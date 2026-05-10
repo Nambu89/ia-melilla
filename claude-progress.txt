@@ -1,0 +1,10 @@
+IA Melilla v2 — Claude Progress Log
+====================================
+
+[2026-05-10] [Session 0] - Bootstrap del proyecto
+- Repositorio creado en https://github.com/Nambu89/ia-melilla.git
+- Sistema multi-agente copiado y adaptado desde TaxIA
+- Stack confirmado: FastAPI + SQLModel + SQLite + OpenAI + React 18 + Vite + Tailwind v4 + shadcn + anime.js v4
+- Infra: VPS Contabo + Coolify
+- Estructura .claude/ (8 agentes, 12 comandos), plans/, memory/, backend/, frontend/ vacios con CLAUDE.md
+- TODO siguiente sesion: Fase 0 — instalar Coolify en VPS, apuntar dominio, configurar SSL, crear DBs
