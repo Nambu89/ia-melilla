@@ -10,5 +10,6 @@
 - [reference_vps_contabo.md](reference_vps_contabo.md) — IP, hostname, recursos, VNC
 - [project_session0_bootstrap.md](project_session0_bootstrap.md) — Sesion 0: setup multi-agente
 - [user_role.md](user_role.md) — Perfil del usuario y co-fundador
+- [feedback_research_before_fix.md](feedback_research_before_fix.md) — Investigar docs oficiales antes de improvisar fix a errores de herramientas externas
 
 > Anade aqui nuevas memorias segun se vayan creando. Una linea por archivo, hook ≤150 caracteres.

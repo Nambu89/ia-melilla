@@ -4,29 +4,44 @@
 >
 > Convenciones: `[ ]` pendiente | `[~]` en progreso | `[x]` completado | `[!]` bloqueado
 
-## Estado del Proyecto: Mayo 2026 (Sesion 0 — bootstrap)
+## Estado del Proyecto: Mayo 2026 (Fase 0 cerrada)
 
 Sistema multi-agente inicializado. Repo en `https://github.com/Nambu89/ia-melilla.git`. Stack confirmado: FastAPI + SQLite + OpenAI + React 18 + Tailwind v4 + shadcn + anime.js v4 + Coolify.
 
-**Pendiente inmediato**: arrancar Fase 0 (infra Coolify + dominio + SSL).
+**VPS operativo** con Coolify v4 accesible en `http://178.238.227.50:8000`. SSH hardened, UFW + fail2ban activos. Deploy de prueba validado.
+
+**Pendiente inmediato**: arrancar Fase 1 (frontend estatico). DNS + SSL diferidos a Fase 0b (ver ADR-007).
 
 ---
 
 ## Fase 0 — Setup Infraestructura
 
-Objetivo: VPS preparado, Coolify instalado, dominio + SSL operativos.
+Objetivo: VPS preparado, Coolify instalado.
 
-- [ ] Confirmar version Ubuntu del VPS (`ssh root@178.238.227.50 "cat /etc/os-release"`)
-- [ ] Si NO es Ubuntu LTS (20.04 / 22.04 / 24.04): planear instalacion manual de Coolify
-- [ ] Hardening basico SSH (deshabilitar root login con password, fail2ban, ufw)
-- [ ] Instalar Coolify (`curl -fsSL https://cdn.coollabs.io/coolify/install.sh | sudo bash`)
-- [ ] Apuntar `iamelilla.com` y `panel.iamelilla.com` al VPS (registros A)
-- [ ] Configurar SSL automatico con Let's Encrypt via Traefik
-- [ ] Crear primer despliegue de prueba (`hello-world` en Coolify)
-- [ ] Configurar backups manuales SQLite + uploads a S3-compatible
-- [ ] Documentar credenciales y URLs en `memory/reference_infra.md`
+- [x] Confirmar version Ubuntu del VPS — **24.04.4 LTS Noble Numbat** (2026-05-17)
+- [x] Si NO es Ubuntu LTS (20.04 / 22.04 / 24.04): planear instalacion manual de Coolify — N/A, es LTS
+- [x] Hardening basico SSH (usuario `iamelilla`, root SSH bloqueado, password SSH bloqueado, UFW 22/80/443/8000, fail2ban 5/10m/1h) — 2026-05-17
+- [x] Instalar Coolify v4 (instalador oficial automatico) — 2026-05-17
+- [x] Crear primer despliegue de prueba (`nginxdemos/hello` via sslip.io) — 2026-05-17
+- [x] Documentar credenciales y URLs en `memory/reference_coolify_admin.md` (local, gitignored) — 2026-05-17
 
-**Bloqueadores potenciales**: version Ubuntu no LTS, dominio aun apuntando a hosting WordPress (necesita ventana migracion).
+**Bloqueadores resueltos**: Ubuntu LTS confirmado, instalador Coolify funciono al segundo intento (incidencia `coolify-helper:1.0.13` resuelta).
+
+---
+
+## Fase 0b — DNS + SSL (cuando estemos listos para publicar)
+
+Objetivo: dominio operativo + HTTPS automatico, sin tirar la web WordPress actual.
+
+- [ ] Decidir registrar y migrar DNS (DonDominio / Cloudflare / Namecheap / GoDaddy)
+- [ ] Crear registros A:
+  - `panel.iamelilla.com` → 178.238.227.50 (primero, no rompe nada)
+  - `iamelilla.com` + `www` → 178.238.227.50 (solo cuando Fase 1 frontend este lista)
+- [ ] Configurar dominio en Coolify para panel y para recursos
+- [ ] Verificar SSL Let's Encrypt automatico funciona
+- [ ] Cerrar puerto 8000 en UFW (panel solo via subdominio HTTPS)
+- [ ] Definir email Let's Encrypt
+- [ ] Configurar backups SQLite + uploads a S3-compatible (Backblaze B2 / Wasabi)
 
 ---
 
@@ -134,4 +149,4 @@ Demos: 5 (Respondedor emails), 6 (Seguimiento post-venta), 8 (Soporte interno RA
 
 ---
 
-**Ultima actualizacion:** 2026-05-10
+**Ultima actualizacion:** 2026-05-17

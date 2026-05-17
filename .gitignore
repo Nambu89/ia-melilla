@@ -4,6 +4,7 @@
 !.env.example
 *.pem
 *.key
+memory/reference_coolify_admin.md
 
 # Python
 __pycache__/

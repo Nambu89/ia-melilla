@@ -98,6 +98,23 @@
     - `agent-comms.md` es el canal de delegacion
     - Sin claude-flow ni hooks complejos `.cjs` (sobre-ingenieria para este caso)
 
+## ADR-007: Diferir DNS + SSL a Fase 0b
+
+- **Fecha**: 2026-05-17
+- **Estado**: Aceptada
+- **Contexto**: `iamelilla.com` apunta hoy al hosting WordPress productivo. Cambiar DNS antes de tener frontend nuevo desplegado tira la web actual y rompe SEO. El panel Coolify es accesible por IP+puerto sin DNS durante desarrollo. Para deploys de prueba, `sslip.io` resuelve cualquier `*.178.238.227.50.sslip.io` a la IP del VPS sin necesidad de DNS propio.
+- **Opciones consideradas**:
+    1. **DNS + SSL en Fase 0**: tener todo "bonito" desde el principio. Pero rompe web WordPress productiva durante todo el desarrollo Fase 1.
+    2. **Subdominio `panel.iamelilla.com` ya**: no rompe nada (subdominio nuevo) pero requiere acceso al registrar antes de necesitarlo. Postpuesto por simplicidad.
+    3. **Fase 0b al final** (elegida): cierra Fase 0 con Coolify accesible via IP+puerto. DNS + SSL se hacen justo antes de publicar (Fase 1 lista, frontend dockerizado, todo testeado).
+- **Decision**: Fase 0 termina con Coolify accesible via `http://178.238.227.50:8000`. DNS, SSL y registrar email Let's Encrypt se hacen en Fase 0b.
+- **Consecuencias**:
+    - Puerto 8000 abierto en UFW temporalmente; se cierra en Fase 0b cuando `panel.iamelilla.com` exista con HTTPS.
+    - Deploys de prueba durante desarrollo usan `*.178.238.227.50.sslip.io` (DNS publico gratis para IPs).
+    - Registrar dominio (DonDominio / Cloudflare / etc.) se confirma en Fase 0b.
+    - Email Let's Encrypt se elige cuando configuremos certificados (Fase 0b).
+    - Backups SQLite + uploads se planifican en Fase 0b junto con SSL (mismo bloque de infra publica).
+
 ---
 
-**Ultima actualizacion:** 2026-05-10
+**Ultima actualizacion:** 2026-05-17
