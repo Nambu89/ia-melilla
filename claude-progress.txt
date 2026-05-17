@@ -8,3 +8,13 @@ IA Melilla v2 — Claude Progress Log
 - Infra: VPS Contabo + Coolify
 - Estructura .claude/ (8 agentes, 12 comandos), plans/, memory/, backend/, frontend/ vacios con CLAUDE.md
 - TODO siguiente sesion: Fase 0 — instalar Coolify en VPS, apuntar dominio, configurar SSL, crear DBs
+
+[2026-05-17] [Session 1] - Fase 0 + tooling Playwright
+- Fase 0 CERRADA: Ubuntu 24.04.4 LTS confirmado, hardening SSH (iamelilla, root bloqueado, UFW, fail2ban), Coolify v4 instalado, deploy nginxdemos/hello validado via sslip.io.
+- 8 incidencias resueltas durante install Coolify (install no-root corrupto -> reinstall como root, postgres volume residual, soketi compose, SSH key Coolify->iamelilla, ACL setfacl /data/coolify).
+- Receta operativa completa en memory/reference_coolify_localhost_setup.md.
+- Lecciones nuevas: feedback_install_as_root, feedback_research_before_fix.
+- DNS + SSL diferidos a Fase 0b (ADR-007) — no romper WordPress productivo hasta tener frontend Fase 1.
+- MCP @playwright/mcp@latest instalado + skill .claude/skills/web-recon/ creado para auditar iamelilla.com.
+- Git: main al dia (commit 786c856). Rama infra/fase-0-coolify viva como referencia.
+- TODO siguiente sesion (2026-05-18): ver memory/project_next_session_2026-05-18.md — invocar skill web-recon, generar brief, arrancar Fase 1 frontend.
