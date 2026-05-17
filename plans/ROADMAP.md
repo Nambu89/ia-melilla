@@ -23,14 +23,18 @@ Objetivo: VPS preparado, Coolify instalado.
 - [x] Hardening basico SSH (usuario `iamelilla`, root SSH bloqueado, password SSH bloqueado, UFW 22/80/443/8000, fail2ban 5/10m/1h) — 2026-05-17
 - [x] Instalar Coolify v4 (reinstalado como root tras intento fallido via `sudo` desde non-root) — 2026-05-17
 - [x] Configurar SSH key Coolify → host (publica Coolify a `~iamelilla/.ssh/authorized_keys`) — 2026-05-17
+- [x] **ACL `/data/coolify`**: `setfacl -R -m u:iamelilla:rwx` + default ACL, para que iamelilla SSH user pueda escribir aunque dirs sean `9999:root 700` — 2026-05-17
 - [x] Entrar al panel Coolify + setup wizard completado con server "This Machine" + user `iamelilla` — 2026-05-17
-- [~] Crear primer despliegue de prueba (`nginxdemos/hello` via sslip.io) — pendiente validar despues del wizard
+- [x] Crear primer despliegue de prueba (`nginxdemos/hello` via sslip.io) — DESPLEGADO OK 2026-05-17
 - [x] Documentar credenciales y URLs en `memory/reference_coolify_admin.md` (local, gitignored) — 2026-05-17
+
+**Fase 0 CERRADA**. Receta operativa completa en `memory/reference_coolify_localhost_setup.md`.
 
 **Bloqueadores resueltos (con sus lecciones)**:
 - Ubuntu LTS confirmado (24.04.4)
-- Instalador Coolify: primer intento como `sudo bash` desde `iamelilla` creo install corrupto (UIDs 1000/9999 mismatch + soketi sin image + DB password rot tras volume residual). Reinstalado **como root via `sudo -i`** — funciono limpio (ver `memory/reference_vps_contabo.md` lecciones).
-- SSH wizard: anadida publica Coolify (`/data/coolify/ssh/keys/id.root@host.docker.internal`) a `authorized_keys` de iamelilla; wizard pasa con user `iamelilla`.
+- Install Coolify via `sudo bash` desde iamelilla creo install corrupto (UIDs mismatch + DB password rot). Reinstalado como root via `sudo -i` — limpio.
+- SSH wizard: publica Coolify a `authorized_keys` de iamelilla; wizard user `iamelilla`.
+- Deploy seguia fallando `tee Permission denied` aun con install limpio: `/data/coolify` 700 9999:root, iamelilla no en grupo. Fix definitivo: ACLs (`setfacl` con default ACL).
 
 ---
 

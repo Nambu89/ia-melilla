@@ -12,5 +12,6 @@
 - [user_role.md](user_role.md) — Perfil del usuario y co-fundador
 - [feedback_research_before_fix.md](feedback_research_before_fix.md) — Investigar docs oficiales antes de improvisar fix a errores de herramientas externas
 - [feedback_install_as_root.md](feedback_install_as_root.md) — Instalar herramientas self-hosted como root via `sudo -i` cuando los docs lo exigen, nunca via `sudo bash` desde usuario normal
+- [reference_coolify_localhost_setup.md](reference_coolify_localhost_setup.md) — Receta completa Coolify "This Machine" con root SSH bloqueado (install root + ACL setfacl + SSH key Coolify→iamelilla)
 
 > Anade aqui nuevas memorias segun se vayan creando. Una linea por archivo, hook ≤150 caracteres.

@@ -49,6 +49,22 @@ Notas:
 5. **`docker compose restart` falla con `soketi has neither image nor build`** → necesita ambos `docker-compose.yml` + `docker-compose.prod.yml`. Mejor usar installer (idempotente).
 6. **Wizard `Permission denied (publickey)` SSH a `host.docker.internal`** → typo user `aimelilla`/`iamelilla` + falta publica Coolify en authorized_keys de iamelilla. Anadida y verificada con `sudo ssh -i /data/coolify/ssh/keys/id.root@host.docker.internal iamelilla@127.0.0.1`.
 
-Siguiente: validar deploy de prueba `nginxdemos/hello` en panel + Fase 1 frontend.
+### Cierre Fase 0 — 2026-05-17 ~20:39
+
+7. **Deploy `nginxdemos/hello` SEGUIA fallando** tras todas las correcciones anteriores. Causa raiz definitiva: Coolify "This Machine" hace SSH como `iamelilla`, pero `/data/coolify` es `9999:root 700`, e iamelilla (UID 1000) NO esta en grupo 9999/root → no puede entrar al dir → tee falla. Fix: **ACL POSIX** sobre `/data/coolify`:
+   ```bash
+   sudo apt install -y acl
+   sudo setfacl -R -m u:iamelilla:rwx /data/coolify
+   sudo setfacl -R -d -m u:iamelilla:rwx /data/coolify
+   ```
+   Default ACL (`-d`) hace que dirs nuevos hereden permisos para iamelilla. Mantiene seguridad (700 base + permisos extra solo para iamelilla via ACL).
+
+8. **Deploy validado**: log final `Rolling update completed`. URL `*.178.238.227.50.sslip.io` responde nginx demo.
+
+Memoria nueva: [[reference_coolify_localhost_setup]] (receta completa).
+
+Estado final Fase 0: **CERRADA**.
+
+Siguiente: Fase 1 frontend estatico.
 
 ---

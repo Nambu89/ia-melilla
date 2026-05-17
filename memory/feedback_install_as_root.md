@@ -32,4 +32,6 @@ Solo entonces UIDs consistentes (todo 9999:root), compose levanta limpio, Postgr
 
 Aplica a: Coolify, Dokku, CapRover, instalaciones n8n/PostgreSQL/Redis self-hosted, herramientas con installer `curl | bash`.
 
-Relacionada: [[feedback_research_before_fix]] (consultar docs antes de improvisar fix).
+**IMPORTANTE — reinstalar como root NO basta si root SSH esta bloqueado por hardening.** Tras reinstalar Coolify limpiamente como root, el deploy seguia fallando con `tee Permission denied`: causa raiz era que Coolify "This Machine" hace SSH al host como `iamelilla` (no root, bloqueado), pero `/data/coolify` es 700 owned 9999:root, e `iamelilla` no esta en grupo 9999 → no puede entrar. Solucion final via ACL — ver [[reference_coolify_localhost_setup]] para la receta completa.
+
+Relacionada: [[feedback_research_before_fix]] (consultar docs antes de improvisar fix), [[reference_coolify_localhost_setup]] (receta completa Coolify localhost con hardening).
