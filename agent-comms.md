@@ -68,3 +68,17 @@ Estado final Fase 0: **CERRADA**.
 Siguiente: Fase 1 frontend estatico.
 
 ---
+
+## [2026-05-17] [Setup] MCP Playwright + skill web-recon instalados
+
+Tarea: anadir browser automation para que PM pueda auditar `iamelilla.com` antes de Fase 1.
+Estado: DONE
+Notas:
+- MCP `@playwright/mcp@latest` (Microsoft oficial) instalado scope local via `claude mcp add playwright npx @playwright/mcp@latest`. Verificado `claude mcp list` muestra `✓ Connected`.
+- Skill custom `.claude/skills/web-recon/SKILL.md` creado con procedimiento para extraer estructura, paleta, tipografias, copy, SEO + generar brief para frontend-dev.
+- Memoria: [[reference_mcp_playwright]] con receta install + maintenance.
+- Listo para invocar cuando PM o usuario pida "auditar/inspeccionar web actual".
+
+Siguiente: arrancar recon de iamelilla.com → brief → Fase 1 frontend.
+
+---
