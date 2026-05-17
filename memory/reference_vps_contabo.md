@@ -32,12 +32,21 @@ Instalador automatico requiere Ubuntu LTS (20.04 / 22.04 / 24.04). Si version no
 - **AllowUsers**: solo `iamelilla`
 - **Clave SSH local**: `C:\Users\Fernando Prada\.ssh\id_ed25519_iamelilla` (passphrase en gestor)
 - **Alias SSH**: `ssh ia-melilla` (definido en `~/.ssh/config`)
+- **Hardening sshd**: `/etc/ssh/sshd_config.d/00-hardening.conf` (NO `99-`, otro nombre)
 - **UFW**: 22/80/443/8000 ALLOW, resto DENY
 - **fail2ban**: jail sshd activo (maxretry 5 / findtime 10m / bantime 1h)
-- **Coolify**: v4 instalado, panel en `http://178.238.227.50:8000` (version exacta en `reference_coolify_admin.md`)
-- **Docker**: instalado por Coolify (engine + compose)
-- **Deploy prueba**: nginxdemos/hello desplegado y borrado OK
+- **Coolify**: v4.0.0 + helper/realtime 1.0.13, panel en `http://178.238.227.50:8000` (credenciales en `reference_coolify_admin.md`)
+- **Docker**: Docker Engine 29.5.0 + BuildKit + Buildx, instalado por Coolify
+- **Wizard Coolify "This Machine" (localhost)**: configurado con user `iamelilla` (NOT root, NOT typo `aimelilla`). Public key Coolify en `/home/iamelilla/.ssh/authorized_keys` con comentario `coolify-localhost`.
+- **Deploy prueba**: PENDIENTE validar (`nginxdemos/hello` falta probar tras setup wizard)
 - **Updates automaticos**: `unattended-upgrades` activo
+
+## Lecciones aprendidas Fase 0 (CRITICO recordar)
+
+1. **Instalar Coolify SOLO como root**: docs oficiales dicen `non-root not fully supported`. Install via `sudo bash` desde usuario normal crea mismatch UIDs (backend UID 1000, helper UID 9999) → `Permission denied` en tee `.env`. Sintoma adicional: `soketi has neither image nor build` al hacer `docker compose` manual. Reinstalar implica borrar **volumes** Docker (`coolify-db`, `coolify-redis`) ademas de containers + `/data/coolify`, sino postgres mantiene password vieja.
+2. **Coolify compose files**: hay `docker-compose.yml` (base, `soketi` sin `image:`) + `docker-compose.prod.yml` (override con `image:`). `docker compose restart` sin especificar ambos rompe. Usar siempre el installer `bash /root/coolify-install.sh` (idempotente).
+3. **Coolify SSH a host**: container Coolify ejecuta despliegues via SSH a `host.docker.internal`. Con root SSH bloqueado, hay que anadir la public key de Coolify (`/data/coolify/ssh/keys/id.root@host.docker.internal`, extraer con `ssh-keygen -y -f`) al `~iamelilla/.ssh/authorized_keys`. Wizard espera User `iamelilla`, no root.
+4. **Bind mounts Coolify**: `/data/coolify/ssh` → `/var/www/html/storage/app/ssh` dentro container. Test SSH directo `sudo ssh -i /data/coolify/ssh/keys/id.root@... iamelilla@127.0.0.1` valida la cadena.
 
 ## Pendiente Fase 0b — DNS + SSL
 

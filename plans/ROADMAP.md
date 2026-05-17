@@ -21,11 +21,16 @@ Objetivo: VPS preparado, Coolify instalado.
 - [x] Confirmar version Ubuntu del VPS — **24.04.4 LTS Noble Numbat** (2026-05-17)
 - [x] Si NO es Ubuntu LTS (20.04 / 22.04 / 24.04): planear instalacion manual de Coolify — N/A, es LTS
 - [x] Hardening basico SSH (usuario `iamelilla`, root SSH bloqueado, password SSH bloqueado, UFW 22/80/443/8000, fail2ban 5/10m/1h) — 2026-05-17
-- [x] Instalar Coolify v4 (instalador oficial automatico) — 2026-05-17
-- [x] Crear primer despliegue de prueba (`nginxdemos/hello` via sslip.io) — 2026-05-17
+- [x] Instalar Coolify v4 (reinstalado como root tras intento fallido via `sudo` desde non-root) — 2026-05-17
+- [x] Configurar SSH key Coolify → host (publica Coolify a `~iamelilla/.ssh/authorized_keys`) — 2026-05-17
+- [x] Entrar al panel Coolify + setup wizard completado con server "This Machine" + user `iamelilla` — 2026-05-17
+- [~] Crear primer despliegue de prueba (`nginxdemos/hello` via sslip.io) — pendiente validar despues del wizard
 - [x] Documentar credenciales y URLs en `memory/reference_coolify_admin.md` (local, gitignored) — 2026-05-17
 
-**Bloqueadores resueltos**: Ubuntu LTS confirmado, instalador Coolify funciono al segundo intento (incidencia `coolify-helper:1.0.13` resuelta).
+**Bloqueadores resueltos (con sus lecciones)**:
+- Ubuntu LTS confirmado (24.04.4)
+- Instalador Coolify: primer intento como `sudo bash` desde `iamelilla` creo install corrupto (UIDs 1000/9999 mismatch + soketi sin image + DB password rot tras volume residual). Reinstalado **como root via `sudo -i`** — funciono limpio (ver `memory/reference_vps_contabo.md` lecciones).
+- SSH wizard: anadida publica Coolify (`/data/coolify/ssh/keys/id.root@host.docker.internal`) a `authorized_keys` de iamelilla; wizard pasa con user `iamelilla`.
 
 ---
 
