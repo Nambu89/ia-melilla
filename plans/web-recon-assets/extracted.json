@@ -1,0 +1,4911 @@
+[
+  {
+    "file": "aviso-legal.html",
+    "name": "aviso-legal",
+    "title": "Aviso legal - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+    "lang": "es",
+    "description": "DATOS IDENTIFICATIVOS:",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "article",
+      "og:title": "Aviso legal - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "og:description": "DATOS IDENTIFICATIVOS:",
+      "og:url": "https://iamelilla.com/aviso-legal/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2025-06-05T03:33:14+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+      "og:image:width": "1024",
+      "og:image:height": "1024",
+      "og:image:alt": "logo instagram ia melillla",
+      "og:image:type": "image/png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Aviso legal - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "twitter:description": "DATOS IDENTIFICATIVOS:",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+      "twitter:label1": "Tiempo de lectura",
+      "twitter:data1": "4 minutos"
+    },
+    "canonical": "https://iamelilla.com/aviso-legal/",
+    "hreflangs": [],
+    "stylesheets_count": 1,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-5d9f1f2fdcbe9526ce0d921a24bf21a2.css"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+            "width": "1024",
+            "height": "1024",
+            "caption": "logo instagram ia melillla",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://iamelilla.com/aviso-legal/#webpage",
+            "url": "https://iamelilla.com/aviso-legal/",
+            "name": "Aviso legal - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "datePublished": "2025-06-05T03:31:44+00:00",
+            "dateModified": "2025-06-05T03:33:14+00:00",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://iamelilla.com/aviso-legal/#author",
+            "name": "Joaquín",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "caption": "Joaquín",
+              "inLanguage": "es"
+            },
+            "sameAs": [
+              "https://iamelilla.com"
+            ],
+            "worksFor": {
+              "@id": "https://iamelilla.com/#organization"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Aviso legal - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "keywords": "Aviso legal ia melilla",
+            "datePublished": "2025-06-05T03:31:44+00:00",
+            "dateModified": "2025-06-05T03:33:14+00:00",
+            "author": {
+              "@id": "https://iamelilla.com/aviso-legal/#author",
+              "name": "Joaquín"
+            },
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "description": "DATOS IDENTIFICATIVOS:",
+            "name": "Aviso legal - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "@id": "https://iamelilla.com/aviso-legal/#richSnippet",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/aviso-legal/#webpage"
+            },
+            "image": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png"
+            },
+            "inLanguage": "es",
+            "mainEntityOfPage": {
+              "@id": "https://iamelilla.com/aviso-legal/#webpage"
+            }
+          }
+        ]
+      }
+    ],
+    "h1": [],
+    "h2": [
+      "Aviso Legal"
+    ],
+    "h3": [],
+    "top_colors": [
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#039",
+        2
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 5,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-f2505fd1984015e54207a64a62d3eef1.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate"
+    ],
+    "elementor_version": null,
+    "has_elementor_class": true,
+    "anchors_count": 44,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  },
+  {
+    "file": "blog.html",
+    "name": "blog",
+    "title": "Blog - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+    "lang": "es",
+    "description": "Nuestro&nbsp;Blog Nuestro&nbsp;Blog Nuestro&nbsp;Blog Home / Blog / junio 10, 2025 IA MelillaInteligencia artifical La Inteligencia Artificial llega a",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "article",
+      "og:title": "Blog - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "og:description": "Nuestro&nbsp;Blog Nuestro&nbsp;Blog Nuestro&nbsp;Blog Home / Blog / junio 10, 2025 IA MelillaInteligencia artifical La Inteligencia Artificial llega a",
+      "og:url": "https://iamelilla.com/blog/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2025-06-10T01:19:37+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/06/video_ia_melilla-600x500.webp",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/06/video_ia_melilla-600x500.webp",
+      "og:image:alt": "Blog ia melilla"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Blog - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "twitter:description": "Nuestro&nbsp;Blog Nuestro&nbsp;Blog Nuestro&nbsp;Blog Home / Blog / junio 10, 2025 IA MelillaInteligencia artifical La Inteligencia Artificial llega a",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/06/video_ia_melilla-600x500.webp",
+      "twitter:label1": "Tiempo de lectura",
+      "twitter:data1": "Menos de un minuto"
+    },
+    "canonical": "https://iamelilla.com/blog/",
+    "hreflangs": [],
+    "stylesheets_count": 2,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-fc9c93f1010c03e42af6faec81f6534c.css",
+      "https://iamelilla.com/wp-content/plugins/selection-lite/css/elementor-admin.min.css?ver=1.16"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/06/video_ia_melilla-600x500.webp",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/06/video_ia_melilla-600x500.webp",
+            "width": "200",
+            "height": "200",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://iamelilla.com/blog/#webpage",
+            "url": "https://iamelilla.com/blog/",
+            "name": "Blog - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "datePublished": "2025-06-10T00:36:28+00:00",
+            "dateModified": "2025-06-10T01:19:37+00:00",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/video_ia_melilla-600x500.webp"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://iamelilla.com/blog/#author",
+            "name": "Joaquín",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "caption": "Joaquín",
+              "inLanguage": "es"
+            },
+            "sameAs": [
+              "https://iamelilla.com"
+            ],
+            "worksFor": {
+              "@id": "https://iamelilla.com/#organization"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Blog - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "keywords": "Blog ia melilla",
+            "datePublished": "2025-06-10T00:36:28+00:00",
+            "dateModified": "2025-06-10T01:19:37+00:00",
+            "author": {
+              "@id": "https://iamelilla.com/blog/#author",
+              "name": "Joaquín"
+            },
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "description": "Nuestro&nbsp;Blog Nuestro&nbsp;Blog Nuestro&nbsp;Blog Home / Blog / junio 10, 2025 IA MelillaInteligencia artifical La Inteligencia Artificial llega a",
+            "name": "Blog - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "@id": "https://iamelilla.com/blog/#richSnippet",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/blog/#webpage"
+            },
+            "image": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/video_ia_melilla-600x500.webp"
+            },
+            "inLanguage": "es",
+            "mainEntityOfPage": {
+              "@id": "https://iamelilla.com/blog/#webpage"
+            }
+          }
+        ]
+      }
+    ],
+    "h1": [
+      "Blog",
+      "Nuestro Blog Nuestro Blog Nuestro Blog",
+      "Blog"
+    ],
+    "h2": [],
+    "h3": [
+      "Automatización IA Melilla: cómo implementar la IA en tu pyme en 6 pasos sin complicaciones",
+      "La inteligencia artificial en Melilla",
+      "Blog"
+    ],
+    "top_colors": [
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#039",
+        2
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 5,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-382bcc98e9f5ddb384ea89956cc50e77.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate",
+      "selection-lite"
+    ],
+    "elementor_version": "1.16",
+    "has_elementor_class": true,
+    "anchors_count": 72,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  },
+  {
+    "file": "chatbots-personalizados.html",
+    "name": "chatbots-personalizados",
+    "title": "Chatbots personalizados - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+    "lang": "es",
+    "description": "Nuestros chatbots personalizados permiten automatizar respuestas, resolver dudas frecuentes y ofrecer atención al cliente inmediata en cualquier momento del",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "article",
+      "og:title": "Chatbots personalizados - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "og:description": "Nuestros chatbots personalizados permiten automatizar respuestas, resolver dudas frecuentes y ofrecer atención al cliente inmediata en cualquier momento del",
+      "og:url": "https://iamelilla.com/chatbots-personalizados/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2025-06-10T13:38:04+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "og:image:width": "1659",
+      "og:image:height": "792",
+      "og:image:alt": "grafico22 ia melilla",
+      "og:image:type": "image/png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Chatbots personalizados - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "twitter:description": "Nuestros chatbots personalizados permiten automatizar respuestas, resolver dudas frecuentes y ofrecer atención al cliente inmediata en cualquier momento del",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "twitter:label1": "Tiempo de lectura",
+      "twitter:data1": "1 minuto"
+    },
+    "canonical": "https://iamelilla.com/chatbots-personalizados/",
+    "hreflangs": [],
+    "stylesheets_count": 1,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-2e9a18603a83a0472958fb3bf0b23298.css"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png",
+            "width": "200",
+            "height": "200",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://iamelilla.com/chatbots-personalizados/#webpage",
+            "url": "https://iamelilla.com/chatbots-personalizados/",
+            "name": "Chatbots personalizados - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "datePublished": "2025-06-10T11:46:18+00:00",
+            "dateModified": "2025-06-10T13:38:04+00:00",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://iamelilla.com/chatbots-personalizados/#author",
+            "name": "Joaquín",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "caption": "Joaquín",
+              "inLanguage": "es"
+            },
+            "sameAs": [
+              "https://iamelilla.com"
+            ],
+            "worksFor": {
+              "@id": "https://iamelilla.com/#organization"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Chatbots personalizados - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "keywords": "chatbots personalizados",
+            "datePublished": "2025-06-10T11:46:18+00:00",
+            "dateModified": "2025-06-10T13:38:04+00:00",
+            "author": {
+              "@id": "https://iamelilla.com/chatbots-personalizados/#author",
+              "name": "Joaquín"
+            },
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "description": "Nuestros chatbots personalizados permiten automatizar respuestas, resolver dudas frecuentes y ofrecer atención al cliente inmediata en cualquier momento del",
+            "name": "Chatbots personalizados - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "@id": "https://iamelilla.com/chatbots-personalizados/#richSnippet",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/chatbots-personalizados/#webpage"
+            },
+            "image": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png"
+            },
+            "inLanguage": "es",
+            "mainEntityOfPage": {
+              "@id": "https://iamelilla.com/chatbots-personalizados/#webpage"
+            }
+          }
+        ]
+      }
+    ],
+    "h1": [
+      "Chatbots Chatbots Chatbots",
+      "Chatbots personalizados"
+    ],
+    "h2": [
+      "Automatiza conversaciones reales con un asistente que nunca descansa.",
+      "Resultados que importan",
+      "Reducción en tiempo de respuesta",
+      "Clientes atendidos sin intervención humana",
+      "Aumento en la captación de leads"
+    ],
+    "h3": [
+      "Como lo hacemos"
+    ],
+    "top_colors": [
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#039",
+        2
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 5,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-e950cff4e697cbd733a69fe098b2b60a.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate"
+    ],
+    "elementor_version": null,
+    "has_elementor_class": true,
+    "anchors_count": 53,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Pide asesoramiento"
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  },
+  {
+    "file": "contacto.html",
+    "name": "contacto",
+    "title": "Contacto - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+    "lang": "es",
+    "description": "Escríbenos si necesitas asesoramiento, resolver preguntas o solicitar información. Estamos disponibles para ayudarte de lunes a viernes.",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "article",
+      "og:title": "Contacto - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "og:description": "Escríbenos si necesitas asesoramiento, resolver preguntas o solicitar información. Estamos disponibles para ayudarte de lunes a viernes.",
+      "og:url": "https://iamelilla.com/contacto/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2025-07-13T07:20:06+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/06/Path-1.png",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/06/Path-1.png",
+      "og:image:width": "1920",
+      "og:image:height": "490",
+      "og:image:alt": "grafico 200",
+      "og:image:type": "image/png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Contacto - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "twitter:description": "Escríbenos si necesitas asesoramiento, resolver preguntas o solicitar información. Estamos disponibles para ayudarte de lunes a viernes.",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/06/Path-1.png",
+      "twitter:label1": "Tiempo de lectura",
+      "twitter:data1": "Menos de un minuto"
+    },
+    "canonical": "https://iamelilla.com/contacto/",
+    "hreflangs": [],
+    "stylesheets_count": 1,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-1acb2b5cdeaf624212afb13c047a96c1.css"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Path-1.png",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/06/Path-1.png",
+            "width": "200",
+            "height": "200",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ContactPage",
+            "@id": "https://iamelilla.com/contacto/#webpage",
+            "url": "https://iamelilla.com/contacto/",
+            "name": "Contacto - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "datePublished": "2025-06-05T01:16:10+00:00",
+            "dateModified": "2025-07-13T07:20:06+00:00",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Path-1.png"
+            },
+            "inLanguage": "es"
+          }
+        ]
+      }
+    ],
+    "h1": [
+      "Contacto Contacto Contacto"
+    ],
+    "h2": [
+      "¿Tienes dudas? Estamos aquí para ayudarte"
+    ],
+    "h3": [],
+    "top_colors": [
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#039",
+        2
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 6,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-e9441719f6be9d143844889d721aa74a.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate"
+    ],
+    "elementor_version": null,
+    "has_elementor_class": true,
+    "anchors_count": 48,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://wa.me/34654186173?text=Hola%2C%20quiero%20ponerme%20en%20contacto%20con%20iamelilla",
+        "text": "Pulse para Whatsapp"
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [
+      "https://wa.me/34654186173?text=Hola%2C%20quiero%20ponerme%20en%20contacto%20con%20iamelilla"
+    ],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  },
+  {
+    "file": "evidencia-visual.html",
+    "name": "evidencia-visual",
+    "title": "Evidencia visual - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+    "lang": "es",
+    "description": "Nota: Todas las imágenes de esta página están en formato WebP. Esto puede implicar una  pérdida de calidad visual, pero mejora significativamente la velocidad",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "article",
+      "og:title": "Evidencia visual - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "og:description": "Nota: Todas las imágenes de esta página están en formato WebP. Esto puede implicar una  pérdida de calidad visual, pero mejora significativamente la velocidad",
+      "og:url": "https://iamelilla.com/evidencia-visual/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2025-09-10T13:13:28+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "og:image:width": "1659",
+      "og:image:height": "792",
+      "og:image:alt": "grafico22 ia melilla",
+      "og:image:type": "image/png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Evidencia visual - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "twitter:description": "Nota: Todas las imágenes de esta página están en formato WebP. Esto puede implicar una  pérdida de calidad visual, pero mejora significativamente la velocidad",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "twitter:label1": "Tiempo de lectura",
+      "twitter:data1": "Menos de un minuto"
+    },
+    "canonical": "https://iamelilla.com/evidencia-visual/",
+    "hreflangs": [],
+    "stylesheets_count": 1,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-aa009d1d5f86bbd02ae1621afa6b76e6.css"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png",
+            "width": "200",
+            "height": "200",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://iamelilla.com/evidencia-visual/#webpage",
+            "url": "https://iamelilla.com/evidencia-visual/",
+            "name": "Evidencia visual - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "datePublished": "2025-06-11T04:42:24+00:00",
+            "dateModified": "2025-09-10T13:13:28+00:00",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://iamelilla.com/evidencia-visual/#author",
+            "name": "Joaquín",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "caption": "Joaquín",
+              "inLanguage": "es"
+            },
+            "sameAs": [
+              "https://iamelilla.com"
+            ],
+            "worksFor": {
+              "@id": "https://iamelilla.com/#organization"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Evidencia visual - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "datePublished": "2025-06-11T04:42:24+00:00",
+            "dateModified": "2025-09-10T13:13:28+00:00",
+            "author": {
+              "@id": "https://iamelilla.com/evidencia-visual/#author",
+              "name": "Joaquín"
+            },
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "description": "Nota: Todas las imágenes de esta página están en formato WebP. Esto puede implicar una  pérdida de calidad visual, pero mejora significativamente la velocidad",
+            "name": "Evidencia visual - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "@id": "https://iamelilla.com/evidencia-visual/#richSnippet",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/evidencia-visual/#webpage"
+            },
+            "image": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png"
+            },
+            "inLanguage": "es",
+            "mainEntityOfPage": {
+              "@id": "https://iamelilla.com/evidencia-visual/#webpage"
+            }
+          }
+        ]
+      }
+    ],
+    "h1": [
+      "Galería Galería Galería",
+      "Galeria de imagenes y vídeos"
+    ],
+    "h2": [],
+    "h3": [],
+    "top_colors": [
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#039",
+        2
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 5,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-53d20a5a80b12850f769a6523f021d67.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate"
+    ],
+    "elementor_version": null,
+    "has_elementor_class": true,
+    "anchors_count": 47,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  },
+  {
+    "file": "home.html",
+    "name": "home",
+    "title": "Inteligencia Artificial Melilla -Soluciones de IA para todos",
+    "lang": "es",
+    "description": "Inteligencia Artificial Melilla - Soluciones de IA para empresas, autónomos y particulares",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "website",
+      "og:title": "Inteligencia Artificial Melilla -Soluciones de IA para todos",
+      "og:description": "Inteligencia Artificial Melilla - Soluciones de IA para empresas, autónomos y particulares",
+      "og:url": "https://iamelilla.com/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2026-04-03T06:13:51+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+      "og:image:width": "1024",
+      "og:image:height": "1024",
+      "og:image:alt": "logo instagram ia melillla",
+      "og:image:type": "image/png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Inteligencia Artificial Melilla -Soluciones de IA para todos",
+      "twitter:description": "Inteligencia Artificial Melilla - Soluciones de IA para empresas, autónomos y particulares",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+      "twitter:label1": "Escrito por",
+      "twitter:data1": "Joaquín",
+      "twitter:label2": "Tiempo de lectura",
+      "twitter:data2": "5 minutos"
+    },
+    "canonical": "https://iamelilla.com/",
+    "hreflangs": [],
+    "stylesheets_count": 1,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-b6f9440f3b801f98f6c87d57f9481cb3.css"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://iamelilla.com/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/06/01.png",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/06/01.png",
+            "width": "200",
+            "height": "200",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://iamelilla.com/#webpage",
+            "url": "https://iamelilla.com/",
+            "name": "Inteligencia Artificial Melilla -Soluciones de IA para todos",
+            "datePublished": "2025-06-05T01:04:39+00:00",
+            "dateModified": "2026-04-03T06:13:51+00:00",
+            "about": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/01.png"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://iamelilla.com/#author",
+            "name": "Joaquín",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "caption": "Joaquín",
+              "inLanguage": "es"
+            },
+            "sameAs": [
+              "https://iamelilla.com"
+            ],
+            "worksFor": {
+              "@id": "https://iamelilla.com/#organization"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Inteligencia Artificial Melilla -Soluciones de IA para todos",
+            "keywords": "Inteligencia Artificial Melilla",
+            "datePublished": "2025-06-05T01:04:39+00:00",
+            "dateModified": "2026-04-03T06:13:51+00:00",
+            "author": {
+              "@id": "https://iamelilla.com/#author",
+              "name": "Joaquín"
+            },
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "description": "Inteligencia Artificial Melilla - Soluciones de IA para empresas, autónomos y particulares",
+            "name": "Inteligencia Artificial Melilla -Soluciones de IA para todos",
+            "@id": "https://iamelilla.com/#richSnippet",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#webpage"
+            },
+            "image": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/01.png"
+            },
+            "inLanguage": "es",
+            "mainEntityOfPage": {
+              "@id": "https://iamelilla.com/#webpage"
+            }
+          }
+        ]
+      }
+    ],
+    "h1": [
+      "Inteligencia Artificial Melilla"
+    ],
+    "h2": [
+      "PARA EMPRESAS Y NEGOCIOS PARA EMPRESAS Y NEGOCIOS PARA EMPRESAS Y NEGOCIOS PARA EMPRESAS Y NEGOCIOS",
+      "Inteligencia Artificial en Melilla al Alcance de Todos",
+      "x",
+      "Que ofrecemos",
+      "Soluciones en video profesionales de inteligencia artificial Melilla",
+      "% menos trabajo manual",
+      "Aplicaciones Reales de inteligencia artificial Melilla",
+      "Testimonios de clientes",
+      "Sectores donde aplicamos inteligencia artificial Melilla",
+      "Únete a la revoluión IA"
+    ],
+    "h3": [
+      "Resultados reales de inteligencia artificial Melilla",
+      "mejora en productividad",
+      "Asistentes Virtuales para WhatsApp",
+      "Contenido Visual con IA para E-commerce y Redes",
+      "Impulsa tus ventas con contenido generado por IA",
+      "Optimización operativa con IA para decisiones más inteligentes",
+      "En Melilla, aplicar soluciones de inteligencia artificial Melilla nunca había sido tan fácil y accesible.",
+      "e-commerce"
+    ],
+    "top_colors": [
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#039",
+        2
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 5,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-84b0b3ce54f432f2e973610bfeee552e.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate"
+    ],
+    "elementor_version": null,
+    "has_elementor_class": true,
+    "anchors_count": 48,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://iamelilla.com/todos-los-servicios/",
+        "text": "Ver soluciones de IA"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Haznos tu consulta"
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  },
+  {
+    "file": "influencer-ia.html",
+    "name": "influencer-ia",
+    "title": "Influencer IA - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+    "lang": "es",
+    "description": "Genera contenido visual realista y profesional para tus redes sociales usando IA avanzada.",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "article",
+      "og:title": "Influencer IA - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "og:description": "Genera contenido visual realista y profesional para tus redes sociales usando IA avanzada.",
+      "og:url": "https://iamelilla.com/influencer-ia/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2025-07-31T15:19:59+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "og:image:width": "1659",
+      "og:image:height": "792",
+      "og:image:alt": "grafico22 ia melilla",
+      "og:image:type": "image/png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Influencer IA - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "twitter:description": "Genera contenido visual realista y profesional para tus redes sociales usando IA avanzada.",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "twitter:label1": "Tiempo de lectura",
+      "twitter:data1": "5 minutos"
+    },
+    "canonical": "https://iamelilla.com/influencer-ia/",
+    "hreflangs": [],
+    "stylesheets_count": 1,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-dde24540ddf2242eb6cce6e1957af4ba.css"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png",
+            "width": "200",
+            "height": "200",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://iamelilla.com/influencer-ia/#webpage",
+            "url": "https://iamelilla.com/influencer-ia/",
+            "name": "Influencer IA - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "datePublished": "2025-07-09T05:18:32+00:00",
+            "dateModified": "2025-07-31T15:19:59+00:00",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://iamelilla.com/influencer-ia/#author",
+            "name": "Joaquín",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "caption": "Joaquín",
+              "inLanguage": "es"
+            },
+            "sameAs": [
+              "https://iamelilla.com"
+            ],
+            "worksFor": {
+              "@id": "https://iamelilla.com/#organization"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Influencer IA - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "keywords": "reservas whatsapp ia",
+            "datePublished": "2025-07-09T05:18:32+00:00",
+            "dateModified": "2025-07-31T15:19:59+00:00",
+            "author": {
+              "@id": "https://iamelilla.com/influencer-ia/#author",
+              "name": "Joaquín"
+            },
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "description": "Genera contenido visual realista y profesional para tus redes sociales usando IA avanzada.",
+            "name": "Influencer IA - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "@id": "https://iamelilla.com/influencer-ia/#richSnippet",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/influencer-ia/#webpage"
+            },
+            "image": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png"
+            },
+            "inLanguage": "es",
+            "mainEntityOfPage": {
+              "@id": "https://iamelilla.com/influencer-ia/#webpage"
+            }
+          }
+        ]
+      }
+    ],
+    "h1": [
+      "Influencer IA Influencer IA Influencer IA",
+      "Influencer IA: Crea tu avatar virtual y destaca en redes sociales con Inteligencia Artificial"
+    ],
+    "h2": [
+      "¿Qué es una Influencer IA?",
+      "Una influencer consistente, realista y con estilo propio",
+      "Tu Influencer IA: la herramienta perfecta para emprendedores digitales",
+      "Sácale el máximo rendimiento a tus redes",
+      "Resultados que importan",
+      "Ahorro de tiempo",
+      "Confirmaciones instantáneas",
+      "Reducción de “no-shows”"
+    ],
+    "h3": [
+      "¿Qué podemos controlar visualmente?",
+      "Como lo hacemos"
+    ],
+    "top_colors": [
+      [
+        "#039",
+        12
+      ],
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 5,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-ad6e793e3ca167810db0af0c64cabcd6.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate"
+    ],
+    "elementor_version": null,
+    "has_elementor_class": true,
+    "anchors_count": 58,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Pide tu influencer"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Haz clic aquí para ver una demo personalizada."
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  },
+  {
+    "file": "modelos-virtuales-ropa.html",
+    "name": "modelos-virtuales-ropa",
+    "title": "Modelos virtuales para ropa | Imágenes IA para tiendas",
+    "lang": "es",
+    "description": "Promociona tu negocio con modelos virtuales para ropa. Imágenes profesionales sin fotógrafos, listas para redes o e-commerce.",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "article",
+      "og:title": "Modelos virtuales para ropa | Imágenes IA para tiendas",
+      "og:description": "Promociona tu negocio con modelos virtuales para ropa. Imágenes profesionales sin fotógrafos, listas para redes o e-commerce.",
+      "og:url": "https://iamelilla.com/modelos-virtuales-para-ropa/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2025-07-31T20:47:16+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "og:image:width": "1659",
+      "og:image:height": "792",
+      "og:image:alt": "grafico22 ia melilla",
+      "og:image:type": "image/png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Modelos virtuales para ropa | Imágenes IA para tiendas",
+      "twitter:description": "Promociona tu negocio con modelos virtuales para ropa. Imágenes profesionales sin fotógrafos, listas para redes o e-commerce.",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "twitter:label1": "Tiempo de lectura",
+      "twitter:data1": "4 minutos"
+    },
+    "canonical": "https://iamelilla.com/modelos-virtuales-para-ropa/",
+    "hreflangs": [],
+    "stylesheets_count": 1,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-8434f99ce9f73942dcf25a734f12ae90.css"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png",
+            "width": "200",
+            "height": "200",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://iamelilla.com/modelos-virtuales-para-ropa/#webpage",
+            "url": "https://iamelilla.com/modelos-virtuales-para-ropa/",
+            "name": "Modelos virtuales para ropa | Imágenes IA para tiendas",
+            "datePublished": "2025-07-31T15:25:47+00:00",
+            "dateModified": "2025-07-31T20:47:16+00:00",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://iamelilla.com/modelos-virtuales-para-ropa/#author",
+            "name": "Joaquín",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "caption": "Joaquín",
+              "inLanguage": "es"
+            },
+            "sameAs": [
+              "https://iamelilla.com"
+            ],
+            "worksFor": {
+              "@id": "https://iamelilla.com/#organization"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Modelos virtuales para ropa | Imágenes IA para tiendas",
+            "keywords": "modelos virtuales para ropa",
+            "datePublished": "2025-07-31T15:25:47+00:00",
+            "dateModified": "2025-07-31T20:47:16+00:00",
+            "author": {
+              "@id": "https://iamelilla.com/modelos-virtuales-para-ropa/#author",
+              "name": "Joaquín"
+            },
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "description": "Promociona tu negocio con modelos virtuales para ropa. Imágenes profesionales sin fotógrafos, listas para redes o e-commerce.",
+            "name": "Modelos virtuales para ropa | Imágenes IA para tiendas",
+            "@id": "https://iamelilla.com/modelos-virtuales-para-ropa/#richSnippet",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/modelos-virtuales-para-ropa/#webpage"
+            },
+            "image": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png"
+            },
+            "inLanguage": "es",
+            "mainEntityOfPage": {
+              "@id": "https://iamelilla.com/modelos-virtuales-para-ropa/#webpage"
+            }
+          }
+        ]
+      }
+    ],
+    "h1": [
+      "Modelos IA Modelos IA Modelos IA",
+      "modelos virtuales para ropa. En solo 24h y sin fotógrafos"
+    ],
+    "h2": [
+      "¿Qué son los modelos virtuales para ropa y cómo pueden ayudarte?",
+      "¿Qué beneficios tienen los modelos virtuales para ropa?",
+      "¿Qué tipo de modelos puedo elegir?",
+      "¿Dónde puedo usar estas imágenes?",
+      "¿Por qué usar imágenes con modelos IA para tu tienda de ropa?",
+      "Sácale el máximo rendimiento a tu ropa",
+      "¿Tienes una tienda de ropa?",
+      "Resultados que importan",
+      "Ahorro de tiempo",
+      "Confirmaciones instantáneas",
+      "Reducción de “no-shows”"
+    ],
+    "h3": [
+      "¿Quién puede usar modelos virtuales para ropa?",
+      "Como lo hacemos"
+    ],
+    "top_colors": [
+      [
+        "#039",
+        12
+      ],
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 5,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-ad6e793e3ca167810db0af0c64cabcd6.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate"
+    ],
+    "elementor_version": null,
+    "has_elementor_class": true,
+    "anchors_count": 59,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Solicite su demo gratis"
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  },
+  {
+    "file": "politica-cookies.html",
+    "name": "politica-cookies",
+    "title": "política de Cookies - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+    "lang": "es",
+    "description": "Si quieres saber más sobre el uso de cookies que realiza este sitio web https://iamelilla.com, estás en el lugar indicado.  A continuación, vamos a explicarte",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "article",
+      "og:title": "política de Cookies - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "og:description": "Si quieres saber más sobre el uso de cookies que realiza este sitio web https://iamelilla.com, estás en el lugar indicado.  A continuación, vamos a explicarte",
+      "og:url": "https://iamelilla.com/politica-de-cookies/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2025-06-05T03:58:04+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+      "og:image:width": "1024",
+      "og:image:height": "1024",
+      "og:image:alt": "logo instagram ia melillla",
+      "og:image:type": "image/png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "política de Cookies - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "twitter:description": "Si quieres saber más sobre el uso de cookies que realiza este sitio web https://iamelilla.com, estás en el lugar indicado.  A continuación, vamos a explicarte",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+      "twitter:label1": "Tiempo de lectura",
+      "twitter:data1": "5 minutos"
+    },
+    "canonical": "https://iamelilla.com/politica-de-cookies/",
+    "hreflangs": [],
+    "stylesheets_count": 1,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-516cfa53fe54aba503c1dde204eca49b.css"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+            "width": "1024",
+            "height": "1024",
+            "caption": "logo instagram ia melillla",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://iamelilla.com/politica-de-cookies/#webpage",
+            "url": "https://iamelilla.com/politica-de-cookies/",
+            "name": "política de Cookies - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "datePublished": "2025-06-05T03:55:50+00:00",
+            "dateModified": "2025-06-05T03:58:04+00:00",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://iamelilla.com/politica-de-cookies/#author",
+            "name": "Joaquín",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "caption": "Joaquín",
+              "inLanguage": "es"
+            },
+            "sameAs": [
+              "https://iamelilla.com"
+            ],
+            "worksFor": {
+              "@id": "https://iamelilla.com/#organization"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "política de Cookies - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "keywords": "politica de cokkies",
+            "datePublished": "2025-06-05T03:55:50+00:00",
+            "dateModified": "2025-06-05T03:58:04+00:00",
+            "author": {
+              "@id": "https://iamelilla.com/politica-de-cookies/#author",
+              "name": "Joaquín"
+            },
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "description": "Si quieres saber más sobre el uso de cookies que realiza este sitio web https://iamelilla.com, estás en el lugar indicado.  A continuación, vamos a explicarte",
+            "name": "política de Cookies - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "@id": "https://iamelilla.com/politica-de-cookies/#richSnippet",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/politica-de-cookies/#webpage"
+            },
+            "image": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png"
+            },
+            "inLanguage": "es",
+            "mainEntityOfPage": {
+              "@id": "https://iamelilla.com/politica-de-cookies/#webpage"
+            }
+          }
+        ]
+      }
+    ],
+    "h1": [],
+    "h2": [
+      "Política de Cookies"
+    ],
+    "h3": [],
+    "top_colors": [
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#039",
+        2
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 5,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-f2505fd1984015e54207a64a62d3eef1.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate"
+    ],
+    "elementor_version": null,
+    "has_elementor_class": true,
+    "anchors_count": 50,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  },
+  {
+    "file": "politica-privacidad.html",
+    "name": "politica-privacidad",
+    "title": "política de privacidad - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+    "lang": "es",
+    "description": "Joaquin Gorgé Luciáñez te informa sobre su Política de Privacidad respecto del tratamiento y protección de los datos de carácter personal de los usuarios que",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "article",
+      "og:title": "política de privacidad - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "og:description": "Joaquin Gorgé Luciáñez te informa sobre su Política de Privacidad respecto del tratamiento y protección de los datos de carácter personal de los usuarios que",
+      "og:url": "https://iamelilla.com/politica-de-privacidad/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2025-06-05T03:54:57+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+      "og:image:width": "1024",
+      "og:image:height": "1024",
+      "og:image:alt": "logo instagram ia melillla",
+      "og:image:type": "image/png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "política de privacidad - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "twitter:description": "Joaquin Gorgé Luciáñez te informa sobre su Política de Privacidad respecto del tratamiento y protección de los datos de carácter personal de los usuarios que",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+      "twitter:label1": "Tiempo de lectura",
+      "twitter:data1": "7 minutos"
+    },
+    "canonical": "https://iamelilla.com/politica-de-privacidad/",
+    "hreflangs": [],
+    "stylesheets_count": 1,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-f749aba7f1754404e678146616028694.css"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png",
+            "width": "1024",
+            "height": "1024",
+            "caption": "logo instagram ia melillla",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://iamelilla.com/politica-de-privacidad/#webpage",
+            "url": "https://iamelilla.com/politica-de-privacidad/",
+            "name": "política de privacidad - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "datePublished": "2025-06-05T03:47:57+00:00",
+            "dateModified": "2025-06-05T03:54:57+00:00",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://iamelilla.com/politica-de-privacidad/#author",
+            "name": "Joaquín",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "caption": "Joaquín",
+              "inLanguage": "es"
+            },
+            "sameAs": [
+              "https://iamelilla.com"
+            ],
+            "worksFor": {
+              "@id": "https://iamelilla.com/#organization"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "política de privacidad - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "keywords": "politica de privacidad",
+            "datePublished": "2025-06-05T03:47:57+00:00",
+            "dateModified": "2025-06-05T03:54:57+00:00",
+            "author": {
+              "@id": "https://iamelilla.com/politica-de-privacidad/#author",
+              "name": "Joaquín"
+            },
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "description": "Joaquin Gorgé Luciáñez te informa sobre su Política de Privacidad respecto del tratamiento y protección de los datos de carácter personal de los usuarios que",
+            "name": "política de privacidad - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "@id": "https://iamelilla.com/politica-de-privacidad/#richSnippet",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/politica-de-privacidad/#webpage"
+            },
+            "image": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/instagram.png"
+            },
+            "inLanguage": "es",
+            "mainEntityOfPage": {
+              "@id": "https://iamelilla.com/politica-de-privacidad/#webpage"
+            }
+          }
+        ]
+      }
+    ],
+    "h1": [],
+    "h2": [
+      "política de privacidad"
+    ],
+    "h3": [],
+    "top_colors": [
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#039",
+        2
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 5,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-f2505fd1984015e54207a64a62d3eef1.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate"
+    ],
+    "elementor_version": null,
+    "has_elementor_class": true,
+    "anchors_count": 51,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  },
+  {
+    "file": "post-automatizacion.html",
+    "name": "post-automatizacion",
+    "title": "Automatización IA Melilla: guía práctica para pymes",
+    "lang": "es",
+    "description": "Automatización IA Melilla: guía práctica para pymes. Aplica IA en inventarios, emails y reservas con pasos simples, ejemplo local, checklist y FAQs.",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "article",
+      "og:title": "Automatización IA Melilla: guía práctica para pymes",
+      "og:description": "Automatización IA Melilla: guía práctica para pymes. Aplica IA en inventarios, emails y reservas con pasos simples, ejemplo local, checklist y FAQs.",
+      "og:url": "https://iamelilla.com/automatizacion-ia-melilla/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2025-09-16T12:29:36+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/09/ia-melilla-blog-pymes.webp",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/09/ia-melilla-blog-pymes.webp",
+      "og:image:width": "1024",
+      "og:image:height": "576",
+      "og:image:alt": "Automatización IA Melilla en una oficina moderna con emprendedor usando inteligencia artificial en su portátil",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Automatización IA Melilla: guía práctica para pymes",
+      "twitter:description": "Automatización IA Melilla: guía práctica para pymes. Aplica IA en inventarios, emails y reservas con pasos simples, ejemplo local, checklist y FAQs.",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/09/ia-melilla-blog-pymes.webp",
+      "twitter:label1": "Escrito por",
+      "twitter:data1": "Joaquín",
+      "twitter:label2": "Tiempo de lectura",
+      "twitter:data2": "5 minutos"
+    },
+    "canonical": "https://iamelilla.com/automatizacion-ia-melilla/",
+    "hreflangs": [],
+    "stylesheets_count": 1,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-92b5ad61655921d76757ea72b757333f.css"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/09/ia-melilla-blog-pymes.webp",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/09/ia-melilla-blog-pymes.webp",
+            "width": "1024",
+            "height": "576",
+            "caption": "Automatización IA Melilla en una oficina moderna con emprendedor usando inteligencia artificial en su portátil",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://iamelilla.com/automatizacion-ia-melilla/#webpage",
+            "url": "https://iamelilla.com/automatizacion-ia-melilla/",
+            "name": "Automatización IA Melilla: guía práctica para pymes",
+            "datePublished": "2025-09-16T11:34:08+00:00",
+            "dateModified": "2025-09-16T12:29:36+00:00",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/09/ia-melilla-blog-pymes.webp"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://iamelilla.com/automatizacion-ia-melilla/#author",
+            "name": "Joaquín",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "caption": "Joaquín",
+              "inLanguage": "es"
+            },
+            "sameAs": [
+              "https://iamelilla.com"
+            ],
+            "worksFor": {
+              "@id": "https://iamelilla.com/#organization"
+            }
+          },
+          {
+            "articleSection": "IA Melilla, Inteligencia artifical",
+            "headline": "Automatización IA Melilla: guía práctica para pymes",
+            "description": "Automatización IA Melilla: guía práctica para pymes. Aplica IA en inventarios, emails y reservas con pasos simples, ejemplo local, checklist y FAQs.",
+            "keywords": "Automatización IA Melilla",
+            "@type": "BlogPosting",
+            "author": {
+              "@id": "https://iamelilla.com/automatizacion-ia-melilla/#author",
+              "name": "Joaquín"
+            },
+            "datePublished": "2025-09-16T11:34:08+00:00",
+            "dateModified": "2025-09-16T12:29:36+00:00",
+            "image": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/09/ia-melilla-blog-pymes.webp"
+            },
+            "name": "Automatización IA Melilla: guía práctica para pymes",
+            "@id": "https://iamelilla.com/automatizacion-ia-melilla/#schema-11315",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/automatizacion-ia-melilla/#webpage"
+            },
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es",
+            "mainEntityOfPage": {
+              "@id": "https://iamelilla.com/automatizacion-ia-melilla/#webpage"
+            }
+          }
+        ]
+      }
+    ],
+    "h1": [
+      "Artículo Artículo Artículo",
+      "Automatización IA Melilla: cómo implementar la IA en tu pyme en 6 pasos sin complicaciones"
+    ],
+    "h2": [
+      "Automación con IA: qué es y por qué te interesa",
+      "Aplicaciones prácticas de la IA en Melilla",
+      "Automatización IA Melilla: ventajas clave para pymes",
+      "Ejemplo local (caso inspirador)",
+      "Guía paso a paso (empieza pequeño)",
+      "Automatización IA Melilla paso a paso (método sencillo)",
+      "Checklist de implementación (cópiame y úsame)?",
+      "Errores comunes y cómo evitarlos",
+      "Métricas para demostrar el ROI",
+      "¿Qué procesos priorizar en una pyme?",
+      "Integración con tu web y herramientas actuales",
+      "Seguridad y privacidad sin dolores de cabeza",
+      "Conclusión final"
+    ],
+    "h3": [],
+    "top_colors": [
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#039",
+        2
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 5,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-f2505fd1984015e54207a64a62d3eef1.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate"
+    ],
+    "elementor_version": null,
+    "has_elementor_class": true,
+    "anchors_count": 50,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  },
+  {
+    "file": "post-ia-melilla.html",
+    "name": "post-ia-melilla",
+    "title": "Transforma tu Negocio con Inteligencia Artificial en Melilla",
+    "lang": "es",
+    "description": "Descubre cómo la inteligencia artificial en Melilla está transformando pymes y autónomos. Ayudas, formación y ejemplos reales.",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "article",
+      "og:title": "Transforma tu Negocio con Inteligencia Artificial en Melilla",
+      "og:description": "Descubre cómo la inteligencia artificial en Melilla está transformando pymes y autónomos. Ayudas, formación y ejemplos reales.",
+      "og:url": "https://iamelilla.com/la-inteligencia-artificial-en-melilla/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2025-06-13T17:56:24+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/06/video_ia_melilla.webp",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/06/video_ia_melilla.webp",
+      "og:image:width": "1344",
+      "og:image:height": "768",
+      "og:image:alt": "inteligencia artificial en melilla",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Transforma tu Negocio con Inteligencia Artificial en Melilla",
+      "twitter:description": "Descubre cómo la inteligencia artificial en Melilla está transformando pymes y autónomos. Ayudas, formación y ejemplos reales.",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/06/video_ia_melilla.webp",
+      "twitter:label1": "Escrito por",
+      "twitter:data1": "Joaquín",
+      "twitter:label2": "Tiempo de lectura",
+      "twitter:data2": "3 minutos"
+    },
+    "canonical": "https://iamelilla.com/la-inteligencia-artificial-en-melilla/",
+    "hreflangs": [],
+    "stylesheets_count": 1,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-fa858435289d4b049f9ca34f11bc3158.css"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/06/video_ia_melilla.webp",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/06/video_ia_melilla.webp",
+            "width": "1344",
+            "height": "768",
+            "caption": "inteligencia artificial en melilla",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://iamelilla.com/la-inteligencia-artificial-en-melilla/#webpage",
+            "url": "https://iamelilla.com/la-inteligencia-artificial-en-melilla/",
+            "name": "Transforma tu Negocio con Inteligencia Artificial en Melilla",
+            "datePublished": "2025-06-10T00:45:28+00:00",
+            "dateModified": "2025-06-13T17:56:24+00:00",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/video_ia_melilla.webp"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://iamelilla.com/la-inteligencia-artificial-en-melilla/#author",
+            "name": "Joaquín",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "caption": "Joaquín",
+              "inLanguage": "es"
+            },
+            "sameAs": [
+              "https://iamelilla.com"
+            ],
+            "worksFor": {
+              "@id": "https://iamelilla.com/#organization"
+            }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "Transforma tu Negocio con Inteligencia Artificial en Melilla",
+            "keywords": "inteligencia artificial en Melilla",
+            "datePublished": "2025-06-10T00:45:28+00:00",
+            "dateModified": "2025-06-13T17:56:24+00:00",
+            "articleSection": "IA Melilla, Inteligencia artifical",
+            "author": {
+              "@id": "https://iamelilla.com/la-inteligencia-artificial-en-melilla/#author",
+              "name": "Joaquín"
+            },
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "description": "Descubre cómo la inteligencia artificial en Melilla está transformando pymes y autónomos. Ayudas, formación y ejemplos reales.",
+            "name": "Transforma tu Negocio con Inteligencia Artificial en Melilla",
+            "@id": "https://iamelilla.com/la-inteligencia-artificial-en-melilla/#richSnippet",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/la-inteligencia-artificial-en-melilla/#webpage"
+            },
+            "image": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/video_ia_melilla.webp"
+            },
+            "inLanguage": "es",
+            "mainEntityOfPage": {
+              "@id": "https://iamelilla.com/la-inteligencia-artificial-en-melilla/#webpage"
+            }
+          }
+        ]
+      }
+    ],
+    "h1": [
+      "Artículo Artículo Artículo",
+      "La inteligencia artificial en Melilla"
+    ],
+    "h2": [
+      "¿Por qué es importante la Inteligencia Artificial en Melilla?",
+      "Aplicaciones prácticas de la IA en Melilla",
+      "Beneficios directos para los negocios melillenses",
+      "¿Cómo implementar la Inteligencia Artificial en tu negocio de Melilla?",
+      "La inteligencia artificial en Melilla es una oportunidad",
+      "¿Qué tipo de negocios en Melilla pueden beneficiarse de la IA?",
+      "¿Qué tipo de negocios en Melilla pueden beneficiarse de la IA?",
+      "La inteligencia artificial en Melilla es una oportunidad"
+    ],
+    "h3": [],
+    "top_colors": [
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#039",
+        4
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 5,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-4ddd3ee02d85f72e2c6da0e76b6d9781.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate"
+    ],
+    "elementor_version": null,
+    "has_elementor_class": true,
+    "anchors_count": 51,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  },
+  {
+    "file": "redes-sociales-ia.html",
+    "name": "redes-sociales-ia",
+    "title": "Redes sociales IA - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+    "lang": "es",
+    "description": "Publicaciones atractivas, consistentes y automatizadas para Instagram, Facebook o TikTok, sin que tengas que hacer nada.",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "article",
+      "og:title": "Redes sociales IA - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "og:description": "Publicaciones atractivas, consistentes y automatizadas para Instagram, Facebook o TikTok, sin que tengas que hacer nada.",
+      "og:url": "https://iamelilla.com/redes-sociales-ia/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2025-07-09T04:46:21+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "og:image:width": "1659",
+      "og:image:height": "792",
+      "og:image:alt": "grafico22 ia melilla",
+      "og:image:type": "image/png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Redes sociales IA - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "twitter:description": "Publicaciones atractivas, consistentes y automatizadas para Instagram, Facebook o TikTok, sin que tengas que hacer nada.",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "twitter:label1": "Tiempo de lectura",
+      "twitter:data1": "1 minuto"
+    },
+    "canonical": "https://iamelilla.com/redes-sociales-ia/",
+    "hreflangs": [],
+    "stylesheets_count": 1,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-c4a49b130bddffdb3556dd98e9e09ad7.css"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png",
+            "width": "200",
+            "height": "200",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://iamelilla.com/redes-sociales-ia/#webpage",
+            "url": "https://iamelilla.com/redes-sociales-ia/",
+            "name": "Redes sociales IA - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "datePublished": "2025-06-10T14:00:39+00:00",
+            "dateModified": "2025-07-09T04:46:21+00:00",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://iamelilla.com/redes-sociales-ia/#author",
+            "name": "Joaquín",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "caption": "Joaquín",
+              "inLanguage": "es"
+            },
+            "sameAs": [
+              "https://iamelilla.com"
+            ],
+            "worksFor": {
+              "@id": "https://iamelilla.com/#organization"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Redes sociales IA - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "keywords": "redes sociales ia",
+            "datePublished": "2025-06-10T14:00:39+00:00",
+            "dateModified": "2025-07-09T04:46:21+00:00",
+            "author": {
+              "@id": "https://iamelilla.com/redes-sociales-ia/#author",
+              "name": "Joaquín"
+            },
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "description": "Publicaciones atractivas, consistentes y automatizadas para Instagram, Facebook o TikTok, sin que tengas que hacer nada.",
+            "name": "Redes sociales IA - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "@id": "https://iamelilla.com/redes-sociales-ia/#richSnippet",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/redes-sociales-ia/#webpage"
+            },
+            "image": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png"
+            },
+            "inLanguage": "es",
+            "mainEntityOfPage": {
+              "@id": "https://iamelilla.com/redes-sociales-ia/#webpage"
+            }
+          }
+        ]
+      }
+    ],
+    "h1": [
+      "REDES SOCIALES REDES SOCIALES REDES SOCIALES",
+      "Redes sociales con IA"
+    ],
+    "h2": [
+      "Haz que tu presencia online trabaje por ti... con ayuda de la inteligencia artificial.",
+      "Resultados típicos",
+      "Ahorro de tiempo mensual",
+      "Más publicaciones al mes",
+      "Presencia constante"
+    ],
+    "h3": [
+      "Como lo hacemos"
+    ],
+    "top_colors": [
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#039",
+        2
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 5,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-c4b611d151171b0e24e6b7850ebe2b05.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate"
+    ],
+    "elementor_version": null,
+    "has_elementor_class": true,
+    "anchors_count": 53,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  },
+  {
+    "file": "reservas-whatsapp.html",
+    "name": "reservas-whatsapp",
+    "title": "Reservas por Whatsapp - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+    "lang": "es",
+    "description": "Automatiza tus citas, responde a tus clientes 24/7 y olvídate del teléfono.",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "article",
+      "og:title": "Reservas por Whatsapp - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "og:description": "Automatiza tus citas, responde a tus clientes 24/7 y olvídate del teléfono.",
+      "og:url": "https://iamelilla.com/reservas-por-whatsapp/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2025-07-13T13:44:17+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "og:image:width": "1659",
+      "og:image:height": "792",
+      "og:image:alt": "grafico22 ia melilla",
+      "og:image:type": "image/png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Reservas por Whatsapp - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "twitter:description": "Automatiza tus citas, responde a tus clientes 24/7 y olvídate del teléfono.",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "twitter:label1": "Tiempo de lectura",
+      "twitter:data1": "1 minuto"
+    },
+    "canonical": "https://iamelilla.com/reservas-por-whatsapp/",
+    "hreflangs": [],
+    "stylesheets_count": 1,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-75711d2f79a56fb908fc9fd4859660e7.css"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png",
+            "width": "200",
+            "height": "200",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://iamelilla.com/reservas-por-whatsapp/#webpage",
+            "url": "https://iamelilla.com/reservas-por-whatsapp/",
+            "name": "Reservas por Whatsapp - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "datePublished": "2025-06-09T23:24:19+00:00",
+            "dateModified": "2025-07-13T13:44:17+00:00",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://iamelilla.com/reservas-por-whatsapp/#author",
+            "name": "Joaquín",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "caption": "Joaquín",
+              "inLanguage": "es"
+            },
+            "sameAs": [
+              "https://iamelilla.com"
+            ],
+            "worksFor": {
+              "@id": "https://iamelilla.com/#organization"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Reservas por Whatsapp - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "keywords": "reservas whatsapp ia",
+            "datePublished": "2025-06-09T23:24:19+00:00",
+            "dateModified": "2025-07-13T13:44:17+00:00",
+            "author": {
+              "@id": "https://iamelilla.com/reservas-por-whatsapp/#author",
+              "name": "Joaquín"
+            },
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "description": "Automatiza tus citas, responde a tus clientes 24/7 y olvídate del teléfono.",
+            "name": "Reservas por Whatsapp - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "@id": "https://iamelilla.com/reservas-por-whatsapp/#richSnippet",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/reservas-por-whatsapp/#webpage"
+            },
+            "image": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png"
+            },
+            "inLanguage": "es",
+            "mainEntityOfPage": {
+              "@id": "https://iamelilla.com/reservas-por-whatsapp/#webpage"
+            }
+          }
+        ]
+      }
+    ],
+    "h1": [
+      "Reservas por Whatsapp",
+      "Sistema de reservas automatizado por WhatsApp"
+    ],
+    "h2": [
+      "Sácale el máximo rendimiento a tus citas",
+      "Resultados que importan",
+      "Ahorro de tiempo",
+      "Confirmaciones instantáneas",
+      "Reducción de “no-shows”"
+    ],
+    "h3": [
+      "Como lo hacemos"
+    ],
+    "top_colors": [
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#039",
+        2
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 5,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-e950cff4e697cbd733a69fe098b2b60a.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate"
+    ],
+    "elementor_version": null,
+    "has_elementor_class": true,
+    "anchors_count": 52,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Solicita tu demo"
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  },
+  {
+    "file": "todos-los-servicios.html",
+    "name": "todos-los-servicios",
+    "title": "Todos los servicios - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+    "lang": "es",
+    "description": "Desde automatización de tareas hasta asistentes virtuales y creación de contenido con IA. Soluciones prácticas y escalables adaptadas a tu negocio.",
+    "keywords": null,
+    "generator": "Elementor 4.0.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og": {
+      "og:locale": "es_ES",
+      "og:type": "article",
+      "og:title": "Todos los servicios - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "og:description": "Desde automatización de tareas hasta asistentes virtuales y creación de contenido con IA. Soluciones prácticas y escalables adaptadas a tu negocio.",
+      "og:url": "https://iamelilla.com/todos-los-servicios/",
+      "og:site_name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+      "og:updated_time": "2025-06-10T13:41:49+00:00",
+      "og:image": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "og:image:secure_url": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "og:image:width": "1659",
+      "og:image:height": "792",
+      "og:image:alt": "grafico22 ia melilla",
+      "og:image:type": "image/png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Todos los servicios - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+      "twitter:description": "Desde automatización de tareas hasta asistentes virtuales y creación de contenido con IA. Soluciones prácticas y escalables adaptadas a tu negocio.",
+      "twitter:image": "https://iamelilla.com/wp-content/uploads/2025/06/Element1.png",
+      "twitter:label1": "Tiempo de lectura",
+      "twitter:data1": "4 minutos"
+    },
+    "canonical": "https://iamelilla.com/todos-los-servicios/",
+    "hreflangs": [],
+    "stylesheets_count": 1,
+    "stylesheets_sample": [
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-af81abe13a3ecf466f8540d60c4742dc.css"
+    ],
+    "preconnects": [],
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Place",
+            "@id": "https://iamelilla.com/#place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://iamelilla.com/#organization",
+            "name": "Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "url": "https://iamelilla.com",
+            "sameAs": [
+              "https://www.facebook.com/iamelilla/",
+              "https://www.instagram.com/iamelilla/"
+            ],
+            "email": "hola@iamelilla.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melilla",
+              "postalCode": "52003",
+              "streetAddress": "C/ Doctor Juan Rios Garcia, 7 2ºA",
+              "addressRegion": "Melilla",
+              "addressCountry": "España"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://iamelilla.com/#logo",
+              "url": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "contentUrl": "https://iamelilla.com/wp-content/uploads/2025/06/IA_Melilla_Brighter_240x56.webp",
+              "caption": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+              "inLanguage": "es",
+              "width": "240",
+              "height": "56"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+34654186173",
+                "contactType": "customer support"
+              }
+            ],
+            "description": "IA Melilla ofrece soluciones de inteligencia artificial para empresas y emprendedores: automatizaciones, generación de contenidos, asistentes virtuales e influencers digitales creados con IA. Un servicio innovador en Melilla para aprovechar todo el potencial de la inteligencia artificial en tu negocio.",
+            "legalName": "hola@iamelilla.com",
+            "location": {
+              "@id": "https://iamelilla.com/#place"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://iamelilla.com/#website",
+            "url": "https://iamelilla.com",
+            "name": "Empresa de Inteligencia Artificial en Melilla | Soluciones IA para Empresas",
+            "alternateName": "IA Melilla",
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png",
+            "url": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png",
+            "width": "200",
+            "height": "200",
+            "inLanguage": "es"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://iamelilla.com/todos-los-servicios/#webpage",
+            "url": "https://iamelilla.com/todos-los-servicios/",
+            "name": "Todos los servicios - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "datePublished": "2025-06-05T00:00:58+00:00",
+            "dateModified": "2025-06-10T13:41:49+00:00",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png"
+            },
+            "inLanguage": "es"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://iamelilla.com/todos-los-servicios/#author",
+            "name": "Joaquín",
+            "image": {
+              "@type": "ImageObject",
+              "@id": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "url": "https://secure.gravatar.com/avatar/1c40d97faf3b34d2b9536e6e1e365b77f9a3e112b3dc7cc5945524546b349363?s=96&amp;d=mm&amp;r=g",
+              "caption": "Joaquín",
+              "inLanguage": "es"
+            },
+            "sameAs": [
+              "https://iamelilla.com"
+            ],
+            "worksFor": {
+              "@id": "https://iamelilla.com/#organization"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Todos los servicios - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "keywords": "todos los servicios ia melilla",
+            "datePublished": "2025-06-05T00:00:58+00:00",
+            "dateModified": "2025-06-10T13:41:49+00:00",
+            "author": {
+              "@id": "https://iamelilla.com/todos-los-servicios/#author",
+              "name": "Joaquín"
+            },
+            "publisher": {
+              "@id": "https://iamelilla.com/#organization"
+            },
+            "description": "Desde automatización de tareas hasta asistentes virtuales y creación de contenido con IA. Soluciones prácticas y escalables adaptadas a tu negocio.",
+            "name": "Todos los servicios - Soluciones de IA para acelerar tu negocio en Melilla – IA Melilla",
+            "@id": "https://iamelilla.com/todos-los-servicios/#richSnippet",
+            "isPartOf": {
+              "@id": "https://iamelilla.com/todos-los-servicios/#webpage"
+            },
+            "image": {
+              "@id": "https://iamelilla.com/wp-content/uploads/2025/06/Element1-1024x489.png"
+            },
+            "inLanguage": "es",
+            "mainEntityOfPage": {
+              "@id": "https://iamelilla.com/todos-los-servicios/#webpage"
+            }
+          }
+        ]
+      }
+    ],
+    "h1": [
+      "Servicios Servicios Servicios",
+      "Servicios de Inteligencia Artificial para Empresas, autónomos y particulares"
+    ],
+    "h2": [
+      "Servicios para empresas y autónomos",
+      "Servicios para empresas o autónomos",
+      "Servicios para emprendedores o particulares",
+      "Los mas demandados"
+    ],
+    "h3": [],
+    "top_colors": [
+      [
+        "#0c4da2",
+        12
+      ],
+      [
+        "#fff",
+        8
+      ],
+      [
+        "#039",
+        2
+      ],
+      [
+        "#25d366",
+        2
+      ],
+      [
+        "#000000",
+        1
+      ],
+      [
+        "#abb8c3",
+        1
+      ],
+      [
+        "#ffffff",
+        1
+      ],
+      [
+        "#f78da7",
+        1
+      ],
+      [
+        "#cf2e2e",
+        1
+      ],
+      [
+        "#ff6900",
+        1
+      ],
+      [
+        "#fcb900",
+        1
+      ],
+      [
+        "#7bdcb5",
+        1
+      ],
+      [
+        "#00d084",
+        1
+      ],
+      [
+        "#8ed1fc",
+        1
+      ],
+      [
+        "#0693e3",
+        1
+      ],
+      [
+        "#9b51e0",
+        1
+      ],
+      [
+        "#32373c",
+        1
+      ],
+      [
+        "#373737",
+        1
+      ],
+      [
+        "#000",
+        1
+      ],
+      [
+        "#111",
+        1
+      ]
+    ],
+    "top_fonts": [
+      [
+        "inherit",
+        1
+      ],
+      [
+        "&#039",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "google_fonts_urls": [],
+    "scripts_count": 5,
+    "scripts_sample": [
+      "https://iamelilla.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://iamelilla.com/wp-content/plugins/gtranslate/js/fc.js?ver=6.9.4",
+      "https://iamelilla.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://iamelilla.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://iamelilla.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-f2505fd1984015e54207a64a62d3eef1.js"
+    ],
+    "wp_plugins_detected": [
+      "*",
+      "gdpr-cookie-compliance",
+      "gtranslate"
+    ],
+    "elementor_version": null,
+    "has_elementor_class": true,
+    "anchors_count": 50,
+    "ctas_unique": [
+      {
+        "href": "https://iamelilla.com/reservas-por-whatsapp/",
+        "text": "Reservas por Whatsapp"
+      },
+      {
+        "href": "https://iamelilla.com/contacto/",
+        "text": "Asesoreme"
+      },
+      {
+        "href": "https://api.whatsapp.com/send/?phone=34654186173&#038;text=Hola%2C+vengo+desde+IAmelilla.com+y+quiero+informaci%C3%B3n&#038;type=phone_number&#038;app_absent=0",
+        "text": "Whatsapp"
+      }
+    ],
+    "emails": [
+      "hola@iamelilla.com"
+    ],
+    "whatsapp_links": [],
+    "instagram_links": [
+      "https://www.instagram.com/iamelilla/"
+    ],
+    "footer_text": "También ofrecemos diseños web profesionales textos Legales Aviso legal política de privacidad política de Cookies Aviso legal política de privacidad política de Cookies Conecte con expertos Whatsapp hola@iamelilla.com Impulsamos negocios con soluciones de inteligencia artificial prácticas, accesibles y adaptadas a Melilla y al mundo. Copyright © 2026 IA Melilla Diseño web Webmelilla Linkedin Instagram 💬 ¿Hablamos? 👋 #wam-btn{ position: fixed; right: 18px; bottom: 18px; display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); z-index: 999999; transition: transform .2s ease; } #wam-btn:hover{ transform: translateY(-1px); } #wam-btn svg{ fill: #fff; }"
+  }
+]

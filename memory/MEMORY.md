@@ -15,5 +15,7 @@
 - [reference_coolify_localhost_setup.md](reference_coolify_localhost_setup.md) — Receta completa Coolify "This Machine" con root SSH bloqueado (install root + ACL setfacl + SSH key Coolify→iamelilla)
 - [reference_mcp_playwright.md](reference_mcp_playwright.md) — MCP @playwright/mcp instalado scope local + skill `.claude/skills/web-recon/` para auditar iamelilla.com antes de Fase 1
 - [project_next_session_2026-05-18.md](project_next_session_2026-05-18.md) — Plan sesion mañana: recon iamelilla.com + brief + arrancar Fase 1 frontend
+- [project_web_recon_2026-05-20.md](project_web_recon_2026-05-20.md) — Recon iamelilla.com + decisiones v2: paleta charcoal+emerald, Demo 1 = IA Fiscal Melilla, servicios WP fuera
+- [feedback_no_wordpress_inherit.md](feedback_no_wordpress_inherit.md) — v2 no hereda paleta/fuentes/copy/servicios del WP actual. Reset visual completo.
 
 > Anade aqui nuevas memorias segun se vayan creando. Una linea por archivo, hook ≤150 caracteres.

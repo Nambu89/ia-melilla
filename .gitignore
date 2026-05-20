@@ -81,3 +81,7 @@ tmp/
 test-results/
 playwright-report/
 .playwright-mcp/
+
+# Recon raw scrapes (heavy HTML/CSS — keep on disk, not in git)
+plans/web-recon-assets/raw/
+package-lock.json

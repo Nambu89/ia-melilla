@@ -64,28 +64,20 @@ iamelilla.com ──┬── /          → Frontend React (contenedor 1)
                 ├── /api       → Backend FastAPI monolito (contenedor 2)
                 │               └─ SQLite volume (sin contenedor extra)
                 ├── /demos     → Paginas de demos dentro del frontend
-                └── demos.iamelilla.com → microservicios pesados
-                     └── reservas-api  (contenedor dedicado, demo 3)
+                └── demos.iamelilla.com → microservicios pesados (futuro)
 
 panel.iamelilla.com → Coolify UI (puerto 8000 detras de Traefik)
 ```
 
-## Catalogo demos MVP (10)
+## Catalogo demos (decision 2026-05-20)
 
-| # | Demo | Ubicacion | Complejidad |
-|---|------|-----------|-------------|
-| 1 | Asistente atencion automatica (widget web) | Monolito | Baja |
-| 2 | Captador leads automatico | Monolito | Baja |
-| 3 | Agente reservas Google Calendar | Microservicio | Alta |
-| 4 | Generador contenido redes | Monolito | Baja |
-| 5 | Respondedor emails (mailbox prueba) | Monolito | Media |
-| 6 | Seguimiento post-venta (secuencias) | Monolito + BackgroundTasks | Media |
-| 7 | Generador presupuestos | Monolito | Baja |
-| 8 | Soporte interno empresas (RAG) | Monolito | Media |
-| 9 | Agente sectorial (clinica/restaurante/taller) | Monolito | Media |
-| 10 | Notificador leads (Telegram/email) | Monolito | Baja |
+**Demo 1 (flagship)**: **IA Fiscal Melilla** — asistente IA sobre regimen fiscal de Melilla (IPSI, REF, especificidades autonomos/pymes locales). Define el tono de credibilidad de todo el showroom.
 
-WhatsApp queda fuera del MVP. Cuando entre, sera `services/whatsapp-bot/`.
+**Demos siguientes**: por decidir. El catalogo de 10 demos anterior (asistente atencion, captador leads, reservas Google Calendar, generador contenido, etc.) queda **archivado**. No se construyen hasta que IA Fiscal Melilla este en produccion y se replantee la lista en base a feedback real.
+
+**Los servicios actuales de iamelilla.com (modelos virtuales ropa, influencer IA, reservas WhatsApp, redes sociales IA, chatbots personalizados) NO migran a v2** — son del sitio WordPress actual y no forman parte del producto v2.
+
+WhatsApp como canal de contacto se mantiene (boton flotante). NO hay demo de WhatsApp en MVP.
 
 ## Directory Layout
 
@@ -204,5 +196,5 @@ Despues de cualquier bugfix, documentar en 3 sitios:
 
 ---
 
-**Ultima actualizacion:** 2026-05-10
+**Ultima actualizacion:** 2026-05-21 (recon iamelilla.com + catalogo demos restart con IA Fiscal Melilla)
 **Autor inicial:** Fernando Prada (AI Tech Lead) + tio (co-founder)

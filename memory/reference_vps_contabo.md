@@ -32,6 +32,11 @@ Instalador automatico requiere Ubuntu LTS (20.04 / 22.04 / 24.04). Si version no
 - **AllowUsers**: solo `iamelilla`
 - **Clave SSH local**: `C:\Users\Fernando Prada\.ssh\id_ed25519_iamelilla` (passphrase en gestor)
 - **Alias SSH**: `ssh ia-melilla` (definido en `~/.ssh/config`)
+- **Admins SSH autorizados** (`/home/iamelilla/.ssh/authorized_keys`):
+  1. `fernando@ia-melilla-vps` — Fernando (clave `id_ed25519_iamelilla` en `C:\Users\Fernando Prada\.ssh\`)
+  2. `coolify-localhost` — Coolify deploys ("This Machine" wizard)
+  3. `joaki@iamelilla` — tio co-founder (clave `id_ed25519_iamelilla` en `C:\Users\joaki\.ssh\`, anadido 2026-05-19). Pubkey fingerprint inicio: `AAAAC3NzaC1lZDI1NTE5AAAAIGjtVPDRNH0lCuEr...`
+- **Politica claves**: cada admin = clave propia. Revocar = borrar linea concreta de `authorized_keys`. Nunca compartir privadas por chat/email.
 - **Hardening sshd**: `/etc/ssh/sshd_config.d/00-hardening.conf` (NO `99-`, otro nombre)
 - **UFW**: 22/80/443/8000 ALLOW, resto DENY
 - **fail2ban**: jail sshd activo (maxretry 5 / findtime 10m / bantime 1h)
