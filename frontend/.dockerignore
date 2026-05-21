@@ -1,0 +1,16 @@
+node_modules
+dist
+.vite
+.eslintcache
+coverage
+*.log
+.DS_Store
+.git
+.gitignore
+CLAUDE.md
+DESIGN.md
+src/test
+__tests__
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js
