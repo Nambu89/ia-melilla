@@ -34,7 +34,11 @@ export async function apiPost<T>(
 		try {
 			parsed = await res.json();
 		} catch {
-			parsed = await res.text();
+			try {
+				parsed = await res.text();
+			} catch {
+				parsed = null;
+			}
 		}
 		throw new ApiError(res.status, parsed);
 	}
@@ -72,7 +76,11 @@ export async function apiPostStream(
 		try {
 			parsed = await res.json();
 		} catch {
-			parsed = await res.text();
+			try {
+				parsed = await res.text();
+			} catch {
+				parsed = null;
+			}
 		}
 		throw new ApiError(res.status, parsed);
 	}
