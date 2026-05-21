@@ -1,4 +1,5 @@
 import { PageShell } from "@/components/layout/PageShell";
+import { SeoHead } from "@/components/seo/SeoHead";
 import { Hero } from "@/components/sections/Hero";
 import { HelpfulCases } from "@/components/sections/HelpfulCases";
 import { HowItWorksList } from "@/components/sections/HowItWorksList";
@@ -9,6 +10,11 @@ import { particularesContent } from "@/content/particulares";
 export default function Particulares() {
 	return (
 		<PageShell>
+			<SeoHead
+				title="Tu asistente fiscal de IA — IA Melilla"
+				description="Pregunta lo que necesites sobre renta, IPSI, deducciones. Respuesta clara con fuentes oficiales, sin esperar al gestor."
+				path="/particulares"
+			/>
 			<Hero
 				eyebrow={particularesContent.hero.eyebrow}
 				headline={particularesContent.hero.headline}

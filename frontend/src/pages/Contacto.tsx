@@ -1,6 +1,7 @@
 import { type ReactNode } from "react";
 import { Mail, Phone, MessageCircle, MapPin } from "lucide-react";
 import { PageShell } from "@/components/layout/PageShell";
+import { SeoHead } from "@/components/seo/SeoHead";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { contactoContent } from "@/content/contacto";
 import { business } from "@/content/shared";
@@ -8,6 +9,11 @@ import { business } from "@/content/shared";
 export default function Contacto() {
 	return (
 		<PageShell>
+			<SeoHead
+				title="Contacto — IA Melilla"
+				description="Cuentanos tu caso. Respondemos el mismo dia. Email, WhatsApp y formulario directos al equipo de IA Melilla."
+				path="/contacto"
+			/>
 			<section className="mx-auto max-w-[1200px] px-6 pt-16 pb-24">
 				<p className="text-label-caps text-primary mb-6">{contactoContent.hero.eyebrow}</p>
 				<h1 className="text-display-md font-bold tracking-tight max-w-3xl">

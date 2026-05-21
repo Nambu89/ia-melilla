@@ -1,9 +1,15 @@
 import { PageShell } from "@/components/layout/PageShell";
+import { SeoHead } from "@/components/seo/SeoHead";
 import { business } from "@/content/shared";
 
 export default function PoliticaPrivacidad() {
 	return (
 		<PageShell>
+			<SeoHead
+				title="Politica de privacidad — IA Melilla"
+				description="Como tratamos y protegemos los datos personales de los usuarios del sitio iamelilla.com."
+				path="/politica-de-privacidad"
+			/>
 			<article className="mx-auto max-w-[800px] px-6 pt-16 pb-24">
 				<h1 className="text-display-md font-bold tracking-tight">Politica de privacidad</h1>
 

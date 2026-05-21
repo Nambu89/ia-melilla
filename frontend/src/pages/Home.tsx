@@ -1,4 +1,6 @@
 import { PageShell } from "@/components/layout/PageShell";
+import { SeoHead } from "@/components/seo/SeoHead";
+import { OrganizationJsonLd } from "@/components/seo/OrganizationJsonLd";
 import { Hero } from "@/components/sections/Hero";
 import { AudienceSplit } from "@/components/sections/AudienceSplit";
 import { DemoFlagship } from "@/components/sections/DemoFlagship";
@@ -10,6 +12,12 @@ import { homeContent } from "@/content/home";
 export default function Home() {
 	return (
 		<PageShell>
+			<SeoHead
+				title="IA Melilla — Inteligencia artificial para empresas y particulares"
+				description="Construimos asistentes de IA practicos desde Melilla. Demo: IA Fiscal Melilla, especialista en regimen local."
+				path="/"
+			/>
+			<OrganizationJsonLd />
 			<Hero
 				eyebrow={homeContent.hero.eyebrow}
 				headline={homeContent.hero.headline}

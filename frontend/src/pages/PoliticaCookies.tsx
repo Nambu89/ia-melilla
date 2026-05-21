@@ -1,9 +1,15 @@
 import { PageShell } from "@/components/layout/PageShell";
+import { SeoHead } from "@/components/seo/SeoHead";
 import { business } from "@/content/shared";
 
 export default function PoliticaCookies() {
 	return (
 		<PageShell>
+			<SeoHead
+				title="Politica de cookies — IA Melilla"
+				description="Informacion sobre el uso de cookies en iamelilla.com: que son, cuales usamos y como gestionarlas."
+				path="/politica-de-cookies"
+			/>
 			<article className="mx-auto max-w-[800px] px-6 pt-16 pb-24">
 				<h1 className="text-display-md font-bold tracking-tight">Politica de cookies</h1>
 

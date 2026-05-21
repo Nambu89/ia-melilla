@@ -1,9 +1,15 @@
 import { PageShell } from "@/components/layout/PageShell";
+import { SeoHead } from "@/components/seo/SeoHead";
 import { business } from "@/content/shared";
 
 export default function AvisoLegal() {
 	return (
 		<PageShell>
+			<SeoHead
+				title="Aviso legal — IA Melilla"
+				description="Aviso legal del sitio iamelilla.com, propiedad de Joaquin Gorge Lucianez. Datos identificativos y condiciones de uso."
+				path="/aviso-legal"
+			/>
 			<article className="mx-auto max-w-[800px] px-6 pt-16 pb-24">
 				<h1 className="text-display-md font-bold tracking-tight">Aviso legal</h1>
 

@@ -1,4 +1,5 @@
 import { PageShell } from "@/components/layout/PageShell";
+import { SeoHead } from "@/components/seo/SeoHead";
 import { Hero } from "@/components/sections/Hero";
 import { ProblemSolutionGrid } from "@/components/sections/ProblemSolutionGrid";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
@@ -11,6 +12,11 @@ import { homeContent } from "@/content/home";
 export default function Empresas() {
 	return (
 		<PageShell>
+			<SeoHead
+				title="IA para empresas y autonomos — IA Melilla"
+				description="Software de IA hecho a medida para asesorias, despachos y pymes. Integraciones reales, sin proof of concept eternos."
+				path="/empresas"
+			/>
 			<Hero
 				eyebrow={empresasContent.hero.eyebrow}
 				headline={empresasContent.hero.headline}
