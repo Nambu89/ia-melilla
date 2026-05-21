@@ -1,12 +1,46 @@
 import { PageShell } from "@/components/layout/PageShell";
+import { Hero } from "@/components/sections/Hero";
+import { ProblemSolutionGrid } from "@/components/sections/ProblemSolutionGrid";
+import { ProcessSteps } from "@/components/sections/ProcessSteps";
+import { DemoCrosslink } from "@/components/sections/DemoCrosslink";
+import { TargetAudienceList } from "@/components/sections/TargetAudienceList";
+import { CtaClose } from "@/components/sections/CtaClose";
+import { empresasContent } from "@/content/empresas";
+import { homeContent } from "@/content/home";
 
 export default function Empresas() {
 	return (
 		<PageShell>
-			<div className="mx-auto max-w-[1200px] px-6 py-16">
-				<h1 className="text-display-md font-bold">Empresas</h1>
-				<p className="text-body-md text-on-surface-variant mt-4">Placeholder</p>
-			</div>
+			<Hero
+				eyebrow={empresasContent.hero.eyebrow}
+				headline={empresasContent.hero.headline}
+				subheadline={empresasContent.hero.subheadline}
+				primaryCta={empresasContent.hero.primaryCta}
+				secondaryCta={empresasContent.hero.secondaryCta}
+			/>
+			<ProblemSolutionGrid
+				headline={empresasContent.problemSolutions.headline}
+				cards={empresasContent.problemSolutions.cards}
+			/>
+			<ProcessSteps
+				eyebrow={homeContent.processSteps.eyebrow}
+				headline={homeContent.processSteps.headline}
+				steps={homeContent.processSteps.steps}
+			/>
+			<DemoCrosslink
+				headline={empresasContent.demoCrosslink.headline}
+				body={empresasContent.demoCrosslink.body}
+				cta={empresasContent.demoCrosslink.cta}
+			/>
+			<TargetAudienceList
+				headline={empresasContent.targetAudience.headline}
+				items={empresasContent.targetAudience.items}
+			/>
+			<CtaClose
+				headline={empresasContent.ctaClose.headline}
+				subheadline={empresasContent.ctaClose.body}
+				primaryCta={empresasContent.ctaClose.cta}
+			/>
 		</PageShell>
 	);
 }
