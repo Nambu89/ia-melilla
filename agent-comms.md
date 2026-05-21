@@ -82,3 +82,105 @@ Notas:
 Siguiente: arrancar recon de iamelilla.com → brief → Fase 1 frontend.
 
 ---
+
+---
+
+## [2026-05-21 09:55] [PM → frontend-dev] Fase 2 — Wiring DemoIaFiscal ↔ backend Impuestify (PENDING)
+
+Tarea: sustituir `DemoChatPlaceholder.tsx` por widget funcional conectado al backend Impuestify demo desplegado.
+Archivos:
+- `frontend/src/components/demo/DemoChatPlaceholder.tsx` → renombrar a `DemoChat.tsx`
+- `frontend/src/hooks/useDemoChat.ts` (nuevo)
+- `frontend/src/lib/apiClient.ts` (nuevo)
+- `frontend/.env.example` (nuevo)
+- `frontend/src/pages/DemoIaFiscal.tsx` (modificar)
+- `frontend/src/components/demo/__tests__/useDemoChat.test.ts` (nuevo)
+
+Backend desplegado: `http://g100ae8up9ehmq4w0mn9od97.178.238.227.50.sslip.io`
+- Login: `POST /auth/login` → response `{user, tokens: {access_token, refresh_token, token_type}}` (token nested)
+- Stream chat: `POST /api/ask/stream` Bearer JWT, body `{question:str(1-1000), conversation_id?, workspace_id?, k?}`
+- Errores: 403 si subscription guard activo (fix commit 8ca8556 pendiente redeploy)
+
+Estado: BLOCKED por redeploy backend pendiente (user opera Coolify)
+Plan completo: `plans/2026-05-21-fase-2-demo-chat.md`
+Plan-check: PENDING
+Resultado esperado: chat funcional con login silencioso + streaming SSE + suggested questions + disclaimer permanente + retry UI. Build verde, tests pasan, PR a main.
+
+
+---
+
+## [2026-05-21 23:48] [PM smoke test] Backend issues detectados pre-Fase 2
+
+Backend desplegado en `http://g100ae8up9ehmq4w0mn9od97.178.238.227.50.sslip.io` esta en commit `8ca8556` (subscription_guard bypass) pero NO incluye commits posteriores `8eec52c1` ni `af205b56` que arreglan el bug `name 'req' is not defined` en `chat_stream.py`.
+
+Estado:
+- `/health` → 200, confirma `subscriptions_enabled: false` ✓
+- `/auth/login` → 200, devuelve `{user, tokens: {access_token, ...}}` ✓
+- `/api/ask` (no-stream) → 200 funcional (RAG vacio: `chunks_found: 0`)
+- `/api/ask/stream` → **500** `NameError: name 'req' is not defined` ✗
+
+Tambien: RAG con `documents: 0, embeddings: 0, rag_initialized: false`. Backend devuelve "No encontré información relevante". Necesita ingest separado a Upstash Vector.
+
+Acciones pendientes:
+- Backend (user): redeploy a HEAD `af205b56` para que `/api/ask/stream` funcione
+- Backend (user): ingest corpus Melilla a Upstash Vector — follow-up no bloquea Fase 2 frontend
+
+Fase 2 frontend BLOCKED hasta `/api/ask/stream` devuelva 200.
+
+---
+
+## [2026-05-21 23:55] [PM update] Backend Fase 2 OK — proceed con plan original
+
+Confirmacion del user:
+- `/api/ask/stream` HTTP 200, SSE valido (sse_starlette format)
+- Eventos verificados: `content` (multi-line data), `done` (data = JSON con conversation_id)
+- Otros eventos posibles: `thinking`, `tool_call`, `tool_result`, `error`
+- Bug minor backend (`warmup_service.py` strings residuales "Impuestify") NO bloquea Fase 2 — la marca correcta es **Fiscal IA Melilla**, el frontend gestiona disclaimer con marca correcta.
+
+Plan ajustado a SSE format real:
+- `consumeStream` reescrito para sse_starlette format (event blocks separados por blank line, multi-line data joined con `\n`)
+- Tests SSE fixtures actualizados a CRLF + event/data lines
+- Plan-checker findings (BLOCKERs + MAJORs + MINORs) ya resueltos
+- Cero referencias a "Impuestify" en plan — backend es proyecto separado Fiscal IA Melilla
+
+Delegando a frontend-dev (siguiente entrada).
+
+---
+
+## [2026-05-22 00:24] [frontend-dev → PM] Fase 2 — DemoChat DONE
+
+Estado: DONE (subagent inicio, PM termino directo tras context drop subagent)
+Branch: claude/fase-2-demo-chat
+PR: https://github.com/Nambu89/ia-melilla/pull/1
+Commits incluidos:
+- 5dc6b85 apiClient wrapper + env vars
+- 517cbd8 useDemoChat hook — login + SSE streaming + retry + 6 tests
+- 26201dd DemoChat live widget + page wiring + 4 tests
+
+Tests: 28/28 pass (13 nuevos: 3 apiClient + 6 useDemoChat + 4 DemoChat)
+Bundle: 21.97 KB CSS (5.0 KB gzip) / 367 KB JS (117 KB gzip) — bajo umbral
+Typecheck: 0 errors
+Theme lint: 0 errors
+
+Smoke test stream live verificado (curl):
+- /auth/login → 200, devuelve {tokens: {access_token,...}} ✓
+- /api/ask/stream → 200 sse_starlette format con eventos: thinking, content, done, : ping, : heartbeat
+- Parser handles all event types correctly (thinking/ping/heartbeat ignored, content emitted, done terminates)
+- Backend tarda >45s en generar (RAG vacio + LLM lento) pero frontend maneja streaming token-a-token sin problemas
+
+Decisiones tomadas fuera del plan:
+- Test bug: loginResponse reusado (Response body solo consumible una vez) → fix con factory makeLogin()
+- TS strict narrowing: refactor a vars derivadas hasError + showEmptyState (más limpio que casts)
+- scrollTo guard defensivo (jsdom no implementa scrollTo en Element)
+- ChatBubble streaming check: extraido como const para evitar inline narrowing weirdness
+
+Brand: "Fiscal IA Melilla" confirmado en disclaimer + bubble label "IA FISCAL". Cero ref a "Impuestify" en frontend code.
+
+Follow-up registrados:
+- frontend/CLAUDE.md dice React 18, repo tiene 19 (actualizar)
+- Backend bug residual "Impuestify" en warmup_service.py (no bloquea Fase 2, user lo arregla aparte)
+- Backend RAG vacio (0 docs/embeddings) — ingest pendiente (no Fase 2 frontend)
+- scrollTo en cada chunk podria jankear con respuestas largas — debounce raf si se nota
+- Refresh token auto-renewal post-1h TTL (out of scope MVP)
+
+Verifier `/verify` queda pendiente — PM lo invoca tras review usuario.
