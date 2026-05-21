@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "Inter Display";
+	src: url("https://rsms.me/inter/font-files/InterDisplay-Variable.woff2") format("woff2");
+	font-weight: 100 900;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("https://rsms.me/inter/font-files/Inter-Variable.woff2") format("woff2");
+	font-weight: 100 900;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "JetBrains Mono";
+	src: url("https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono:vf@latest/latin-wght-normal.woff2") format("woff2");
+	font-weight: 100 800;
+	font-display: swap;
+}

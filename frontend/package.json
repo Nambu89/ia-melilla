@@ -12,14 +12,18 @@
     "lint": "eslint src --ext ts,tsx",
     "format": "prettier --write src",
     "theme:gen": "node scripts/generate-theme.mjs",
-    "theme:lint": "node ../node_modules/@google/design.md/dist/index.js lint DESIGN.md"
+    "theme:lint": "node node_modules/@google/design.md/dist/index.js lint DESIGN.md",
+    "theme:export": "node node_modules/@google/design.md/dist/index.js export --format tailwind DESIGN.md"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.3.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
-    "react-router-dom": "^7.15.1"
+    "react-router-dom": "^7.15.1",
+    "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
+    "@google/design.md": "^0.1.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
