@@ -43,6 +43,9 @@ pnpm-debug.log*
 # Frontend build
 frontend/dist/
 frontend/.vite/
+frontend/*.tsbuildinfo
+frontend/vite.config.d.ts
+frontend/vite.config.js
 .eslintcache
 
 # DB local
@@ -84,4 +87,7 @@ playwright-report/
 
 # Recon raw scrapes (heavy HTML/CSS — keep on disk, not in git)
 plans/web-recon-assets/raw/
-package-lock.json
+
+# Root-level package-lock (only from one-off CLI installs like @google/design.md)
+# Frontend lockfile is committed normally
+/package-lock.json
