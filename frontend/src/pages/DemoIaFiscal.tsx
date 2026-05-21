@@ -1,6 +1,6 @@
 import { PageShell } from "@/components/layout/PageShell";
 import { SeoHead } from "@/components/seo/SeoHead";
-import { DemoChatPlaceholder } from "@/components/demo/DemoChatPlaceholder";
+import { DemoChat } from "@/components/demo/DemoChat";
 import { Badge } from "@/components/ui/badge";
 import { demoIaFiscalContent } from "@/content/demoIaFiscal";
 
@@ -23,10 +23,7 @@ export default function DemoIaFiscal() {
 					{demoIaFiscalContent.hero.subheadline}
 				</p>
 				<div className="mt-12 max-w-3xl">
-					<DemoChatPlaceholder
-						suggestedQuestions={demoIaFiscalContent.suggestedQuestions}
-						placeholderNote={demoIaFiscalContent.placeholderNote}
-					/>
+					<DemoChat suggestedQuestions={demoIaFiscalContent.suggestedQuestions} />
 				</div>
 			</section>
 		</PageShell>
