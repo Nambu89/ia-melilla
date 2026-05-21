@@ -3,6 +3,7 @@ import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { useScrollFadeIn } from "@/components/animations/useScrollFadeIn";
 
 interface AudienceCard {
 	audience: "b2b" | "b2c";
@@ -19,6 +20,41 @@ interface AudienceSplitProps {
 	cards: readonly AudienceCard[];
 }
 
+function AudienceCardWrapper({ card }: { card: AudienceCard }) {
+	const ref = useScrollFadeIn<HTMLDivElement>();
+	return (
+		<div ref={ref}>
+			<Card className="border border-outline-variant p-8">
+				<CardHeader>
+					<Badge variant={card.audience} className="self-start">
+						{card.badge}
+					</Badge>
+					<CardTitle className="mt-3 text-headline-md">{card.title}</CardTitle>
+				</CardHeader>
+				<CardContent className="mt-4">
+					<p>{card.description}</p>
+					<ul className="mt-6 flex flex-col gap-3">
+						{card.bullets.map((bullet) => (
+							<li key={bullet} className="flex items-start gap-3 text-body-md text-on-surface">
+								<Check className="mt-1 h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+								<span>{bullet}</span>
+							</li>
+						))}
+					</ul>
+					<Button
+						asChild
+						variant={card.audience}
+						className="mt-8 w-full sm:w-auto"
+						size="lg"
+					>
+						<Link to={card.cta.href}>{card.cta.label}</Link>
+					</Button>
+				</CardContent>
+			</Card>
+		</div>
+	);
+}
+
 export function AudienceSplit({ eyebrow, headline, cards }: AudienceSplitProps) {
 	return (
 		<section className="mx-auto max-w-[1200px] px-6 py-24">
@@ -26,39 +62,7 @@ export function AudienceSplit({ eyebrow, headline, cards }: AudienceSplitProps) 
 			<h2 className="text-headline-lg font-semibold tracking-tight max-w-3xl">{headline}</h2>
 			<div className="mt-12 grid gap-6 md:grid-cols-2">
 				{cards.map((card) => (
-					<Card key={card.audience} className="border border-outline-variant p-8">
-						<CardHeader>
-							<Badge variant={card.audience} className="self-start">
-								{card.badge}
-							</Badge>
-							<CardTitle className="mt-3 text-headline-md">{card.title}</CardTitle>
-						</CardHeader>
-						<CardContent className="mt-4">
-							<p>{card.description}</p>
-							<ul className="mt-6 flex flex-col gap-3">
-								{card.bullets.map((bullet) => (
-									<li
-										key={bullet}
-										className="flex items-start gap-3 text-body-md text-on-surface"
-									>
-										<Check
-											className="mt-1 h-5 w-5 shrink-0 text-primary"
-											aria-hidden="true"
-										/>
-										<span>{bullet}</span>
-									</li>
-								))}
-							</ul>
-							<Button
-								asChild
-								variant={card.audience}
-								className="mt-8 w-full sm:w-auto"
-								size="lg"
-							>
-								<Link to={card.cta.href}>{card.cta.label}</Link>
-							</Button>
-						</CardContent>
-					</Card>
+					<AudienceCardWrapper key={card.audience} card={card} />
 				))}
 			</div>
 		</section>

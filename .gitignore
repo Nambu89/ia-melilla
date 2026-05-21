@@ -91,3 +91,4 @@ plans/web-recon-assets/raw/
 # Root-level package-lock (only from one-off CLI installs like @google/design.md)
 # Frontend lockfile is committed normally
 /package-lock.json
+image copy 2.png
