@@ -184,3 +184,27 @@ Follow-up registrados:
 - Refresh token auto-renewal post-1h TTL (out of scope MVP)
 
 Verifier `/verify` queda pendiente — PM lo invoca tras review usuario.
+
+---
+
+## [2026-05-22 00:50] [verifier → PM] Fase 2 — VERIFIED (post-PR-merge)
+
+Estado: VERIFIED
+Commit verificado: a78c6b1 (merge PR #1)
+Tests: 28/28 pass
+Bundle: 117 KB JS gzip / 5 KB CSS gzip (bajo umbral 200 KB)
+Typecheck: 0 errors
+Theme lint: 0 errors
+
+Verifier inicial reporto 3 fails — PM revalido manualmente:
+- abortSignal: PASS funcional (ES6 shorthand `signal,` en apiClient.ts lines 29+71)
+- .env.example: PASS, archivo tracked en 5dc6b85 (verifier corrio ls sin -a)
+- backend smoke: PASS, /health + /auth/login devuelven 200 (verifier timeout transient)
+
+Cero issues bloqueantes. Fase 2 cerrada.
+
+Follow-ups pendientes (no bloquean):
+- Backend warmup_service.py strings "Impuestify" residuales
+- Backend RAG vacio — necesita ingest
+- frontend/CLAUDE.md desactualizado React 18 → 19
+- Plan acceptance criterion #6 mejor formulado como `grep -E "\bsignal\b"` para futuras revisiones
