@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import {
 	MessageCircle,
 	Bot,
-	ShoppingBag,
-	Sparkles,
+	Briefcase,
+	GraduationCap,
 	Image,
 	Workflow,
 	ArrowRight,
@@ -37,20 +37,20 @@ const SERVICES: Service[] = [
 		href: "/contacto?servicio=whatsapp",
 	},
 	{
-		icon: ShoppingBag,
-		title: "Modelos virtuales para ropa",
+		icon: Briefcase,
+		title: "Agente IA por sector",
 		description:
-			"Try-on virtual con IA para tu e-commerce. Generas fotos de producto sobre modelos diversos sin montar sesión de fotos.",
-		tags: ["E-commerce", "Moda"],
-		href: "/contacto?servicio=modelos-virtuales",
+			"Asistentes hechos a la medida de un nicho concreto: clínicas, restaurantes, talleres, despachos… El agente habla con el lenguaje de tu sector.",
+		tags: ["Vertical", "A medida"],
+		href: "/contacto?servicio=agente-sectorial",
 	},
 	{
-		icon: Sparkles,
-		title: "Influencer IA / Avatar",
+		icon: GraduationCap,
+		title: "Agente IA para academias y opositores",
 		description:
-			"Una persona digital con tu cara de marca. Vídeos, posts y anuncios listos en horas en vez de cuadrar agendas con creadores.",
-		tags: ["Marketing", "Branding"],
-		href: "/contacto?servicio=influencer-ia",
+			"Tutor IA entrenado en el temario real: Guardia Civil, Bomberos, Policía Nacional, Policía Local, Correos, Auxilio Judicial… Pregunta, examina, repite.",
+		tags: ["Academias", "Oposiciones"],
+		href: "/contacto?servicio=agente-academias",
 	},
 	{
 		icon: Image,

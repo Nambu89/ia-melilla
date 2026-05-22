@@ -13,8 +13,8 @@ export default function Empresas() {
 	return (
 		<PageShell>
 			<SeoHead
-				title="IA para empresas y autonomos — IA Melilla"
-				description="Software de IA hecho a medida para asesorias, despachos y pymes. Integraciones reales, sin proof of concept eternos."
+				title="IA para empresas y autónomos — IA Melilla"
+				description="Software de IA hecho a medida para asesorías, despachos y pymes. Integraciones reales, sin proof of concept eternos."
 				path="/empresas"
 			/>
 			<Hero

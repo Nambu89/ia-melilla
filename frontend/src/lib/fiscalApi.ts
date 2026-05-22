@@ -258,8 +258,8 @@ export interface InvoiceUploadResponse {
 }
 
 /**
- * Sube una factura (PDF / JPG / PNG) al backend. OCR Gemini + clasificacion
- * PGC + generacion asiento contable. Si la respuesta indica `status:
+ * Sube una factura (PDF / JPG / PNG) al backend. OCR Gemini + clasificación
+ * PGC + generación asiento contable. Si la respuesta indica `status:
  * "processing"`, hacer polling con `getInvoice(id)` hasta status terminal.
  */
 export async function uploadInvoice(

@@ -4,7 +4,6 @@ export const navContent = {
 		{ label: "Empresas", href: "/empresas" },
 		{ label: "Particulares", href: "/particulares" },
 		{ label: "Demos", href: "/demos" },
-		{ label: "Portafolio", href: "/portafolio" },
 		{ label: "Blog", href: "/blog" },
 		{ label: "Contacto", href: "/contacto" },
 	],

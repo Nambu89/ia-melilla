@@ -19,7 +19,7 @@ export default function Home() {
 		<PageShell>
 			<SeoHead
 				title="IA Melilla — Inteligencia artificial para empresas y particulares"
-				description="Construimos asistentes de IA practicos desde Melilla. Chatbots, asistentes WhatsApp, modelos virtuales, contenido visual IA, automatizaciones, IA Fiscal Melilla y más."
+				description="Construimos asistentes de IA prácticos desde Melilla. Chatbots, asistentes WhatsApp, agentes por sector, contenido visual IA, automatizaciones, IA Fiscal Melilla y más."
 				path="/"
 			/>
 			<OrganizationJsonLd />
