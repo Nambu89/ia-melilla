@@ -2,8 +2,9 @@ import { chromium } from "@playwright/test";
 import { writeFileSync } from "fs";
 import { mkdirSync } from "fs";
 
-const BASE_URL = "http://localhost:5173";
-const SCREENSHOTS_DIR = "qa-screenshots";
+const BASE_URL = process.env.BASE_URL ?? "http://localhost:5173";
+const SCREENSHOTS_DIR = process.env.SCREENSHOTS_DIR ?? "qa-screenshots";
+console.log(`QA walkthrough against ${BASE_URL}, screenshots in ${SCREENSHOTS_DIR}/`);
 
 mkdirSync(SCREENSHOTS_DIR, { recursive: true });
 

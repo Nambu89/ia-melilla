@@ -102,3 +102,5 @@ redesign-home-*.jpg
 # QA walkthrough artifacts
 frontend/qa-screenshots/
 frontend/qa-report.json
+frontend/qa-live/
+image copy*.png
