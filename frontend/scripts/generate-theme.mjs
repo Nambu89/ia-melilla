@@ -54,9 +54,50 @@ for (const [name, entry] of Object.entries(fontSizes)) {
 		lines.push(`\t--font-weight-${name}: ${props.fontWeight};`);
 }
 
+// Spacing tokens — SKIP tokens that collide with Tailwind v4 --container-* scale.
+// Tailwind v4 resolves max-w-* against --spacing-* before --container-* when both exist,
+// so --spacing-xs/2xl/3xl/4xl/5xl would override container breakpoints and break max-w-*.
+// These tokens are re-emitted as --space-* (no collision) further below.
+const SPACING_CONTAINER_COLLISION = new Set(["xs", "2xl", "3xl", "4xl", "5xl"]);
+
 const spacing = theme.theme?.extend?.spacing ?? {};
+lines.push(
+	"\t/* Spacing base tokens — named to avoid collision with Tailwind v4 --container-* scale.",
+	"\t   REMOVED: --spacing-xs/2xl/3xl/4xl/5xl — these override --container-* and break max-w-* utilities.",
+	"\t   Use numeric Tailwind utilities (p-4, gap-8, etc.) or --space-* custom vars for semantic sizes. */",
+);
 for (const [name, value] of Object.entries(spacing)) {
-	lines.push(`\t--spacing-${name}: ${value};`);
+	if (SPACING_CONTAINER_COLLISION.has(name)) {
+		// Emit as --space-* alias instead to preserve value without collision
+		lines.push(`\t--space-${name}: ${value};`);
+	} else {
+		lines.push(`\t--spacing-${name}: ${value};`);
+	}
+}
+
+// Container tokens — Tailwind v4 default scale.
+// CRITICAL: These must exist so max-w-* utilities resolve against --container-*
+// NOT against --spacing-*. Without these, max-w-4xl → 96px (--spacing-4xl)
+// instead of 56rem (--container-4xl), causing layout collapse.
+// Added 2026-05-22 to fix Tailwind v4 token collision.
+lines.push("\t/* Container scale (max-w-* utilities) — Tailwind v4 default */");
+const containerScale = {
+	"3xs": "16rem",
+	"2xs": "18rem",
+	xs: "20rem",
+	sm: "24rem",
+	md: "28rem",
+	lg: "32rem",
+	xl: "36rem",
+	"2xl": "42rem",
+	"3xl": "48rem",
+	"4xl": "56rem",
+	"5xl": "64rem",
+	"6xl": "72rem",
+	"7xl": "80rem",
+};
+for (const [name, value] of Object.entries(containerScale)) {
+	lines.push(`\t--container-${name}: ${value};`);
 }
 
 const rounded = theme.theme?.extend?.borderRadius ?? {};

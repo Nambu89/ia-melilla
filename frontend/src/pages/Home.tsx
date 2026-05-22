@@ -7,6 +7,9 @@ import { DemoFlagship } from "@/components/sections/DemoFlagship";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { AboutMelilla } from "@/components/sections/AboutMelilla";
 import { CtaClose } from "@/components/sections/CtaClose";
+import { MarqueeTech } from "@/components/sections/MarqueeTech";
+import { ComparisonTable } from "@/components/sections/ComparisonTable";
+import { FAQ } from "@/components/sections/FAQ";
 import { homeContent } from "@/content/home";
 
 export default function Home() {
@@ -25,6 +28,7 @@ export default function Home() {
 				primaryCta={homeContent.hero.primaryCta}
 				secondaryCta={homeContent.hero.secondaryCta}
 			/>
+			<MarqueeTech />
 			<AudienceSplit
 				eyebrow={homeContent.audienceSplit.eyebrow}
 				headline={homeContent.audienceSplit.headline}
@@ -43,11 +47,13 @@ export default function Home() {
 				headline={homeContent.processSteps.headline}
 				steps={homeContent.processSteps.steps}
 			/>
+			<ComparisonTable />
 			<AboutMelilla
 				eyebrow={homeContent.aboutMelilla.eyebrow}
 				headline={homeContent.aboutMelilla.headline}
 				body={homeContent.aboutMelilla.body}
 			/>
+			<FAQ />
 			<CtaClose
 				headline={homeContent.ctaClose.headline}
 				subheadline={homeContent.ctaClose.subheadline}

@@ -101,20 +101,38 @@
 	--text-code-md: 14px;
 	--tracking-code-md: 0em;
 	--font-weight-code-md: 400;
+	/* Spacing base tokens — named to avoid collision with Tailwind v4 --container-* scale.
+	   REMOVED: --spacing-xs/2xl/3xl/4xl/5xl — these override --container-* and break max-w-* utilities.
+	   Use numeric Tailwind utilities (p-4, gap-8, etc.) or --space-* custom vars for semantic sizes. */
 	--spacing-unit: 4px;
-	--spacing-xs: 4px;
 	--spacing-sm: 8px;
 	--spacing-md: 16px;
 	--spacing-lg: 24px;
 	--spacing-xl: 32px;
-	--spacing-2xl: 48px;
-	--spacing-3xl: 64px;
-	--spacing-4xl: 96px;
-	--spacing-5xl: 128px;
 	--spacing-container-padding: 24px;
 	--spacing-container-max: 1200px;
 	--spacing-section-y-mobile: 80px;
 	--spacing-section-y-desktop: 128px;
+	/* Semantic spacing aliases (no collision with container scale) */
+	--space-xs: 4px;
+	--space-2xl: 48px;
+	--space-3xl: 64px;
+	--space-4xl: 96px;
+	--space-5xl: 128px;
+	/* Container scale (max-w-* utilities) — Tailwind v4 default */
+	--container-3xs: 16rem;
+	--container-2xs: 18rem;
+	--container-xs: 20rem;
+	--container-sm: 24rem;
+	--container-md: 28rem;
+	--container-lg: 32rem;
+	--container-xl: 36rem;
+	--container-2xl: 42rem;
+	--container-3xl: 48rem;
+	--container-4xl: 56rem;
+	--container-5xl: 64rem;
+	--container-6xl: 72rem;
+	--container-7xl: 80rem;
 	--radius-none: 0px;
 	--radius-sm: 4px;
 	--radius-md: 6px;

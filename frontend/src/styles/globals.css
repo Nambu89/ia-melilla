@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "./theme.css";
 @import "./fonts.css";
+@import "./animations.css";
 
 :root {
 	color-scheme: dark;
