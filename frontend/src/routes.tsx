@@ -10,7 +10,6 @@ import IaFiscalCalculadoraRetenciones from "@/pages/IaFiscalCalculadoraRetencion
 import IaFiscalGuiaFiscal from "@/pages/IaFiscalGuiaFiscal";
 import IaFiscalClasificadorFacturas from "@/pages/IaFiscalClasificadorFacturas";
 import Contacto from "@/pages/Contacto";
-import Portafolio from "@/pages/Portafolio";
 import Blog from "@/pages/Blog";
 import AvisoLegal from "@/pages/AvisoLegal";
 import PoliticaPrivacidad from "@/pages/PoliticaPrivacidad";
@@ -41,7 +40,6 @@ export const routes: RouteObject[] = [
 		element: <IaFiscalClasificadorFacturas />,
 	},
 	{ path: "/contacto", element: <Contacto /> },
-	{ path: "/portafolio", element: <Portafolio /> },
 	{ path: "/blog", element: <Blog /> },
 	{ path: "/aviso-legal", element: <AvisoLegal /> },
 	{ path: "/politica-de-privacidad", element: <PoliticaPrivacidad /> },

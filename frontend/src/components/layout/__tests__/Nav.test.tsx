@@ -14,7 +14,6 @@ describe("Nav", () => {
 		expect(screen.getByText("Particulares")).toBeInTheDocument();
 		expect(screen.getByText("Demos")).toBeInTheDocument();
 		expect(screen.getByText("Contacto")).toBeInTheDocument();
-		expect(screen.getByText("Portafolio")).toBeInTheDocument();
 		expect(screen.getByText("Blog")).toBeInTheDocument();
 	});
 

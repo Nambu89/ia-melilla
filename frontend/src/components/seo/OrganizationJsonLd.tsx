@@ -21,7 +21,7 @@ export function OrganizationJsonLd() {
 					addressCountry: business.address.country,
 				},
 				description:
-					"IA Melilla construye soluciones de inteligencia artificial para empresas, autonomos y particulares.",
+					"IA Melilla construye soluciones de inteligencia artificial para empresas, autónomos y particulares.",
 			},
 			{
 				"@type": "WebSite",

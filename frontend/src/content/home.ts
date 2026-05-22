@@ -3,9 +3,9 @@ export const homeContent = {
 		eyebrow: "IA APLICADA · DESDE MELILLA",
 		headline: "Inteligencia artificial\nque te ayuda en tu día a día.",
 		subheadline:
-			"Construimos asistentes de IA para empresas, autonomos y particulares. Arrancamos con lo mas enredado que hay aqui: el regimen fiscal de Melilla. Y de ahi, lo que necesites.",
+			"Construimos asistentes de IA para empresas, autónomos y particulares. Arrancamos con lo más enredado que hay aquí: el régimen fiscal de Melilla. Y de ahí, lo que necesites.",
 		primaryCta: { label: "Probar IA Fiscal Melilla →", href: "/demos/ia-fiscal-melilla" },
-		secondaryCta: { label: "Como trabajamos", href: "#como-trabajamos" },
+		secondaryCta: { label: "Cómo trabajamos", href: "#como-trabajamos" },
 	},
 	audienceSplit: {
 		eyebrow: "ELIGE TU CAMINO",
@@ -13,13 +13,13 @@ export const homeContent = {
 		cards: [
 			{
 				audience: "b2b" as const,
-				badge: "EMPRESAS Y AUTONOMOS",
+				badge: "EMPRESAS Y AUTÓNOMOS",
 				title: "Para tu negocio",
 				description:
-					"Automatizamos lo que tu equipo ya hace en bucle, te montamos atencion fuera de horario y conectamos la IA con el software que llevas usando.",
+					"Automatizamos lo que tu equipo ya hace en bucle, te montamos atención fuera de horario y conectamos la IA con el software que llevas usando.",
 				bullets: [
-					"Asesorias fiscales que se encargan de consultas IPSI y renta",
-					"Atencion al cliente que no se va de fin de semana",
+					"Asesorías fiscales que se encargan de consultas de IPSI y renta",
+					"Atención al cliente que no se va de fin de semana",
 					"Procesos administrativos que se hacen solos",
 				],
 				cta: { label: "Soluciones para empresas →", href: "/empresas" },
@@ -27,13 +27,13 @@ export const homeContent = {
 			{
 				audience: "b2c" as const,
 				badge: "PARTICULARES",
-				title: "Para tu dia a dia",
+				title: "Para tu día a día",
 				description:
-					"Pregunta sobre impuestos o tramites cuando lo necesites. Te respondemos claro, citando la norma, sin pillar cita con el gestor.",
+					"Pregunta sobre impuestos o trámites cuando lo necesites. Te respondemos claro, citando la norma, sin tener que pillar cita con el gestor.",
 				bullets: [
-					"Renta, IPSI, deducciones explicadas en castellano normal",
-					"Plazos y formularios sin jerga raruna",
-					"Respuestas en segundos, no en dias",
+					"Renta, IPSI y deducciones explicadas en castellano normal",
+					"Plazos y formularios sin jerga rara",
+					"Respuestas en segundos, no en días",
 				],
 				cta: { label: "Soluciones para particulares →", href: "/particulares" },
 			},
@@ -43,18 +43,18 @@ export const homeContent = {
 		eyebrow: "DEMO 1 · DISPONIBLE",
 		headline: "IA Fiscal Melilla",
 		subheadline:
-			"Preguntale lo que quieras sobre fiscalidad de Melilla. Responde en segundos y te cita la norma. Es la primera demo, vienen mas.",
+			"Pregúntale lo que quieras sobre fiscalidad de Melilla. Responde en segundos y te cita la norma. Es la primera demo, vienen más.",
 		exchange: {
 			question: "¿Tengo que pagar IPSI si vendo en Melilla a un cliente peninsular?",
 			answer:
-				"Si la entrega del bien o la prestacion del servicio se realiza fisicamente en Melilla, esta sujeta a IPSI. Si el cliente recoge el producto en Melilla, IPSI. Si lo envias a peninsula, no — la operacion no se considera localizada en Melilla a efectos del impuesto.",
-			source: "Ordenanza Fiscal Reguladora del IPSI, Ciudad Autonoma de Melilla, art. 4.",
+				"Si la entrega del bien o la prestación del servicio se realiza físicamente en Melilla, está sujeta a IPSI. Si el cliente recoge el producto en Melilla, IPSI. Si lo envías a península, no — la operación no se considera localizada en Melilla a efectos del impuesto.",
+			source: "Ordenanza Fiscal Reguladora del IPSI, Ciudad Autónoma de Melilla, art. 4.",
 		},
 		cta: { label: "Probar la demo completa →", href: "/demos/ia-fiscal-melilla" },
 	},
 	processSteps: {
 		eyebrow: "PROCESO",
-		headline: "Como trabajamos.",
+		headline: "Cómo trabajamos.",
 		steps: [
 			{
 				number: "01",
@@ -63,30 +63,30 @@ export const homeContent = {
 			},
 			{
 				number: "02",
-				title: "Construimos la solucion a medida",
-				body: "Software real, conectado a tus sistemas, probado en produccion antes de entregartelo. Nada de demos vacios.",
+				title: "Construimos la solución a medida",
+				body: "Software real, conectado a tus sistemas, probado en producción antes de entregártelo. Nada de demos vacías.",
 			},
 			{
 				number: "03",
 				title: "Te entregamos y formamos a tu equipo",
-				body: "La solucion es tuya, tu equipo la opera. Te dejamos documentacion, formacion y soporte si lo necesitas, pero sin atarte a nosotros.",
+				body: "La solución es tuya, tu equipo la opera. Te dejamos documentación, formación y soporte si lo necesitas, pero sin atarte a nosotros.",
 			},
 		],
 	},
 	aboutMelilla: {
-		eyebrow: "POR QUE EMPEZAMOS AQUI",
-		headline: "Melilla no encaja en plantillas estandar.",
+		eyebrow: "POR QUÉ EMPEZAMOS AQUÍ",
+		headline: "Melilla no encaja en plantillas estándar.",
 		body: [
-			"Regimen fiscal propio (IPSI en lugar de IVA, REF, particularidades para autonomos y pymes locales) y una economia pegada a frontera. La gente de aqui lleva años usando software pensado para Madrid o Barcelona y adaptado a empujones.",
-			"Hemos vivido aqui las consultas que se quedan sin respuesta, los formularios que confunden, las gestoras desbordadas en campaña de renta. Por eso empezamos por aqui.",
-			"La IA que construimos sirve en cualquier mercado. Empezamos aqui porque es lo que conocemos.",
+			"Régimen fiscal propio (IPSI en lugar de IVA, REF, particularidades para autónomos y pymes locales) y una economía pegada a frontera. La gente de aquí lleva años usando software pensado para Madrid o Barcelona y adaptado a empujones.",
+			"Hemos vivido aquí las consultas que se quedan sin respuesta, los formularios que confunden y las gestorías desbordadas en campaña de renta. Por eso empezamos por aquí.",
+			"La IA que construimos sirve en cualquier mercado. Empezamos aquí porque es lo que conocemos.",
 		],
 	},
 	ctaClose: {
 		headline: "¿Hablamos?",
 		subheadline:
-			"Cuentanos que problema tienes. Primera reunion sin coste, sin compromiso. Solemos contestar el mismo dia.",
+			"Cuéntanos qué problema tienes. Primera reunión sin coste, sin compromiso. Solemos contestar el mismo día.",
 		primaryCta: { label: "Pedir cita →", href: "/contacto" },
-		secondaryCta: { label: "Escribenos por WhatsApp", href: "" },
+		secondaryCta: { label: "Escríbenos por WhatsApp", href: "" },
 	},
 } as const;

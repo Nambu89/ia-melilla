@@ -89,7 +89,7 @@ export function useDemoChat() {
 			const msg =
 				err instanceof ApiError
 					? `No pudimos conectar con la demo (HTTP ${err.status}).`
-					: "No pudimos conectar con la demo. Comprueba tu conexion.";
+					: "No pudimos conectar con la demo. Comprueba tu conexión.";
 			dispatch({ type: "LOGIN_FAIL", message: msg });
 		}
 	}, [baseUrl, email, password]);
@@ -124,8 +124,8 @@ export function useDemoChat() {
 				const isApiError = err instanceof ApiError || (err as Error).name === "ApiError";
 				const msg =
 					isApiError
-						? `Error del servidor (HTTP ${(err as ApiError).status}). Intentalo de nuevo.`
-						: "Conexion perdida. Intentalo de nuevo.";
+						? `Error del servidor (HTTP ${(err as ApiError).status}). Inténtalo de nuevo.`
+						: "Conexión perdida. Inténtalo de nuevo.";
 				dispatch({ type: "STREAM_FAIL", message: msg });
 			}
 		},
