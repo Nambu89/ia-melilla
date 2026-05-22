@@ -3,24 +3,24 @@ import RevealOnScroll from "@/components/animations/RevealOnScroll";
 
 const ROWS = [
 	{
-		without: "2 horas medias por consulta sobre IPSI",
-		with: "8 segundos por respuesta con cita normativa",
+		without: "Cada consulta de IPSI se te lleva un par de horas",
+		with: "8 segundos por respuesta y con la norma en mano",
 	},
 	{
-		without: "Gestor saturado en campaña de renta",
-		with: "Disponibilidad 24/7, sin esperar al lunes",
+		without: "El gestor desaparece en campaña de renta",
+		with: "Disponible cuando lo necesitas, sin esperar al lunes",
 	},
 	{
-		without: "Errores por mezclar régimen peninsular y de Melilla",
-		with: "Respuestas localizadas al régimen fiscal real",
+		without: "Pifias por mezclar régimen peninsular y de Melilla",
+		with: "Las respuestas tienen en cuenta el régimen de aquí",
 	},
 	{
-		without: "Llamadas que se pierden y consultas sin respuesta",
+		without: "Llamadas que se pierden y consultas sin contestar",
 		with: "Cada pregunta queda registrada y respondida",
 	},
 	{
-		without: "Tarifas por hora opacas e impredecibles",
-		with: "Coste fijo y conocido por adelantado",
+		without: "Tarifas por hora opacas que no terminas de saber",
+		with: "Coste fijo, lo sabes antes de empezar",
 	},
 ];
 
@@ -32,7 +32,7 @@ export function ComparisonTable() {
 					EL CAMBIO
 				</p>
 				<h2 className="text-headline-lg md:text-headline-lg font-semibold tracking-tight max-w-3xl text-on-surface">
-					Antes y después de integrar IA Melilla.
+					Cómo se vive antes y cómo después.
 				</h2>
 			</RevealOnScroll>
 			<RevealOnScroll delay={0.15}>

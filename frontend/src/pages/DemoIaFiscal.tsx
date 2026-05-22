@@ -23,7 +23,7 @@ const TOOLS: Tool[] = [
 		href: "/demos/ia-fiscal-melilla/chat",
 		title: "Chat IA Fiscal",
 		description:
-			"Pregunta lo que necesites sobre fiscalidad en Melilla. IPSI, REF, IRPF, deducciones, plazos. Responde citando normativa.",
+			"Preguntá lo que sea sobre fiscalidad de Melilla. IPSI, REF, IRPF, deducciones, plazos. Te contesta y te cita la norma para que puedas comprobarla.",
 		icon: MessageSquare,
 		badge: "FLAGSHIP",
 		featured: true,
@@ -32,7 +32,7 @@ const TOOLS: Tool[] = [
 		href: "/demos/ia-fiscal-melilla/calculadora-neto",
 		title: "Calculadora Neto Autónomos",
 		description:
-			"Calcula tu neto mensual y anual. Aplica IPSI 4% y deducción 60% Ceuta/Melilla automáticamente.",
+			"Mira cuánto te queda al mes y al año. Aplica IPSI 4% y la deducción 60% de Ceuta/Melilla por ti.",
 		icon: Calculator,
 		badge: "CÁLCULO",
 	},
@@ -40,7 +40,7 @@ const TOOLS: Tool[] = [
 		href: "/demos/ia-fiscal-melilla/calculadora-retenciones",
 		title: "Calculadora Retenciones IRPF",
 		description:
-			"Estima la retención IRPF de tu nómina aplicando reducción 60% Melilla si corresponde.",
+			"Mete tu sueldo bruto y mira qué te retendrán. Si vives aquí, la reducción del 60% ya está dentro.",
 		icon: FileText,
 		badge: "CÁLCULO",
 	},
@@ -48,7 +48,7 @@ const TOOLS: Tool[] = [
 		href: "/demos/ia-fiscal-melilla/guia-fiscal",
 		title: "Guía Fiscal IRPF",
 		description:
-			"Wizard paso a paso. Estima base, cuota líquida y resultado de tu declaración con cobertura Melilla.",
+			"Te llevamos paso a paso por la declaración. Base, cuotas y resultado, con cobertura de Melilla incluida.",
 		icon: BookOpen,
 		badge: "WIZARD",
 	},
@@ -56,7 +56,7 @@ const TOOLS: Tool[] = [
 		href: "/demos/ia-fiscal-melilla/clasificador-facturas",
 		title: "Clasificador de Facturas",
 		description:
-			"Sube una factura PDF o foto. OCR + IA extrae proveedor, base, impuestos, clasifica PGC y genera el asiento contable.",
+			"Suelta una factura en PDF o foto. La IA saca proveedor, base, impuestos, te dice la cuenta PGC y te propone el asiento.",
 		icon: Receipt,
 		badge: "OCR · IA",
 	},
@@ -79,16 +79,16 @@ export default function DemoIaFiscal() {
 						</Badge>
 					</RevealOnScroll>
 					<AnimatedHeadline
-						lines={["IA Fiscal Melilla.", "Pruébala ya."]}
+						lines={["IA Fiscal Melilla.", "Trastéala."]}
 						as="h1"
 						className="text-display-md md:text-display-lg lg:text-display-xl font-bold max-w-5xl text-on-surface"
 					/>
 					<RevealOnScroll delay={0.2}>
 						<p className="mt-8 max-w-2xl text-body-lg text-on-surface-variant">
-							Cinco herramientas conectadas a un mismo motor IA entrenado en
-							el régimen fiscal de Melilla. Chat conversacional, calculadoras y
-							wizards. Pruébalas en este orden o salta directamente a la que te
-							interesa.
+							Cinco herramientas que tiran del mismo motor IA, entrenado en
+							el régimen fiscal de Melilla. Chat, calculadoras, wizard y un
+							clasificador de facturas. Pruébalas como quieras: en orden o
+							a saltos.
 						</p>
 					</RevealOnScroll>
 				</div>
@@ -100,7 +100,7 @@ export default function DemoIaFiscal() {
 						HERRAMIENTAS DISPONIBLES
 					</p>
 					<h2 className="text-headline-lg font-semibold tracking-tight text-on-surface">
-						{TOOLS.length} formas de probar el motor.
+						Cinco formas de meterle mano al motor.
 					</h2>
 				</RevealOnScroll>
 				<div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -116,14 +116,14 @@ export default function DemoIaFiscal() {
 						<div className="grid gap-6 md:grid-cols-[2fr_1fr] md:items-center">
 							<div>
 								<p className="text-label-caps uppercase tracking-[0.12em] text-on-surface-muted">
-									¿NECESITAS ALGO A MEDIDA?
+									¿LO TUYO ES OTRA HISTORIA?
 								</p>
 								<h2 className="mt-3 text-headline-md font-semibold tracking-tight text-on-surface">
-									Construimos asistentes IA para tu sector y tus procesos.
+									Te montamos un asistente IA para tu sector y tus procesos.
 								</h2>
 								<p className="mt-4 text-body-md text-on-surface-variant">
-									El mismo motor que ves aquí lo adaptamos a otros regímenes,
-									a tu CRM, a tus formularios. Cuéntanos qué problema tienes.
+									El motor que ves aquí lo adaptamos a otros regímenes, a tu
+									CRM o a tus formularios. Cuéntanos qué te trae de cabeza.
 								</p>
 							</div>
 							<div className="flex flex-col gap-3 md:items-end">

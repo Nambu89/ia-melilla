@@ -45,10 +45,9 @@ export function ToolPageShell({
 			<div className="mt-12">{children}</div>
 			<div className="mt-16 rounded-lg border border-outline-variant bg-surface-container-low p-5">
 				<p className="text-body-sm text-on-surface-muted">
-					<strong className="text-on-surface-variant">Aviso legal:</strong>{" "}
-					Estimación orientativa basada en normativa fiscal vigente. No
-					sustituye el asesoramiento profesional. Consulta a un asesor
-					fiscal para casos reales.
+					<strong className="text-on-surface-variant">Por si acaso:</strong>{" "}
+					esto es una estimación, no un papel firmado. Para casos serios,
+					mejor llévalo a un asesor fiscal.
 				</p>
 			</div>
 		</section>

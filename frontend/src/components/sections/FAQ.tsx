@@ -8,36 +8,36 @@ import RevealOnScroll from "@/components/animations/RevealOnScroll";
 
 const FAQ_ITEMS = [
 	{
-		q: "¿Cuánto cuesta integrar IA en mi negocio?",
-		a: "Depende del alcance. Una asesoría IA Fiscal arranca desde 199€/mes. Una solución a medida (chatbot, automatización procesos, integraciones) se cotiza por proyecto tras una reunión gratuita. Primera reunión sin compromiso.",
+		q: "¿Cuánto cuesta?",
+		a: "Depende del alcance. Una suscripción a IA Fiscal arranca en 199€/mes. Si te montamos algo a medida (chatbot, automatización, integraciones con tu CRM o ERP), lo cotizamos por proyecto después de una primera reunión sin coste.",
 	},
 	{
-		q: "¿Qué datos guardáis cuando uso el chat?",
-		a: "Las conversaciones se procesan para generar la respuesta y se eliminan periodicamente. No almacenamos datos identificables salvo que tú nos los facilites por contacto. Cumplimos RGPD. Ver Política de privacidad.",
+		q: "¿Qué pasa con los datos cuando uso el chat?",
+		a: "Las conversaciones se procesan para darte la respuesta y se borran cada cierto tiempo. No guardamos nada que te identifique salvo que tú nos escribas por contacto. Cumplimos RGPD. Lo tienes en la Política de privacidad.",
 	},
 	{
-		q: "¿Funciona si no tengo gestor o asesor fiscal?",
-		a: "Sí. La IA Fiscal Melilla está pensada precisamente para particulares y autónomos que quieren entender sus obligaciones sin pasar por una gestoría. Para casos complejos seguimos recomendando un profesional, pero para el 80% de consultas habituales la IA basta.",
+		q: "¿Me sirve si no tengo gestor?",
+		a: "Sí. De hecho la IA Fiscal está pensada justo para eso: autónomos y particulares que quieren entender lo que pagan y a qué tienen derecho sin pasar por gestoría. Para casos complejos te diremos que vayas a un profesional, pero el grueso de consultas las cubre.",
 	},
 	{
-		q: "¿Soportáis empresas con sede en península que vendan en Melilla?",
-		a: "Sí. La IA distingue entre operaciones realizadas en Melilla (IPSI) y operaciones interterritoriales (no sujetas o sujetas a IVA peninsular). Te orientamos sobre qué aplicar.",
+		q: "¿Vale para empresas peninsulares que venden en Melilla?",
+		a: "Vale. La IA distingue entre operaciones hechas en Melilla (IPSI) y operaciones interterritoriales (no sujetas o sujetas a IVA peninsular). Te orienta sobre cuál aplicar y por qué.",
 	},
 	{
-		q: "¿Qué pasa si la IA se equivoca?",
-		a: "Toda respuesta cita la fuente normativa que la sustenta para que puedas verificarla. La información es orientativa y no sustituye asesoramiento profesional para casos críticos. Si detectas un error: contacta@iamelilla.com — lo arreglamos rápido.",
+		q: "¿Y si la IA se equivoca?",
+		a: "Cada respuesta lleva la cita normativa que la sustenta, para que puedas comprobarla. Es orientativa, no sustituye al asesor en casos serios. Si pillas algo mal, escribe a hola@iamelilla.com y lo arreglamos.",
 	},
 	{
-		q: "¿Plazos de entrega para una solución a medida?",
-		a: "Un asistente sencillo (FAQ, atención cliente) en 2-3 semanas. Una automatización con integraciones complejas (CRM, ERP) entre 1 y 3 meses. Te damos un calendario realista tras entender tu caso.",
+		q: "¿Cuánto se tarda en montar algo a medida?",
+		a: "Un asistente sencillo (FAQ, atención básica) sale en 2 o 3 semanas. Cuando hay integraciones con CRM, ERP o sistemas internos, calcula entre 1 y 3 meses. Te damos calendario realista cuando hablamos.",
 	},
 	{
-		q: "¿Puedo probar antes de contratar?",
-		a: "Sí. Por eso construimos el showroom de demos. Pruebas el producto real (IA Fiscal Melilla y los que vayamos sumando) antes de firmar nada.",
+		q: "¿Puedo probar antes de pagar?",
+		a: "Sí, justo por eso montamos el showroom. Pruebas el producto real (IA Fiscal Melilla, y los que vayamos sumando) antes de firmar ningún papel.",
 	},
 	{
-		q: "¿Trabajáis solo en Melilla?",
-		a: "No. Empezamos en Melilla porque el régimen fiscal local es nuestro ancla de credibilidad. Pero la tecnología vale para cualquier mercado de habla hispana. Tenemos clientes en península y norte de África.",
+		q: "¿Trabajáis solo aquí en Melilla?",
+		a: "No. Empezamos aquí porque el régimen fiscal local nos sirve de ancla de credibilidad: si funciona aquí, funciona en cualquier sitio. Ya tenemos clientes en península y norte de África.",
 	},
 ];
 
@@ -49,7 +49,7 @@ export function FAQ() {
 					PREGUNTAS FRECUENTES
 				</p>
 				<h2 className="text-headline-lg font-semibold tracking-tight max-w-3xl text-on-surface">
-					Lo que más nos preguntan antes de contratar.
+					Lo que más nos preguntáis antes de dar el paso.
 				</h2>
 			</RevealOnScroll>
 			<RevealOnScroll delay={0.1}>

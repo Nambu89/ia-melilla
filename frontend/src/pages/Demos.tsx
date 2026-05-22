@@ -21,7 +21,7 @@ const DEMOS: Demo[] = [
 		slug: "ia-fiscal-melilla",
 		name: "IA Fiscal Melilla",
 		tagline:
-			"Asistente IA + 4 herramientas especializadas en el régimen fiscal de Melilla. IPSI, IRPF con deducción 60%, autónomos, deducciones.",
+			"Asistente IA + cuatro herramientas pensadas alrededor del régimen fiscal de Melilla. IPSI, IRPF con la reducción del 60%, neto autónomos, retenciones y un clasificador de facturas.",
 		status: "live",
 		toolsCount: 5,
 		category: "FISCAL",
@@ -30,7 +30,7 @@ const DEMOS: Demo[] = [
 		slug: "atencion-cliente",
 		name: "IA Atención al Cliente",
 		tagline:
-			"Bot conversacional 24/7 entrenado con tu base de conocimiento. Integración WhatsApp, web, email.",
+			"Bot que habla con tus clientes a cualquier hora, entrenado con tu documentación. Va por WhatsApp, web o correo.",
 		status: "coming-soon",
 		category: "COMERCIAL",
 	},
@@ -38,7 +38,7 @@ const DEMOS: Demo[] = [
 		slug: "captador-leads",
 		name: "Captador de Leads IA",
 		tagline:
-			"Califica leads automáticamente conversando con visitantes web. Sincroniza con tu CRM.",
+			"Cualifica leads charlando con quien entra a tu web. Se sincroniza con tu CRM para que no se te pierda ni uno.",
 		status: "coming-soon",
 		category: "COMERCIAL",
 	},
@@ -46,7 +46,7 @@ const DEMOS: Demo[] = [
 		slug: "reservas",
 		name: "Reservas con Google Calendar",
 		tagline:
-			"Agenda citas por conversación natural. Consulta disponibilidad y reserva en tiempo real.",
+			"Agenda citas hablando como si fuera una persona. Mira tu calendario y reserva en directo.",
 		status: "coming-soon",
 		category: "OPERACIONES",
 	},
@@ -72,15 +72,15 @@ export default function Demos() {
 						</p>
 					</RevealOnScroll>
 					<AnimatedHeadline
-						lines={["Pruébalo tú mismo.", "Sin compromiso."]}
+						lines={["Pruébalo tú mismo.", "Sin pedir cita."]}
 						as="h1"
 						className="text-display-md md:text-display-lg lg:text-display-xl font-bold max-w-5xl text-on-surface"
 					/>
 					<RevealOnScroll delay={0.2}>
 						<p className="mt-8 max-w-2xl text-body-lg text-on-surface-variant">
-							Cada demo es producto real conectado a backend de verdad, no
-							maqueta. Lo que ves aquí es lo que entregamos a clientes,
-							adaptado a tu caso.
+							Cada demo es un producto de verdad enchufado a un backend de
+							verdad. Lo que ves aquí es lo que entregamos a clientes,
+							adaptado a su caso.
 						</p>
 					</RevealOnScroll>
 				</div>

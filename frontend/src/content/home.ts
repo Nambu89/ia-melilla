@@ -1,26 +1,26 @@
 export const homeContent = {
 	hero: {
 		eyebrow: "IA APLICADA · DESDE MELILLA",
-		headline: "Inteligencia artificial que resuelve. Sin humo.",
+		headline: "Inteligencia artificial\nque te ayuda en tu día a día.",
 		subheadline:
-			"Construimos asistentes de IA para empresas y particulares. Empezamos por lo dificil: el regimen fiscal de Melilla. Seguimos por lo que tu necesites.",
+			"Construimos asistentes de IA para empresas, autonomos y particulares. Arrancamos con lo mas enredado que hay aqui: el regimen fiscal de Melilla. Y de ahi, lo que necesites.",
 		primaryCta: { label: "Probar IA Fiscal Melilla →", href: "/demos/ia-fiscal-melilla" },
 		secondaryCta: { label: "Como trabajamos", href: "#como-trabajamos" },
 	},
 	audienceSplit: {
 		eyebrow: "ELIGE TU CAMINO",
-		headline: "Dos publicos. Una misma tecnologia.",
+		headline: "Tienes negocio. O eres particular. Vamos contigo en los dos sitios.",
 		cards: [
 			{
 				audience: "b2b" as const,
 				badge: "EMPRESAS Y AUTONOMOS",
 				title: "Para tu negocio",
 				description:
-					"Automatiza consultas repetidas, da soporte 24/7 sin renunciar a tu equipo, integra IA con el software que ya usas.",
+					"Automatizamos lo que tu equipo ya hace en bucle, te montamos atencion fuera de horario y conectamos la IA con el software que llevas usando.",
 				bullets: [
-					"Asesorias fiscales que automatizan consultas IPSI y renta",
-					"Atencion al cliente que no descansa",
-					"Procesos administrativos sin papeleo manual",
+					"Asesorias fiscales que se encargan de consultas IPSI y renta",
+					"Atencion al cliente que no se va de fin de semana",
+					"Procesos administrativos que se hacen solos",
 				],
 				cta: { label: "Soluciones para empresas →", href: "/empresas" },
 			},
@@ -29,10 +29,10 @@ export const homeContent = {
 				badge: "PARTICULARES",
 				title: "Para tu dia a dia",
 				description:
-					"Pregunta lo que necesites sobre fiscalidad o tramites. Respuesta clara, con fuentes oficiales. Sin esperar al gestor.",
+					"Pregunta sobre impuestos o tramites cuando lo necesites. Te respondemos claro, citando la norma, sin pillar cita con el gestor.",
 				bullets: [
-					"Renta, IPSI, deducciones explicadas en castellano",
-					"Plazos y formularios sin jerga",
+					"Renta, IPSI, deducciones explicadas en castellano normal",
+					"Plazos y formularios sin jerga raruna",
 					"Respuestas en segundos, no en dias",
 				],
 				cta: { label: "Soluciones para particulares →", href: "/particulares" },
@@ -43,7 +43,7 @@ export const homeContent = {
 		eyebrow: "DEMO 1 · DISPONIBLE",
 		headline: "IA Fiscal Melilla",
 		subheadline:
-			"Pregunta lo que quieras sobre fiscalidad en Melilla. Responde en segundos, citando la norma. Es la primera de muchas.",
+			"Preguntale lo que quieras sobre fiscalidad de Melilla. Responde en segundos y te cita la norma. Es la primera demo, vienen mas.",
 		exchange: {
 			question: "¿Tengo que pagar IPSI si vendo en Melilla a un cliente peninsular?",
 			answer:
@@ -54,7 +54,7 @@ export const homeContent = {
 	},
 	processSteps: {
 		eyebrow: "PROCESO",
-		headline: "Tres pasos. Sin sorpresas.",
+		headline: "Como trabajamos.",
 		steps: [
 			{
 				number: "01",
@@ -64,12 +64,12 @@ export const homeContent = {
 			{
 				number: "02",
 				title: "Construimos la solucion a medida",
-				body: "Software real. Conectado a tus sistemas. Probado en produccion antes de entregartelo. Cero demos vacios.",
+				body: "Software real, conectado a tus sistemas, probado en produccion antes de entregartelo. Nada de demos vacios.",
 			},
 			{
 				number: "03",
 				title: "Te entregamos y formamos a tu equipo",
-				body: "La solucion es tuya. Tu equipo la opera. Documentacion, formacion, soporte cuando lo necesites — pero sin dependencia.",
+				body: "La solucion es tuya, tu equipo la opera. Te dejamos documentacion, formacion y soporte si lo necesitas, pero sin atarte a nosotros.",
 			},
 		],
 	},
@@ -77,15 +77,15 @@ export const homeContent = {
 		eyebrow: "POR QUE EMPEZAMOS AQUI",
 		headline: "Melilla no encaja en plantillas estandar.",
 		body: [
-			"Regimen fiscal propio (IPSI en lugar de IVA, REF, especificidades para autonomos y pymes). Una economia con fronteras y oportunidades unicas. Una poblacion que merece tecnologia hecha pensando en ella, no software adaptado a empujones.",
+			"Regimen fiscal propio (IPSI en lugar de IVA, REF, particularidades para autonomos y pymes locales) y una economia pegada a frontera. La gente de aqui lleva años usando software pensado para Madrid o Barcelona y adaptado a empujones.",
 			"Hemos vivido aqui las consultas que se quedan sin respuesta, los formularios que confunden, las gestoras desbordadas en campaña de renta. Por eso empezamos por aqui.",
-			"Pero la IA que construimos vale en cualquier mercado. Melilla es el inicio, no el limite.",
+			"La IA que construimos sirve en cualquier mercado. Empezamos aqui porque es lo que conocemos.",
 		],
 	},
 	ctaClose: {
 		headline: "¿Hablamos?",
 		subheadline:
-			"Cuentanos que problema tienes. Primera reunion gratis, sin compromiso. Respondemos el mismo dia.",
+			"Cuentanos que problema tienes. Primera reunion sin coste, sin compromiso. Solemos contestar el mismo dia.",
 		primaryCta: { label: "Pedir cita →", href: "/contacto" },
 		secondaryCta: { label: "Escribenos por WhatsApp", href: "" },
 	},
