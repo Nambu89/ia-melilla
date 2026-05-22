@@ -2,7 +2,13 @@ import { type RouteObject } from "react-router-dom";
 import Home from "@/pages/Home";
 import Empresas from "@/pages/Empresas";
 import Particulares from "@/pages/Particulares";
+import Demos from "@/pages/Demos";
 import DemoIaFiscal from "@/pages/DemoIaFiscal";
+import IaFiscalChat from "@/pages/IaFiscalChat";
+import IaFiscalCalculadoraNeto from "@/pages/IaFiscalCalculadoraNeto";
+import IaFiscalCalculadoraRetenciones from "@/pages/IaFiscalCalculadoraRetenciones";
+import IaFiscalGuiaFiscal from "@/pages/IaFiscalGuiaFiscal";
+import IaFiscalDeducciones from "@/pages/IaFiscalDeducciones";
 import Contacto from "@/pages/Contacto";
 import Portafolio from "@/pages/Portafolio";
 import Blog from "@/pages/Blog";
@@ -15,7 +21,25 @@ export const routes: RouteObject[] = [
 	{ path: "/", element: <Home /> },
 	{ path: "/empresas", element: <Empresas /> },
 	{ path: "/particulares", element: <Particulares /> },
+	{ path: "/demos", element: <Demos /> },
 	{ path: "/demos/ia-fiscal-melilla", element: <DemoIaFiscal /> },
+	{ path: "/demos/ia-fiscal-melilla/chat", element: <IaFiscalChat /> },
+	{
+		path: "/demos/ia-fiscal-melilla/calculadora-neto",
+		element: <IaFiscalCalculadoraNeto />,
+	},
+	{
+		path: "/demos/ia-fiscal-melilla/calculadora-retenciones",
+		element: <IaFiscalCalculadoraRetenciones />,
+	},
+	{
+		path: "/demos/ia-fiscal-melilla/guia-fiscal",
+		element: <IaFiscalGuiaFiscal />,
+	},
+	{
+		path: "/demos/ia-fiscal-melilla/deducciones",
+		element: <IaFiscalDeducciones />,
+	},
 	{ path: "/contacto", element: <Contacto /> },
 	{ path: "/portafolio", element: <Portafolio /> },
 	{ path: "/blog", element: <Blog /> },

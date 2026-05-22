@@ -3,7 +3,7 @@ export const navContent = {
 	links: [
 		{ label: "Empresas", href: "/empresas" },
 		{ label: "Particulares", href: "/particulares" },
-		{ label: "Demos", href: "/demos/ia-fiscal-melilla" },
+		{ label: "Demos", href: "/demos" },
 		{ label: "Portafolio", href: "/portafolio" },
 		{ label: "Blog", href: "/blog" },
 		{ label: "Contacto", href: "/contacto" },
