@@ -3,6 +3,8 @@ import { SeoHead } from "@/components/seo/SeoHead";
 import { OrganizationJsonLd } from "@/components/seo/OrganizationJsonLd";
 import { Hero } from "@/components/sections/Hero";
 import { AudienceSplit } from "@/components/sections/AudienceSplit";
+import { ServicesGrid } from "@/components/sections/ServicesGrid";
+import { Sectores } from "@/components/sections/Sectores";
 import { DemoFlagship } from "@/components/sections/DemoFlagship";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { AboutMelilla } from "@/components/sections/AboutMelilla";
@@ -17,7 +19,7 @@ export default function Home() {
 		<PageShell>
 			<SeoHead
 				title="IA Melilla — Inteligencia artificial para empresas y particulares"
-				description="Construimos asistentes de IA practicos desde Melilla. Demo: IA Fiscal Melilla, especialista en regimen local."
+				description="Construimos asistentes de IA practicos desde Melilla. Chatbots, asistentes WhatsApp, modelos virtuales, contenido visual IA, automatizaciones, IA Fiscal Melilla y más."
 				path="/"
 			/>
 			<OrganizationJsonLd />
@@ -29,11 +31,13 @@ export default function Home() {
 				secondaryCta={homeContent.hero.secondaryCta}
 			/>
 			<MarqueeTech />
+			<ServicesGrid />
 			<AudienceSplit
 				eyebrow={homeContent.audienceSplit.eyebrow}
 				headline={homeContent.audienceSplit.headline}
 				cards={homeContent.audienceSplit.cards}
 			/>
+			<Sectores />
 			<DemoFlagship
 				eyebrow={homeContent.demoFlagship.eyebrow}
 				headline={homeContent.demoFlagship.headline}

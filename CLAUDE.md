@@ -75,7 +75,9 @@ panel.iamelilla.com → Coolify UI (puerto 8000 detras de Traefik)
 
 **Demos siguientes**: por decidir. El catalogo de 10 demos anterior (asistente atencion, captador leads, reservas Google Calendar, generador contenido, etc.) queda **archivado**. No se construyen hasta que IA Fiscal Melilla este en produccion y se replantee la lista en base a feedback real.
 
-**Los servicios actuales de iamelilla.com (modelos virtuales ropa, influencer IA, reservas WhatsApp, redes sociales IA, chatbots personalizados) NO migran a v2** — son del sitio WordPress actual y no forman parte del producto v2.
+**Los servicios actuales de iamelilla.com SI se muestran en home v2 (decisión 2026-05-22 sesión rediseño):** modelos virtuales ropa, influencer IA, reservas WhatsApp, redes sociales IA, chatbots personalizados, automatizaciones. Componente `ServicesGrid.tsx` lista 6 cards con nombres concretos. Cada card link a `/contacto?servicio=<slug>` para captación de lead. Componente `Sectores.tsx` lista los 6 sectores aplicación (Salud, E-commerce, Marketing, Emprendedores, Logística, Academias).
+
+Las **demos pruebables** viven en `/demos` (showroom): IA Fiscal Melilla activa + skeletons coming-soon. NO se mezclan servicios (lo que vendemos) con demos (lo que se puede probar online).
 
 WhatsApp como canal de contacto se mantiene (boton flotante). NO hay demo de WhatsApp en MVP.
 
