@@ -212,11 +212,11 @@ export default function IaFiscalCalculadoraNeto() {
 
 					<div className="rounded-xl border border-outline-variant bg-surface-container p-8 lg:p-10">
 						{!result && !error && (
-							<div className="flex h-full flex-col items-center justify-center gap-3 py-12 text-center">
-								<p className="w-full text-headline-sm font-semibold text-on-surface">
+							<div className="flex h-full flex-col justify-center gap-3 py-12 text-center">
+								<p className="text-headline-sm font-semibold text-on-surface">
 									Rellena tus datos y pulsa Calcular
 								</p>
-								<p className="w-full max-w-sm text-body-md text-on-surface-variant">
+								<p className="mx-auto max-w-sm text-body-md text-on-surface-variant">
 									Te mostraremos tu neto mensual y anual, las cotizaciones SS,
 									IPSI y la deducción Melilla aplicable.
 								</p>
