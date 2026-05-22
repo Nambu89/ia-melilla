@@ -1,7 +1,7 @@
 export const homeContent = {
 	hero: {
 		eyebrow: "IA APLICADA · DESDE MELILLA",
-		headline: "Inteligencia artificial\nque te resuelve cosas.",
+		headline: "Inteligencia artificial\nque te ayuda en tu día a día.",
 		subheadline:
 			"Construimos asistentes de IA para empresas, autonomos y particulares. Arrancamos con lo mas enredado que hay aqui: el regimen fiscal de Melilla. Y de ahi, lo que necesites.",
 		primaryCta: { label: "Probar IA Fiscal Melilla →", href: "/demos/ia-fiscal-melilla" },
