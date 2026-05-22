@@ -92,3 +92,7 @@ plans/web-recon-assets/raw/
 # Frontend lockfile is committed normally
 /package-lock.json
 image copy 2.png
+
+# Local screenshots / debug
+frontend-full-*.png
+image.png
