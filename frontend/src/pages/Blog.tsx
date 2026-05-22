@@ -6,15 +6,18 @@ export default function Blog() {
 		<PageShell>
 			<SeoHead
 				title="Blog — IA Melilla"
-				description="Articulos sobre inteligencia artificial, fiscalidad y emprendimiento en Melilla y mas alla."
+				description="Artículos sobre inteligencia artificial, fiscalidad y emprendimiento en Melilla y más allá."
 				path="/blog"
 			/>
-			<section className="mx-auto max-w-[1200px] px-6 pt-16 pb-24">
+			<section className="mx-auto flex min-h-[70vh] max-w-[1200px] flex-col justify-center px-6 pt-16 pb-24">
 				<p className="text-label-caps text-primary mb-6">BLOG</p>
-				<h1 className="text-display-md font-bold tracking-tight max-w-3xl">Proximamente.</h1>
+				<h1 className="text-display-md md:text-display-lg font-bold tracking-tight break-words max-w-3xl">
+					Próximamente.
+				</h1>
 				<p className="mt-6 text-body-lg text-on-surface-variant max-w-2xl">
-					Estamos preparando articulos sobre IA, fiscalidad y emprendimiento en Melilla. Mientras
-					tanto, puedes seguirnos en Instagram para no perderte nada.
+					Estamos preparando artículos sobre IA, fiscalidad y emprendimiento en
+					Melilla. Mientras tanto, puedes seguirnos en Instagram para no
+					perderte nada.
 				</p>
 			</section>
 		</PageShell>

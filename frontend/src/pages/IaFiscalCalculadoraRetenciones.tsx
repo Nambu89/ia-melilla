@@ -216,10 +216,10 @@ export default function IaFiscalCalculadoraRetenciones() {
 					<div className="rounded-xl border border-outline-variant bg-surface-container p-8 lg:p-10">
 						{!result && !error && (
 							<div className="flex h-full flex-col items-center justify-center gap-3 py-12 text-center">
-								<p className="text-headline-sm font-semibold text-on-surface">
+								<p className="w-full text-headline-sm font-semibold text-on-surface">
 									Rellena tus datos para ver la retención
 								</p>
-								<p className="text-body-md text-on-surface-variant max-w-sm">
+								<p className="w-full max-w-sm text-body-md text-on-surface-variant">
 									Calculamos según el algoritmo oficial AEAT 2026 con
 									reducción Ceuta/Melilla si aplica.
 								</p>
