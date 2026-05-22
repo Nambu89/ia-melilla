@@ -312,10 +312,10 @@ function EmptyState() {
 	return (
 		<div className="flex h-full flex-col items-center justify-center gap-3 rounded-xl border border-outline-variant bg-surface-container py-16 px-8 text-center">
 			<Receipt size={32} className="text-on-surface-muted" aria-hidden />
-			<p className="text-headline-sm font-semibold text-on-surface">
+			<p className="w-full text-headline-sm font-semibold text-on-surface">
 				Sube una factura para empezar
 			</p>
-			<p className="max-w-sm text-body-md text-on-surface-variant">
+			<p className="w-full max-w-sm text-body-md text-on-surface-variant">
 				Extraemos automáticamente proveedor, base imponible, impuestos
 				(IVA / IPSI), total y clasificamos según PGC. Te proponemos el
 				asiento contable listo para tu libro.
@@ -332,10 +332,10 @@ function ProcessingState({ status }: { status: string | null }) {
 				className="animate-spin text-primary"
 				aria-hidden
 			/>
-			<p className="text-headline-sm font-semibold text-on-surface">
+			<p className="w-full text-headline-sm font-semibold text-on-surface">
 				{status ?? "Procesando..."}
 			</p>
-			<p className="max-w-sm text-body-md text-on-surface-variant">
+			<p className="w-full max-w-sm text-body-md text-on-surface-variant">
 				La IA está extrayendo los datos y clasificándolos. Puede tardar
 				entre 5 y 15 segundos según el tipo de factura.
 			</p>

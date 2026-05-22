@@ -98,3 +98,7 @@ frontend-full-*.png
 image.png
 redesign-home-*.png
 redesign-home-*.jpg
+
+# QA walkthrough artifacts
+frontend/qa-screenshots/
+frontend/qa-report.json

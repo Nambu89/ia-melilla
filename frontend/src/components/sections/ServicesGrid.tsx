@@ -93,14 +93,14 @@ export function ServicesGrid() {
 			</div>
 
 			<RevealOnScroll delay={0.2}>
-				<div className="mt-12 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
-					<p className="text-body-md text-on-surface-variant max-w-xl">
+				<div className="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+					<p className="w-full max-w-xl text-body-md text-on-surface-variant">
 						¿Tu caso no encaja exacto en estas categorías? Te lo construimos
 						a medida.
 					</p>
 					<Link
 						to="/contacto"
-						className="inline-flex items-center gap-1.5 text-label-lg font-semibold text-primary transition-colors hover:text-primary-hover"
+						className="inline-flex shrink-0 items-center gap-1.5 text-label-lg font-semibold text-primary transition-colors hover:text-primary-hover"
 					>
 						Cuéntanos tu caso
 						<ArrowRight size={16} />
