@@ -8,7 +8,7 @@ import IaFiscalChat from "@/pages/IaFiscalChat";
 import IaFiscalCalculadoraNeto from "@/pages/IaFiscalCalculadoraNeto";
 import IaFiscalCalculadoraRetenciones from "@/pages/IaFiscalCalculadoraRetenciones";
 import IaFiscalGuiaFiscal from "@/pages/IaFiscalGuiaFiscal";
-import IaFiscalDeducciones from "@/pages/IaFiscalDeducciones";
+import IaFiscalClasificadorFacturas from "@/pages/IaFiscalClasificadorFacturas";
 import Contacto from "@/pages/Contacto";
 import Portafolio from "@/pages/Portafolio";
 import Blog from "@/pages/Blog";
@@ -37,8 +37,8 @@ export const routes: RouteObject[] = [
 		element: <IaFiscalGuiaFiscal />,
 	},
 	{
-		path: "/demos/ia-fiscal-melilla/deducciones",
-		element: <IaFiscalDeducciones />,
+		path: "/demos/ia-fiscal-melilla/clasificador-facturas",
+		element: <IaFiscalClasificadorFacturas />,
 	},
 	{ path: "/contacto", element: <Contacto /> },
 	{ path: "/portafolio", element: <Portafolio /> },

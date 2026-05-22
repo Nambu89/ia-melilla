@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MessageSquare, Calculator, FileText, BookOpen, ScrollText, ArrowRight } from "lucide-react";
+import { MessageSquare, Calculator, FileText, BookOpen, Receipt, ArrowRight } from "lucide-react";
 import { PageShell } from "@/components/layout/PageShell";
 import { SeoHead } from "@/components/seo/SeoHead";
 import { Badge } from "@/components/ui/badge";
@@ -53,12 +53,12 @@ const TOOLS: Tool[] = [
 		badge: "WIZARD",
 	},
 	{
-		href: "/demos/ia-fiscal-melilla/deducciones",
-		title: "Descubrir Deducciones",
+		href: "/demos/ia-fiscal-melilla/clasificador-facturas",
+		title: "Clasificador de Facturas",
 		description:
-			"Encuentra todas las deducciones IRPF aplicables según tu situación. Cobertura Melilla + estatales.",
-		icon: ScrollText,
-		badge: "WIZARD",
+			"Sube una factura PDF o foto. OCR + IA extrae proveedor, base, impuestos, clasifica PGC y genera el asiento contable.",
+		icon: Receipt,
+		badge: "OCR · IA",
 	},
 ];
 
