@@ -24,7 +24,7 @@ const SERVICES: Service[] = [
 		icon: Bot,
 		title: "Chatbots IA personalizados",
 		description:
-			"Asistentes conversacionales entrenados con tu base de conocimiento. Web, app, intranet o canal interno.",
+			"Asistentes que hablan con tus clientes igual que lo haría un compañero tuyo, pero a cualquier hora. Entrenados con tu documentación.",
 		tags: ["Atención cliente", "Soporte interno"],
 		href: "/contacto?servicio=chatbot",
 	},
@@ -32,7 +32,7 @@ const SERVICES: Service[] = [
 		icon: MessageCircle,
 		title: "Asistentes WhatsApp 24/7",
 		description:
-			"Automatiza consultas, reservas y captación por WhatsApp. Sin perder llamadas ni clientes los fines de semana.",
+			"Atendemos consultas, reservas y leads por WhatsApp sin que tu equipo se rompa la cabeza ni pierdas clientes los fines de semana.",
 		tags: ["Reservas", "Captación"],
 		href: "/contacto?servicio=whatsapp",
 	},
@@ -40,7 +40,7 @@ const SERVICES: Service[] = [
 		icon: ShoppingBag,
 		title: "Modelos virtuales para ropa",
 		description:
-			"Try-on virtual con IA para tu e-commerce. Genera fotos de producto sobre modelos diversos sin sesión fotográfica.",
+			"Try-on virtual con IA para tu e-commerce. Generas fotos de producto sobre modelos diversos sin montar sesión de fotos.",
 		tags: ["E-commerce", "Moda"],
 		href: "/contacto?servicio=modelos-virtuales",
 	},
@@ -48,7 +48,7 @@ const SERVICES: Service[] = [
 		icon: Sparkles,
 		title: "Influencer IA / Avatar",
 		description:
-			"Persona digital propia que habla por tu marca. Vídeos, posts, anuncios — generados en horas, no semanas.",
+			"Una persona digital con tu cara de marca. Vídeos, posts y anuncios listos en horas en vez de cuadrar agendas con creadores.",
 		tags: ["Marketing", "Branding"],
 		href: "/contacto?servicio=influencer-ia",
 	},
@@ -56,7 +56,7 @@ const SERVICES: Service[] = [
 		icon: Image,
 		title: "Contenido visual con IA",
 		description:
-			"Imágenes y vídeos a medida para campañas, redes y catálogos. Coherencia de marca sin diseñador a tiempo completo.",
+			"Imágenes y vídeos para campañas, redes y catálogos. Te dejamos un estilo definido para que todo lo generado parezca tuyo de verdad.",
 		tags: ["Redes sociales", "Ads"],
 		href: "/contacto?servicio=contenido-visual",
 	},
@@ -64,7 +64,7 @@ const SERVICES: Service[] = [
 		icon: Workflow,
 		title: "Automatizaciones inteligentes",
 		description:
-			"Conectamos tu CRM, hojas, ERP, email y formularios para que el papeleo se haga solo. Tu equipo en lo importante.",
+			"Conectamos tu CRM, hojas, ERP, email y formularios para que el papeleo deje de comerte horas. Tu equipo en lo que importa.",
 		tags: ["Procesos", "Productividad"],
 		href: "/contacto?servicio=automatizacion",
 	},
@@ -78,11 +78,11 @@ export function ServicesGrid() {
 					QUÉ HACEMOS
 				</p>
 				<h2 className="text-headline-lg font-semibold tracking-tight max-w-3xl text-on-surface">
-					IA aplicada a problemas concretos. Sin humo.
+					Seis cosas que llevamos haciendo.
 				</h2>
 				<p className="mt-4 max-w-2xl text-body-lg text-on-surface-variant">
-					Seis líneas de trabajo. Todo lo entregamos con el producto
-					funcionando y con tu equipo formado para operarlo.
+					Lo entregamos con el producto en marcha y con tu equipo sabiendo
+					cómo usarlo. Si tu caso encaja a medias en alguno, lo adaptamos.
 				</p>
 			</RevealOnScroll>
 

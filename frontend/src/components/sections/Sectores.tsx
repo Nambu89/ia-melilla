@@ -57,12 +57,12 @@ export function Sectores() {
 						SECTORES
 					</p>
 					<h2 className="text-headline-lg font-semibold tracking-tight max-w-3xl text-on-surface">
-						Hemos visto qué funciona en cada sitio.
+						Donde ya hemos visto que funciona.
 					</h2>
 					<p className="mt-4 max-w-2xl text-body-md text-on-surface-variant">
-						Aplicaciones reales que hemos construido o vamos a construir,
-						organizadas por sector. Si el tuyo no está, dilo — la mayoría
-						de los casos se parecen más de lo que parece.
+						Aplicaciones reales que hemos montado, organizadas por sector.
+						Si el tuyo no está, escríbenos igual — la mayoría de problemas
+						se parecen entre sí.
 					</p>
 				</RevealOnScroll>
 
