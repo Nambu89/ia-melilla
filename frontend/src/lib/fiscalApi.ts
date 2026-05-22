@@ -212,4 +212,190 @@ export async function getHealth(): Promise<HealthResponse> {
 	return (await res.json()) as HealthResponse;
 }
 
+// ===== Invoices (OCR + PGC classification) =====
+
+export interface InvoiceUploadResponse {
+	id?: string;
+	invoice_id?: string;
+	status?: string;
+	vendor?: string;
+	vendor_name?: string;
+	supplier?: string;
+	customer?: string;
+	date?: string;
+	invoice_date?: string;
+	invoice_number?: string;
+	number?: string;
+	subtotal?: number;
+	base_imponible?: number;
+	tax?: number;
+	tax_amount?: number;
+	iva?: number;
+	ipsi?: number;
+	tax_rate?: number;
+	total?: number;
+	amount?: number;
+	currency?: string;
+	pgc_account?: string;
+	pgc_code?: string;
+	classification?: string;
+	category?: string;
+	confidence?: number;
+	accounting_entry?: {
+		debit?: Array<{ account: string; amount: number; description?: string }>;
+		credit?: Array<{ account: string; amount: number; description?: string }>;
+	};
+	asiento?: unknown;
+	items?: Array<{
+		description?: string;
+		quantity?: number;
+		unit_price?: number;
+		total?: number;
+	}>;
+	raw_text?: string;
+	processing_time_ms?: number;
+	[key: string]: unknown;
+}
+
+/**
+ * Sube una factura (PDF / JPG / PNG) al backend. OCR Gemini + clasificacion
+ * PGC + generacion asiento contable. Si la respuesta indica `status:
+ * "processing"`, hacer polling con `getInvoice(id)` hasta status terminal.
+ */
+export async function uploadInvoice(
+	file: File,
+	opts: { workspaceId?: string; signal?: AbortSignal } = {},
+): Promise<InvoiceUploadResponse> {
+	const baseUrl = getBaseUrl();
+	const token = await getToken();
+
+	const form = new FormData();
+	form.append("file", file);
+	if (opts.workspaceId) form.append("workspace_id", opts.workspaceId);
+
+	const doUpload = async (bearer: string) => {
+		const res = await fetch(`${baseUrl}/api/invoices/upload`, {
+			method: "POST",
+			headers: { Authorization: `Bearer ${bearer}` },
+			body: form,
+			signal: opts.signal,
+		});
+		if (!res.ok) {
+			let body: unknown;
+			try {
+				body = await res.json();
+			} catch {
+				body = await res.text();
+			}
+			throw new ApiError(res.status, body);
+		}
+		return (await res.json()) as InvoiceUploadResponse;
+	};
+
+	try {
+		return await doUpload(token);
+	} catch (err) {
+		if (err instanceof ApiError && err.status === 401) {
+			cachedToken = null;
+			const fresh = await login();
+			return doUpload(fresh);
+		}
+		throw err;
+	}
+}
+
+export async function getInvoice(
+	invoiceId: string,
+): Promise<InvoiceUploadResponse> {
+	const baseUrl = getBaseUrl();
+	const token = await getToken();
+	const res = await fetch(`${baseUrl}/api/invoices/${invoiceId}`, {
+		headers: { Authorization: `Bearer ${token}` },
+	});
+	if (!res.ok) {
+		let body: unknown;
+		try {
+			body = await res.json();
+		} catch {
+			body = await res.text();
+		}
+		throw new ApiError(res.status, body);
+	}
+	return (await res.json()) as InvoiceUploadResponse;
+}
+
+/**
+ * Sube factura y hace polling hasta status terminal. Resuelve con resultado
+ * final o rechaza si timeout/error. onProgress recibe el estado intermedio
+ * cada chequeo (mostrar spinner + texto al usuario).
+ */
+export async function uploadAndProcessInvoice(
+	file: File,
+	opts: {
+		workspaceId?: string;
+		signal?: AbortSignal;
+		pollIntervalMs?: number;
+		timeoutMs?: number;
+		onProgress?: (status: string) => void;
+	} = {},
+): Promise<InvoiceUploadResponse> {
+	const {
+		pollIntervalMs = 2000,
+		timeoutMs = 60_000,
+		onProgress,
+	} = opts;
+
+	onProgress?.("Subiendo archivo...");
+	const initial = await uploadInvoice(file, {
+		workspaceId: opts.workspaceId,
+		signal: opts.signal,
+	});
+
+	const terminalStatuses = new Set([
+		"completed",
+		"complete",
+		"done",
+		"processed",
+		"success",
+		"finished",
+		"ok",
+		"error",
+		"failed",
+	]);
+
+	// Si no hay status o ya es terminal, devolver lo que tenemos
+	if (!initial.status || terminalStatuses.has(initial.status.toLowerCase())) {
+		return initial;
+	}
+
+	const id = initial.id ?? initial.invoice_id;
+	if (!id) {
+		// Sin id no podemos pollear — devolver lo que tenemos
+		return initial;
+	}
+
+	const started = Date.now();
+	let lastStatus = initial.status;
+	onProgress?.(`Procesando (${lastStatus})...`);
+
+	while (Date.now() - started < timeoutMs) {
+		if (opts.signal?.aborted) {
+			throw new Error("AbortError");
+		}
+		await new Promise((r) => setTimeout(r, pollIntervalMs));
+		const polled = await getInvoice(id);
+		if (
+			!polled.status ||
+			terminalStatuses.has(polled.status.toLowerCase())
+		) {
+			return polled;
+		}
+		if (polled.status !== lastStatus) {
+			lastStatus = polled.status;
+			onProgress?.(`Procesando (${lastStatus})...`);
+		}
+	}
+	throw new Error("Timeout procesando factura tras 60s");
+}
+
 export { ApiError };
