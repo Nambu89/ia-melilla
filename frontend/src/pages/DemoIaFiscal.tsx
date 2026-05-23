@@ -8,6 +8,10 @@ import AnimatedHeadline from "@/components/animations/AnimatedHeadline";
 import AuroraBackground from "@/components/decoration/AuroraBackground";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
 import { AiDisclaimer } from "@/components/demo/AiDisclaimer";
+import { DemoFlagship } from "@/components/sections/DemoFlagship";
+import { ComparisonTable } from "@/components/sections/ComparisonTable";
+import { AboutMelilla } from "@/components/sections/AboutMelilla";
+import { demoIaFiscalContent } from "@/content/demoIaFiscal";
 import type { LucideIcon } from "lucide-react";
 
 interface Tool {
@@ -64,11 +68,12 @@ const TOOLS: Tool[] = [
 ];
 
 export default function DemoIaFiscal() {
+	const { demoFlagship, aboutFiscal } = demoIaFiscalContent;
 	return (
 		<PageShell>
 			<SeoHead
-				title="IA Fiscal Melilla — Showroom de herramientas"
-				description="Chat IA + calculadoras + wizards fiscales especializados en el régimen fiscal de Melilla. Pruébalo gratis."
+				title="IA Fiscal Melilla — Demo del régimen fiscal local"
+				description="Chat IA + calculadoras + wizards fiscales especializados en el régimen fiscal de Melilla. Esta es la primera demo del showroom de IA Melilla. Pruébala gratis."
 				path="/demos/ia-fiscal-melilla"
 			/>
 			<section className="relative overflow-hidden">
@@ -86,15 +91,23 @@ export default function DemoIaFiscal() {
 					/>
 					<RevealOnScroll delay={0.2}>
 						<p className="mt-8 max-w-2xl text-body-lg text-on-surface-variant">
-							Cinco herramientas que tiran del mismo motor IA, entrenado en
-							el régimen fiscal de Melilla. Chat, calculadoras, wizard y un
-							clasificador de facturas. Pruébalas como quieras: en orden o
-							a saltos.
+							Esta es la primera demo del showroom de IA Melilla. Cinco
+							herramientas tirando del mismo motor IA, entrenado en el régimen
+							fiscal específico de Melilla. Chat, calculadoras, wizard y un
+							clasificador de facturas. Pruébalas como quieras.
 						</p>
 						<AiDisclaimer className="mt-8 max-w-3xl" />
 					</RevealOnScroll>
 				</div>
 			</section>
+
+			<DemoFlagship
+				eyebrow={demoFlagship.eyebrow}
+				headline={demoFlagship.headline}
+				subheadline={demoFlagship.subheadline}
+				exchange={demoFlagship.exchange}
+				cta={demoFlagship.cta}
+			/>
 
 			<section className="mx-auto max-w-[1200px] px-6 pb-24">
 				<RevealOnScroll>
@@ -111,6 +124,15 @@ export default function DemoIaFiscal() {
 					))}
 				</div>
 			</section>
+
+			<ComparisonTable />
+
+			<AboutMelilla
+				eyebrow={aboutFiscal.eyebrow}
+				headline={aboutFiscal.headline}
+				body={aboutFiscal.body}
+				stats={aboutFiscal.stats}
+			/>
 
 			<section className="mx-auto max-w-[1200px] px-6 pb-24">
 				<RevealOnScroll>
