@@ -22,8 +22,9 @@
 
 	--color-on-surface: #0a0a0a;
 	--color-on-surface-variant: #525252;
-	--color-on-surface-muted: #737373;
-	--color-on-surface-dim: #a3a3a3;
+	/* on-surface-muted bajado a #595959 para asegurar AA en text-label-caps 11px (4.5:1) */
+	--color-on-surface-muted: #595959;
+	--color-on-surface-dim: #8a8a8a;
 	--color-inverse-surface: #0a0a0a;
 	--color-inverse-on-surface: #fafafa;
 

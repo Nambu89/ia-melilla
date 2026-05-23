@@ -87,8 +87,10 @@ export function ServicesGrid() {
 			</RevealOnScroll>
 
 			<div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-				{SERVICES.map((s) => (
-					<ServiceCard key={s.title} service={s} />
+				{SERVICES.map((s, i) => (
+					<RevealOnScroll key={s.title} delay={i * 0.08}>
+						<ServiceCard service={s} />
+					</RevealOnScroll>
 				))}
 			</div>
 

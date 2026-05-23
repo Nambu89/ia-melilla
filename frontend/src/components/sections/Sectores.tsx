@@ -67,8 +67,10 @@ export function Sectores() {
 				</RevealOnScroll>
 
 				<div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-					{SECTORES.map((s) => (
-						<SectorCard key={s.name} sector={s} />
+					{SECTORES.map((s, i) => (
+						<RevealOnScroll key={s.name} delay={i * 0.06}>
+							<SectorCard sector={s} />
+						</RevealOnScroll>
 					))}
 				</div>
 			</div>
