@@ -27,8 +27,7 @@ export default function AvisoLegal() {
 						<strong className="text-on-surface">Titular:</strong> Joaquín Gorge Lucianez
 					</p>
 					<p>
-						<strong className="text-on-surface">NIF:</strong>{" "}
-						<span className="italic text-on-surface-muted">[pendiente de cumplimentación]</span>
+						<strong className="text-on-surface">NIF:</strong> 45281348Y
 					</p>
 					<p>
 						<strong className="text-on-surface">Actividad:</strong> Servicios de inteligencia
