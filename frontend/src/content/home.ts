@@ -1,11 +1,23 @@
 export const homeContent = {
 	hero: {
 		eyebrow: "SOLUCIONES IA · DESDE MELILLA",
-		headline: "Inteligencia artificial\nque resuelve cosas reales.",
+		headline: "Inteligencia Artificial\nMelilla",
+		tagline: "Soluciones IA reales para empresas, autónomos y particulares.",
 		subheadline:
-			"Diseñamos, construimos y mantenemos soluciones de IA para empresas, autónomos y particulares. Chatbots, asistentes WhatsApp, agentes verticales, contenido visual, automatizaciones e integraciones a medida.",
+			"Diseñamos, construimos y mantenemos soluciones de IA: chatbots, asistentes WhatsApp, agentes verticales, contenido visual, automatizaciones e integraciones a medida.",
 		primaryCta: { label: "Cuéntanos tu caso →", href: "/contacto" },
 		secondaryCta: { label: "Ver demos en vivo", href: "/demos" },
+	},
+	seoBlock: {
+		eyebrow: "INTELIGENCIA ARTIFICIAL EN MELILLA",
+		headline:
+			"En Melilla, aplicar soluciones de inteligencia artificial Melilla nunca había sido tan fácil y accesible.",
+		paragraphs: [
+			"En Melilla, cada vez más negocios están apostando por la inteligencia artificial como una herramienta clave para mejorar sus procesos. Desde la automatización de tareas repetitivas hasta el análisis avanzado de datos, la inteligencia artificial Melilla está marcando un antes y un después para autónomos y pequeñas empresas.",
+			"A través de soluciones prácticas y adaptadas, iamelilla.com pone al alcance de todos los beneficios de la tecnología inteligente sin necesidad de conocimientos técnicos. Tanto si gestionas una tienda local como si ofreces servicios profesionales, puedes integrar sistemas de IA que te ayuden a ahorrar tiempo y aumentar la productividad.",
+			"Nuestro enfoque de inteligencia artificial en Melilla combina accesibilidad, simplicidad y eficiencia. Apostamos por ofrecer herramientas útiles que realmente aporten valor a negocios y particulares.",
+			"Si estás en busca de innovación, es el momento de considerar la inteligencia artificial Melilla como parte de tu estrategia. Automatiza, optimiza y evoluciona con nosotros.",
+		],
 	},
 	audienceSplit: {
 		eyebrow: "ELIGE TU CAMINO",
