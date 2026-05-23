@@ -8,36 +8,40 @@ import RevealOnScroll from "@/components/animations/RevealOnScroll";
 
 const FAQ_ITEMS = [
 	{
-		q: "¿Cuánto cuesta?",
-		a: "Depende del alcance. Una suscripción a IA Fiscal arranca en 199€/mes. Si te montamos algo a medida (chatbot, automatización, integraciones con tu CRM o ERP), lo cotizamos por proyecto después de una primera reunión sin coste.",
+		q: "¿Qué tipo de soluciones IA construís?",
+		a: "Chatbots y asistentes conversacionales, agentes IA especializados por sector, automatizaciones de procesos (CRM, ERP, email, hojas), generación de contenido visual con modelos virtuales, integraciones con WhatsApp Business y herramientas a medida. Si lo puede hacer una IA hoy, lo montamos.",
 	},
 	{
-		q: "¿Qué pasa con los datos cuando uso el chat?",
-		a: "Las conversaciones se procesan para darte la respuesta y se borran cada cierto tiempo. No guardamos nada que te identifique salvo que tú nos escribas por contacto. Cumplimos RGPD. Lo tienes en la Política de privacidad.",
-	},
-	{
-		q: "¿Me sirve si no tengo gestor?",
-		a: "Sí. De hecho la IA Fiscal está pensada justo para eso: autónomos y particulares que quieren entender lo que pagan y a qué tienen derecho sin pasar por gestoría. Para casos complejos te diremos que vayas a un profesional, pero el grueso de consultas las cubre.",
-	},
-	{
-		q: "¿Vale para empresas peninsulares que venden en Melilla?",
-		a: "Vale. La IA distingue entre operaciones hechas en Melilla (IPSI) y operaciones interterritoriales (no sujetas o sujetas a IVA peninsular). Te orienta sobre cuál aplicar y por qué.",
-	},
-	{
-		q: "¿Y si la IA se equivoca?",
-		a: "Cada respuesta lleva la cita normativa que la sustenta, para que puedas comprobarla. Es orientativa, no sustituye al asesor en casos serios. Si pillas algo mal, escribe a hola@iamelilla.com y lo arreglamos.",
+		q: "¿Cuánto cuesta un proyecto?",
+		a: "Depende del alcance. Suscripciones a herramientas listas (como IA Fiscal Melilla) arrancan en 199€/mes. Proyectos a medida los cotizamos por hitos después de una primera reunión sin coste. Sin tarifas opacas: el presupuesto lo sabes antes de firmar.",
 	},
 	{
 		q: "¿Cuánto se tarda en montar algo a medida?",
-		a: "Un asistente sencillo (FAQ, atención básica) sale en 2 o 3 semanas. Cuando hay integraciones con CRM, ERP o sistemas internos, calcula entre 1 y 3 meses. Te damos calendario realista cuando hablamos.",
+		a: "Un asistente sencillo (FAQ, atención básica, integración WhatsApp) sale en 2 o 3 semanas. Cuando hay integraciones con CRM, ERP o sistemas internos, calcula entre 1 y 3 meses. Te damos calendario realista cuando hablamos.",
 	},
 	{
 		q: "¿Puedo probar antes de pagar?",
-		a: "Sí, justo por eso montamos el showroom. Pruebas el producto real (IA Fiscal Melilla, y los que vayamos sumando) antes de firmar ningún papel.",
+		a: "Sí, justo por eso montamos el showroom de demos. Pruebas el producto real (empezando por IA Fiscal Melilla y los que vamos sumando) antes de firmar ningún papel.",
 	},
 	{
-		q: "¿Trabajáis solo aquí en Melilla?",
-		a: "No. Empezamos aquí porque el régimen fiscal local nos sirve de ancla de credibilidad: si funciona aquí, funciona en cualquier sitio. Ya tenemos clientes en península y norte de África.",
+		q: "¿Trabajáis solo en Melilla?",
+		a: "No. Nuestra base está aquí pero damos servicio a empresas en toda España y norte de África. Trabajamos en remoto con reuniones presenciales puntuales cuando aporta valor.",
+	},
+	{
+		q: "¿Qué modelos de IA utilizáis?",
+		a: "Mezclamos modelos según el caso: GPT-4o y GPT-4o-mini de OpenAI para conversación y razonamiento, Claude para tareas largas, modelos abiertos (Llama, Mistral) cuando los datos no pueden salir de tu infraestructura. Lo elegimos por resultado, no por marca.",
+	},
+	{
+		q: "¿Qué pasa con mis datos y los de mis clientes?",
+		a: "Cumplimos RGPD estrictamente. Firmamos contrato de encargo del tratamiento (art. 28 RGPD) para soluciones que tocan datos personales. Si necesitas que nada salga a la nube de un tercero, montamos modelos on-premise o en infraestructura europea. Más detalles en nuestra Política de Privacidad y la página de Transparencia en IA.",
+	},
+	{
+		q: "¿Y si la IA se equivoca?",
+		a: "Toda solución que entregamos lleva mecanismos de control: citación de fuentes, intervención humana cuando hace falta, logs auditables. Las respuestas son orientativas y nunca sustituyen al profesional en decisiones críticas. Si pillas algo mal, lo arreglamos.",
+	},
+	{
+		q: "¿Os ocupáis del mantenimiento después de entregar?",
+		a: "Sí, con un plan de mantenimiento mensual. La IA cambia rápido: modelos nuevos, mejores prompts, normativa que se actualiza. Mantenemos la solución viva. Si prefieres opciones de auto-gestión, te dejamos la documentación y formación para que tu equipo se encargue.",
 	},
 ];
 

@@ -1,11 +1,11 @@
 export const homeContent = {
 	hero: {
-		eyebrow: "IA APLICADA · DESDE MELILLA",
-		headline: "Inteligencia artificial\nque te ayuda en tu día a día.",
+		eyebrow: "SOLUCIONES IA · DESDE MELILLA",
+		headline: "Inteligencia artificial\nque resuelve cosas reales.",
 		subheadline:
-			"Construimos asistentes de IA para empresas, autónomos y particulares. Arrancamos con lo más enredado que hay aquí: el régimen fiscal de Melilla. Y de ahí, lo que necesites.",
-		primaryCta: { label: "Probar IA Fiscal Melilla →", href: "/demos/ia-fiscal-melilla" },
-		secondaryCta: { label: "Cómo trabajamos", href: "#como-trabajamos" },
+			"Diseñamos, construimos y mantenemos soluciones de IA para empresas, autónomos y particulares. Chatbots, asistentes WhatsApp, agentes verticales, contenido visual, automatizaciones e integraciones a medida.",
+		primaryCta: { label: "Cuéntanos tu caso →", href: "/contacto" },
+		secondaryCta: { label: "Ver demos en vivo", href: "/demos" },
 	},
 	audienceSplit: {
 		eyebrow: "ELIGE TU CAMINO",
@@ -16,11 +16,11 @@ export const homeContent = {
 				badge: "EMPRESAS Y AUTÓNOMOS",
 				title: "Para tu negocio",
 				description:
-					"Automatizamos lo que tu equipo ya hace en bucle, te montamos atención fuera de horario y conectamos la IA con el software que llevas usando.",
+					"Automatizamos tareas repetidas, te montamos atención fuera de horario y conectamos la IA con el software que ya usas (CRM, ERP, WhatsApp, email).",
 				bullets: [
-					"Asesorías fiscales que se encargan de consultas de IPSI y renta",
-					"Atención al cliente que no se va de fin de semana",
-					"Procesos administrativos que se hacen solos",
+					"Chatbots y asistentes que atienden a tus clientes 24/7",
+					"Agentes IA verticales adaptados a tu sector y procesos",
+					"Automatizaciones que liberan horas de papeleo cada semana",
 				],
 				cta: { label: "Soluciones para empresas →", href: "/empresas" },
 			},
@@ -29,28 +29,15 @@ export const homeContent = {
 				badge: "PARTICULARES",
 				title: "Para tu día a día",
 				description:
-					"Pregunta sobre impuestos o trámites cuando lo necesites. Te respondemos claro, citando la norma, sin tener que pillar cita con el gestor.",
+					"Te montamos asistentes IA que responden a tus dudas con datos y normativa actualizada. Tutor IA para opositores, asistente fiscal, generadores de contenido y más.",
 				bullets: [
-					"Renta, IPSI y deducciones explicadas en castellano normal",
-					"Plazos y formularios sin jerga rara",
-					"Respuestas en segundos, no en días",
+					"Tutor IA personalizado para oposiciones (Guardia Civil, Bomberos, Policía…)",
+					"Asistentes fiscales y trámites explicados sin jerga",
+					"Respuestas claras y rápidas, con la fuente delante",
 				],
 				cta: { label: "Soluciones para particulares →", href: "/particulares" },
 			},
 		],
-	},
-	demoFlagship: {
-		eyebrow: "DEMO 1 · DISPONIBLE",
-		headline: "IA Fiscal Melilla",
-		subheadline:
-			"Pregúntale lo que quieras sobre fiscalidad de Melilla. Responde en segundos y te cita la norma. Es la primera demo, vienen más.",
-		exchange: {
-			question: "¿Tengo que pagar IPSI si vendo en Melilla a un cliente peninsular?",
-			answer:
-				"Si la entrega del bien o la prestación del servicio se realiza físicamente en Melilla, está sujeta a IPSI. Si el cliente recoge el producto en Melilla, IPSI. Si lo envías a península, no — la operación no se considera localizada en Melilla a efectos del impuesto.",
-			source: "Ordenanza Fiscal Reguladora del IPSI, Ciudad Autónoma de Melilla, art. 4.",
-		},
-		cta: { label: "Probar la demo completa →", href: "/demos/ia-fiscal-melilla" },
 	},
 	processSteps: {
 		eyebrow: "PROCESO",
@@ -73,13 +60,64 @@ export const homeContent = {
 			},
 		],
 	},
-	aboutMelilla: {
-		eyebrow: "POR QUÉ EMPEZAMOS AQUÍ",
-		headline: "Melilla no encaja en plantillas estándar.",
+	demosShowcase: {
+		eyebrow: "DEMOS EN VIVO",
+		headline: "Pruébalas antes de contratar.",
+		subheadline:
+			"Nuestras soluciones se pueden tocar. Vamos publicando demos funcionando para que veas cómo se siente trabajar con IA bien hecha, sin presentaciones de PowerPoint.",
+		cta: { label: "Ver catálogo completo →", href: "/demos" },
+		items: [
+			{
+				slug: "ia-fiscal-melilla",
+				title: "IA Fiscal Melilla",
+				description:
+					"Asistente especializado en el régimen fiscal de Melilla. Chat + calculadoras + wizard + clasificador OCR de facturas.",
+				badge: "DISPONIBLE",
+				status: "live" as const,
+				href: "/demos/ia-fiscal-melilla",
+			},
+			{
+				slug: "asistente-whatsapp",
+				title: "Asistente WhatsApp 24/7",
+				description:
+					"Bot conversacional que atiende, califica leads y reserva citas dentro de WhatsApp Business. Demo abierta próximamente.",
+				badge: "PRÓXIMAMENTE",
+				status: "coming-soon" as const,
+				href: "/demos",
+			},
+			{
+				slug: "tutor-opositor",
+				title: "Tutor IA Opositor",
+				description:
+					"Profesor personal IA entrenado en temarios reales (Guardia Civil, Policía, Bomberos…). Tests adaptativos y simulacros.",
+				badge: "PRÓXIMAMENTE",
+				status: "coming-soon" as const,
+				href: "/demos",
+			},
+			{
+				slug: "contenido-visual",
+				title: "Catálogo IA con modelos virtuales",
+				description:
+					"Generación de fotos producto con modelos virtuales coherentes para e-commerce y redes sociales.",
+				badge: "PRÓXIMAMENTE",
+				status: "coming-soon" as const,
+				href: "/demos",
+			},
+		],
+	},
+	aboutCompany: {
+		eyebrow: "QUIÉNES SOMOS",
+		headline: "Un equipo de IA con base en Melilla y mirada global.",
 		body: [
-			"Régimen fiscal propio (IPSI en lugar de IVA, REF, particularidades para autónomos y pymes locales) y una economía pegada a frontera. La gente de aquí lleva años usando software pensado para Madrid o Barcelona y adaptado a empujones.",
-			"Hemos vivido aquí las consultas que se quedan sin respuesta, los formularios que confunden y las gestorías desbordadas en campaña de renta. Por eso empezamos por aquí.",
-			"La IA que construimos sirve en cualquier mercado. Empezamos aquí porque es lo que conocemos.",
+			"IA Melilla nace para acercar la inteligencia artificial a empresas y particulares que necesitan resultados, no presentaciones. Trabajamos con tecnologías punteras (GPT-4o, Claude, modelos abiertos) y las traducimos a soluciones concretas que funcionan en producción.",
+			"Nuestra base está en Melilla pero damos servicio a clientes en toda España y norte de África. Construimos software, no diapositivas: cada solución se entrega en marcha, con tu equipo formado y la documentación al día.",
+			"Si la IA no es la respuesta a tu problema, te lo diremos. Solo proponemos lo que sabemos que va a funcionar.",
+		],
+		stats: [
+			{ value: 6, suffix: "+", label: "Servicios disponibles", hint: "chatbots, agentes, automatización…" },
+			{ value: 6, suffix: "+", label: "Sectores cubiertos", hint: "salud, e-commerce, academias…" },
+			{ value: 5, label: "Demos públicas", hint: "abiertas en /demos" },
+			{ value: 24, suffix: "h", label: "Tiempo respuesta", hint: "primera reunión gratis" },
 		],
 	},
 	ctaClose: {

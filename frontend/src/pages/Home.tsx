@@ -5,12 +5,11 @@ import { Hero } from "@/components/sections/Hero";
 import { AudienceSplit } from "@/components/sections/AudienceSplit";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { Sectores } from "@/components/sections/Sectores";
-import { DemoFlagship } from "@/components/sections/DemoFlagship";
+import { DemosShowcase } from "@/components/sections/DemosShowcase";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
-import { AboutMelilla } from "@/components/sections/AboutMelilla";
+import { AboutCompany } from "@/components/sections/AboutCompany";
 import { CtaClose } from "@/components/sections/CtaClose";
 import { MarqueeTech } from "@/components/sections/MarqueeTech";
-import { ComparisonTable } from "@/components/sections/ComparisonTable";
 import { FAQ } from "@/components/sections/FAQ";
 import { homeContent } from "@/content/home";
 
@@ -18,8 +17,8 @@ export default function Home() {
 	return (
 		<PageShell>
 			<SeoHead
-				title="IA Melilla — Inteligencia artificial para empresas y particulares"
-				description="Construimos asistentes de IA prácticos desde Melilla. Chatbots, asistentes WhatsApp, agentes por sector, contenido visual IA, automatizaciones, IA Fiscal Melilla y más."
+				title="IA Melilla — Soluciones de inteligencia artificial para empresas y particulares"
+				description="Diseñamos, construimos y mantenemos soluciones IA: chatbots, asistentes WhatsApp, agentes verticales, contenido visual, automatizaciones e integraciones a medida. Demos en vivo disponibles."
 				path="/"
 			/>
 			<OrganizationJsonLd />
@@ -38,12 +37,12 @@ export default function Home() {
 				cards={homeContent.audienceSplit.cards}
 			/>
 			<Sectores />
-			<DemoFlagship
-				eyebrow={homeContent.demoFlagship.eyebrow}
-				headline={homeContent.demoFlagship.headline}
-				subheadline={homeContent.demoFlagship.subheadline}
-				exchange={homeContent.demoFlagship.exchange}
-				cta={homeContent.demoFlagship.cta}
+			<DemosShowcase
+				eyebrow={homeContent.demosShowcase.eyebrow}
+				headline={homeContent.demosShowcase.headline}
+				subheadline={homeContent.demosShowcase.subheadline}
+				cta={homeContent.demosShowcase.cta}
+				items={homeContent.demosShowcase.items}
 			/>
 			<ProcessSteps
 				id="como-trabajamos"
@@ -51,11 +50,11 @@ export default function Home() {
 				headline={homeContent.processSteps.headline}
 				steps={homeContent.processSteps.steps}
 			/>
-			<ComparisonTable />
-			<AboutMelilla
-				eyebrow={homeContent.aboutMelilla.eyebrow}
-				headline={homeContent.aboutMelilla.headline}
-				body={homeContent.aboutMelilla.body}
+			<AboutCompany
+				eyebrow={homeContent.aboutCompany.eyebrow}
+				headline={homeContent.aboutCompany.headline}
+				body={homeContent.aboutCompany.body}
+				stats={homeContent.aboutCompany.stats}
 			/>
 			<FAQ />
 			<CtaClose
