@@ -13,7 +13,11 @@ export const footerContent = {
 		},
 		{
 			title: "Recursos",
-			links: [{ label: "Blog", href: "/blog" }],
+			links: [
+				{ label: "Blog", href: "/blog" },
+				{ label: "Sobre nosotros", href: "/sobre-nosotros" },
+				{ label: "Transparencia en IA", href: "/transparencia-ia" },
+			],
 		},
 		{
 			title: "Legal",
@@ -21,6 +25,7 @@ export const footerContent = {
 				{ label: "Aviso legal", href: "/aviso-legal" },
 				{ label: "Política de privacidad", href: "/politica-de-privacidad" },
 				{ label: "Política de cookies", href: "/politica-de-cookies" },
+				{ label: "Términos y condiciones", href: "/terminos" },
 			],
 		},
 	],

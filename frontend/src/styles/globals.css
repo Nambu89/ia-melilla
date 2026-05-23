@@ -31,14 +31,14 @@
 	--color-outline-variant: #e5e5e5;
 	--color-outline-strong: #a3a3a3;
 
-	/* Primary emerald 600 para contraste sobre blanco */
-	--color-primary: #059669;
+	/* Primary azul Melilla (bandera) para light mode. WCAG AA OK sobre #FAFAFA (6.6:1). */
+	--color-primary: #005ec4;
 	--color-on-primary: #ffffff;
-	--color-primary-container: #d1fae5;
-	--color-on-primary-container: #064e3b;
-	--color-primary-hover: #047857;
-	--color-primary-active: #065f46;
-	--color-primary-subtle: #ecfdf5;
+	--color-primary-container: #cfe4ff;
+	--color-on-primary-container: #001f4d;
+	--color-primary-hover: #004a9c;
+	--color-primary-active: #003b7f;
+	--color-primary-subtle: #eaf3ff;
 
 	--color-tertiary: #1e40af;
 	--color-on-tertiary: #ffffff;
@@ -52,6 +52,7 @@
 	--color-on-secondary-container: #78350f;
 	--color-secondary-subtle: #fffbeb;
 
+	/* Success sigue emerald para distinguirlo del primary azul Melilla */
 	--color-success: #059669;
 	--color-on-success: #ffffff;
 	--color-success-container: #d1fae5;

@@ -14,6 +14,9 @@ import Blog from "@/pages/Blog";
 import AvisoLegal from "@/pages/AvisoLegal";
 import PoliticaPrivacidad from "@/pages/PoliticaPrivacidad";
 import PoliticaCookies from "@/pages/PoliticaCookies";
+import Terminos from "@/pages/Terminos";
+import TransparenciaIA from "@/pages/TransparenciaIA";
+import SobreNosotros from "@/pages/SobreNosotros";
 import NotFound from "@/pages/NotFound";
 
 export const routes: RouteObject[] = [
@@ -44,5 +47,8 @@ export const routes: RouteObject[] = [
 	{ path: "/aviso-legal", element: <AvisoLegal /> },
 	{ path: "/politica-de-privacidad", element: <PoliticaPrivacidad /> },
 	{ path: "/politica-de-cookies", element: <PoliticaCookies /> },
+	{ path: "/terminos", element: <Terminos /> },
+	{ path: "/transparencia-ia", element: <TransparenciaIA /> },
+	{ path: "/sobre-nosotros", element: <SobreNosotros /> },
 	{ path: "*", element: <NotFound /> },
 ];

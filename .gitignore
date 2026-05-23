@@ -104,3 +104,7 @@ frontend/qa-screenshots/
 frontend/qa-report.json
 frontend/qa-live/
 image copy*.png
+
+# Branding assets pendientes integracion Phase 3 (Estopi mascota, bandera HD)
+# Se utilizaran cuando se construya /sobre-nosotros con la historia local.
+frontend/public/branding/

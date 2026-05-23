@@ -214,8 +214,24 @@ export default function IaFiscalClasificadorFacturas() {
 							</p>
 							<p>
 								<strong className="text-on-surface-variant">Privacidad:</strong>{" "}
-								la factura se procesa en el momento. No la almacenamos para
-								marketing ni se usa para entrenamiento.
+								la factura se procesa en el momento y se elimina automáticamente
+								tras devolver el resultado. No la usamos para marketing ni para
+								entrenar modelos.
+							</p>
+						</div>
+
+						<div
+							role="note"
+							className="rounded-lg border border-warning/40 bg-warning-container/20 p-4 text-body-sm text-on-warning-container leading-relaxed"
+						>
+							<p className="mb-1 font-semibold text-warning">
+								Aviso sobre datos de terceros
+							</p>
+							<p>
+								No subas facturas con datos personales reales de terceros
+								(clientes o proveedores) sin su consentimiento expreso. Para
+								probar la herramienta utiliza una factura propia o pseudonimiza
+								los datos antes de subirla.
 							</p>
 						</div>
 					</div>
