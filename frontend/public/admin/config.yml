@@ -1,0 +1,118 @@
+backend:
+  name: github
+  repo: Nambu89/ia-melilla
+  branch: main
+  base_url: https://sveltia-cms-auth.ia-melilla.workers.dev
+  auth_endpoint: oauth
+  commit_messages:
+    create: "post(blog): {{slug}} — {{message}}"
+    update: "post(blog): actualizar {{slug}}"
+    delete: "post(blog): borrar {{slug}}"
+    uploadMedia: "post(blog): subir media {{path}}"
+    deleteMedia: "post(blog): borrar media {{path}}"
+
+site_url: https://iamelilla.com
+display_url: https://iamelilla.com
+logo_url: /favicon.svg
+locale: es
+
+media_folder: frontend/public/blog-media
+public_folder: /blog-media
+
+editor:
+  preview: false
+
+i18n:
+  structure: single_file
+  locales: [es]
+  default_locale: es
+
+collections:
+  - name: posts
+    label: "Artículos del blog"
+    label_singular: "Artículo"
+    folder: frontend/content/blog
+    create: true
+    delete: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}} — {{publishedAt | date('YYYY-MM-DD')}}"
+    sortable_fields: [publishedAt, title]
+    view_filters:
+      - label: "Publicados últimos 30 días"
+        field: publishedAt
+        pattern: "2026"
+    fields:
+      - label: "Slug (URL)"
+        name: slug
+        widget: string
+        hint: "URL del post. Ej: chatbots-whatsapp-melilla. Solo minúsculas, guiones, sin tildes."
+        pattern: ["^[a-z0-9-]+$", "Solo letras minúsculas, números y guiones"]
+      - label: "Título"
+        name: title
+        widget: string
+        hint: "Título principal del artículo. Aparecerá como H1."
+      - label: "Descripción breve"
+        name: description
+        widget: text
+        hint: "1-2 frases. Se usa en SEO y en la tarjeta del listado."
+        pattern: [".{40,200}", "Entre 40 y 200 caracteres recomendado"]
+      - label: "Fecha de publicación"
+        name: publishedAt
+        widget: datetime
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        format: "YYYY-MM-DD"
+        picker_utc: true
+      - label: "Minutos de lectura"
+        name: readingMinutes
+        widget: number
+        default: 5
+        min: 1
+        max: 60
+        value_type: int
+        hint: "Estimación. Aprox 1 min por cada 200 palabras."
+      - label: "Tags"
+        name: tags
+        widget: list
+        default: []
+        hint: "Etiquetas que aparecen en la tarjeta del post. Pulsa Enter tras cada uno."
+      - label: "Imagen de portada"
+        name: cover
+        widget: object
+        fields:
+          - label: "Texto alternativo"
+            name: alt
+            widget: string
+            hint: "Descripción de la imagen para accesibilidad y SEO."
+          - label: "Imagen (opcional)"
+            name: src
+            widget: image
+            required: false
+            hint: "Si no subes imagen, se usará un gradiente azul como placeholder."
+          - label: "Placeholder (si no hay imagen)"
+            name: placeholder
+            widget: select
+            default: automation
+            required: false
+            options:
+              - { label: "Automatización (gradiente azul oscuro)", value: automation }
+              - { label: "Restaurante (gradiente azul medio)", value: restaurant }
+              - { label: "Skyline urbano (gradiente negro a azul)", value: skyline }
+              - { label: "Oficina (gradiente negro y azul)", value: office }
+      - label: "Cuerpo del artículo"
+        name: body
+        widget: markdown
+        modes: [rich_text, raw]
+        buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - quote
+          - bulleted-list
+          - numbered-list
+        editor_components: [image]
+        hint: "Usa H2 (##) para secciones principales y H3 (###) para subsecciones. La primera cita > será el copete del artículo."
