@@ -9,8 +9,7 @@
 - **Tailwind CSS v4**
 - **shadcn/ui** componentes base accesibles
 - **React Bits** componentes animados (`npx shadcn@latest add https://reactbits.dev/r/<COMP>-TS-TW`)
-- **anime.js v4** (`npm i animejs`) animaciones complejas
-- **Framer Motion** (forzado por React Bits, coexiste con anime.js)
+- **Framer Motion** unica libreria de animaciones (forzada por React Bits, suficiente para todo)
 - **React Router v6**
 - **TanStack Query** estado servidor
 - **Lucide React** iconos
@@ -42,15 +41,16 @@ src/
 ├── components/
 │   ├── ui/              # shadcn (button, card, input, etc.)
 │   ├── reactbits/       # Componentes copiados de React Bits
-│   ├── animations/      # Helpers anime.js (useAnime hook)
+│   ├── animations/      # Wrappers Framer Motion (RevealOnScroll, AnimatedHeadline, CountUp)
 │   └── sections/        # Hero, Servicios, Testimonios, Footer, etc.
 ├── demos/               # Una carpeta por demo
 │   ├── asistente-atencion/
 │   ├── captador-leads/
 │   └── ...
 ├── hooks/
-│   ├── useAnime.ts      # wrapper anime.js + cleanup
-│   └── useDemoChat.ts   # SSE/streaming de demos
+│   ├── useReducedMotion.ts  # detecta prefers-reduced-motion
+│   ├── useInView.ts         # IntersectionObserver wrapper
+│   └── useDemoChat.ts       # SSE/streaming de demos
 ├── lib/
 │   ├── api.ts           # fetch wrapper + TanStack Query setup
 │   └── analytics.ts     # Plausible
@@ -60,28 +60,32 @@ src/
 
 ## Patrones
 
-### anime.js + React (sin memory leaks)
+### Framer Motion + React (patron unico animaciones)
+
+Decision 2026-05-23: `anime.js` eliminado del stack. Framer Motion ya estaba cargado (forzado por React Bits) y cubre todos los casos del proyecto. Una sola API = menos superficie, -15 KB gzip.
+
+Patron generico reveal on scroll:
 ```tsx
-import { useEffect, useRef } from "react";
-import { animate } from "animejs";
+import { motion } from "framer-motion";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 export function HeroTitle() {
-	const ref = useRef<HTMLHeadingElement>(null);
-
-	useEffect(() => {
-		if (!ref.current) return;
-		const instance = animate(ref.current, {
-			translateY: [40, 0],
-			opacity: [0, 1],
-			duration: 800,
-			easing: "easeOutCubic",
-		});
-		return () => instance.pause();  // cleanup obligatorio
-	}, []);
-
-	return <h1 ref={ref} className="text-6xl font-bold">IA accesible</h1>;
+	const reduced = useReducedMotion();
+	return (
+		<motion.h1
+			initial={reduced ? false : { opacity: 0, y: 40 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			viewport={{ once: true, amount: 0.2 }}
+			transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+			className="text-6xl font-bold"
+		>
+			IA accesible
+		</motion.h1>
+	);
 }
 ```
+
+Patron stagger de palabras (`AnimatedHeadline`): `variants` + `staggerChildren`. SVG path drawing: `motion.path` con `pathLength`. Counters: `useMotionValue` + `useTransform` o el componente `CountUp` ya existente. Wrapper recomendado para casos triviales: `<RevealOnScroll>`. Respeta siempre `useReducedMotion`.
 
 ### Componente shadcn pattern
 - PascalCase

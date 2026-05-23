@@ -2,8 +2,9 @@ import { useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from 
 import { Send, AlertCircle, Loader2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import { useDemoChat } from "@/hooks/useDemoChat";
-import { useAnimeEntry } from "@/components/animations/useAnimeEntry";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { AiDisclaimer } from "@/components/demo/AiDisclaimer";
 
 interface DemoChatProps {
@@ -145,9 +146,14 @@ function ChatBubble({
 	streaming: boolean;
 }) {
 	const isUser = role === "user";
-	const ref = useAnimeEntry<HTMLDivElement>(0);
+	const reduced = useReducedMotion();
 	return (
-		<div ref={ref} className={`mb-4 flex ${isUser ? "justify-end" : "justify-start"}`}>
+		<motion.div
+			initial={reduced ? false : { opacity: 0, y: 24 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+			className={`mb-4 flex ${isUser ? "justify-end" : "justify-start"}`}
+		>
 			<div
 				className={`max-w-[80%] rounded-lg px-5 py-3 ${
 					isUser
@@ -168,6 +174,6 @@ function ChatBubble({
 					)}
 				</p>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
