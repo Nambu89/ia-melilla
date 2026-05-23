@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { LogOut, MessageSquare, Calculator, FileText, Briefcase, Shield, Settings } from "lucide-react";
+import { LogOut, MessageSquare, Calculator, FileText, Shield, Settings } from "lucide-react";
 import { PageShell } from "@/components/layout/PageShell";
 import { SeoHead } from "@/components/seo/SeoHead";
 import { Button } from "@/components/ui/button";
@@ -26,35 +26,28 @@ const tools: Tool[] = [
 		description: "IRPF, retenciones, neto autónomo, IPSI Melilla.",
 		href: "/cliente/calculadoras",
 		icon: Calculator,
-		status: "soon",
+		status: "available",
 	},
 	{
 		label: "Modelos AEAT",
-		description: "100, 130, 131, 303, 308, 309, 349, 390, 200 IS, 420 IGIC, 720, 721, IPSI.",
-		href: "/cliente/modelos",
+		description: "Pídeselos al chat: 'genera modelo 303 con base 21% de 12.000€'. Soporta 100, 130, 131, 200 IS, 303, 308, 309, 349, 390, 420 IGIC, 720, 721, IPSI.",
+		href: "/cliente/chat",
 		icon: FileText,
-		status: "soon",
-	},
-	{
-		label: "Workspaces",
-		description: "Espacios de trabajo por cliente con facturas, nóminas y libros contables.",
-		href: "/cliente/workspaces",
-		icon: Briefcase,
-		status: "soon",
+		status: "available",
 	},
 	{
 		label: "DefensIA",
-		description: "Asistente de defensa fiscal para requerimientos y reclamaciones.",
+		description: "Asistente de defensa fiscal para requerimientos AEAT, reclamaciones y recursos.",
 		href: "/cliente/defensia",
 		icon: Shield,
-		status: "soon",
+		status: "available",
 	},
 	{
 		label: "Ajustes",
-		description: "Perfil, suscripción, sesiones, passkeys.",
+		description: "Perfil, suscripción, sesión activa.",
 		href: "/cliente/ajustes",
 		icon: Settings,
-		status: "soon",
+		status: "available",
 	},
 ];
 

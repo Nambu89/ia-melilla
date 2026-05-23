@@ -22,6 +22,9 @@ import NotFound from "@/pages/NotFound";
 import ClienteLogin from "@/pages/cliente/Login";
 import ClienteDashboard from "@/pages/cliente/Dashboard";
 import ClienteChat from "@/pages/cliente/Chat";
+import ClienteCalculadoras from "@/pages/cliente/Calculadoras";
+import ClienteDefensia from "@/pages/cliente/Defensia";
+import ClienteAjustes from "@/pages/cliente/Ajustes";
 import { RequireAuth } from "@/components/auth/RequireAuth";
 
 export const routes: RouteObject[] = [
@@ -71,6 +74,30 @@ export const routes: RouteObject[] = [
 		element: (
 			<RequireAuth>
 				<ClienteChat />
+			</RequireAuth>
+		),
+	},
+	{
+		path: "/cliente/calculadoras",
+		element: (
+			<RequireAuth>
+				<ClienteCalculadoras />
+			</RequireAuth>
+		),
+	},
+	{
+		path: "/cliente/defensia",
+		element: (
+			<RequireAuth>
+				<ClienteDefensia />
+			</RequireAuth>
+		),
+	},
+	{
+		path: "/cliente/ajustes",
+		element: (
+			<RequireAuth>
+				<ClienteAjustes />
 			</RequireAuth>
 		),
 	},
