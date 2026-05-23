@@ -1,6 +1,4 @@
 import type { BlogPost } from "./types";
-import { parseFrontmatter } from "./parseFrontmatter";
-import { parseMarkdownBody } from "./parseMarkdown";
 
 export const blogPosts: readonly BlogPost[] = [
 	{
@@ -227,17 +225,37 @@ export const blogPosts: readonly BlogPost[] = [
 		readingMinutes: 6,
 		tags: ["Inteligencia Artificial", "Melilla", "Pymes"],
 		cover: {
-			alt: cover.alt ?? "",
-			src: cover.src,
-			placeholder: cover.placeholder,
+			alt: "La inteligencia artificial llega a Melilla — oportunidad para autónomos y pymes",
+			placeholder: "skyline",
 		},
-		blocks: parseMarkdownBody(body),
-	};
-}
-
-export const blogPosts: readonly BlogPost[] = Object.entries(rawFiles)
-	.map(([path, raw]) => buildPost(path, raw))
-	.sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1));
+		blocks: [
+			{
+				type: "intro",
+				text: "La **inteligencia artificial en Melilla** ya no es un concepto futurista reservado para grandes empresas tecnológicas. Cada vez más autónomos y pymes locales la incorporan para ahorrar tiempo, reducir costes y mejorar la experiencia de cliente.",
+			},
+			{ type: "h2", text: "¿Por qué importa la IA en Melilla?" },
+			{
+				type: "paragraph",
+				text: "En un entorno cada vez más competitivo y digitalizado, la IA se posiciona como una solución estratégica para automatizar tareas repetitivas y centrarse en lo que aporta valor real al negocio.",
+			},
+			{ type: "h2", text: "Casos de uso prácticos" },
+			{
+				type: "ulist",
+				items: [
+					"**Atención al cliente 24/7** con asistentes virtuales en WhatsApp y web.",
+					"**Automatización de reservas** para restaurantes, peluquerías y clínicas.",
+					"**Generación de contenido** para redes sociales y publicidad local.",
+					"**Asistentes fiscales** especializados en régimen Melilla (IPSI, REF, IRPF local).",
+				],
+			},
+			{ type: "h2", text: "Primer paso recomendado" },
+			{
+				type: "paragraph",
+				text: "Identifica una tarea repetitiva que te ocupe varias horas a la semana, prueba un piloto pequeño durante 14 días y mide el tiempo ahorrado antes de escalar.",
+			},
+		],
+	},
+];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
 	return blogPosts.find((p) => p.slug === slug);
