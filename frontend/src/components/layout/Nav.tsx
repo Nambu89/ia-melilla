@@ -75,6 +75,9 @@ export function Nav() {
 
 				<div className="flex items-center gap-2">
 					<ThemeToggle />
+					<Button asChild variant="ghost" size="sm" className="hidden md:inline-flex">
+						<Link to={navContent.clienteHref}>{navContent.clienteLabel}</Link>
+					</Button>
 					<Button asChild size="sm" className="hidden md:inline-flex">
 						<Link to={navContent.ctaHref}>{navContent.ctaLabel}</Link>
 					</Button>

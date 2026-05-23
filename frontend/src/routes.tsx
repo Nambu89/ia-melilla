@@ -19,6 +19,9 @@ import Terminos from "@/pages/Terminos";
 import TransparenciaIA from "@/pages/TransparenciaIA";
 import SobreNosotros from "@/pages/SobreNosotros";
 import NotFound from "@/pages/NotFound";
+import ClienteLogin from "@/pages/cliente/Login";
+import ClienteDashboard from "@/pages/cliente/Dashboard";
+import { RequireAuth } from "@/components/auth/RequireAuth";
 
 export const routes: RouteObject[] = [
 	{ path: "/", element: <Home /> },
@@ -52,5 +55,15 @@ export const routes: RouteObject[] = [
 	{ path: "/terminos", element: <Terminos /> },
 	{ path: "/transparencia-ia", element: <TransparenciaIA /> },
 	{ path: "/sobre-nosotros", element: <SobreNosotros /> },
+	// Cliente (suite SaaS authenticated)
+	{ path: "/cliente/login", element: <ClienteLogin /> },
+	{
+		path: "/cliente",
+		element: (
+			<RequireAuth>
+				<ClienteDashboard />
+			</RequireAuth>
+		),
+	},
 	{ path: "*", element: <NotFound /> },
 ];
