@@ -18,13 +18,13 @@
 	--color-outline: #2e2e2e;
 	--color-outline-variant: #1f1f1f;
 	--color-outline-strong: #404040;
-	--color-primary: #10b981;
-	--color-on-primary: #022c1f;
-	--color-primary-container: #064e3b;
-	--color-on-primary-container: #a7f3d0;
-	--color-primary-hover: #34d399;
-	--color-primary-active: #059669;
-	--color-primary-subtle: #022c22;
+	--color-primary: #005ec4;
+	--color-on-primary: #ffffff;
+	--color-primary-container: #003b7f;
+	--color-on-primary-container: #cfe4ff;
+	--color-primary-hover: #2a78d8;
+	--color-primary-active: #004a9c;
+	--color-primary-subtle: #001f4d;
 	--color-tertiary: #1e40af;
 	--color-on-tertiary: #dbeafe;
 	--color-tertiary-container: #1e3a8a;
@@ -105,20 +105,19 @@
 	   REMOVED: --spacing-xs/2xl/3xl/4xl/5xl — these override --container-* and break max-w-* utilities.
 	   Use numeric Tailwind utilities (p-4, gap-8, etc.) or --space-* custom vars for semantic sizes. */
 	--spacing-unit: 4px;
+	--space-xs: 4px;
 	--spacing-sm: 8px;
 	--spacing-md: 16px;
 	--spacing-lg: 24px;
 	--spacing-xl: 32px;
-	--spacing-container-padding: 24px;
-	--spacing-container-max: 1200px;
-	--spacing-section-y-mobile: 80px;
-	--spacing-section-y-desktop: 128px;
-	/* Semantic spacing aliases (no collision with container scale) */
-	--space-xs: 4px;
 	--space-2xl: 48px;
 	--space-3xl: 64px;
 	--space-4xl: 96px;
 	--space-5xl: 128px;
+	--spacing-container-padding: 24px;
+	--spacing-container-max: 1200px;
+	--spacing-section-y-mobile: 80px;
+	--spacing-section-y-desktop: 128px;
 	/* Container scale (max-w-* utilities) — Tailwind v4 default */
 	--container-3xs: 16rem;
 	--container-2xs: 18rem;

@@ -2,6 +2,7 @@ import { ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import type { ReactNode } from "react";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
+import { AiDisclaimer } from "@/components/demo/AiDisclaimer";
 
 interface ToolPageShellProps {
 	eyebrow?: string;
@@ -41,6 +42,7 @@ export function ToolPageShell({
 						{description}
 					</p>
 				)}
+				<AiDisclaimer className="mt-8 max-w-3xl" />
 			</RevealOnScroll>
 			<div className="mt-12">{children}</div>
 			<div className="mt-16 rounded-lg border border-outline-variant bg-surface-container-low p-5">

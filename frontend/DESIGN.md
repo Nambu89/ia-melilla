@@ -27,14 +27,15 @@ colors:
   outline-variant: "#1F1F1F"
   outline-strong: "#404040"
 
-  # Primary — emerald (CTA, brand)
-  primary: "#10B981"
-  on-primary: "#022C1F"
-  primary-container: "#064E3B"
-  on-primary-container: "#A7F3D0"
-  primary-hover: "#34D399"
-  primary-active: "#059669"
-  primary-subtle: "#022C22"
+  # Primary — Melilla blue (CTA, brand). Reemplaza emerald Linear desde 2026-05-23.
+  # Pantone 2935 / bandera oficial Melilla. WCAG AA OK (#005EC4 sobre #0A0A0A = 5.5:1).
+  primary: "#005EC4"
+  on-primary: "#FFFFFF"
+  primary-container: "#003B7F"
+  on-primary-container: "#CFE4FF"
+  primary-hover: "#2A78D8"
+  primary-active: "#004A9C"
+  primary-subtle: "#001F4D"
 
   # Tertiary — deep blue (B2B audience pathway)
   tertiary: "#1E40AF"
@@ -344,20 +345,22 @@ Three priorities in this exact order:
 
 The emotional register is calm, dense, confident. We deliberately avoid the visual cliches of the 2024-2026 AI startup wave: no glassmorphism, no orb-and-particle gradients, no holographic shaders, no abstract floating shapes meant to evoke "intelligence."
 
-What you'll see instead: high-contrast type on near-black surfaces, surgical use of emerald, generous vertical rhythm, and motion measured in milliseconds.
+What you'll see instead: high-contrast type on near-black surfaces, surgical use of Melilla blue, generous vertical rhythm, and motion measured in milliseconds.
 
 ## Colors
 
 The palette is rooted in **neutral charcoal** — not tinted-blue like Tailwind slate, not warm-grey like Notion. Pure neutral darks (`#0A0A0A` to `#262626`) form the surface progression. Decisions:
 
 - **Charcoal surfaces** read "professional software" rather than "tech-startup blue." Slate-blue surfaces are over-used; neutral charcoal is what serious products (Linear, Vercel docs dark mode, Notion dark) standardized on after 2024.
-- **Emerald primary (`#10B981`)** carries the brand. Emerald is uncommon enough in fintech/fiscal UIs to be memorable, and it connotes verification, compliance, and growth without the cliche of healthcare green. It pairs cleanly with charcoal at WCAG AA (`#10B981` on `#0A0A0A` = 4.97:1 for medium text).
-- **Tertiary deep blue (`#1E40AF`) for B2B**, **secondary amber (`#B45309`) for B2C**. These colors only exist in audience-routing components (audience-coded buttons and badges). If you see deep blue, you're in a B2B context. If you see amber, you're in B2C. Never mix in one component.
-- **Status colors** reuse emerald for success (intentional — emerald is already "good" in the brand) and use D97706/DC2626 for warning/error. Status colors only appear in real status contexts (form errors, validation feedback) — never decoratively.
+- **Melilla blue primary (`#005EC4`)** carries the brand. Es el azul oficial de la bandera de Melilla (Pantone 2935), heredado de la Casa de Medina Sidonia. Connota institucionalidad, confianza, verificación y origen local sin caer en el tópico fintech-blue genérico. Contraste WCAG AA: `#005EC4` sobre `#0A0A0A` = 5.5:1; `#FFFFFF` sobre `#005EC4` = 6.7:1.
+- **Tertiary deep blue (`#1E40AF`) for B2B**, **secondary amber (`#B45309`) for B2C**. These colors only exist in audience-routing components (audience-coded buttons and badges). If you see deep blue, you're in a B2B context. If you see amber, you're in B2C. Never mix in one component. (El primary Melilla blue es más vibrante y se distingue del tertiary deep blue B2B.)
+- **Status colors** mantienen emerald (`#10B981`) para success — verificación, validación de formularios, confirmaciones. Warning `#D97706`, error `#DC2626`. Status colors solo aparecen en contextos reales de estado, nunca decorativamente.
 - **On-surface text:** `#FAFAFA` for headlines, `#A3A3A3` for body, `#737373` for metadata. All three exceed WCAG AAA on the surface family.
 - **Outlines:** `#2E2E2E` for default borders, `#1F1F1F` for subtle dividers, `#404040` for emphasized borders. Always 1px, always intentional.
 
 The palette deliberately does NOT inherit anything from the existing WordPress site. The cyan accent on the current iamelilla.com belongs to that build; v2 starts clean.
+
+Decisión 2026-05-23: el primary color cambia de emerald (`#10B981`) a azul oficial de Melilla (`#005EC4`, Pantone 2935). Razones: orgullo local + identidad institucional reconocible + la web pasa a tener el azul de la bandera como acento principal. Emerald se reserva para success/validación. La paleta cumple WCAG AA en ambos modos.
 
 ## Typography
 

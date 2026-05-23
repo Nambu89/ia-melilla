@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import AnimatedHeadline from "@/components/animations/AnimatedHeadline";
 import AuroraBackground from "@/components/decoration/AuroraBackground";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
+import { AiDisclaimer } from "@/components/demo/AiDisclaimer";
 import type { LucideIcon } from "lucide-react";
 
 interface Tool {
@@ -90,6 +91,7 @@ export default function DemoIaFiscal() {
 							clasificador de facturas. Pruébalas como quieras: en orden o
 							a saltos.
 						</p>
+						<AiDisclaimer className="mt-8 max-w-3xl" />
 					</RevealOnScroll>
 				</div>
 			</section>

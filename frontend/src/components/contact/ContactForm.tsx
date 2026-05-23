@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from "react";
+import { Link } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -10,10 +11,14 @@ type Status = "idle" | "submitting" | "success" | "error";
 
 export function ContactForm() {
 	const [status, setStatus] = useState<Status>("idle");
+	const [consent, setConsent] = useState(false);
+	const [marketing, setMarketing] = useState(false);
 	const fields = contactoContent.form.fields;
+	const legal = contactoContent.form.legalInfo;
 
 	async function handleSubmit(e: FormEvent<HTMLFormElement>) {
 		e.preventDefault();
+		if (!consent) return;
 		const formData = new FormData(e.currentTarget);
 		const data: ContactSubmission = {
 			nombre: String(formData.get("nombre") || ""),
@@ -80,16 +85,71 @@ export function ContactForm() {
 					placeholder={fields.mensaje.placeholder}
 				/>
 			</div>
+
+			<div className="rounded-lg border border-outline-variant bg-surface-container-low p-4 text-body-sm text-on-surface-variant leading-relaxed">
+				<p className="mb-3 text-label-caps text-on-surface-muted">
+					Información básica sobre protección de datos
+				</p>
+				<dl className="grid gap-1 md:grid-cols-[140px_1fr]">
+					<dt className="font-semibold text-on-surface">Responsable</dt>
+					<dd>{legal.responsable}</dd>
+					<dt className="font-semibold text-on-surface">Finalidad</dt>
+					<dd>{legal.finalidad}</dd>
+					<dt className="font-semibold text-on-surface">Legitimación</dt>
+					<dd>{legal.legitimacion}</dd>
+					<dt className="font-semibold text-on-surface">Destinatarios</dt>
+					<dd>{legal.destinatarios}</dd>
+					<dt className="font-semibold text-on-surface">Derechos</dt>
+					<dd>{legal.derechos}</dd>
+				</dl>
+				<p className="mt-3">
+					Más información en nuestra{" "}
+					<Link
+						to="/politica-de-privacidad"
+						className="text-primary underline underline-offset-2"
+					>
+						Política de Privacidad
+					</Link>
+					.
+				</p>
+			</div>
+
 			<label className="flex items-start gap-3 text-body-sm text-on-surface-variant cursor-pointer">
-				<input type="checkbox" required className="mt-1" />
-				{fields.consent.label}
+				<input
+					type="checkbox"
+					required
+					checked={consent}
+					onChange={(e) => setConsent(e.target.checked)}
+					className="mt-1 h-4 w-4 accent-[var(--color-primary)]"
+				/>
+				<span>
+					{fields.consent.label}{" "}
+					<span className="text-error" aria-hidden="true">
+						*
+					</span>
+				</span>
 			</label>
+
+			<label className="flex items-start gap-3 text-body-sm text-on-surface-variant cursor-pointer">
+				<input
+					type="checkbox"
+					checked={marketing}
+					onChange={(e) => setMarketing(e.target.checked)}
+					className="mt-1 h-4 w-4 accent-[var(--color-primary)]"
+				/>
+				<span>{fields.marketing.label}</span>
+			</label>
+
 			{status === "error" && (
 				<p role="alert" className="text-body-sm text-error">
 					{contactoContent.form.errorMessage}
 				</p>
 			)}
-			<Button type="submit" size="lg" disabled={status === "submitting"}>
+			<Button
+				type="submit"
+				size="lg"
+				disabled={status === "submitting" || !consent}
+			>
 				{status === "submitting" ? "Enviando..." : contactoContent.form.submitLabel}
 			</Button>
 		</form>

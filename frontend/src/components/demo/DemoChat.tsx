@@ -4,13 +4,11 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useDemoChat } from "@/hooks/useDemoChat";
 import { useAnimeEntry } from "@/components/animations/useAnimeEntry";
+import { AiDisclaimer } from "@/components/demo/AiDisclaimer";
 
 interface DemoChatProps {
 	suggestedQuestions: readonly string[];
 }
-
-const DISCLAIMER =
-	"Demo informativa basada en normativa de Melilla. No constituye asesoramiento fiscal vinculante. Consulta a un profesional para tu caso concreto.";
 
 export function DemoChat({ suggestedQuestions }: DemoChatProps) {
 	const { status, messages, errorMessage, ask, retry } = useDemoChat();
@@ -116,7 +114,7 @@ export function DemoChat({ suggestedQuestions }: DemoChatProps) {
 				</div>
 			)}
 
-			<p className="text-body-sm text-on-surface-muted leading-relaxed mt-2">{DISCLAIMER}</p>
+			<AiDisclaimer variant="inline" className="mt-2 leading-relaxed" />
 		</div>
 	);
 }

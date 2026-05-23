@@ -5,6 +5,10 @@ import { Separator } from "@/components/ui/separator";
 import { InstagramIcon, LinkedinIcon, FacebookIcon } from "./BrandIcons";
 
 export function Footer() {
+	function openCookieSettings() {
+		window.dispatchEvent(new CustomEvent("open-cookie-settings"));
+	}
+
 	return (
 		<footer className="border-t border-outline-variant bg-surface-container-low mt-32">
 			<div className="mx-auto max-w-[1200px] px-6 py-16">
@@ -14,6 +18,16 @@ export function Footer() {
 						<p className="text-body-md text-on-surface-variant max-w-xs">
 							{footerContent.tagline}
 						</p>
+						<div className="mt-6 inline-flex items-center gap-2 rounded-full border border-outline-variant bg-surface-container px-3 py-1.5">
+							<span
+								aria-hidden="true"
+								className="inline-block h-3 w-4 rounded-sm bg-[#005EC4]"
+								title="Bandera de Melilla"
+							/>
+							<span className="text-label-caps text-on-surface-variant">
+								Hecho en Melilla
+							</span>
+						</div>
 					</div>
 					{footerContent.columns.map((col) => (
 						<div key={col.title}>
@@ -29,6 +43,17 @@ export function Footer() {
 										</Link>
 									</li>
 								))}
+								{col.title === "Legal" && (
+									<li>
+										<button
+											type="button"
+											onClick={openCookieSettings}
+											className="text-left text-body-md text-on-surface-variant hover:text-on-surface"
+										>
+											Configurar cookies
+										</button>
+									</li>
+								)}
 							</ul>
 						</div>
 					))}

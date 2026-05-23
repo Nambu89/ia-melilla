@@ -24,9 +24,25 @@ export const contactoContent = {
 				placeholder: "Qué problema te gustaría resolver con IA, o qué duda tienes",
 			},
 			consent: {
-				label: "He leído y acepto la política de privacidad",
+				label:
+					"He leído y acepto la Política de Privacidad y el Aviso Legal de iamelilla.com.",
 				required: true,
 			},
+			marketing: {
+				label:
+					"Acepto recibir comunicaciones comerciales sobre servicios, novedades y demos de IA Melilla por email o WhatsApp. Puedo revocar este consentimiento en cualquier momento.",
+				required: false,
+			},
+		},
+		legalInfo: {
+			responsable: "Joaquín Gorge Lucianez (IA Melilla)",
+			finalidad:
+				"Atender tu consulta y, si lo autorizas, enviarte comunicaciones comerciales.",
+			legitimacion: "Tu consentimiento expreso.",
+			destinatarios:
+				"No se cederán datos a terceros, salvo obligación legal.",
+			derechos:
+				"Acceso, rectificación, supresión, oposición, portabilidad y limitación.",
 		},
 		submitLabel: "Enviar consulta →",
 		successMessage:
