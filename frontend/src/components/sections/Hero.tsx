@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import AnimatedHeadline from "@/components/animations/AnimatedHeadline";
 import AuroraBackground from "@/components/decoration/AuroraBackground";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
+import Magnet from "@/components/reactbits/Magnet";
 
 interface HeroProps {
 	eyebrow: string;
@@ -41,13 +42,17 @@ export function Hero({
 				</RevealOnScroll>
 				<RevealOnScroll delay={0.3}>
 					<div className="mt-12 flex flex-col gap-4 sm:flex-row">
-						<Button asChild size="lg">
-							<Link to={primaryCta.href}>{primaryCta.label}</Link>
-						</Button>
-						{secondaryCta && (
-							<Button asChild variant="outline" size="lg">
-								<Link to={secondaryCta.href}>{secondaryCta.label}</Link>
+						<Magnet padding={70} magnetStrength={4}>
+							<Button asChild size="lg">
+								<Link to={primaryCta.href}>{primaryCta.label}</Link>
 							</Button>
+						</Magnet>
+						{secondaryCta && (
+							<Magnet padding={70} magnetStrength={4}>
+								<Button asChild variant="outline" size="lg">
+									<Link to={secondaryCta.href}>{secondaryCta.label}</Link>
+								</Button>
+							</Magnet>
 						)}
 					</div>
 				</RevealOnScroll>

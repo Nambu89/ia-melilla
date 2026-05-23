@@ -42,7 +42,7 @@ IA Melilla v2 es la nueva version de [iamelilla.com](https://iamelilla.com): neg
 - **Tailwind CSS v4**
 - **shadcn/ui** (componentes base accesibles)
 - **React Bits** (`npx shadcn@latest add https://reactbits.dev/r/<COMP>-TS-TW`)
-- **anime.js v4** (`npm i animejs`) — animaciones complejas, hero, page transitions, SVG
+- **Framer Motion** unica libreria de animaciones (anime.js eliminado 2026-05-23, FM cubre todo)
 - **Framer Motion** (forzado por React Bits — coexiste)
 - **React Router v6**, **TanStack Query**, **Lucide React**
 

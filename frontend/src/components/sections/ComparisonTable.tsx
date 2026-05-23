@@ -61,7 +61,7 @@ export function ComparisonTable() {
 							))}
 						</ul>
 					</div>
-					<div className="rounded-xl border border-primary/30 bg-surface-container p-8 shadow-[0_0_32px_-12px_rgba(16,185,129,0.4)]">
+					<div className="rounded-xl border border-primary/30 bg-surface-container p-8 shadow-[0_0_48px_-4px_rgba(0,94,196,0.28)]">
 						<div className="flex items-center gap-3 mb-6">
 							<div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/15 text-primary">
 								<Check size={18} />

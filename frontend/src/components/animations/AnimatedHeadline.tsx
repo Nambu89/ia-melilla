@@ -1,6 +1,4 @@
-import { useEffect, useRef } from "react";
-import { animate, stagger } from "animejs";
-import { useInView } from "@/hooks/useInView";
+import { motion, type Variants } from "framer-motion";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { cn } from "@/lib/cn";
 
@@ -10,63 +8,65 @@ interface AnimatedHeadlineProps {
 	className?: string;
 }
 
+const containerVariants: Variants = {
+	hidden: {},
+	visible: { transition: { staggerChildren: 0.06, delayChildren: 0.1 } },
+};
+
+const wordVariants: Variants = {
+	hidden: { opacity: 0, y: 40 },
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] },
+	},
+};
+
 export default function AnimatedHeadline({
 	lines,
 	as: Tag = "h1",
 	className,
 }: AnimatedHeadlineProps) {
 	const reduced = useReducedMotion();
-	const [inViewRef, isInView] = useInView<HTMLElement>({
-		threshold: 0.2,
-		once: true,
-	});
-	const containerRef = useRef<HTMLElement | null>(null);
+	const MotionTag = motion[Tag];
 
-	const setRefs = (el: HTMLElement | null) => {
-		containerRef.current = el;
-		(inViewRef as React.MutableRefObject<HTMLElement | null>).current = el;
-	};
-
-	useEffect(() => {
-		if (!isInView || reduced || !containerRef.current) return;
-		const words = containerRef.current.querySelectorAll<HTMLSpanElement>(
-			"[data-word]",
+	if (reduced) {
+		return (
+			<Tag className={cn("tracking-tight", className)}>
+				{lines.map((line, lineIdx) => (
+					<span key={lineIdx} className="block">
+						{line}
+					</span>
+				))}
+			</Tag>
 		);
-		if (words.length === 0) return;
-		const instance = animate(words, {
-			translateY: [40, 0],
-			opacity: [0, 1],
-			duration: 800,
-			delay: stagger(60),
-			ease: "out(4)",
-		});
-		return () => {
-			instance.pause();
-		};
-	}, [isInView, reduced]);
-
-	const initialOpacity = reduced ? 1 : 0;
+	}
 
 	return (
-		<Tag
-			ref={setRefs as React.Ref<HTMLHeadingElement>}
+		<MotionTag
 			className={cn("tracking-tight", className)}
+			variants={containerVariants}
+			initial="hidden"
+			whileInView="visible"
+			viewport={{ once: true, amount: 0.2 }}
 		>
-			{lines.map((line, lineIdx) => (
-				<span key={lineIdx} className="block">
-					{line.split(" ").map((word, i) => (
-						<span
-							key={`${lineIdx}-${i}`}
-							data-word
-							className="inline-block"
-							style={{ opacity: initialOpacity }}
-						>
-							{word}
-							{i < line.split(" ").length - 1 ? " " : ""}
-						</span>
-					))}
-				</span>
-			))}
-		</Tag>
+			{lines.map((line, lineIdx) => {
+				const words = line.split(" ");
+				return (
+					<span key={lineIdx} className="block">
+						{words.map((word, i) => (
+							<motion.span
+								key={`${lineIdx}-${i}`}
+								variants={wordVariants}
+								className="inline-block"
+							>
+								{word}
+								{i < words.length - 1 ? " " : ""}
+							</motion.span>
+						))}
+					</span>
+				);
+			})}
+		</MotionTag>
 	);
 }

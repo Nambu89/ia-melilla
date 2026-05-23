@@ -8,6 +8,8 @@ import {
 	type LucideIcon,
 } from "lucide-react";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
+import DotGrid from "@/components/decoration/DotGrid";
+import { useSpotlight } from "@/hooks/useSpotlight";
 
 interface Sector {
 	icon: LucideIcon;
@@ -50,8 +52,9 @@ const SECTORES: Sector[] = [
 
 export function Sectores() {
 	return (
-		<section className="border-t border-outline-variant bg-surface-container-low">
-			<div className="mx-auto max-w-[1200px] px-6 py-20">
+		<section className="relative border-t border-outline-variant bg-surface-container-low">
+			<DotGrid fadeRadius="70%" />
+			<div className="relative mx-auto max-w-[1200px] px-6 py-20">
 				<RevealOnScroll>
 					<p className="text-label-caps uppercase tracking-[0.12em] text-on-surface-muted mb-3">
 						SECTORES
@@ -67,8 +70,10 @@ export function Sectores() {
 				</RevealOnScroll>
 
 				<div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-					{SECTORES.map((s) => (
-						<SectorCard key={s.name} sector={s} />
+					{SECTORES.map((s, i) => (
+						<RevealOnScroll key={s.name} delay={i * 0.06}>
+							<SectorCard sector={s} />
+						</RevealOnScroll>
 					))}
 				</div>
 			</div>
@@ -78,12 +83,27 @@ export function Sectores() {
 
 function SectorCard({ sector }: { sector: Sector }) {
 	const Icon = sector.icon;
+	const [handlers, pos] = useSpotlight<HTMLDivElement>();
 	return (
-		<div className="flex items-start gap-4 rounded-lg border border-outline-variant bg-surface-container p-5 transition-colors hover:border-primary/30">
-			<div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+		<div
+			ref={handlers.ref}
+			onMouseMove={handlers.onMouseMove}
+			onMouseEnter={handlers.onMouseEnter}
+			onMouseLeave={handlers.onMouseLeave}
+			className="relative flex items-start gap-4 overflow-hidden rounded-lg border border-outline-variant bg-surface-container p-5 transition-colors hover:border-primary/30"
+		>
+			<div
+				aria-hidden
+				className="pointer-events-none absolute inset-0 transition-opacity duration-500"
+				style={{
+					opacity: pos.opacity,
+					background: `radial-gradient(280px circle at ${pos.x}px ${pos.y}px, rgba(0,94,196,0.16), transparent 70%)`,
+				}}
+			/>
+			<div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
 				<Icon size={18} aria-hidden />
 			</div>
-			<div>
+			<div className="relative">
 				<h3 className="text-label-lg font-semibold text-on-surface">
 					{sector.name}
 				</h3>

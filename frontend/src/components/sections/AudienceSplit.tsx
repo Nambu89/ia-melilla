@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { useScrollFadeIn } from "@/components/animations/useScrollFadeIn";
+import RevealOnScroll from "@/components/animations/RevealOnScroll";
 
 interface AudienceCard {
 	audience: "b2b" | "b2c";
@@ -21,9 +21,8 @@ interface AudienceSplitProps {
 }
 
 function AudienceCardWrapper({ card }: { card: AudienceCard }) {
-	const ref = useScrollFadeIn<HTMLDivElement>();
 	return (
-		<div ref={ref}>
+		<RevealOnScroll>
 			<Card className="border border-outline-variant p-8">
 				<CardHeader>
 					<Badge variant={card.audience} className="self-start">
@@ -51,7 +50,7 @@ function AudienceCardWrapper({ card }: { card: AudienceCard }) {
 					</Button>
 				</CardContent>
 			</Card>
-		</div>
+		</RevealOnScroll>
 	);
 }
 

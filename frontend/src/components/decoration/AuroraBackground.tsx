@@ -1,14 +1,25 @@
+import { lazy, Suspense } from "react";
 import { useTheme } from "@/hooks/useTheme";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { cn } from "@/lib/cn";
+
+const Aurora = lazy(() => import("@/components/reactbits/Aurora"));
 
 interface AuroraBackgroundProps {
 	className?: string;
 }
 
-export default function AuroraBackground({ className }: AuroraBackgroundProps) {
-	const { resolvedTheme } = useTheme();
-	if (resolvedTheme === "light") return null;
+const DARK_COLOR_STOPS = ["#005EC4", "#2A78D8", "#0A0A0A"];
 
+function StaticFallback({
+	className,
+	light,
+}: {
+	className?: string;
+	light: boolean;
+}) {
+	const intensity = light ? 0.08 : 0.22;
+	const secondaryIntensity = light ? 0.04 : 0.1;
 	return (
 		<div
 			aria-hidden
@@ -18,31 +29,47 @@ export default function AuroraBackground({ className }: AuroraBackgroundProps) {
 			)}
 		>
 			<div
-				className="absolute -top-32 -left-32 h-[600px] w-[600px] rounded-full blur-3xl animate-aurora-pulse"
+				className="absolute -top-32 -left-32 h-[600px] w-[600px] rounded-full blur-3xl"
 				style={{
-					background:
-						"radial-gradient(circle at center, rgba(16,185,129,0.18) 0%, rgba(5,150,105,0.10) 40%, transparent 70%)",
-					mixBlendMode: "screen",
+					background: `radial-gradient(circle at center, rgba(0,94,196,${intensity}) 0%, rgba(0,94,196,${secondaryIntensity}) 50%, transparent 75%)`,
 				}}
 			/>
 			<div
-				className="absolute top-1/3 right-0 h-[800px] w-[800px] -translate-y-1/2 translate-x-1/3 rounded-full blur-3xl animate-aurora-pulse"
+				className="absolute top-1/3 right-0 h-[800px] w-[800px] -translate-y-1/2 translate-x-1/3 rounded-full blur-3xl"
 				style={{
-					background:
-						"radial-gradient(circle at center, rgba(16,185,129,0.12) 0%, rgba(5,150,105,0.06) 50%, transparent 75%)",
-					mixBlendMode: "screen",
-					animationDelay: "-7s",
+					background: `radial-gradient(circle at center, rgba(42,120,216,${secondaryIntensity * 1.5}) 0%, transparent 70%)`,
 				}}
 			/>
-			<div
-				className="absolute -bottom-40 left-1/4 h-[500px] w-[500px] rounded-full blur-3xl animate-aurora-pulse"
-				style={{
-					background:
-						"radial-gradient(circle at center, rgba(52,211,153,0.10) 0%, transparent 70%)",
-					mixBlendMode: "screen",
-					animationDelay: "-13s",
-				}}
-			/>
+		</div>
+	);
+}
+
+export default function AuroraBackground({ className }: AuroraBackgroundProps) {
+	const { resolvedTheme } = useTheme();
+	const reduced = useReducedMotion();
+	const isLight = resolvedTheme === "light";
+
+	if (isLight || reduced) {
+		return <StaticFallback className={className} light={isLight} />;
+	}
+
+	return (
+		<div
+			aria-hidden
+			className={cn(
+				"pointer-events-none absolute inset-0 overflow-hidden",
+				className,
+			)}
+			style={{ opacity: 0.7 }}
+		>
+			<Suspense fallback={<StaticFallback light={false} />}>
+				<Aurora
+					colorStops={DARK_COLOR_STOPS}
+					amplitude={0.9}
+					blend={0.45}
+					speed={0.6}
+				/>
+			</Suspense>
 		</div>
 	);
 }
