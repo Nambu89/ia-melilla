@@ -11,6 +11,7 @@ import { AboutCompany } from "@/components/sections/AboutCompany";
 import { CtaClose } from "@/components/sections/CtaClose";
 import { MarqueeTech } from "@/components/sections/MarqueeTech";
 import { FAQ } from "@/components/sections/FAQ";
+import { SeoBlock } from "@/components/sections/SeoBlock";
 import { homeContent } from "@/content/home";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
 			<Hero
 				eyebrow={homeContent.hero.eyebrow}
 				headline={homeContent.hero.headline}
+				tagline={homeContent.hero.tagline}
 				subheadline={homeContent.hero.subheadline}
 				primaryCta={homeContent.hero.primaryCta}
 				secondaryCta={homeContent.hero.secondaryCta}
@@ -57,6 +59,11 @@ export default function Home() {
 				stats={homeContent.aboutCompany.stats}
 			/>
 			<FAQ />
+			<SeoBlock
+				eyebrow={homeContent.seoBlock.eyebrow}
+				headline={homeContent.seoBlock.headline}
+				paragraphs={homeContent.seoBlock.paragraphs}
+			/>
 			<CtaClose
 				headline={homeContent.ctaClose.headline}
 				subheadline={homeContent.ctaClose.subheadline}

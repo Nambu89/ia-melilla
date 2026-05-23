@@ -8,6 +8,7 @@ import Magnet from "@/components/reactbits/Magnet";
 interface HeroProps {
 	eyebrow: string;
 	headline: string;
+	tagline?: string;
 	subheadline: string;
 	primaryCta: { label: string; href: string };
 	secondaryCta?: { label: string; href: string };
@@ -16,6 +17,7 @@ interface HeroProps {
 export function Hero({
 	eyebrow,
 	headline,
+	tagline,
 	subheadline,
 	primaryCta,
 	secondaryCta,
@@ -35,12 +37,19 @@ export function Hero({
 					as="h1"
 					className="text-display-md md:text-display-lg lg:text-display-xl font-bold max-w-5xl text-on-surface"
 				/>
-				<RevealOnScroll delay={0.2}>
-					<p className="text-body-lg text-on-surface-variant mt-8 max-w-2xl">
+				{tagline && (
+					<RevealOnScroll delay={0.15}>
+						<p className="text-headline-md md:text-headline-lg font-semibold tracking-tight text-on-surface-variant mt-6 max-w-3xl">
+							{tagline}
+						</p>
+					</RevealOnScroll>
+				)}
+				<RevealOnScroll delay={0.25}>
+					<p className="text-body-lg text-on-surface-variant mt-6 max-w-2xl">
 						{subheadline}
 					</p>
 				</RevealOnScroll>
-				<RevealOnScroll delay={0.3}>
+				<RevealOnScroll delay={0.35}>
 					<div className="mt-12 flex flex-col gap-4 sm:flex-row">
 						<Magnet padding={70} magnetStrength={4}>
 							<Button asChild size="lg">
