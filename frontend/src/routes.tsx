@@ -11,6 +11,7 @@ import IaFiscalGuiaFiscal from "@/pages/IaFiscalGuiaFiscal";
 import IaFiscalClasificadorFacturas from "@/pages/IaFiscalClasificadorFacturas";
 import Contacto from "@/pages/Contacto";
 import Blog from "@/pages/Blog";
+import BlogPost from "@/pages/BlogPost";
 import AvisoLegal from "@/pages/AvisoLegal";
 import PoliticaPrivacidad from "@/pages/PoliticaPrivacidad";
 import PoliticaCookies from "@/pages/PoliticaCookies";
@@ -44,6 +45,7 @@ export const routes: RouteObject[] = [
 	},
 	{ path: "/contacto", element: <Contacto /> },
 	{ path: "/blog", element: <Blog /> },
+	{ path: "/blog/:slug", element: <BlogPost /> },
 	{ path: "/aviso-legal", element: <AvisoLegal /> },
 	{ path: "/politica-de-privacidad", element: <PoliticaPrivacidad /> },
 	{ path: "/politica-de-cookies", element: <PoliticaCookies /> },
