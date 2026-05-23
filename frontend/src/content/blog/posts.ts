@@ -7,7 +7,7 @@ export const blogPosts: readonly BlogPost[] = [
 			"Automatización IA Melilla: cómo implementar la IA en tu pyme en 6 pasos sin complicaciones",
 		description:
 			"La Automatización IA Melilla ya no es cosa de grandes corporaciones: cada vez más pymes melillenses la aplican para ahorrar tiempo, reducir errores y mejorar la atención al cliente.",
-		publishedAt: "2026-05-15",
+		publishedAt: "2025-09-16",
 		readingMinutes: 9,
 		tags: ["Automatización", "Pymes", "Implementación"],
 		cover: {
@@ -221,7 +221,7 @@ export const blogPosts: readonly BlogPost[] = [
 		title: "La inteligencia artificial en Melilla",
 		description:
 			"La inteligencia artificial en Melilla ya no es un concepto futurista reservado para grandes empresas tecnológicas. Guía práctica para pymes y autónomos locales.",
-		publishedAt: "2026-05-10",
+		publishedAt: "2025-06-10",
 		readingMinutes: 6,
 		tags: ["Inteligencia Artificial", "Melilla", "Pymes"],
 		cover: {
