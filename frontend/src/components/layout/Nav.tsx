@@ -1,15 +1,25 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { navContent } from "@/content/nav";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/cn";
 import MobileDrawer from "@/components/navigation/MobileDrawer";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 
+function isLinkActive(pathname: string, href: string): boolean {
+	if (href === "/") return pathname === "/";
+	return pathname === href || pathname.startsWith(`${href}/`);
+}
+
 export function Nav() {
 	const y = useScrollPosition();
 	const shrunk = y > 24;
+	const { pathname } = useLocation();
+	const reduced = useReducedMotion();
+
 	return (
 		<header
 			className={cn(
@@ -25,27 +35,44 @@ export function Nav() {
 				>
 					{navContent.logoAlt}
 				</Link>
+
 				<nav
-					className="hidden md:flex items-center gap-1"
+					className="hidden md:flex items-center"
 					aria-label="Secciones"
 				>
-					{navContent.links.map((link) => (
-						<NavLink
-							key={link.href}
-							to={link.href}
-							className={({ isActive }) =>
-								cn(
-									"px-3 py-2 text-label-lg transition-colors rounded-md",
-									isActive
-										? "text-on-surface"
-										: "text-on-surface-variant hover:text-on-surface",
-								)
-							}
-						>
-							{link.label}
-						</NavLink>
-					))}
+					<div className="flex items-center gap-1 rounded-full border border-outline-variant bg-surface-container-low p-1 shadow-sm">
+						{navContent.links.map((link) => {
+							const active = isLinkActive(pathname, link.href);
+							return (
+								<NavLink
+									key={link.href}
+									to={link.href}
+									className={cn(
+										"relative inline-flex items-center justify-center rounded-full px-4 py-1.5 text-label-md transition-colors",
+										active
+											? "text-on-primary"
+											: "text-on-surface-variant hover:text-on-surface",
+									)}
+								>
+									{active && (
+										<motion.span
+											layoutId="nav-pill-indicator"
+											className="absolute inset-0 rounded-full bg-primary"
+											transition={
+												reduced
+													? { duration: 0 }
+													: { type: "spring", stiffness: 380, damping: 30 }
+											}
+											aria-hidden="true"
+										/>
+									)}
+									<span className="relative z-10">{link.label}</span>
+								</NavLink>
+							);
+						})}
+					</div>
 				</nav>
+
 				<div className="flex items-center gap-2">
 					<ThemeToggle />
 					<Button asChild size="sm" className="hidden md:inline-flex">

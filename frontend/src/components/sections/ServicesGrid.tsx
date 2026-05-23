@@ -10,6 +10,7 @@ import {
 	type LucideIcon,
 } from "lucide-react";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
+import { useSpotlight } from "@/hooks/useSpotlight";
 
 interface Service {
 	icon: LucideIcon;
@@ -115,35 +116,52 @@ export function ServicesGrid() {
 
 function ServiceCard({ service }: { service: Service }) {
 	const Icon = service.icon;
+	const [handlers, pos] = useSpotlight<HTMLAnchorElement>();
 	return (
 		<Link
 			to={service.href}
-			className="group flex flex-col gap-4 rounded-xl border border-outline-variant bg-surface-container p-6 transition-all duration-200 hover:border-primary/50 hover:bg-surface-container-high focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+			ref={handlers.ref}
+			onMouseMove={handlers.onMouseMove}
+			onMouseEnter={handlers.onMouseEnter}
+			onMouseLeave={handlers.onMouseLeave}
+			onFocus={handlers.onFocus}
+			onBlur={handlers.onBlur}
+			className="group relative flex h-full flex-col gap-4 overflow-hidden rounded-xl border border-outline-variant bg-surface-container p-6 transition-all duration-200 hover:border-primary/50 hover:bg-surface-container-high focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
 		>
-			<div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 text-primary">
-				<Icon size={20} aria-hidden />
-			</div>
-			<div className="flex-1">
-				<h3 className="text-headline-sm font-semibold text-on-surface">
-					{service.title}
-				</h3>
-				<p className="mt-2 text-body-md text-on-surface-variant">
-					{service.description}
-				</p>
-			</div>
-			<div className="flex flex-wrap gap-2 pt-2">
-				{service.tags.map((tag) => (
-					<span
-						key={tag}
-						className="rounded-full border border-outline-variant bg-surface-container-low px-3 py-1 text-label-md text-on-surface-variant"
-					>
-						{tag}
-					</span>
-				))}
-			</div>
-			<div className="mt-2 flex items-center gap-1.5 text-label-lg font-medium text-primary opacity-0 transition-all duration-200 group-hover:translate-x-1 group-hover:opacity-100">
-				Pedir información
-				<ArrowRight size={14} />
+			<div
+				aria-hidden
+				className="pointer-events-none absolute inset-0 transition-opacity duration-500"
+				style={{
+					opacity: pos.opacity,
+					background: `radial-gradient(420px circle at ${pos.x}px ${pos.y}px, rgba(0,94,196,0.18), transparent 70%)`,
+				}}
+			/>
+			<div className="relative flex h-full flex-col gap-4">
+				<div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 text-primary">
+					<Icon size={20} aria-hidden />
+				</div>
+				<div className="flex-1">
+					<h3 className="text-headline-sm font-semibold text-on-surface">
+						{service.title}
+					</h3>
+					<p className="mt-2 text-body-md text-on-surface-variant">
+						{service.description}
+					</p>
+				</div>
+				<div className="flex flex-wrap gap-2 pt-2">
+					{service.tags.map((tag) => (
+						<span
+							key={tag}
+							className="rounded-full border border-outline-variant bg-surface-container-low px-3 py-1 text-label-md text-on-surface-variant"
+						>
+							{tag}
+						</span>
+					))}
+				</div>
+				<div className="mt-2 flex items-center gap-1.5 text-label-lg font-medium text-primary opacity-0 transition-all duration-200 group-hover:translate-x-1 group-hover:opacity-100">
+					Pedir información
+					<ArrowRight size={14} />
+				</div>
 			</div>
 		</Link>
 	);

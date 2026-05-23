@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import ShinyText from "@/components/reactbits/ShinyText";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 interface DemoFlagshipProps {
@@ -61,7 +61,19 @@ export function DemoFlagship({
 			>
 				<div className="grid gap-12 md:grid-cols-[1fr_1.2fr]">
 					<div>
-						<Badge variant="primary">{eyebrow}</Badge>
+						<span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1">
+							<span
+								aria-hidden="true"
+								className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-primary"
+							/>
+							<ShinyText
+								text={eyebrow}
+								color="rgb(0, 94, 196)"
+								shineColor="#ffffff"
+								speed={3}
+								className="text-label-caps font-semibold tracking-[0.12em]"
+							/>
+						</span>
 						<h2 className="mt-4 text-headline-lg font-semibold tracking-tight">{headline}</h2>
 						<p className="mt-4 text-body-lg text-on-surface-variant">{subheadline}</p>
 						<Button asChild size="lg" className="mt-8">
