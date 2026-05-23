@@ -19,7 +19,7 @@ const tools: Tool[] = [
 		description: "Asistente conversacional con acceso a normativa AEAT y BOE.",
 		href: "/cliente/chat",
 		icon: MessageSquare,
-		status: "soon",
+		status: "available",
 	},
 	{
 		label: "Calculadoras",

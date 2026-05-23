@@ -21,6 +21,7 @@ import SobreNosotros from "@/pages/SobreNosotros";
 import NotFound from "@/pages/NotFound";
 import ClienteLogin from "@/pages/cliente/Login";
 import ClienteDashboard from "@/pages/cliente/Dashboard";
+import ClienteChat from "@/pages/cliente/Chat";
 import { RequireAuth } from "@/components/auth/RequireAuth";
 
 export const routes: RouteObject[] = [
@@ -62,6 +63,14 @@ export const routes: RouteObject[] = [
 		element: (
 			<RequireAuth>
 				<ClienteDashboard />
+			</RequireAuth>
+		),
+	},
+	{
+		path: "/cliente/chat",
+		element: (
+			<RequireAuth>
+				<ClienteChat />
 			</RequireAuth>
 		),
 	},
