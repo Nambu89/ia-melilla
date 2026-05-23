@@ -75,6 +75,9 @@ export function Nav() {
 
 				<div className="flex items-center gap-2">
 					<ThemeToggle />
+					<Button asChild variant="ghost" size="sm" className="hidden md:inline-flex">
+						<Link to={navContent.clienteHref}>{navContent.clienteLabel}</Link>
+					</Button>
 					<Button asChild size="sm" className="hidden md:inline-flex">
 						<Link to={navContent.ctaHref}>{navContent.ctaLabel}</Link>
 					</Button>
@@ -92,9 +95,8 @@ export function Nav() {
 							links={navContent.links as unknown as { label: string; href: string }[]}
 							cta={{ label: navContent.ctaLabel, href: navContent.ctaHref }}
 							secondary={{
-								label: "WhatsApp",
-								href: "https://wa.me/34654186173?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20de%20IA%20Melilla",
-								external: true,
+								label: navContent.clienteLabel,
+								href: navContent.clienteHref,
 							}}
 						/>
 					</div>

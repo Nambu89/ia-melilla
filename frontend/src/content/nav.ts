@@ -9,4 +9,7 @@ export const navContent = {
 	],
 	ctaLabel: "Probar IA Fiscal",
 	ctaHref: "/demos/ia-fiscal-melilla",
+	// Acceso clientes (suite SaaS authenticated, solo para usuarios con credencial)
+	clienteLabel: "Acceso clientes",
+	clienteHref: "/cliente/login",
 } as const;

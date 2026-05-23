@@ -19,6 +19,13 @@ import Terminos from "@/pages/Terminos";
 import TransparenciaIA from "@/pages/TransparenciaIA";
 import SobreNosotros from "@/pages/SobreNosotros";
 import NotFound from "@/pages/NotFound";
+import ClienteLogin from "@/pages/cliente/Login";
+import ClienteDashboard from "@/pages/cliente/Dashboard";
+import ClienteChat from "@/pages/cliente/Chat";
+import ClienteCalculadoras from "@/pages/cliente/Calculadoras";
+import ClienteDefensia from "@/pages/cliente/Defensia";
+import ClienteAjustes from "@/pages/cliente/Ajustes";
+import { RequireAuth } from "@/components/auth/RequireAuth";
 
 export const routes: RouteObject[] = [
 	{ path: "/", element: <Home /> },
@@ -52,5 +59,47 @@ export const routes: RouteObject[] = [
 	{ path: "/terminos", element: <Terminos /> },
 	{ path: "/transparencia-ia", element: <TransparenciaIA /> },
 	{ path: "/sobre-nosotros", element: <SobreNosotros /> },
+	// Cliente (suite SaaS authenticated)
+	{ path: "/cliente/login", element: <ClienteLogin /> },
+	{
+		path: "/cliente",
+		element: (
+			<RequireAuth>
+				<ClienteDashboard />
+			</RequireAuth>
+		),
+	},
+	{
+		path: "/cliente/chat",
+		element: (
+			<RequireAuth>
+				<ClienteChat />
+			</RequireAuth>
+		),
+	},
+	{
+		path: "/cliente/calculadoras",
+		element: (
+			<RequireAuth>
+				<ClienteCalculadoras />
+			</RequireAuth>
+		),
+	},
+	{
+		path: "/cliente/defensia",
+		element: (
+			<RequireAuth>
+				<ClienteDefensia />
+			</RequireAuth>
+		),
+	},
+	{
+		path: "/cliente/ajustes",
+		element: (
+			<RequireAuth>
+				<ClienteAjustes />
+			</RequireAuth>
+		),
+	},
 	{ path: "*", element: <NotFound /> },
 ];
