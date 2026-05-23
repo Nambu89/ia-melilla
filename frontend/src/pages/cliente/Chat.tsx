@@ -9,6 +9,15 @@ import { Input } from "@/components/ui/input";
 import { AiDisclaimer } from "@/components/demo/AiDisclaimer";
 import { useClienteChat } from "@/hooks/useClienteChat";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { ThinkingIndicator } from "@/components/cliente/ThinkingIndicator";
+
+const thinkingMessages = [
+	"Procesando tu consulta…",
+	"Buscando en el corpus fiscal AEAT y BOE…",
+	"Revisando deducciones aplicables a tu CCAA…",
+	"Comprobando casillas oficiales del modelo…",
+	"Redactando la respuesta con citas oficiales…",
+] as const;
 
 const suggestedQuestions = [
 	"¿Qué deducciones puedo aplicarme si vivo y trabajo en Melilla?",
@@ -89,6 +98,15 @@ export default function ClienteChat() {
 						{messages.map((m, i) => {
 							const isLast = i === messages.length - 1;
 							const isStreaming = busy && isLast && m.role === "assistant";
+							if (isLast && m.role === "assistant" && m.content === "" && busy) {
+								return (
+									<ThinkingIndicator
+										key={i}
+										label="IA FISCAL"
+										messages={thinkingMessages}
+									/>
+								);
+							}
 							return (
 								<ChatBubble
 									key={i}

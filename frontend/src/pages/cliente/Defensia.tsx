@@ -9,6 +9,15 @@ import { Input } from "@/components/ui/input";
 import { AiDisclaimer } from "@/components/demo/AiDisclaimer";
 import { useDefensiaChat } from "@/hooks/useDefensiaChat";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { ThinkingIndicator } from "@/components/cliente/ThinkingIndicator";
+
+const thinkingMessages = [
+	"Analizando tu caso…",
+	"Consultando normativa AEAT y procedimiento aplicable…",
+	"Comprobando plazos y obligaciones del contribuyente…",
+	"Buscando precedentes y casos similares…",
+	"Redactando una respuesta estructurada…",
+] as const;
 
 const suggestedQuestions = [
 	"He recibido un requerimiento de la AEAT por el IRPF 2023. ¿Cómo respondo?",
@@ -95,6 +104,17 @@ export default function ClienteDefensia() {
 						{messages.map((m, i) => {
 							const isLast = i === messages.length - 1;
 							const isStreaming = busy && isLast && m.role === "assistant";
+							// Si el último assistant está vacío, mostramos ThinkingIndicator
+							// en su lugar (NO el bubble vacío) hasta que llegue el primer chunk.
+							if (isLast && m.role === "assistant" && m.content === "" && busy) {
+								return (
+									<ThinkingIndicator
+										key={i}
+										label="DEFENSIA"
+										messages={thinkingMessages}
+									/>
+								);
+							}
 							return (
 								<ChatBubble
 									key={i}
