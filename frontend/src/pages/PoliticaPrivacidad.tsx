@@ -32,8 +32,7 @@ export default function PoliticaPrivacidad() {
 						<strong className="text-on-surface">Responsable:</strong> Joaquín Gorge Lucianez
 					</p>
 					<p>
-						<strong className="text-on-surface">NIF:</strong>{" "}
-						<span className="italic text-on-surface-muted">[pendiente de cumplimentación]</span>
+						<strong className="text-on-surface">NIF:</strong> 45281348Y
 					</p>
 					<p>
 						<strong className="text-on-surface">Domicilio:</strong>{" "}
