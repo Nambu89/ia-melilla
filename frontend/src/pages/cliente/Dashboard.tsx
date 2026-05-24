@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { LogOut, MessageSquare, Calculator, FileText, Shield, Settings } from "lucide-react";
+import { LogOut, MessageSquare, Calculator, FileText, Shield, Settings, Receipt } from "lucide-react";
 import { PageShell } from "@/components/layout/PageShell";
 import { SeoHead } from "@/components/seo/SeoHead";
 import { Button } from "@/components/ui/button";
@@ -33,6 +33,13 @@ const tools: Tool[] = [
 		description: "Pídeselos al chat: 'genera modelo 303 con base 21% de 12.000€'. Soporta 100, 130, 131, 200 IS, 303, 308, 309, 349, 390, 420 IGIC, 720, 721, IPSI.",
 		href: "/cliente/chat",
 		icon: FileText,
+		status: "available",
+	},
+	{
+		label: "Clasificador de facturas",
+		description: "OCR de facturas + clasificación PGC + asiento contable propuesto. PDF o foto.",
+		href: "/cliente/clasificador-facturas",
+		icon: Receipt,
 		status: "available",
 	},
 	{

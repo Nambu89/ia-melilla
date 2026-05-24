@@ -23,6 +23,7 @@ import ClienteLogin from "@/pages/cliente/Login";
 import ClienteDashboard from "@/pages/cliente/Dashboard";
 import ClienteChat from "@/pages/cliente/Chat";
 import ClienteCalculadoras from "@/pages/cliente/Calculadoras";
+import ClienteClasificadorFacturas from "@/pages/cliente/ClasificadorFacturas";
 import ClienteDefensia from "@/pages/cliente/Defensia";
 import ClienteAjustes from "@/pages/cliente/Ajustes";
 import { RequireAuth } from "@/components/auth/RequireAuth";
@@ -82,6 +83,14 @@ export const routes: RouteObject[] = [
 		element: (
 			<RequireAuth>
 				<ClienteCalculadoras />
+			</RequireAuth>
+		),
+	},
+	{
+		path: "/cliente/clasificador-facturas",
+		element: (
+			<RequireAuth>
+				<ClienteClasificadorFacturas />
 			</RequireAuth>
 		),
 	},
