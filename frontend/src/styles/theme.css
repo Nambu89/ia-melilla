@@ -101,15 +101,17 @@
 	--text-code-md: 14px;
 	--tracking-code-md: 0em;
 	--font-weight-code-md: 400;
-	/* Spacing base tokens — named to avoid collision with Tailwind v4 --container-* scale.
-	   REMOVED: --spacing-xs/2xl/3xl/4xl/5xl — these override --container-* and break max-w-* utilities.
-	   Use numeric Tailwind utilities (p-4, gap-8, etc.) or --space-* custom vars for semantic sizes. */
+	/* Spacing base tokens — must NEVER collide with Tailwind v4 --container-* scale
+	   (sm, md, lg, xl, 2xl, 3xl, 4xl, 5xl, 6xl, 7xl). Tailwind generates max-w-sm,
+	   max-w-md, etc. from those tokens; declaring --spacing-sm here would override
+	   them and break max-w-* utilities. Use --space-* (semantic sizes) or numeric
+	   Tailwind utilities (p-4, gap-8) instead. */
 	--spacing-unit: 4px;
 	--space-xs: 4px;
-	--spacing-sm: 8px;
-	--spacing-md: 16px;
-	--spacing-lg: 24px;
-	--spacing-xl: 32px;
+	--space-sm: 8px;
+	--space-md: 16px;
+	--space-lg: 24px;
+	--space-xl: 32px;
 	--space-2xl: 48px;
 	--space-3xl: 64px;
 	--space-4xl: 96px;
