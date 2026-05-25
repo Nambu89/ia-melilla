@@ -170,11 +170,13 @@ export default function PoliticaPrivacidad() {
 				</p>
 				<ul className="mt-3 ml-6 list-disc text-body-md text-on-surface-variant leading-relaxed space-y-2">
 					<li>
-						<strong className="text-on-surface">OpenAI Ireland Ltd. y OpenAI L.L.C. (EE.UU.):
+						<strong className="text-on-surface">
+							Proveedores de modelos de IA (OpenAI, Anthropic, Google u otros, según el
+							caso):
 						</strong>{" "}
-						proveedor de los modelos de lenguaje utilizados en las herramientas de IA. Procesa
-						las consultas enviadas a las demos. OpenAI confirma contractualmente que no
-						utiliza los datos enviados a través de su API para entrenar modelos.
+						procesan las consultas enviadas a las herramientas de IA. Estos proveedores
+						confirman contractualmente que no utilizan los datos enviados a través de sus
+						APIs para entrenar modelos.
 					</li>
 					<li>
 						<strong className="text-on-surface">Contabo GmbH (Alemania):</strong> proveedor de
@@ -199,8 +201,9 @@ export default function PoliticaPrivacidad() {
 				</h2>
 				<p className="mt-4 text-body-md text-on-surface-variant leading-relaxed">
 					Al utilizar las herramientas de inteligencia artificial alojadas en el Sitio, las
-					consultas pueden transferirse a servidores de OpenAI L.L.C. ubicados en Estados
-					Unidos. Esta transferencia internacional se ampara en:
+					consultas pueden transferirse a servidores de proveedores de modelos de IA
+					(OpenAI, Anthropic, Google u otros) ubicados en Estados Unidos o en otras
+					jurisdicciones. Esta transferencia internacional se ampara en:
 				</p>
 				<ul className="mt-3 ml-6 list-disc text-body-md text-on-surface-variant leading-relaxed space-y-2">
 					<li>

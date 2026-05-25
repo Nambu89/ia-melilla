@@ -97,8 +97,9 @@ export default function Terminos() {
 					4. Funcionamiento y limitaciones de las Demos
 				</h2>
 				<p className="mt-4 text-body-md text-on-surface-variant leading-relaxed">
-					Las Demos están construidas sobre modelos de lenguaje (en concreto, modelos de la
-					familia GPT proporcionados por OpenAI) y bases documentales internas. Su
+					Las Demos están construidas sobre modelos de lenguaje proporcionados por
+					terceros (OpenAI, Anthropic o modelos abiertos, según el caso) y bases
+					documentales internas. Su
 					funcionamiento está sujeto a las siguientes limitaciones que el Usuario reconoce y
 					acepta:
 				</p>

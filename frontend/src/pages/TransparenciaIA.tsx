@@ -61,22 +61,22 @@ export default function TransparenciaIA() {
 						<tbody>
 							<tr className="border-b border-outline-variant">
 								<td className="py-3 pr-4 align-top">Chat IA Fiscal Melilla</td>
-								<td className="py-3 pr-4 align-top">GPT-4o</td>
-								<td className="py-3 pr-4 align-top">OpenAI L.L.C. (EE.UU.)</td>
+								<td className="py-3 pr-4 align-top">Modelos de lenguaje (LLM)</td>
+								<td className="py-3 pr-4 align-top">OpenAI, Anthropic o modelos abiertos</td>
 								<td className="py-3 align-top">API REST. No se entrena con los datos.</td>
 							</tr>
 							<tr className="border-b border-outline-variant">
 								<td className="py-3 pr-4 align-top">Guía fiscal y cálculos IRPF</td>
 								<td className="py-3 pr-4 align-top">
-									Funciones deterministas + GPT-4o-mini para explicaciones
+									Funciones deterministas + LLM para explicaciones
 								</td>
-								<td className="py-3 pr-4 align-top">OpenAI L.L.C. (EE.UU.)</td>
+								<td className="py-3 pr-4 align-top">OpenAI, Anthropic o modelos abiertos</td>
 								<td className="py-3 align-top">API REST. No se entrena con los datos.</td>
 							</tr>
 							<tr>
 								<td className="py-3 pr-4 align-top">Clasificador de facturas (OCR)</td>
-								<td className="py-3 pr-4 align-top">GPT-4o con visión</td>
-								<td className="py-3 pr-4 align-top">OpenAI L.L.C. (EE.UU.)</td>
+								<td className="py-3 pr-4 align-top">Modelo multimodal con visión</td>
+								<td className="py-3 pr-4 align-top">OpenAI, Anthropic o Google</td>
 								<td className="py-3 align-top">
 									Procesamiento efímero en memoria. Eliminación tras devolver el
 									resultado.
@@ -95,9 +95,9 @@ export default function TransparenciaIA() {
 				<ul className="mt-3 ml-6 list-disc text-body-md text-on-surface-variant leading-relaxed space-y-2">
 					<li>
 						<strong className="text-on-surface">Conocimiento general del modelo:</strong>{" "}
-						resultado del entrenamiento original realizado por OpenAI sobre datos públicos
-						de internet con corte temporal a la fecha de publicación del modelo. No
-						intervenimos en ese entrenamiento.
+						resultado del entrenamiento original realizado por el proveedor del modelo
+						(OpenAI, Anthropic, etc.) sobre datos públicos de internet con corte temporal
+						a la fecha de publicación del modelo. No intervenimos en ese entrenamiento.
 					</li>
 					<li>
 						<strong className="text-on-surface">Base documental fiscal propia (RAG):</strong>{" "}
@@ -107,10 +107,10 @@ export default function TransparenciaIA() {
 					</li>
 				</ul>
 				<p className="mt-4 text-body-md text-on-surface-variant leading-relaxed">
-					<strong className="text-on-surface">OpenAI confirma contractualmente</strong> que
-					los datos enviados a través de su API empresarial <strong>no se utilizan para
-					entrenar futuros modelos</strong>. Las consultas pueden conservarse hasta 30 días
-					exclusivamente para fines de detección de abuso y seguridad, tras lo cual son
+					<strong className="text-on-surface">Los proveedores confirman contractualmente</strong>{" "}
+					que los datos enviados a través de sus APIs empresariales <strong>no se utilizan
+					para entrenar futuros modelos</strong>. Las consultas pueden conservarse hasta 30
+					días exclusivamente para fines de detección de abuso y seguridad, tras lo cual son
 					eliminadas.
 				</p>
 
