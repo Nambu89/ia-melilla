@@ -6,6 +6,8 @@ import { ToolPageShell } from "@/components/demo/ToolPageShell";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { FormField } from "@/components/forms/FormField";
+import { DemoLimitGate } from "@/components/demo/DemoLimitGate";
+import { useDemoUsageLimit } from "@/hooks/useDemoUsageLimit";
 import {
 	calculateNetSalary,
 	type NetSalaryRequest,
@@ -33,6 +35,7 @@ function fmtEur(n: number): string {
 }
 
 export default function IaFiscalCalculadoraNeto() {
+	const limit = useDemoUsageLimit("calculadora-neto");
 	const [form, setForm] = useState<NetSalaryRequest>(DEFAULTS);
 	const [result, setResult] = useState<NetSalaryResponse | null>(null);
 	const [loading, setLoading] = useState(false);
@@ -53,6 +56,7 @@ export default function IaFiscalCalculadoraNeto() {
 		try {
 			const res = await calculateNetSalary(form);
 			setResult(res);
+			limit.increment();
 		} catch (err) {
 			if (err instanceof ApiError) {
 				setError(`Error del servidor (HTTP ${err.status}). Inténtalo de nuevo.`);
@@ -75,6 +79,12 @@ export default function IaFiscalCalculadoraNeto() {
 				title="Calculadora Neto Autónomos"
 				description="Calcula cuánto te queda al mes y al año tras impuestos. Aplica IPSI y la deducción 60% Ceuta/Melilla si corresponde."
 			>
+				<DemoLimitGate
+					blocked={limit.blocked}
+					used={limit.used}
+					max={limit.max}
+					toolLabel="Calculadora de Neto Autónomo"
+				>
 				<div className="grid gap-8 lg:grid-cols-[1fr_1.2fr]">
 					<form onSubmit={onSubmit} className="flex flex-col gap-5">
 						<FormField
@@ -234,6 +244,7 @@ export default function IaFiscalCalculadoraNeto() {
 						{result && <ResultPanel data={result} />}
 					</div>
 				</div>
+				</DemoLimitGate>
 			</ToolPageShell>
 		</PageShell>
 	);

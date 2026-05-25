@@ -36,7 +36,11 @@ function fmtMb(bytes: number): string {
 	return `${(bytes / 1024 / 1024).toFixed(2)} MB`;
 }
 
-export function InvoiceClassifierCore() {
+export function InvoiceClassifierCore({
+	onUseConsumed,
+}: {
+	onUseConsumed?: () => void;
+} = {}) {
 	const [file, setFile] = useState<File | null>(null);
 	const [result, setResult] = useState<InvoiceUploadResponse | null>(null);
 	const [status, setStatus] = useState<string | null>(null);
@@ -113,6 +117,7 @@ export function InvoiceClassifierCore() {
 			});
 			setResult(data);
 			setStatus(null);
+			onUseConsumed?.();
 		} catch (err) {
 			if ((err as Error).name === "AbortError") {
 				setStatus(null);

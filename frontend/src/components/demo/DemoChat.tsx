@@ -9,9 +9,10 @@ import { AiDisclaimer } from "@/components/demo/AiDisclaimer";
 
 interface DemoChatProps {
 	suggestedQuestions: readonly string[];
+	onUseConsumed?: () => void;
 }
 
-export function DemoChat({ suggestedQuestions }: DemoChatProps) {
+export function DemoChat({ suggestedQuestions, onUseConsumed }: DemoChatProps) {
 	const { status, messages, errorMessage, ask, retry } = useDemoChat();
 	const [draft, setDraft] = useState("");
 	const scrollRef = useRef<HTMLDivElement>(null);
@@ -31,6 +32,7 @@ export function DemoChat({ suggestedQuestions }: DemoChatProps) {
 		if (!question.trim() || busy) return;
 		setDraft("");
 		void ask(question);
+		onUseConsumed?.();
 	}
 
 	function handleSubmit(e: FormEvent<HTMLFormElement>) {

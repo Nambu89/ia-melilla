@@ -6,6 +6,8 @@ import { ToolPageShell } from "@/components/demo/ToolPageShell";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { FormField } from "@/components/forms/FormField";
+import { DemoLimitGate } from "@/components/demo/DemoLimitGate";
+import { useDemoUsageLimit } from "@/hooks/useDemoUsageLimit";
 import {
 	estimateIrpf,
 	type EstimateRequest,
@@ -74,6 +76,7 @@ function fmtEur(n: number | undefined): string {
 }
 
 export default function IaFiscalGuiaFiscal() {
+	const limit = useDemoUsageLimit("guia-fiscal");
 	const [step, setStep] = useState(0);
 	const [form, setForm] = useState<EstimateRequest>(DEFAULTS);
 	const [result, setResult] = useState<EstimateResponse | null>(null);
@@ -103,6 +106,7 @@ export default function IaFiscalGuiaFiscal() {
 		try {
 			const res = await estimateIrpf(form);
 			setResult(res);
+			limit.increment();
 		} catch (err) {
 			if (err instanceof ApiError) {
 				setError(`Error del servidor (HTTP ${err.status}). Inténtalo de nuevo.`);
@@ -132,6 +136,12 @@ export default function IaFiscalGuiaFiscal() {
 				title="Guía Fiscal IRPF"
 				description="Te llevamos paso a paso por los datos clave de tu declaración. Estimamos base, cuota y resultado con cobertura específica de Melilla."
 			>
+				<DemoLimitGate
+					blocked={limit.blocked}
+					used={limit.used}
+					max={limit.max}
+					toolLabel="Guía Fiscal IRPF"
+				>
 				{result ? (
 					<ResultPanel result={result} onReset={reset} />
 				) : (
@@ -217,6 +227,7 @@ export default function IaFiscalGuiaFiscal() {
 						</div>
 					</div>
 				)}
+				</DemoLimitGate>
 			</ToolPageShell>
 		</PageShell>
 	);

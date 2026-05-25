@@ -2,8 +2,11 @@ import { PageShell } from "@/components/layout/PageShell";
 import { SeoHead } from "@/components/seo/SeoHead";
 import { ToolPageShell } from "@/components/demo/ToolPageShell";
 import { InvoiceClassifierCore } from "@/components/clasificador/InvoiceClassifierCore";
+import { DemoLimitGate } from "@/components/demo/DemoLimitGate";
+import { useDemoUsageLimit } from "@/hooks/useDemoUsageLimit";
 
 export default function IaFiscalClasificadorFacturas() {
+	const limit = useDemoUsageLimit("clasificador-facturas");
 	return (
 		<PageShell>
 			<SeoHead
@@ -15,7 +18,14 @@ export default function IaFiscalClasificadorFacturas() {
 				title="Clasificador de Facturas"
 				description="Sube una factura en PDF o foto. La IA extrae todos los datos con OCR, la clasifica según el Plan General Contable y propone el asiento. Útil para autónomos y pymes que quieren ahorrar tiempo en contabilidad."
 			>
-				<InvoiceClassifierCore />
+				<DemoLimitGate
+					blocked={limit.blocked}
+					used={limit.used}
+					max={limit.max}
+					toolLabel="Clasificador de Facturas"
+				>
+					<InvoiceClassifierCore onUseConsumed={limit.increment} />
+				</DemoLimitGate>
 			</ToolPageShell>
 		</PageShell>
 	);

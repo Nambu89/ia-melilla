@@ -2,9 +2,12 @@ import { PageShell } from "@/components/layout/PageShell";
 import { SeoHead } from "@/components/seo/SeoHead";
 import { ToolPageShell } from "@/components/demo/ToolPageShell";
 import { DemoChat } from "@/components/demo/DemoChat";
+import { DemoLimitGate } from "@/components/demo/DemoLimitGate";
+import { useDemoUsageLimit } from "@/hooks/useDemoUsageLimit";
 import { demoIaFiscalContent } from "@/content/demoIaFiscal";
 
 export default function IaFiscalChat() {
+	const limit = useDemoUsageLimit("chat-fiscal");
 	return (
 		<PageShell>
 			<SeoHead
@@ -16,9 +19,19 @@ export default function IaFiscalChat() {
 				title="Chat IA Fiscal Melilla"
 				description="Pregunta lo que necesites sobre fiscalidad en Melilla. IPSI, REF, IRPF, deducciones, plazos. Responde citando normativa."
 			>
-				<div className="max-w-3xl">
-					<DemoChat suggestedQuestions={demoIaFiscalContent.suggestedQuestions} />
-				</div>
+				<DemoLimitGate
+					blocked={limit.blocked}
+					used={limit.used}
+					max={limit.max}
+					toolLabel="Chat IA Fiscal"
+				>
+					<div className="max-w-3xl">
+						<DemoChat
+							suggestedQuestions={demoIaFiscalContent.suggestedQuestions}
+							onUseConsumed={limit.increment}
+						/>
+					</div>
+				</DemoLimitGate>
 			</ToolPageShell>
 		</PageShell>
 	);

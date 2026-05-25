@@ -6,6 +6,8 @@ import { ToolPageShell } from "@/components/demo/ToolPageShell";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { FormField } from "@/components/forms/FormField";
+import { DemoLimitGate } from "@/components/demo/DemoLimitGate";
+import { useDemoUsageLimit } from "@/hooks/useDemoUsageLimit";
 import {
 	calculateWithholding,
 	type WithholdingRequest,
@@ -36,6 +38,7 @@ function fmtEur(n: number): string {
 }
 
 export default function IaFiscalCalculadoraRetenciones() {
+	const limit = useDemoUsageLimit("calculadora-retenciones");
 	const [form, setForm] = useState<WithholdingRequest>(DEFAULTS);
 	const [result, setResult] = useState<WithholdingResponse | null>(null);
 	const [loading, setLoading] = useState(false);
@@ -56,6 +59,7 @@ export default function IaFiscalCalculadoraRetenciones() {
 		try {
 			const res = await calculateWithholding(form);
 			setResult(res);
+			limit.increment();
 		} catch (err) {
 			if (err instanceof ApiError) {
 				setError(`Error del servidor (HTTP ${err.status}). Inténtalo de nuevo.`);
@@ -78,6 +82,12 @@ export default function IaFiscalCalculadoraRetenciones() {
 				title="Calculadora Retenciones IRPF"
 				description="Estima la retención IRPF que te aplicarán en nómina según situación familiar y residencia. Aplica reducción 60% Ceuta/Melilla."
 			>
+				<DemoLimitGate
+					blocked={limit.blocked}
+					used={limit.used}
+					max={limit.max}
+					toolLabel="Calculadora de Retenciones IRPF"
+				>
 				<div className="grid gap-8 lg:grid-cols-[1fr_1.2fr]">
 					<form onSubmit={onSubmit} className="flex flex-col gap-5">
 						<FormField
@@ -287,6 +297,7 @@ export default function IaFiscalCalculadoraRetenciones() {
 						)}
 					</div>
 				</div>
+				</DemoLimitGate>
 			</ToolPageShell>
 		</PageShell>
 	);
