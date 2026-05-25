@@ -401,6 +401,16 @@ function ResultPanel({
 	result: EstimateResponse;
 	onReset: () => void;
 }) {
+	// Backend uses *_total / *_general suffixes; legacy field names kept as
+	// fallback so the panel works even if a future backend version renames them.
+	const resultado = result.resultado_estimado ?? result.resultado ?? 0;
+	const baseImponible =
+		result.base_imponible ??
+		(result.base_imponible_general ?? 0) + (result.base_imponible_ahorro ?? 0);
+	const cuotaLiquida = result.cuota_liquida_total ?? result.cuota_liquida;
+	const cuotaIntegra = result.cuota_integra_general ?? result.cuota_estatal;
+	const deduccionMelilla = result.deduccion_ceuta_melilla;
+
 	return (
 		<div className="flex flex-col gap-8">
 			<div>
@@ -409,46 +419,52 @@ function ResultPanel({
 				</p>
 				<p
 					className={`mt-2 text-display-md font-bold ${
-						(result.resultado ?? 0) <= 0 ? "text-primary" : "text-warning"
+						resultado <= 0 ? "text-primary" : "text-warning"
 					}`}
 				>
-					{fmtEur(result.resultado)}
+					{fmtEur(resultado)}
 				</p>
 				<p className="mt-1 text-body-md text-on-surface-variant">
-					{(result.resultado ?? 0) <= 0
-						? "A devolver"
-						: "A pagar"}
+					{resultado <= 0 ? "A devolver" : "A pagar"}
 				</p>
 			</div>
 			<div className="grid grid-cols-2 gap-6 border-t border-outline-variant pt-6 md:grid-cols-4">
-				<Stat label="Base imponible" value={fmtEur(result.base_imponible)} />
-				<Stat label="Cuota estatal" value={fmtEur(result.cuota_estatal)} />
+				<Stat label="Base imponible" value={fmtEur(baseImponible)} />
+				<Stat label="Cuota íntegra" value={fmtEur(cuotaIntegra)} />
 				<Stat
-					label="Cuota autonómica"
-					value={fmtEur(result.cuota_autonomica)}
+					label="Deducción Ceuta/Melilla"
+					value={fmtEur(deduccionMelilla)}
 				/>
-				<Stat label="Cuota líquida" value={fmtEur(result.cuota_liquida)} />
+				<Stat label="Cuota líquida" value={fmtEur(cuotaLiquida)} />
 			</div>
-			{result.deducciones && result.deducciones.length > 0 && (
-				<div>
-					<p className="text-label-caps uppercase tracking-[0.12em] text-on-surface-muted">
-						DEDUCCIONES APLICADAS
-					</p>
-					<ul className="mt-3 flex flex-col gap-2">
-						{result.deducciones.map((d, i) => (
-							<li
-								key={i}
-								className="flex items-center justify-between rounded-md border border-outline-variant bg-surface-container-low px-4 py-3 text-body-md"
-							>
-								<span className="text-on-surface">{d.name}</span>
-								<span className="font-semibold text-primary">
-									{fmtEur(d.amount)}
-								</span>
-							</li>
-						))}
-					</ul>
-				</div>
-			)}
+			{(() => {
+				const deds =
+					(result.deducciones_autonomicas as Array<{
+						name?: string;
+						amount?: number;
+					}> | undefined) ?? result.deducciones;
+				if (!deds || deds.length === 0) return null;
+				return (
+					<div>
+						<p className="text-label-caps uppercase tracking-[0.12em] text-on-surface-muted">
+							DEDUCCIONES APLICADAS
+						</p>
+						<ul className="mt-3 flex flex-col gap-2">
+							{deds.map((d, i) => (
+								<li
+									key={i}
+									className="flex items-center justify-between rounded-md border border-outline-variant bg-surface-container-low px-4 py-3 text-body-md"
+								>
+									<span className="text-on-surface">{d.name ?? "Deducción"}</span>
+									<span className="font-semibold text-primary">
+										{fmtEur(d.amount)}
+									</span>
+								</li>
+							))}
+						</ul>
+					</div>
+				);
+			})()}
 			<Button onClick={onReset} variant="outline" size="lg" className="self-start">
 				Hacer otra estimación
 			</Button>

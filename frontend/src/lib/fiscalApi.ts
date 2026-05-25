@@ -141,6 +141,23 @@ export interface EstimateRequest {
 }
 
 export interface EstimateResponse {
+	// Canonical field names returned by Impuestify backend
+	resultado_estimado?: number;
+	cuota_liquida_total?: number;
+	cuota_integra_general?: number;
+	cuota_integra_ahorro?: number;
+	base_imponible_general?: number;
+	base_imponible_ahorro?: number;
+	deduccion_ceuta_melilla?: number;
+	total_deducciones_autonomicas?: number;
+	deducciones_autonomicas?: Array<{
+		code?: string;
+		name?: string;
+		amount?: number;
+		reference?: string;
+	}>;
+	tipo_medio_efectivo?: number;
+	// Legacy aliases (kept for safety; backend may evolve)
 	base_imponible?: number;
 	cuota_estatal?: number;
 	cuota_autonomica?: number;
