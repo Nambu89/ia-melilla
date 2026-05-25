@@ -235,6 +235,43 @@ export interface InvoiceUploadResponse {
 	id?: string;
 	invoice_id?: string;
 	status?: string;
+	// --- Canonical Impuestify backend shape (nested) ---
+	factura?: {
+		emisor?: { nif_cif?: string; nombre?: string; direccion?: string };
+		receptor?: { nif_cif?: string; nombre?: string; direccion?: string };
+		numero_factura?: string;
+		fecha_factura?: string;
+		fecha_operacion?: string | null;
+		lineas?: Array<{
+			concepto?: string;
+			cantidad?: number;
+			precio_unitario?: number;
+			base_imponible?: number;
+		}>;
+		base_imponible_total?: number;
+		tipo_iva_pct?: number;
+		cuota_iva?: number;
+		tipo_re_pct?: number | null;
+		cuota_re?: number | null;
+		retencion_irpf_pct?: number | null;
+		retencion_irpf?: number | null;
+		total?: number;
+		tipo?: "emitida" | "recibida";
+	};
+	clasificacion?: {
+		cuenta_code?: string;
+		cuenta_nombre?: string;
+		confianza?: "alta" | "media" | "baja";
+		alternativas?: Array<{ code?: string; nombre?: string }>;
+		justificacion?: string;
+	};
+	validacion?: {
+		confianza_extraccion?: "alta" | "media" | "baja";
+		nif_emisor_valido?: boolean;
+		nif_receptor_valido?: boolean;
+		errores_validacion?: string[];
+	};
+	// --- Legacy flat fields kept for backward compatibility ---
 	vendor?: string;
 	vendor_name?: string;
 	supplier?: string;

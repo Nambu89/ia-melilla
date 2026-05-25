@@ -343,18 +343,50 @@ function ProcessingState({ status }: { status: string | null }) {
 }
 
 function ResultPanel({ data }: { data: InvoiceUploadResponse }) {
+	// Backend returns the structured payload nested under `factura` /
+	// `clasificacion` / `validacion`. Read those first and fall back to the
+	// legacy flat fields so the panel works for both shapes.
+	const f = data.factura;
+	const c = data.clasificacion;
+	const v = data.validacion;
+
 	const vendor =
-		data.vendor ?? data.vendor_name ?? data.supplier ?? "Proveedor no detectado";
-	const date = data.date ?? data.invoice_date;
-	const number = data.invoice_number ?? data.number;
-	const subtotal = data.subtotal ?? data.base_imponible;
-	const tax = data.tax ?? data.tax_amount ?? data.iva ?? data.ipsi;
-	const total = data.total ?? data.amount;
-	const pgc = data.pgc_account ?? data.pgc_code ?? data.classification ?? data.category;
+		f?.emisor?.nombre ??
+		data.vendor ??
+		data.vendor_name ??
+		data.supplier ??
+		"Proveedor no detectado";
+	const date = f?.fecha_factura ?? data.date ?? data.invoice_date;
+	const number = f?.numero_factura ?? data.invoice_number ?? data.number;
+	const subtotal = f?.base_imponible_total ?? data.subtotal ?? data.base_imponible;
+	const tax =
+		f?.cuota_iva ??
+		data.tax ??
+		data.tax_amount ??
+		data.iva ??
+		data.ipsi;
+	const taxRate = f?.tipo_iva_pct ?? data.tax_rate;
+	const total = f?.total ?? data.total ?? data.amount;
+	const pgcCode =
+		c?.cuenta_code ??
+		data.pgc_account ??
+		data.pgc_code ??
+		data.classification ??
+		data.category;
+	const pgcName = c?.cuenta_nombre;
+	const pgc = pgcCode && pgcName ? `${pgcCode} — ${pgcName}` : pgcCode;
+	const justificacion = c?.justificacion;
+	const confidenceLabel = v?.confianza_extraccion ?? c?.confianza;
 	const confidence =
-		data.confidence !== undefined
-			? Math.round(data.confidence * 100)
-			: undefined;
+		confidenceLabel === "alta"
+			? 95
+			: confidenceLabel === "media"
+				? 70
+				: confidenceLabel === "baja"
+					? 40
+					: data.confidence !== undefined
+						? Math.round(data.confidence * 100)
+						: undefined;
 	const entry = data.accounting_entry;
 
 	return (
@@ -397,8 +429,8 @@ function ResultPanel({ data }: { data: InvoiceUploadResponse }) {
 					label={
 						data.ipsi !== undefined
 							? "IPSI"
-							: data.tax_rate !== undefined
-								? `Impuesto (${data.tax_rate}%)`
+							: taxRate !== undefined && taxRate !== null
+								? `Impuesto (${taxRate}%)`
 								: "Impuesto"
 					}
 					value={fmtEur(tax)}
@@ -410,6 +442,15 @@ function ResultPanel({ data }: { data: InvoiceUploadResponse }) {
 				/>
 				{pgc && <Stat label="Cuenta PGC" value={String(pgc)} mono />}
 			</div>
+
+			{justificacion && (
+				<div className="rounded-lg border border-outline-variant bg-surface-container-low px-4 py-3 text-body-sm text-on-surface-variant">
+					<p className="mb-1 text-label-caps uppercase tracking-[0.12em] text-on-surface-muted">
+						JUSTIFICACIÓN PGC
+					</p>
+					<p>{justificacion}</p>
+				</div>
+			)}
 
 			{entry && (entry.debit || entry.credit) && (
 				<div>
@@ -480,34 +521,47 @@ function ResultPanel({ data }: { data: InvoiceUploadResponse }) {
 				</div>
 			)}
 
-			{data.items && data.items.length > 0 && (
-				<div>
-					<p className="text-label-caps uppercase tracking-[0.12em] text-on-surface-muted mb-3">
-						LÍNEAS DETECTADAS ({data.items.length})
-					</p>
-					<ul className="flex flex-col gap-2 text-body-sm">
-						{data.items.slice(0, 8).map((item, i) => (
-							<li
-								key={i}
-								className="flex items-start justify-between gap-4 rounded-md border border-outline-variant bg-surface-container-low px-3 py-2"
-							>
-								<span className="text-on-surface">
-									{item.description ?? "—"}
-								</span>
-								<span className="shrink-0 font-mono text-on-surface-variant">
-									{item.quantity ? `${item.quantity} · ` : ""}
-									{fmtEur(item.total ?? item.unit_price)}
-								</span>
-							</li>
-						))}
-						{data.items.length > 8 && (
-							<li className="text-on-surface-muted">
-								+ {data.items.length - 8} líneas más...
-							</li>
-						)}
-					</ul>
-				</div>
-			)}
+			{(() => {
+				// Normalise both nested (factura.lineas) and legacy (data.items)
+				// to a single shape so the rendering loop is identical.
+				const lineas = f?.lineas
+					? f.lineas.map((l) => ({
+							description: l.concepto,
+							quantity: l.cantidad,
+							unit_price: l.precio_unitario,
+							total: l.base_imponible,
+						}))
+					: data.items;
+				if (!lineas || lineas.length === 0) return null;
+				return (
+					<div>
+						<p className="text-label-caps uppercase tracking-[0.12em] text-on-surface-muted mb-3">
+							LÍNEAS DETECTADAS ({lineas.length})
+						</p>
+						<ul className="flex flex-col gap-2 text-body-sm">
+							{lineas.slice(0, 8).map((item, i) => (
+								<li
+									key={i}
+									className="flex items-start justify-between gap-4 rounded-md border border-outline-variant bg-surface-container-low px-3 py-2"
+								>
+									<span className="text-on-surface">
+										{item.description ?? "—"}
+									</span>
+									<span className="shrink-0 font-mono text-on-surface-variant">
+										{item.quantity ? `${item.quantity} · ` : ""}
+										{fmtEur(item.total ?? item.unit_price)}
+									</span>
+								</li>
+							))}
+							{lineas.length > 8 && (
+								<li className="text-on-surface-muted">
+									+ {lineas.length - 8} líneas más...
+								</li>
+							)}
+						</ul>
+					</div>
+				);
+			})()}
 		</div>
 	);
 }
