@@ -34,9 +34,8 @@ export default function AvisoLegal() {
 						artificial aplicada (consultoría, desarrollo e implantación)
 					</p>
 					<p>
-						<strong className="text-on-surface">Domicilio profesional:</strong>{" "}
-						{business.address.street}, {business.address.postalCode} {business.address.city},{" "}
-						{business.address.country}
+						<strong className="text-on-surface">Ubicación:</strong>{" "}
+						{business.address.city}, {business.address.country}
 					</p>
 					<p>
 						<strong className="text-on-surface">Correo electrónico:</strong>{" "}

@@ -18,7 +18,7 @@ export default function Home() {
 	return (
 		<PageShell>
 			<SeoHead
-				title="IA Melilla — Soluciones de inteligencia artificial para empresas y particulares"
+				title="IA Melilla — Soluciones de inteligencia artificial para empresas y autónomos"
 				description="Diseñamos, construimos y mantenemos soluciones IA: chatbots, asistentes WhatsApp, agentes verticales, contenido visual, automatizaciones e integraciones a medida. Demos en vivo disponibles."
 				path="/"
 			/>

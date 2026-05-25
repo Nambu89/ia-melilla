@@ -35,9 +35,8 @@ export default function PoliticaPrivacidad() {
 						<strong className="text-on-surface">NIF:</strong> 45281348Y
 					</p>
 					<p>
-						<strong className="text-on-surface">Domicilio:</strong>{" "}
-						{business.address.street}, {business.address.postalCode} {business.address.city},{" "}
-						{business.address.country}
+						<strong className="text-on-surface">Ubicación:</strong>{" "}
+						{business.address.city}, {business.address.country}
 					</p>
 					<p>
 						<strong className="text-on-surface">Email de contacto:</strong>{" "}

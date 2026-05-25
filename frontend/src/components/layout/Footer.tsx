@@ -61,8 +61,8 @@ export function Footer() {
 				<Separator className="my-12" />
 				<div className="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
 					<div className="text-body-sm text-on-surface-muted">
-						© {footerContent.copyrightYear} {business.name}. {business.address.street},{" "}
-						{business.address.postalCode} {business.address.city}.
+						© {footerContent.copyrightYear} {business.name}. {business.address.city},{" "}
+						{business.address.country}.
 					</div>
 					<div className="flex gap-4">
 						<a href={business.instagram} target="_blank" rel="noreferrer" aria-label="Instagram">

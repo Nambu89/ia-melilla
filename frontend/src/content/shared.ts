@@ -9,8 +9,6 @@ export const business = {
 	linkedin: "https://www.linkedin.com/company/iamelilla/",
 	facebook: "https://www.facebook.com/iamelilla/",
 	address: {
-		street: "C/ Doctor Juan Ríos García, 7 2ºA",
-		postalCode: "52003",
 		city: "Melilla",
 		country: "España",
 	},

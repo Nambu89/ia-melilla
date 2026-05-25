@@ -2,7 +2,7 @@ export const homeContent = {
 	hero: {
 		eyebrow: "SOLUCIONES IA · DESDE MELILLA",
 		headline: "Inteligencia Artificial\nMelilla",
-		tagline: "Soluciones IA reales para empresas, autónomos y particulares.",
+		tagline: "Soluciones IA reales para empresas y autónomos.",
 		subheadline:
 			"Diseñamos, construimos y mantenemos soluciones de IA: chatbots, asistentes WhatsApp, agentes verticales, contenido visual, automatizaciones e integraciones a medida.",
 		primaryCta: { label: "Cuéntanos tu caso →", href: "/contacto" },
@@ -15,13 +15,13 @@ export const homeContent = {
 		paragraphs: [
 			"En Melilla, cada vez más negocios están apostando por la inteligencia artificial como una herramienta clave para mejorar sus procesos. Desde la automatización de tareas repetitivas hasta el análisis avanzado de datos, la inteligencia artificial Melilla está marcando un antes y un después para autónomos y pequeñas empresas.",
 			"A través de soluciones prácticas y adaptadas, iamelilla.com pone al alcance de todos los beneficios de la tecnología inteligente sin necesidad de conocimientos técnicos. Tanto si gestionas una tienda local como si ofreces servicios profesionales, puedes integrar sistemas de IA que te ayuden a ahorrar tiempo y aumentar la productividad.",
-			"Nuestro enfoque de inteligencia artificial en Melilla combina accesibilidad, simplicidad y eficiencia. Apostamos por ofrecer herramientas útiles que realmente aporten valor a negocios y particulares.",
+			"Nuestro enfoque de inteligencia artificial en Melilla combina accesibilidad, simplicidad y eficiencia. Apostamos por ofrecer herramientas útiles que realmente aporten valor a negocios y autónomos.",
 			"Si estás en busca de innovación, es el momento de considerar la inteligencia artificial Melilla como parte de tu estrategia. Automatiza, optimiza y evoluciona con nosotros.",
 		],
 	},
 	audienceSplit: {
-		eyebrow: "ELIGE TU CAMINO",
-		headline: "Tienes negocio. O eres particular. Vamos contigo en los dos sitios.",
+		eyebrow: "PARA QUIÉN TRABAJAMOS",
+		headline: "Soluciones IA para empresas y autónomos.",
 		cards: [
 			{
 				audience: "b2b" as const,
@@ -35,19 +35,6 @@ export const homeContent = {
 					"Automatizaciones que liberan horas de papeleo cada semana",
 				],
 				cta: { label: "Soluciones para empresas →", href: "/empresas" },
-			},
-			{
-				audience: "b2c" as const,
-				badge: "PARTICULARES",
-				title: "Para tu día a día",
-				description:
-					"Te montamos asistentes IA que responden a tus dudas con datos y normativa actualizada. Tutor IA para opositores, asistente fiscal, generadores de contenido y más.",
-				bullets: [
-					"Tutor IA personalizado para oposiciones (Guardia Civil, Bomberos, Policía…)",
-					"Asistentes fiscales y trámites explicados sin jerga",
-					"Respuestas claras y rápidas, con la fuente delante",
-				],
-				cta: { label: "Soluciones para particulares →", href: "/particulares" },
 			},
 		],
 	},
@@ -121,7 +108,7 @@ export const homeContent = {
 		eyebrow: "QUIÉNES SOMOS",
 		headline: "Un equipo de IA con base en Melilla y mirada global.",
 		body: [
-			"IA Melilla nace para acercar la inteligencia artificial a empresas y particulares que necesitan resultados, no presentaciones. Trabajamos con tecnologías punteras (GPT-4o, Claude, modelos abiertos) y las traducimos a soluciones concretas que funcionan en producción.",
+			"IA Melilla nace para acercar la inteligencia artificial a empresas y autónomos que necesitan resultados, no presentaciones. Trabajamos con tecnologías punteras (OpenAI, Anthropic, modelos abiertos) y las traducimos a soluciones concretas que funcionan en producción.",
 			"Nuestra base está en Melilla pero damos servicio a clientes en toda España y norte de África. Construimos software, no diapositivas: cada solución se entrega en marcha, con tu equipo formado y la documentación al día.",
 			"Si la IA no es la respuesta a tu problema, te lo diremos. Solo proponemos lo que sabemos que va a funcionar.",
 		],

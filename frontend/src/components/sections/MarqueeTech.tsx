@@ -2,6 +2,8 @@ import MarqueeRow from "@/components/marketing/MarqueeRow";
 
 const TECH_ITEMS = [
 	"OpenAI",
+	"Anthropic",
+	"Modelos abiertos",
 	"Retrieval-Augmented Generation",
 	"FastAPI",
 	"Python 3.12",

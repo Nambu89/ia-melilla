@@ -1,7 +1,6 @@
 import { type RouteObject } from "react-router-dom";
 import Home from "@/pages/Home";
 import Empresas from "@/pages/Empresas";
-import Particulares from "@/pages/Particulares";
 import Demos from "@/pages/Demos";
 import DemoIaFiscal from "@/pages/DemoIaFiscal";
 import IaFiscalChat from "@/pages/IaFiscalChat";
@@ -31,7 +30,6 @@ import { RequireAuth } from "@/components/auth/RequireAuth";
 export const routes: RouteObject[] = [
 	{ path: "/", element: <Home /> },
 	{ path: "/empresas", element: <Empresas /> },
-	{ path: "/particulares", element: <Particulares /> },
 	{ path: "/demos", element: <Demos /> },
 	{ path: "/demos/ia-fiscal-melilla", element: <DemoIaFiscal /> },
 	{ path: "/demos/ia-fiscal-melilla/chat", element: <IaFiscalChat /> },

@@ -11,7 +11,6 @@ describe("Nav", () => {
 			</MemoryRouter>,
 		);
 		expect(screen.getByText("Empresas")).toBeInTheDocument();
-		expect(screen.getByText("Particulares")).toBeInTheDocument();
 		expect(screen.getByText("Demos")).toBeInTheDocument();
 		expect(screen.getByText("Contacto")).toBeInTheDocument();
 		expect(screen.getByText("Blog")).toBeInTheDocument();

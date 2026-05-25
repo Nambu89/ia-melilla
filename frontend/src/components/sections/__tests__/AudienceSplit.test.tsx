@@ -14,11 +14,11 @@ const cards = [
 	},
 	{
 		audience: "b2c" as const,
-		badge: "PARTICULARES",
-		title: "Para ti",
+		badge: "DEMOS",
+		title: "Pruébalo",
 		description: "Description B2C",
 		bullets: ["Bullet B2C 1"],
-		cta: { label: "B2C CTA", href: "/particulares" },
+		cta: { label: "B2C CTA", href: "/demos" },
 	},
 ];
 
@@ -30,7 +30,7 @@ describe("AudienceSplit", () => {
 			</MemoryRouter>,
 		);
 		expect(screen.getByText("Para tu negocio")).toBeInTheDocument();
-		expect(screen.getByText("Para ti")).toBeInTheDocument();
+		expect(screen.getByText("Pruébalo")).toBeInTheDocument();
 	});
 
 	it("renders all bullets", () => {
@@ -51,6 +51,6 @@ describe("AudienceSplit", () => {
 			</MemoryRouter>,
 		);
 		expect(screen.getByText("B2B CTA").closest("a")).toHaveAttribute("href", "/empresas");
-		expect(screen.getByText("B2C CTA").closest("a")).toHaveAttribute("href", "/particulares");
+		expect(screen.getByText("B2C CTA").closest("a")).toHaveAttribute("href", "/demos");
 	});
 });

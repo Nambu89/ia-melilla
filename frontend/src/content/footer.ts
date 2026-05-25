@@ -1,13 +1,12 @@
 export const footerContent = {
 	tagline:
-		"Inteligencia artificial práctica para empresas, autónomos y particulares. Hecho en Melilla, útil en cualquier sitio.",
+		"Inteligencia artificial práctica para empresas y autónomos. Hecho en Melilla, útil en cualquier sitio.",
 	columns: [
 		{
 			title: "Producto",
 			links: [
 				{ label: "Demos", href: "/demos" },
 				{ label: "Empresas", href: "/empresas" },
-				{ label: "Particulares", href: "/particulares" },
 				{ label: "Contacto", href: "/contacto" },
 			],
 		},

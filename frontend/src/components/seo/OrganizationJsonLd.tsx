@@ -15,13 +15,11 @@ export function OrganizationJsonLd() {
 				sameAs: [business.instagram, business.linkedin, business.facebook],
 				address: {
 					"@type": "PostalAddress",
-					streetAddress: business.address.street,
-					postalCode: business.address.postalCode,
 					addressLocality: business.address.city,
 					addressCountry: business.address.country,
 				},
 				description:
-					"IA Melilla construye soluciones de inteligencia artificial para empresas, autónomos y particulares.",
+					"IA Melilla construye soluciones de inteligencia artificial para empresas y autónomos.",
 			},
 			{
 				"@type": "WebSite",
@@ -35,8 +33,6 @@ export function OrganizationJsonLd() {
 				"@id": "https://iamelilla.com/#place",
 				address: {
 					"@type": "PostalAddress",
-					streetAddress: business.address.street,
-					postalCode: business.address.postalCode,
 					addressLocality: business.address.city,
 					addressRegion: business.address.city,
 					addressCountry: business.address.country,

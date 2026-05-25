@@ -29,7 +29,7 @@ const FAQ_ITEMS = [
 	},
 	{
 		q: "¿Qué modelos de IA utilizáis?",
-		a: "Mezclamos modelos según el caso: GPT-4o y GPT-4o-mini de OpenAI para conversación y razonamiento, Claude para tareas largas, modelos abiertos (Llama, Mistral) cuando los datos no pueden salir de tu infraestructura. Lo elegimos por resultado, no por marca.",
+		a: "Mezclamos proveedores según el caso: OpenAI y Anthropic para conversación y razonamiento, modelos abiertos cuando los datos no pueden salir de tu infraestructura. Lo elegimos por resultado, no por marca.",
 	},
 	{
 		q: "¿Qué pasa con mis datos y los de mis clientes?",

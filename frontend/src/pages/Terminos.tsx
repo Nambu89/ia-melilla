@@ -52,7 +52,7 @@ export default function Terminos() {
 					<li>
 						<strong className="text-on-surface">Servicios profesionales contratados:</strong>{" "}
 						consultoría, desarrollo, integración y mantenimiento de soluciones de IA para
-						empresas, autónomos y particulares. Las condiciones específicas de cada servicio
+						empresas y autónomos. Las condiciones específicas de cada servicio
 						se documentarán en una propuesta o contrato individualizado entre las partes,
 						prevaleciendo en caso de contradicción con las presentes.
 					</li>

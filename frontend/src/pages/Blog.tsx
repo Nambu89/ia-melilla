@@ -32,8 +32,8 @@ export default function Blog() {
 						Inteligencia artificial en Melilla, explicada sin humo.
 					</h1>
 					<p className="mt-6 max-w-2xl text-body-lg text-on-surface-variant">
-						Guías prácticas y casos reales para autónomos, pymes y particulares
-						que quieren aplicar IA en su día a día desde Melilla.
+						Guías prácticas y casos reales para autónomos y pymes que
+						quieren aplicar IA en su día a día desde Melilla.
 					</p>
 				</RevealOnScroll>
 			</section>

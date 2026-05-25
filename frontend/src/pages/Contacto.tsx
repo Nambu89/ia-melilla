@@ -49,9 +49,7 @@ export default function Contacto() {
 						<div className="flex items-start gap-3 text-body-md text-on-surface-variant">
 							<MapPin className="mt-1 h-5 w-5 text-on-surface-muted" aria-hidden="true" />
 							<div>
-								{business.address.street}
-								<br />
-								{business.address.postalCode} {business.address.city}
+								{business.address.city}, {business.address.country}
 							</div>
 						</div>
 					</div>
