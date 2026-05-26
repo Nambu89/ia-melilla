@@ -52,7 +52,7 @@ export default function BlogPostPage() {
 								</span>
 							))}
 						</div>
-						<h1 className="mt-6 text-display-md md:text-display-lg font-bold tracking-tight text-on-surface">
+						<h1 className="mt-6 text-display-md md:text-display-lg font-bold tracking-tight text-on-surface break-words hyphens-auto">
 							{post.title}
 						</h1>
 						<p className="mt-6 text-body-lg text-on-surface-variant max-w-2xl">
@@ -82,9 +82,7 @@ export default function BlogPostPage() {
 				</div>
 
 				<div className="mx-auto max-w-[800px] px-6 pt-12 pb-16">
-					<RevealOnScroll delay={0.15}>
-						<BlogContent blocks={post.blocks} />
-					</RevealOnScroll>
+					<BlogContent blocks={post.blocks} />
 				</div>
 
 				<aside className="mx-auto max-w-[800px] px-6 pb-12">

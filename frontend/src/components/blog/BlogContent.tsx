@@ -1,18 +1,39 @@
-import { Sparkles } from "lucide-react";
+import {
+	Sparkles,
+	Workflow,
+	UtensilsCrossed,
+	Building2,
+	Briefcase,
+	type LucideIcon,
+} from "lucide-react";
 import { InlineMarkdown } from "./InlineMarkdown";
 import type { BlogBlock } from "@/content/blog/types";
 
 const PLACEHOLDER_GRADIENTS: Record<string, string> = {
 	automation:
-		"linear-gradient(135deg, #001F4D 0%, #005EC4 50%, #2A78D8 100%)",
+		"radial-gradient(circle at 30% 20%, #2A78D8 0%, transparent 50%), radial-gradient(circle at 80% 80%, #001F4D 0%, transparent 60%), linear-gradient(135deg, #001F4D 0%, #005EC4 50%, #2A78D8 100%)",
 	restaurant:
-		"linear-gradient(135deg, #003B7F 0%, #2A78D8 60%, #5294E8 100%)",
+		"radial-gradient(circle at 25% 25%, #5294E8 0%, transparent 55%), radial-gradient(circle at 75% 75%, #003B7F 0%, transparent 55%), linear-gradient(135deg, #003B7F 0%, #2A78D8 60%, #5294E8 100%)",
 	skyline:
-		"linear-gradient(160deg, #001F4D 0%, #0A0A0A 40%, #005EC4 100%)",
+		"radial-gradient(circle at 50% 100%, #005EC4 0%, transparent 60%), linear-gradient(160deg, #001F4D 0%, #0A0A0A 40%, #005EC4 100%)",
 	office:
-		"linear-gradient(135deg, #0A0A0A 0%, #003B7F 50%, #005EC4 100%)",
+		"radial-gradient(circle at 70% 30%, #005EC4 0%, transparent 50%), linear-gradient(135deg, #0A0A0A 0%, #003B7F 50%, #005EC4 100%)",
 	default:
-		"linear-gradient(135deg, #001F4D 0%, #005EC4 100%)",
+		"radial-gradient(circle at 30% 30%, #2A78D8 0%, transparent 60%), linear-gradient(135deg, #001F4D 0%, #005EC4 100%)",
+};
+
+const PLACEHOLDER_ICONS: Record<string, LucideIcon> = {
+	automation: Workflow,
+	restaurant: UtensilsCrossed,
+	skyline: Building2,
+	office: Briefcase,
+};
+
+const PLACEHOLDER_TOPICS: Record<string, string> = {
+	automation: "Automatizacion",
+	restaurant: "Hosteleria",
+	skyline: "Pymes Melilla",
+	office: "Profesionales",
 };
 
 export function PlaceholderImage({
@@ -27,16 +48,26 @@ export function PlaceholderImage({
 	const gradient =
 		(placeholder && PLACEHOLDER_GRADIENTS[placeholder]) ??
 		PLACEHOLDER_GRADIENTS.default;
+	const Icon: LucideIcon =
+		(placeholder ? PLACEHOLDER_ICONS[placeholder] : undefined) ?? Sparkles;
+	const topic =
+		(placeholder ? PLACEHOLDER_TOPICS[placeholder] : undefined) ??
+		"IA Melilla";
 	return (
 		<div
 			role="img"
 			aria-label={alt}
-			className={`relative flex aspect-[16/9] w-full items-center justify-center overflow-hidden rounded-xl border border-outline-variant ${className ?? ""}`}
+			className={`relative flex aspect-[16/9] w-full flex-col items-center justify-center overflow-hidden rounded-xl border border-outline-variant ${className ?? ""}`}
 			style={{ background: gradient }}
 		>
-			<div className="flex items-center gap-2 rounded-full border border-white/20 bg-black/30 px-3 py-1 text-label-caps text-white/80 backdrop-blur-sm">
+			<Icon
+				className="h-16 w-16 text-white/70 drop-shadow-lg md:h-20 md:w-20"
+				aria-hidden
+				strokeWidth={1.4}
+			/>
+			<div className="mt-4 flex items-center gap-2 rounded-full border border-white/25 bg-black/35 px-3.5 py-1.5 text-label-caps text-white/90 backdrop-blur-sm">
 				<Sparkles className="h-3 w-3" aria-hidden />
-				IA Melilla
+				{topic}
 			</div>
 		</div>
 	);
