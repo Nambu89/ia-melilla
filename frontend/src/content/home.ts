@@ -64,7 +64,7 @@ export const homeContent = {
 		headline: "Pruébalas antes de contratar.",
 		subheadline:
 			"Nuestras soluciones se pueden probar. Publicamos demos reales para que veas cómo funciona una IA aplicada a casos concretos, sin promesas vacías ni presentaciones interminables.",
-.",
+
 		cta: { label: "Ver catálogo completo →", href: "/demos" },
 		items: [
 			{
