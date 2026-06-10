@@ -63,7 +63,8 @@ export const homeContent = {
 		eyebrow: "DEMOS EN VIVO",
 		headline: "Pruébalas antes de contratar.",
 		subheadline:
-			"Nuestras soluciones se pueden tocar. Vamos publicando demos funcionando para que veas cómo se siente trabajar con IA bien hecha, sin presentaciones de PowerPoint.",
+			"Nuestras soluciones se pueden probar. Publicamos demos reales para que veas cómo funciona una IA aplicada a casos concretos, sin promesas vacías ni presentaciones interminables.
+.",
 		cta: { label: "Ver catálogo completo →", href: "/demos" },
 		items: [
 			{
@@ -77,7 +78,7 @@ export const homeContent = {
 			},
 			{
 				slug: "asistente-whatsapp",
-				title: "Asistente WhatsApp 24/7",
+				title: "Asistente IA para atención al cliente,
 				description:
 					"Bot conversacional que atiende, califica leads y reserva citas dentro de WhatsApp Business. Demo abierta próximamente.",
 				badge: "PRÓXIMAMENTE",
@@ -102,6 +103,33 @@ export const homeContent = {
 				status: "coming-soon" as const,
 				href: "/demos",
 			},
+			{
+  slug: "inmo-ia",
+  title: "InmoAI para inmobiliarias",
+  description:
+    "Herramienta para mejorar imágenes de viviendas: borrar objetos, difuminar datos sensibles, aplicar home staging virtual y preparar fotos más atractivas para portales y redes.",
+  badge: "PRÓXIMAMENTE",
+  status: "coming-soon" as const,
+  href: "/demos",
+},
+			{
+  slug: "menu-ia-restaurantes",
+  title: "Menú IA para restaurantes",
+  description:
+    "Carta digital editable para restaurantes, con gestión rápida de platos, traducciones, QR, carteles y generación de contenidos para redes sociales.",
+  badge: "PRÓXIMAMENTE",
+  status: "coming-soon" as const,
+  href: "/demos",
+},
+			{
+  slug: "agendaflow",
+  title: "AgendaFlow reservas",
+  description:
+    "Sistema de reservas online para negocios con citas, confirmación automática, recordatorios y opción para que el cliente añada la cita a su propio calendario.",
+  badge: "PRÓXIMAMENTE",
+  status: "coming-soon" as const,
+  href: "/demos",
+},
 		],
 	},
 	aboutCompany: {
