@@ -63,7 +63,7 @@ export const homeContent = {
 		eyebrow: "DEMOS EN VIVO",
 		headline: "Pruébalas antes de contratar.",
 		subheadline:
-			"Nuestras soluciones se pueden probar. Publicamos demos reales para que veas cómo funciona una IA aplicada a casos concretos, sin promesas vacías ni presentaciones interminables.
+			"Nuestras soluciones se pueden probar. Publicamos demos reales para que veas cómo funciona una IA aplicada a casos concretos, sin promesas vacías ni presentaciones interminables.",
 .",
 		cta: { label: "Ver catálogo completo →", href: "/demos" },
 		items: [
@@ -78,7 +78,7 @@ export const homeContent = {
 			},
 			{
 				slug: "asistente-whatsapp",
-				title: "Asistente IA para atención al cliente,
+				title: "Asistente IA para atención al cliente",
 				description:
 					"Bot conversacional que atiende, califica leads y reserva citas dentro de WhatsApp Business. Demo abierta próximamente.",
 				badge: "PRÓXIMAMENTE",
