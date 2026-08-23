@@ -9,9 +9,10 @@
 		<title>Admin · IA Melilla</title>
 	</head>
 	<body>
-		<script
-			type="module"
-			src="https://unpkg.com/@sveltia/cms@0.164.0/dist/sveltia-cms.js"
-		></script>
+		<!-- Script clásico a propósito: dist/sveltia-cms.js es un IIFE y solo
+		     auto-arranca si encuentra su propio <script>. Con type="module" la
+		     librería avisa por consola. El build ESM (.mjs) no vale aquí: su
+		     auto-arranque busca un src acabado en /sveltia-cms.js. -->
+		<script src="https://unpkg.com/@sveltia/cms@0.196.0/dist/sveltia-cms.js"></script>
 	</body>
 </html>

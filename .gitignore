@@ -108,3 +108,11 @@ image copy*.png
 # Branding assets pendientes integracion Phase 3 (Estopi mascota, bandera HD)
 # Se utilizaran cuando se construya /sobre-nosotros con la historia local.
 frontend/public/branding/
+
+# Credenciales y codigos de recuperacion — NUNCA al repo (este repo es PUBLICO)
+*recuperaci*n*.txt
+*recovery*.txt
+*credenciales*.txt
+
+# Carpeta de trabajo para material que manda el cliente antes de colocarlo
+_joaquin/

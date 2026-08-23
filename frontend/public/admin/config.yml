@@ -2,8 +2,16 @@ backend:
   name: github
   repo: Nambu89/ia-melilla
   branch: main
-  base_url: https://sveltia-cms-auth.ia-melilla.workers.dev
-  auth_endpoint: oauth
+  # Login con Personal Access Token de GitHub: sin servidor OAuth propio.
+  # Con auth_methods: [token] el panel oculta el botón de OAuth, que sin
+  # servidor de autenticación no llevaría a ningún sitio, y deja solo
+  # "Iniciar sesión con un token de acceso". Ese diálogo ya enlaza a la
+  # página de GitHub donde se crea el token, con el permiso
+  # "Contents: Read and write" preseleccionado — pero ese enlace es de
+  # token fine-grained y solo sirve al dueño del repositorio. Quien sea
+  # solo colaborador necesita un token classic con ámbito public_repo.
+  # Ver README.md de esta carpeta.
+  auth_methods: [token]
   commit_messages:
     create: "post(blog): {{slug}} — {{message}}"
     update: "post(blog): actualizar {{slug}}"
@@ -14,7 +22,7 @@ backend:
 site_url: https://iamelilla.com
 display_url: https://iamelilla.com
 logo_url: /favicon.svg
-locale: es
+# Sin opción de idioma: Sveltia CMS no admite `locale` y toma el del navegador.
 
 media_folder: frontend/public/blog-media
 public_folder: /blog-media
@@ -39,10 +47,6 @@ collections:
     slug: "{{slug}}"
     summary: "{{title}} — {{publishedAt | date('YYYY-MM-DD')}}"
     sortable_fields: [publishedAt, title]
-    view_filters:
-      - label: "Publicados últimos 30 días"
-        field: publishedAt
-        pattern: "2026"
     fields:
       - label: "Slug (URL)"
         name: slug
