@@ -13,6 +13,47 @@
 
 ---
 
+## [2026-08-23 12:15] [PM → frontend-dev] Panel /admin/ del blog usable de verdad
+Estado: **DONE** — PR #25, rama `claude/blog-admin-token`, 5 commits.
+
+**El diagnostico de partida era falso.** Se creia que `/admin/` no podia loguear
+porque `config.yml` apuntaba `base_url` a un Cloudflare Worker que nunca se
+desplego (`curl` -> HTTP 000). El Worker efectivamente no existe, pero **no
+bloqueaba nada**: Sveltia CMS ofrece ademas login por token y ese boton llevaba
+meses habilitado. Verificado contra el bundle real y con Playwright, tres
+configuraciones en la misma corrida.
+
+El bloqueador real: la invitacion de colaborador estaba **caducada** (GitHub las
+caduca a los 7 dias) y la guia del repo solo contaba el camino del Worker.
+
+**Lo que hay que saber para dar acceso a alguien**: el enlace que ofrece el
+propio panel **solo sirve al dueno del repositorio**. GitHub no da escritura
+sobre repositorios publicos ajenos a los tokens *fine-grained*, solo a los
+*classic* con ambito `public_repo`. Un colaborador que siga el enlace del panel
+crea un token que parece correcto y falla al guardar.
+
+**Cambios**: `auth_methods: [token]`; Sveltia 0.164.0 -> 0.196.0 (panel en
+espanol, enlace al token pintado, boton de OAuth fuera); `blog-media/.gitkeep`;
+`Cache-Control` en `/admin/`; `view_filters` fuera (su etiqueta mentia); y **las
+tres cabeceras de seguridad, que no llegaban a cuatro rutas** — un `add_header`
+dentro de un `location` sustituye a los heredados del `server`, y el bloque de
+assets casa `css|js|...`, o sea que todo el JS y el CSS se servian sin `nosniff`.
+
+**Documentacion**: `docs/sveltia-cms-setup.md` BORRADO (mandaba montar
+infraestructura innecesaria). `docs/blog-admin.md` con el acceso reescrito.
+`.gitignore` ampliado: el repo es publico y tenia sin ignorar un fichero de
+codigos de recuperacion de Coolify en la raiz.
+
+**Limite de lo verificado**: nadie ha editado y guardado un post de verdad. Eso
+exige un token con escritura y commitea en `main`. Pendiente para `qa-tester`.
+
+**Pendiente de humano**: reenviar la invitacion de colaborador (la de `lopentan`
+del 2026-06-08 esta `expired: true`) y confirmar que esa cuenta es la de Joaquin
+antes de darle escritura sobre lo que despliega Coolify.
+
+
+---
+
 ## [2026-05-10] [Setup] Inicializacion del proyecto
 
 Tarea: copiar y adaptar sistema multi-agente desde TaxIA → IA Melilla v2.
