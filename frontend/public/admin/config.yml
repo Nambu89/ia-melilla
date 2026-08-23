@@ -2,8 +2,15 @@ backend:
   name: github
   repo: Nambu89/ia-melilla
   branch: main
-  base_url: https://sveltia-cms-auth.ia-melilla.workers.dev
-  auth_endpoint: oauth
+  # Login con Personal Access Token de GitHub: sin servidor OAuth propio.
+  # Sveltia CMS muestra el botón "Sign In Using Access Token" en /admin/ y
+  # desactiva el de OAuth, que sin servidor de autenticación no lleva a ningún
+  # sitio.
+  # OJO: la versión fijada en index.html (0.164.0) NO pinta el enlace a la
+  # página de creación del token. Se crea a mano aquí, con permiso
+  # "Contents: Read and write" sobre este repositorio:
+  # https://github.com/settings/personal-access-tokens/new?name=Sveltia+CMS&contents=write
+  auth_methods: [token]
   commit_messages:
     create: "post(blog): {{slug}} — {{message}}"
     update: "post(blog): actualizar {{slug}}"
