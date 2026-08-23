@@ -47,10 +47,6 @@ collections:
     slug: "{{slug}}"
     summary: "{{title}} — {{publishedAt | date('YYYY-MM-DD')}}"
     sortable_fields: [publishedAt, title]
-    view_filters:
-      - label: "Publicados últimos 30 días"
-        field: publishedAt
-        pattern: "2026"
     fields:
       - label: "Slug (URL)"
         name: slug
