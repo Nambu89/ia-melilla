@@ -4,12 +4,62 @@ Esta guía está pensada para el editor del blog (titular, redactores). **No nec
 
 ## Acceso al panel
 
-1. Abre <https://iamelilla.com/admin/> en tu navegador.
-2. Pulsa **Login with GitHub**.
-3. Introduce tu cuenta de GitHub. La primera vez tendrás que **autorizar la app "IA Melilla CMS"** (es la única vez).
-4. Verás el panel con la lista de artículos publicados.
+El panel vive en <https://iamelilla.com/admin/> y se entra con un **token de
+GitHub**. No hay usuario ni contraseña, y no hay que autorizar ninguna
+aplicación: el token es la llave.
 
-> Si no tienes acceso aún, pide al administrador del repo que te añada como colaborador con permisos de escritura en GitHub.
+Antes del primer acceso hacen falta dos cosas, y las dos las prepara el
+administrador del repositorio:
+
+1. **Ser colaborador** de `Nambu89/ia-melilla` con permiso de escritura. Llega
+   una invitación por correo. **Acéptala en menos de 7 días**: GitHub las caduca
+   y hay que pedir otra. Si intentas entrar sin ser colaborador, el panel
+   responde *"Not a collaborator of the repository"*.
+2. **Tu propio token**, que creas tú una sola vez (siguiente apartado).
+
+### Crear tu token
+
+> ⚠️ **No uses el enlace que ofrece el propio panel** salvo que seas el dueño
+> del repositorio. Ese enlace lleva a los tokens *fine-grained*, y GitHub **no
+> les da permiso de escritura sobre repositorios públicos que no son tuyos**.
+> Lo crearías, parecería correcto, y fallaría justo al guardar el artículo.
+
+Si eres **colaborador** (el caso normal):
+
+1. Abre <https://github.com/settings/tokens/new?scopes=public_repo&description=Sveltia+CMS>.
+   El enlace ya trae marcado el ámbito `public_repo`, que es el único que hace
+   falta.
+2. En **Expiration** elige cuánto quieres que dure. Si pones caducidad, apunta
+   la fecha: el día que expire, el panel dejará de guardar y habrá que repetir
+   estos pasos.
+3. Pulsa **Generate token** y **copia el token en ese momento**. GitHub no
+   vuelve a enseñarlo nunca.
+
+Si eres el **dueño** del repositorio (`Nambu89`), te sirve además el enlace del
+propio diálogo del panel, que abre la página de token *fine-grained* con el
+permiso **Contents: Read and write** ya marcado.
+
+### Entrar
+
+1. Abre <https://iamelilla.com/admin/>.
+2. Pulsa **Iniciar sesión con un token de acceso** (es el único botón).
+3. Pega el token y confirma.
+
+El token se guarda **solo en tu navegador**. Consecuencias prácticas: si entras
+desde otro ordenador tendrás que pegarlo otra vez, y si pierdes el equipo,
+revócalo desde *GitHub → Settings → Developer settings → Personal access
+tokens*.
+
+> **El panel sale en el idioma de tu navegador.** Sveltia CMS no permite fijarlo
+> desde la configuración del sitio. Con el navegador en español verás la
+> interfaz en español —en la variante de Colombia, la única que publica la
+> librería—, así que alguna palabra suena a americana ("Ingresa tu token" en vez
+> de "Introduce"). Con el navegador en inglés, verás los botones en inglés: en
+> este documento se citan las dos formas donde puede confundir.
+
+> **Sobre los nombres de los botones**: abajo se citan en inglés (*Save*,
+> *Publish*, *Delete entry*). Con el navegador en español los verás traducidos.
+> Fíate de la acción que se describe, no de la palabra exacta.
 
 ## Crear un artículo nuevo
 
