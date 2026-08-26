@@ -1,4 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#005EC4"/>
-  <text x="16" y="22" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">IA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="IA Melilla">
+  <title>IA Melilla</title>
+  <!--
+    Favicon de IA Melilla. Version reducida del chip del logotipo
+    (public/logo-ia-melilla.svg), simplificada para que se lea a 16x16:
+      - 8 pines rectos en vez de los 13 del logotipo (fuera los 4 diagonales
+        de esquina, que a 16 px solo ensucian).
+      - Terminaciones planas: ni anillos ni puntos ni la traza en L, que a ese
+        tamano se funden con el trazo.
+      - Pines pegados al chip; en el logotipo van despegados.
+      - Trazo 4.6 sobre rejilla de 64 (en el logotipo es 2.1) para caer sobre
+        al menos un pixel fisico a 16 px.
+      - El chip ocupa el 62% del lienzo; el PNG original solo el 56%.
+    Color #0DBFDE, muestreado del trazo del original de Joaquin Gorge.
+  -->
+  <g fill="none" stroke="#0DBFDE" stroke-width="4.6" stroke-linecap="round">
+    <rect x="14.3" y="14.3" width="35.4" height="35.4" rx="6.2"/>
+    <path d="M25.5 12V6M38.5 12V6M25.5 52v6M38.5 52v6M12 25.5H6M12 38.5H6M52 25.5h6M52 38.5h6"/>
+  </g>
+  <g fill="#0DBFDE">
+    <rect x="19.9" y="22" width="4.6" height="20"/>
+    <path fill-rule="evenodd" d="M33.3 22H37.9L44.1 42H39.7L38.43 37.9H32.77L31.5 42H27.1ZM35.6 28.77 37.62 35.3H33.58Z"/>
+  </g>
 </svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 64" role="img" aria-label="IA Melilla">
+  <title>IA Melilla</title>
+  <!--
+    Logotipo de IA Melilla redibujado en vectorial a partir del original de Joaquin Gorge
+    (_joaquin/logoyfavicon/Ia Melilla.png). Sin el fondo gris del original: fondo transparente.
+    Color #0DBFDE, muestreado del trazo del PNG por debajo del halo de neon.
+    El texto va como <path>: contornos de Inter (la tipografia del sitio, que coincide con la
+    del original) convertidos a curvas, para que no dependa de fuentes del visitante.
+    "IA" en Inter 700, "MELILLA" en Inter 500, ambas a tracking 0.
+  -->
+  <g fill="none" stroke="#0DBFDE" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <!-- cuerpo del chip -->
+    <rect x="17.85" y="17.85" width="28.3" height="28.3" rx="3.3"/>
+    <!-- pistas: traza en L superior, y los pines rectos de los cuatro lados -->
+    <path d="M32.2 5.9V13.3H43.6"/>
+    <path d="M23.4 7.6V14.3M8.2 27.3H14.3M8.6 35.2H14.3M49.7 27.6H55.1M31.9 49.7V57.3"/>
+    <path d="M49.7 35.3H55.2Q56.7 35.3 56.7 36.8V43.6"/>
+    <path d="M39.2 49.7V51.8Q39.2 53.3 40.7 53.3H41.6"/>
+    <path d="M24.9 49.7V53.9L22.1 57.2"/>
+    <!-- pines diagonales de las cuatro esquinas -->
+    <path d="M12.9 12.9 16.3 16.3M51.1 12.9 47.7 16.3M12.9 51.1 16.3 47.7M51.1 51.1 47.7 47.7"/>
+    <!-- terminaciones en anillo -->
+    <circle cx="32.2" cy="4" r="1.9"/>
+    <circle cx="11.4" cy="11.4" r="1.9"/>
+    <circle cx="52.6" cy="11.4" r="1.9"/>
+    <circle cx="6.7" cy="35.2" r="1.9"/>
+    <circle cx="57" cy="27.6" r="1.9"/>
+    <circle cx="11.4" cy="52.6" r="1.9"/>
+    <circle cx="52.6" cy="52.6" r="1.9"/>
+    <circle cx="31.9" cy="59.2" r="1.9"/>
+  </g>
+  <g fill="#0DBFDE">
+    <!-- terminaciones en punto solido -->
+    <circle cx="23.4" cy="7.6" r="1.85"/>
+    <circle cx="8.2" cy="27.3" r="1.85"/>
+    <circle cx="56.7" cy="43.6" r="1.85"/>
+    <circle cx="41.6" cy="53.3" r="1.85"/>
+    <!-- letras IA dentro del chip -->
+    <rect x="23.28" y="24.72" width="2.65" height="15.04"/>
+    <path fill-rule="evenodd" d="M32.85 24.72H35.65L40.6 39.76H38.1L37.09 36.69H31.41L30.4 39.76H27.9ZM34.25 28.06 36.45 34.75H32.05Z"/>
+    <!-- IA (Inter 700, altura de caja 23.19) -->
+    <path d="M73.63 9.78V32.97H68.87V9.78ZM76.48 32.97 84.42 9.78H90.63L98.76 32.97H93.48L89.77 21.78Q89.09 19.62 88.4 17.04Q87.71 14.46 86.95 11.42H87.98Q87.24 14.47 86.6 17.07Q85.95 19.66 85.31 21.78L81.73 32.97ZM81.44 27.59V23.86H93.81V27.59Z"/>
+    <!-- MELILLA (Inter 500, altura de caja 14.29) -->
+    <path d="M68.87 53.51V39.22H72.09L75.21 47.42Q75.34 47.78 75.51 48.34Q75.68 48.9 75.86 49.55Q76.04 50.2 76.21 50.84Q76.37 51.47 76.49 51.98H76.03Q76.16 51.49 76.33 50.87Q76.49 50.24 76.67 49.59Q76.85 48.93 77.02 48.36Q77.2 47.79 77.33 47.42L80.4 39.22H83.64V53.51H81.46V45.82Q81.46 45.37 81.47 44.76Q81.48 44.15 81.49 43.47Q81.51 42.78 81.53 42.08Q81.54 41.38 81.55 40.73H81.72Q81.52 41.44 81.3 42.18Q81.07 42.92 80.85 43.61Q80.64 44.3 80.44 44.87Q80.25 45.45 80.11 45.82L77.19 53.51H75.31L72.35 45.82Q72.21 45.45 72.02 44.89Q71.84 44.33 71.62 43.65Q71.4 42.96 71.17 42.22Q70.94 41.47 70.71 40.73H70.9Q70.92 41.32 70.93 42.01Q70.95 42.7 70.96 43.39Q70.97 44.09 70.99 44.72Q71 45.35 71 45.82V53.51ZM86.79 53.51V39.22H95.79V41.1H88.99V45.36H95.31V47.23H88.99V51.63H95.85V53.51ZM98.64 53.51V39.22H100.83V51.63H107.3V53.51ZM111.94 39.22V53.51H109.75V39.22ZM115.1 53.51V39.22H117.29V51.63H123.75V53.51ZM126.2 53.51V39.22H128.39V51.63H134.86V53.51ZM136.22 53.51 141.3 39.22H143.99L149.16 53.51H146.8L144.01 45.56Q143.69 44.59 143.3 43.28Q142.91 41.96 142.41 40.13H142.85Q142.35 41.98 141.97 43.31Q141.58 44.64 141.28 45.56L138.58 53.51ZM138.97 49.74V47.92H146.4V49.74Z"/>
+  </g>
+</svg>

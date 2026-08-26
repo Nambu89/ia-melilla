@@ -31,9 +31,18 @@ export function Nav() {
 			<div className="mx-auto flex h-full max-w-[1200px] items-center justify-between px-6">
 				<Link
 					to="/"
-					className="text-headline-sm font-bold text-on-surface transition-colors hover:text-primary"
+					className="flex items-center transition-opacity hover:opacity-80"
 				>
-					{navContent.logoAlt}
+					<img
+						src="/logo-ia-melilla.svg"
+						alt={navContent.logoAlt}
+						width={152}
+						height={64}
+						className={cn(
+							"w-auto transition-all duration-200",
+							shrunk ? "h-8" : "h-10",
+						)}
+					/>
 				</Link>
 
 				<nav
