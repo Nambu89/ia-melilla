@@ -1,7 +1,7 @@
 ---
 slug: automatizacion-ia-melilla
-title: "Automatización IA Melilla: cómo implementar la IA en tu pyme en 6 pasos sin complicaciones"
-description: "La Automatización IA Melilla ya no es cosa de grandes corporaciones: cada vez más pymes melillenses la aplican para ahorrar tiempo, reducir errores y mejorar la atención al cliente."
+title: 'Automatización IA Melilla: cómo implementar la IA en tu pyme en 6 pasos sin complicaciones'
+description: 'La Automatización IA Melilla ya no es cosa de grandes corporaciones: cada vez más pymes melillenses la aplican para ahorrar tiempo, reducir errores y mejorar la atención al cliente.'
 publishedAt: 2025-09-16
 readingMinutes: 9
 tags:
@@ -9,7 +9,8 @@ tags:
   - Pymes
   - Implementación
 cover:
-  alt: "Automatización IA Melilla aplicada a una pyme local"
+  alt: Automatización IA Melilla aplicada a una pyme local
+  src: ''
   placeholder: automation
 ---
 
