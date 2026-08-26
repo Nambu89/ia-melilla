@@ -164,7 +164,7 @@ function ChatBubble({
 				}`}
 			>
 				<p className="text-label-caps text-on-surface-muted mb-1 font-mono">
-					{isUser ? "TU" : "IA FISCAL"}
+					{isUser ? "TÚ" : "IA FISCAL"}
 				</p>
 				<p className="text-body-md whitespace-pre-wrap">
 					{content}

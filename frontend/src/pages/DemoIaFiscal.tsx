@@ -28,7 +28,7 @@ const TOOLS: Tool[] = [
 		href: "/demos/ia-fiscal-melilla/chat",
 		title: "Chat IA Fiscal",
 		description:
-			"Preguntá lo que sea sobre fiscalidad de Melilla. IPSI, REF, IRPF, deducciones, plazos. Te contesta y te cita la norma para que puedas comprobarla.",
+			"Pregunta lo que sea sobre fiscalidad de Melilla. IPSI, REF, IRPF, deducciones, plazos. Te contesta y te cita la norma para que puedas comprobarla.",
 		icon: MessageSquare,
 		badge: "FLAGSHIP",
 		featured: true,

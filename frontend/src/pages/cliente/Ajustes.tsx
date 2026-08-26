@@ -43,7 +43,7 @@ export default function ClienteAjustes() {
 					<Card
 						icon={<ShieldCheck className="h-5 w-5" />}
 						label="Plan"
-						value={session?.user.plan ?? "autonomo (demo)"}
+						value={session?.user.plan ?? "autónomo (demo)"}
 					/>
 					<Card
 						icon={<Calendar className="h-5 w-5" />}

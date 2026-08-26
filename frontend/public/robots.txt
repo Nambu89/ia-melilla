@@ -1,7 +1,27 @@
-User-Agent: *
-Disallow:
+# Los rastreadores de IA se permiten a propósito: queremos que GPTBot,
+# ClaudeBot, PerplexityBot y compañía indexen el sitio y lo citen.
+# No bloquear ninguno sin hablarlo antes con el titular del sitio.
 
-User-agent: GPTBot
-Disallow:
+User-agent: *
+Allow: /
 
 Sitemap: https://iamelilla.com/sitemap.xml
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI
+User-agent: Google-Extended
+Allow: /

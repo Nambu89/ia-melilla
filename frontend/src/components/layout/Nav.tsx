@@ -26,7 +26,7 @@ export function Nav() {
 				"sticky top-0 z-40 w-full border-b border-outline-variant bg-surface/90 backdrop-blur-md transition-all duration-200",
 				shrunk ? "h-14" : "h-20",
 			)}
-			aria-label="Navegacion principal"
+			aria-label="Navegación principal"
 		>
 			<div className="mx-auto flex h-full max-w-[1200px] items-center justify-between px-6">
 				<Link

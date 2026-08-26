@@ -306,7 +306,7 @@ function DropZone({
 				</p>
 			</div>
 			<p className="text-label-lg text-on-surface-muted">
-				PDF · JPG · PNG · WEBP · max 10MB
+				PDF · JPG · PNG · WEBP · máx. 10 MB
 			</p>
 		</label>
 	);

@@ -30,8 +30,8 @@ const PLACEHOLDER_ICONS: Record<string, LucideIcon> = {
 };
 
 const PLACEHOLDER_TOPICS: Record<string, string> = {
-	automation: "Automatizacion",
-	restaurant: "Hosteleria",
+	automation: "Automatización",
+	restaurant: "Hostelería",
 	skyline: "Pymes Melilla",
 	office: "Profesionales",
 };

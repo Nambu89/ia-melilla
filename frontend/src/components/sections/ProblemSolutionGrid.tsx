@@ -20,7 +20,7 @@ export function ProblemSolutionGrid({ headline, cards }: ProblemSolutionGridProp
 						<CardContent>
 							<p className="text-label-caps text-on-surface-muted mb-2">PROBLEMA</p>
 							<p className="text-headline-sm font-semibold mb-4">{card.problem}</p>
-							<p className="text-label-caps text-primary mb-2">SOLUCION</p>
+							<p className="text-label-caps text-primary mb-2">SOLUCIÓN</p>
 							<p className="text-body-md text-on-surface-variant">{card.solution}</p>
 						</CardContent>
 					</Card>
