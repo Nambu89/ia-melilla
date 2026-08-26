@@ -31,7 +31,8 @@ describe("Nav", () => {
 				<Nav />
 			</MemoryRouter>,
 		);
-		const logo = screen.getByText("IA Melilla");
+		const logo = screen.getByAltText("IA Melilla");
+		expect(logo).toHaveAttribute("src", "/logo-ia-melilla.svg");
 		expect(logo.closest("a")).toHaveAttribute("href", "/");
 	});
 });
