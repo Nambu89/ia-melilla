@@ -1,7 +1,7 @@
 import { type ReactNode } from "react";
 import { Nav } from "./Nav";
 import { Footer } from "./Footer";
-import { WhatsAppFloat } from "./WhatsAppFloat";
+import { FloatingCta } from "./FloatingCta";
 import CursorBlob from "@/components/decoration/CursorBlob";
 import PageTransition from "@/components/animations/PageTransition";
 
@@ -14,7 +14,7 @@ export function PageShell({ children }: { children: ReactNode }) {
 				<PageTransition>{children}</PageTransition>
 			</main>
 			<Footer />
-			<WhatsAppFloat />
+			<FloatingCta />
 		</>
 	);
 }
