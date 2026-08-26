@@ -13,6 +13,56 @@
 
 ---
 
+## [2026-08-26 21:00] [PM → frontend-dev] Leadbot rescatado + el banner tapaba el CTA
+Estado: **DONE** — PR #28, rama `claude/leadbot-widget`, 2 commits. Backend en Impuestify PR #45 (mergeado).
+
+**El captador de leads llevaba desde junio sin subirse a ningun sitio.** El
+backend vivia solo en dos ramas de Impuestify y el widget en un commit huerfano
+(`9f6d736`) de un clon obsoleto del repositorio. Ahora: backend mergeado a `main`
+y llevado a `demo/fiscal-ia-melilla` por fast-forward, widget en el PR #28.
+
+**Todo apagado.** `LEADBOT_ENABLED` es `default=False` y con el flag apagado el
+modulo ni se importa. En el frontend, `FLOATING_CTA` en `layout/FloatingCta.tsx`
+con `whatsapp` (por defecto, la web como hoy), `chat` o `ambos`.
+
+**Para encenderlo no hace falta codigo**: SMTP de SiteGround (app password, no la
+principal), `LEADBOT_ENABLED=true` en Coolify, y cambiar `FLOATING_CTA`. Calendar
+es opcional y **tiene plazo**: la pantalla de consentimiento OAuth debe estar *In
+production* o el refresh token caduca a los 7 dias, y verificar el scope tarda
+3-5 dias. Detalle en `docs/deploy/leadbot-config.md`.
+
+### BUG DE PRODUCCION que salio al rescatarlo
+
+**El banner de cookies dejaba el boton de contacto sin poder pulsarse.** Banner
+`fixed bottom-4 left-4 right-4 z-[60]` contra boton `fixed bottom-5 right-5
+z-40`: se solapan y 60 gana a 40.
+
+**Empieza por debajo de 872 px de ancho** — en escritorio no se ve porque el
+banner esta centrado a `max-w-[720px]`. Por debajo: movil, tableta y ventanas
+pequenas. O sea la mayoria del trafico, y justo el visitante nuevo.
+
+Arreglado: el banner **mide su propio alto** (242 px en escritorio, 528 en un
+movil de 320) y lo publica en `--cookie-banner-height`; los flotantes lo suman a
+su `bottom`. Con tope, porque en 320x568 apartarse sacaba el boton de la pantalla.
+
+De paso, dos preexistentes mas: **el banner tapaba la cabecera entera en
+apaisado** (346 px de 360 en 740x360 — el boton de menu no se podia pulsar) y
+**flotaba sobre el menu movil abierto** (60 contra 50).
+
+Capas finales: banner 60 → flotantes 65 → modal de configuracion 70 → menu movil
+74/75.
+
+**Leccion**: un boton flotante se verifica con un `click()` de verdad, no
+comprobando que el elemento existe. Lo que falla cuando algo se superpone es el
+clic, y eso no se ve midiendo coordenadas.
+
+**Pendiente de humano**: las credenciales SMTP, encender el flag, decidir
+`FLOATING_CTA`, y preguntar a Joaquin si quiere citas automaticas (su correo de
+Google y su horario real — los valores de hoy son provisionales de mayo).
+
+
+---
+
 ## [2026-08-26 12:30] [PM → frontend-dev] SEO: los tres ficheros de Joaquin y lo que aparecio al aplicarlos
 Estado: **DONE** — PR #26, rama `claude/seo-llms-sitemap`, 2 commits.
 
