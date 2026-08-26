@@ -13,6 +13,59 @@
 
 ---
 
+## [2026-08-26 12:30] [PM → frontend-dev] SEO: los tres ficheros de Joaquin y lo que aparecio al aplicarlos
+Estado: **DONE** — PR #26, rama `claude/seo-llms-sitemap`, 2 commits.
+
+Joaquin mando `llms.txt`, `sitemap.xml` y `robots.txt` el 2026-06-08. Llevaban
+casi tres meses sin aplicarse. Se recuperaron del correo (MIME en crudo) y
+**ninguno se aplico tal cual**, porque al compararlos aparecio esto:
+
+**El sitemap anunciaba `/particulares` y `/portafolio`, que no existen** en
+`routes.tsx`. Al ser una SPA con fallback, devolvian **HTTP 200 con la pagina de
+404**: soft 404. Un curl al codigo de estado no lo detecta — hay que contrastar
+contra el router. Faltaban ademas `/terminos`, `/transparencia-ia` y los dos
+posts del blog.
+
+**Quitarlas del sitemap no bastaba**: quien ya las tiene indexadas sigue
+pidiendolas. La 404 pasa a `noindex, follow`.
+
+**`/cliente/*` era indexable**: no esta en el sitemap, pero el menu enlaza
+"Acceso clientes". Ahora lleva `X-Robots-Tag` por cabecera de nginx, no por meta
+en React — el rastreador que no ejecuta JS nunca veria la meta.
+
+**TRAMPA DE NGINX, para que no se repita**: `try_files` (el fallback de la SPA)
+es una **redireccion interna**. Nginx vuelve a elegir `location`, cae en
+`location /` y **descarta los `add_header` del bloque de origen**. La cabecera se
+pierde sin ningun aviso; solo se ve midiendo con un contenedor real. Y al
+resolverlo con un `add_header` en `location /`, ese bloque **deja de heredar** las
+tres cabeceras de seguridad del `server` — o sea todas las paginas HTML. Van
+repetidas a proposito. Misma familia que el hallazgo del PR #25.
+
+**Sitemap y `llms.txt` se generan ahora en el build**
+(`frontend/scripts/seo-files-plugin.ts`) desde las rutas reales, y los posts se
+leen con `parseFrontmatter`, el mismo parser del router, para que no puedan
+divergir. **Publicar un post desde `/admin/` ya no exige tocar codigo.**
+
+**14 correcciones de ortografia** en 11 ficheros. Entre ellas: el
+`meta description` de Contacto sin tildes (**es lo que Google enseña**), un
+**voseo rioplatense** en la demo ("Pregunta", no "Preguntá"), y "TU" en vez de
+"TÚ" en el chat publico. Detalle: `content/contacto.ts` ya lo tenia bien — lo
+que fallaba era una copia hardcodeada en la pagina.
+
+**Pendiente de humano**: (1) confirmar si `lopentan` es la cuenta de Joaquin y
+reenviarle la invitacion, caducada desde el 2026-06-15; (2) los 5 ficheros de
+imagen del correo "logo y favicon", que siguen sin poner — el favicon es aun el
+cuadrado azul con "IA" en texto; (3) decidir si `/sobre-nosotros` lleva `noindex`
+mientras diga "Pagina en construccion".
+
+**Deuda anotada, no tocada**: `npm run lint` roto en `main` (eslint 9 sin
+`eslint.config.js`), y `ContactForm.test.tsx` busca `/Cuentanos/i` sin tildes —
+la bandera `i` ignora mayusculas pero NO diacriticos, asi que quien arregle el
+`Link` fuera de `Router` se dara contra un segundo muro acto seguido.
+
+
+---
+
 ## [2026-08-23 12:15] [PM → frontend-dev] Panel /admin/ del blog usable de verdad
 Estado: **DONE** — PR #25, rama `claude/blog-admin-token`, 5 commits.
 
