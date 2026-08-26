@@ -11,7 +11,7 @@ export default function Contacto() {
 		<PageShell>
 			<SeoHead
 				title="Contacto — IA Melilla"
-				description="Cuentanos tu caso. Respondemos el mismo dia. Email, WhatsApp y formulario directos al equipo de IA Melilla."
+				description="Cuéntanos tu caso. Respondemos el mismo día. Email, WhatsApp y formulario directos al equipo de IA Melilla."
 				path="/contacto"
 			/>
 			<section className="mx-auto max-w-[1200px] px-6 pt-16 pb-24">
@@ -27,7 +27,7 @@ export default function Contacto() {
 						<ContactForm />
 					</div>
 					<div className="flex flex-col gap-6">
-						<h2 className="text-headline-sm font-semibold tracking-tight">Tambien puedes</h2>
+						<h2 className="text-headline-sm font-semibold tracking-tight">También puedes</h2>
 						<ContactChannel
 							icon={<MessageCircle className="h-5 w-5" />}
 							label="WhatsApp"
@@ -42,7 +42,7 @@ export default function Contacto() {
 						/>
 						<ContactChannel
 							icon={<Phone className="h-5 w-5" />}
-							label="Telefono"
+							label="Teléfono"
 							value={business.phone}
 							href={`tel:+${business.phoneIntl}`}
 						/>

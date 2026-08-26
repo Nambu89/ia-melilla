@@ -18,7 +18,7 @@ export const empresasContent = {
 			{
 				problem: "Renta y temporadas que desbordan al equipo",
 				solution:
-					"Pre-procesamiento automático de consultas. Clasificación por urgencia. Tu equipo trabaja sobre lo que aporta valor.",
+					"Preprocesamiento automático de consultas. Clasificación por urgencia. Tu equipo trabaja sobre lo que aporta valor.",
 			},
 			{
 				problem: "Software fragmentado que no se habla entre sí",

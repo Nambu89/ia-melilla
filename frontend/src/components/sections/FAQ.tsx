@@ -41,7 +41,7 @@ const FAQ_ITEMS = [
 	},
 	{
 		q: "¿Os ocupáis del mantenimiento después de entregar?",
-		a: "Sí, con un plan de mantenimiento mensual. La IA cambia rápido: modelos nuevos, mejores prompts, normativa que se actualiza. Mantenemos la solución viva. Si prefieres opciones de auto-gestión, te dejamos la documentación y formación para que tu equipo se encargue.",
+		a: "Sí, con un plan de mantenimiento mensual. La IA cambia rápido: modelos nuevos, mejores prompts, normativa que se actualiza. Mantenemos la solución viva. Si prefieres opciones de autogestión, te dejamos la documentación y formación para que tu equipo se encargue.",
 	},
 ];
 
