@@ -5,10 +5,18 @@ import { SeoHead } from "@/components/seo/SeoHead";
 export default function SobreNosotros() {
 	return (
 		<PageShell>
+			{/*
+			 * noindex mientras siga siendo un marcador de posición: está
+			 * enlazada desde el footer, así que quitarla del sitemap no evita
+			 * que Google la encuentre e indexe una página vacía. Quitar el
+			 * noindex y añadir la ruta a PAGES en scripts/seo-files-plugin.ts
+			 * en cuanto se escriba el contenido.
+			 */}
 			<SeoHead
 				title="Sobre nosotros — IA Melilla"
 				description="IA Melilla. Inteligencia artificial accesible nacida en Melilla, para Melilla y para el mundo. Página en construcción."
 				path="/sobre-nosotros"
+				noindex
 			/>
 			<section className="mx-auto flex min-h-[70vh] max-w-[1200px] flex-col justify-center px-6 pt-16 pb-24">
 				<p className="text-label-caps text-primary mb-6">Sobre nosotros</p>

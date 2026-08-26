@@ -6,17 +6,30 @@ interface SeoHeadProps {
 	description: string;
 	path: string;
 	ogImage?: string;
+	/**
+	 * Deja la página fuera del índice sin dejar de seguir sus enlaces. Para
+	 * páginas que existen y están enlazadas pero todavía no tienen contenido:
+	 * quitarlas del sitemap no basta, Google llega igual por el enlace.
+	 */
+	noindex?: boolean;
 }
 
 const SITE_URL = "https://iamelilla.com";
 
-export function SeoHead({ title, description, path, ogImage }: SeoHeadProps) {
+export function SeoHead({
+	title,
+	description,
+	path,
+	ogImage,
+	noindex = false,
+}: SeoHeadProps) {
 	const canonical = `${SITE_URL}${path}`;
 	const image = ogImage || `${SITE_URL}/og-default.png`;
 	return (
 		<Helmet>
 			<title>{title}</title>
 			<meta name="description" content={description} />
+			{noindex ? <meta name="robots" content="noindex, follow" /> : null}
 			<link rel="canonical" href={canonical} />
 			<meta property="og:type" content="website" />
 			<meta property="og:title" content={title} />
