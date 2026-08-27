@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -46,9 +46,61 @@ const CATEGORY_META: Array<{
 	},
 ];
 
+/**
+ * Alto que el banner ocupa contando desde el borde inferior de la ventana, en
+ * píxeles. Lo lee el botón flotante de contacto para apartarse por encima: los
+ * dos viven en la misma esquina y el banner, con más z-index, lo dejaba
+ * literalmente sin poder pulsarse en cuanto la ventana bajaba de ~870 px.
+ * Vale 0 (o no existe) mientras el banner no está a la vista.
+ */
+export const COOKIE_BANNER_HEIGHT_VAR = "--cookie-banner-height";
+
+/**
+ * Marca en `<html>` mientras el banner está a la vista. La usa el CTA apilado
+ * para esconderse: cuando el banner ocupa la parte baja no hay sitio para dos
+ * botones flotantes sin que uno acabe sobre los de consentimiento.
+ */
+const BANNER_VISIBLE_ATTR = "cookieBanner";
+
 export function CookieBanner() {
 	const [view, setView] = useState<View>("hidden");
 	const [draft, setDraft] = useState<ConsentState>(DEFAULT_CONSENT);
+	const bannerRef = useRef<HTMLDivElement>(null);
+
+	// Se mide en vez de fijar un número: el texto reparte en más o menos líneas
+	// según el ancho, y en móvil los tres botones se apilan.
+	//
+	// `useLayoutEffect` y no `useEffect`: con este último el valor se publicaría
+	// un fotograma tarde y el botón flotante llegaría a pintarse una vez encima
+	// del banner.
+	useLayoutEffect(() => {
+		const root = document.documentElement;
+		const el = view === "banner" ? bannerRef.current : null;
+		if (!el) {
+			root.style.removeProperty(COOKIE_BANNER_HEIGHT_VAR);
+			delete root.dataset[BANNER_VISIBLE_ATTR];
+			return;
+		}
+		root.dataset[BANNER_VISIBLE_ATTR] = "visible";
+		const publicar = () => {
+			const alto = Math.max(
+				0,
+				Math.round(window.innerHeight - el.getBoundingClientRect().top),
+			);
+			root.style.setProperty(COOKIE_BANNER_HEIGHT_VAR, `${alto}px`);
+		};
+		publicar();
+		const observer =
+			typeof ResizeObserver !== "undefined" ? new ResizeObserver(publicar) : null;
+		observer?.observe(el);
+		window.addEventListener("resize", publicar);
+		return () => {
+			observer?.disconnect();
+			window.removeEventListener("resize", publicar);
+			root.style.removeProperty(COOKIE_BANNER_HEIGHT_VAR);
+			delete root.dataset[BANNER_VISIBLE_ATTR];
+		};
+	}, [view]);
 
 	useEffect(() => {
 		if (!hasResponded()) {
@@ -88,13 +140,24 @@ export function CookieBanner() {
 	if (view === "banner") {
 		return (
 			<div
+				ref={bannerRef}
 				role="dialog"
 				aria-labelledby="cookie-banner-title"
 				aria-describedby="cookie-banner-description"
-				className="fixed bottom-4 left-4 right-4 z-[60] mx-auto max-w-[720px] rounded-2xl border border-outline bg-surface-container shadow-2xl"
+				/* El tope de alto no es cosmético: en una pantalla baja —un móvil
+				   apaisado de 360 px— el banner llegaba a medir 346 px y tapaba
+				   hasta el botón de menú de la cabecera. Con el tope se queda por
+				   debajo de ella. Lo que se desplaza cuando no cabe es el texto; los
+				   tres botones van fuera del scroll y siempre se ven, que son los que
+				   el visitante necesita para decidir. */
+				className="fixed bottom-4 left-4 right-4 z-[60] mx-auto flex max-h-[calc(100dvh-6rem)] max-w-[720px] flex-col rounded-2xl border border-outline bg-surface-container shadow-2xl"
 			>
-				<div className="flex flex-col gap-4 p-5 md:p-6">
-					<div>
+				<div className="flex min-h-0 flex-col gap-4 p-5 md:p-6">
+					{/* `tabIndex` para que el texto, cuando se desplaza, se pueda
+					    recorrer con el teclado: sin él, en WebKit una zona con scroll
+					    que no es enfocable queda fuera del alcance de quien no usa
+					    ratón (WCAG 2.1.1). */}
+					<div className="min-h-0 overflow-y-auto" tabIndex={0}>
 						<h2
 							id="cookie-banner-title"
 							className="text-headline-sm font-semibold tracking-tight text-on-surface"
@@ -118,7 +181,7 @@ export function CookieBanner() {
 							.
 						</p>
 					</div>
-					<div className="grid gap-2 md:grid-cols-3">
+					<div className="grid shrink-0 gap-2 md:grid-cols-3">
 						<Button
 							type="button"
 							variant="outline"

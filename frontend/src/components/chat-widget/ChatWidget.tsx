@@ -109,7 +109,11 @@ export function ChatWidget() {
 					type="button"
 					onClick={() => setOpen(true)}
 					aria-label="Abrir asistente de IA Melilla"
-					className="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-on-primary shadow-lg transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
+					/* Mismo tope que en WhatsAppFloat, y por el mismo motivo: cuando el
+					   banner no deja sitio, el botón se queda en la franja libre justo
+					   debajo de la cabecera, que cae sobre el texto del banner y no
+					   sobre sus botones de consentimiento. */
+					className="fixed bottom-[min(calc(1.25rem+var(--cookie-banner-height,0px)),calc(100dvh-9rem))] right-5 z-[65] flex h-14 w-14 items-center justify-center rounded-full bg-primary text-on-primary shadow-lg transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
 				>
 					<MessageCircle className="h-6 w-6" />
 				</button>
@@ -122,7 +126,18 @@ export function ChatWidget() {
 					role="dialog"
 					aria-label="Asistente de IA Melilla"
 					tabIndex={-1}
-					className="fixed inset-0 z-50 flex flex-col bg-surface sm:inset-auto sm:bottom-5 sm:right-5 sm:h-[600px] sm:max-h-[85vh] sm:w-[390px] sm:rounded-2xl sm:border sm:border-outline-variant sm:shadow-2xl overflow-hidden focus:outline-none"
+					/* z-[65]: por encima del banner de cookies (60) y por debajo del
+					   modal de configuración de cookies (70). En móvil ocupa la
+					   pantalla entera y lo tapa mientras está abierto, que para eso
+					   lo acaba de abrir el visitante.
+
+					   De sm en adelante se aparta del banner, con dos topes: el
+					   `min` del `bottom` reserva siempre 18rem de alto útil, y el
+					   `max` del `max-height` impide que el panel se quede en nada
+					   cuando el banner ocupa media pantalla (un portátil apaisado a
+					   740x360 entra por aquí, porque `sm` mira el ancho, no el alto).
+					   Con los dos topes el panel nunca se sale por arriba. */
+					className="fixed inset-0 z-[65] flex flex-col bg-surface sm:inset-auto sm:bottom-[min(calc(1.25rem+var(--cookie-banner-height,0px)),calc(100dvh-19.25rem))] sm:right-5 sm:h-[600px] sm:max-h-[max(18rem,calc(85vh-var(--cookie-banner-height,0px)))] sm:w-[390px] sm:rounded-2xl sm:border sm:border-outline-variant sm:shadow-2xl overflow-hidden focus:outline-none"
 				>
 					{/* Header */}
 					<header className="flex items-center justify-between bg-primary px-4 py-3 text-on-primary">
