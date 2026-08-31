@@ -10,8 +10,22 @@ interface ToolPageShellProps {
 	description?: string;
 	backHref?: string;
 	backLabel?: string;
+	/**
+	 * La coletilla del pie. Por defecto es la fiscal, que es de donde salió
+	 * este componente; las demos que no van de impuestos pasan la suya, porque
+	 * mandar a un opositor "a un asesor fiscal" no significa nada.
+	 */
+	footerNote?: ReactNode;
 	children: ReactNode;
 }
+
+const NOTA_FISCAL_POR_DEFECTO = (
+	<>
+		<strong className="text-on-surface-variant">Por si acaso:</strong> esto es
+		una estimación, no un papel firmado. Para casos serios, mejor llévalo a un
+		asesor fiscal.
+	</>
+);
 
 export function ToolPageShell({
 	eyebrow = "IA FISCAL MELILLA",
@@ -19,6 +33,7 @@ export function ToolPageShell({
 	description,
 	backHref = "/demos/ia-fiscal-melilla",
 	backLabel = "Volver a IA Fiscal Melilla",
+	footerNote = NOTA_FISCAL_POR_DEFECTO,
 	children,
 }: ToolPageShellProps) {
 	return (
@@ -46,11 +61,7 @@ export function ToolPageShell({
 			</RevealOnScroll>
 			<div className="mt-12">{children}</div>
 			<div className="mt-16 rounded-lg border border-outline-variant bg-surface-container-low p-5">
-				<p className="text-body-sm text-on-surface-muted">
-					<strong className="text-on-surface-variant">Por si acaso:</strong>{" "}
-					esto es una estimación, no un papel firmado. Para casos serios,
-					mejor llévalo a un asesor fiscal.
-				</p>
+				<p className="text-body-sm text-on-surface-muted">{footerNote}</p>
 			</div>
 		</section>
 	);

@@ -8,6 +8,10 @@ import IaFiscalCalculadoraNeto from "@/pages/IaFiscalCalculadoraNeto";
 import IaFiscalCalculadoraRetenciones from "@/pages/IaFiscalCalculadoraRetenciones";
 import IaFiscalGuiaFiscal from "@/pages/IaFiscalGuiaFiscal";
 import IaFiscalClasificadorFacturas from "@/pages/IaFiscalClasificadorFacturas";
+import DemoTutorOpositores from "@/pages/DemoTutorOpositores";
+import TutorOpositoresTutor from "@/pages/TutorOpositoresTutor";
+import TutorOpositoresTest from "@/pages/TutorOpositoresTest";
+import TutorOpositoresGenerador from "@/pages/TutorOpositoresGenerador";
 import Contacto from "@/pages/Contacto";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
@@ -48,6 +52,16 @@ export const routes: RouteObject[] = [
 	{
 		path: "/demos/ia-fiscal-melilla/clasificador-facturas",
 		element: <IaFiscalClasificadorFacturas />,
+	},
+	{ path: "/demos/tutor-ia-opositores", element: <DemoTutorOpositores /> },
+	{
+		path: "/demos/tutor-ia-opositores/tutor",
+		element: <TutorOpositoresTutor />,
+	},
+	{ path: "/demos/tutor-ia-opositores/test", element: <TutorOpositoresTest /> },
+	{
+		path: "/demos/tutor-ia-opositores/generador",
+		element: <TutorOpositoresGenerador />,
 	},
 	{ path: "/contacto", element: <Contacto /> },
 	{ path: "/blog", element: <Blog /> },

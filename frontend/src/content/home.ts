@@ -87,12 +87,12 @@ export const homeContent = {
 			},
 			{
 				slug: "tutor-opositor",
-				title: "Tutor IA Opositor",
+				title: "Tutor IA para opositores",
 				description:
-					"Profesor personal IA entrenado en temarios reales (Guardia Civil, Policía, Bomberos…). Tests adaptativos y simulacros.",
-				badge: "PRÓXIMAMENTE",
-				status: "coming-soon" as const,
-				href: "/demos",
+					"Profesor personal IA anclado al temario: resuelve dudas citando la fuente, pone tests de diez preguntas y corrige explicando cada fallo.",
+				badge: "DISPONIBLE",
+				status: "live" as const,
+				href: "/demos/tutor-ia-opositores",
 			},
 			{
 				slug: "contenido-visual",
