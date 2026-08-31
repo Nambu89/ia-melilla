@@ -5,10 +5,27 @@ export const demoTutorOpositoresContent = {
 		subheadline:
 			"Asistente IA anclado al temario publicado de la oposición. Resuelve dudas citando el fragmento del que sale cada respuesta, te pone un test de diez preguntas y te lo corrige explicándote cada fallo.",
 	},
+	/**
+	 * Las cuatro preguntas de ejemplo. Son el camino que recorre TODO el que
+	 * entra, asi que se eligen por que funcionan contra el temario y NO por lo
+	 * que miden ni por lo bien que suenan.
+	 *
+	 * El criterio, aprendido de una que se rechazo: usar el vocabulario que el
+	 * corpus usa de verdad —"forma politica", "Estado espanol"— y NO pedir
+	 * definiciones de terminos que el temario menciona pero no define, ni
+	 * comparaciones entre dos cosas que ningun fragmento pone juntas. La valla
+	 * del backend mide distancia a un fragmento: si no hay ninguno cerca,
+	 * rechaza, y hace bien.
+	 *
+	 * ANTES DE TOCAR ESTA LISTA: probar la pregunta contra el backend real y
+	 * comprobar que devuelve 200. Un 400 aqui es un "no lo se" en la primera
+	 * pantalla de la demo.
+	 */
 	preguntasSugeridas: [
-		"¿Qué es la Monarquía parlamentaria?",
+		// Comprobada contra el backend real: 200, con 3 fuentes.
+		"¿Qué forma política tiene el Estado español según la Constitución?",
 		"¿Cuáles son los derechos fundamentales y libertades públicas?",
-		"Explícame la diferencia entre las Cortes Generales y el Gobierno.",
+		"¿Qué plazo hay para interponer un recurso de alzada?",
 		"¿Qué dice la Constitución sobre la organización territorial del Estado?",
 	],
 	comoFunciona: {
