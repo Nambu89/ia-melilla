@@ -93,7 +93,7 @@ export function CookieBanner() {
 				aria-describedby="cookie-banner-description"
 				className="fixed bottom-4 left-4 right-4 z-[60] mx-auto max-w-[720px] rounded-2xl border border-outline bg-surface-container shadow-2xl"
 			>
-				<div className="flex flex-col gap-4 p-5 md:p-6">
+				<div className="flex flex-col gap-3 p-4 md:gap-4 md:p-6">
 					<div>
 						<h2
 							id="cookie-banner-title"
@@ -105,10 +105,10 @@ export function CookieBanner() {
 							id="cookie-banner-description"
 							className="mt-2 text-body-sm text-on-surface-variant leading-relaxed"
 						>
-							Utilizamos cookies técnicas necesarias para el funcionamiento del Sitio. Si lo
-							deseas, puedes aceptar también cookies opcionales (preferencias, analíticas o
-							publicitarias). Puedes cambiar tu decisión en cualquier momento desde el pie
-							de página. Más información en nuestra{" "}
+							Usamos cookies técnicas necesarias para que el Sitio funcione y, si las
+							aceptas, de preferencias, analíticas o publicitarias. Puedes cambiar tu
+							decisión en cualquier momento desde el pie de página. Más información en
+							nuestra{" "}
 							<Link
 								to="/politica-de-cookies"
 								className="text-primary underline underline-offset-2"
@@ -118,25 +118,29 @@ export function CookieBanner() {
 							.
 						</p>
 					</div>
-					<div className="grid gap-2 md:grid-cols-3">
+					<div className="grid grid-cols-2 gap-2 min-[360px]:grid-cols-3">
 						<Button
 							type="button"
 							variant="outline"
 							onClick={rejectAll}
-							className="w-full"
+							className="w-full whitespace-nowrap px-1 md:px-6"
 						>
-							Rechazar todas
+							Rechazar<span className="hidden md:inline">&nbsp;todas</span>
 						</Button>
 						<Button
 							type="button"
 							variant="outline"
 							onClick={openSettingsView}
-							className="w-full"
+							className="order-last col-span-2 w-full whitespace-nowrap px-1 min-[360px]:order-none min-[360px]:col-span-1 md:px-6"
 						>
 							Configurar
 						</Button>
-						<Button type="button" onClick={acceptAll} className="w-full">
-							Aceptar todas
+						<Button
+							type="button"
+							onClick={acceptAll}
+							className="w-full whitespace-nowrap px-1 md:px-6"
+						>
+							Aceptar<span className="hidden md:inline">&nbsp;todas</span>
 						</Button>
 					</div>
 				</div>
