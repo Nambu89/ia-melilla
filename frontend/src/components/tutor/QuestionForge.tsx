@@ -226,28 +226,41 @@ function PreguntaGeneradaVista({ datos }: { datos: PreguntaGenerada }) {
 				<ul className="mt-4 flex flex-col gap-2">
 					{LETRAS.filter(
 						(letra) => pregunta.opciones[letra] !== undefined,
-					).map((letra) => (
-						<li
-							key={letra}
-							className="flex items-start gap-3 rounded-lg border border-outline-variant bg-surface-container-low px-4 py-3"
-						>
-							<span
-								className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-surface-container-high text-label-caps font-semibold uppercase text-on-surface-variant"
-								aria-hidden="true"
+					).map((letra) => {
+						const esCorrecta = pregunta.respuesta === letra;
+						return (
+							<li
+								key={letra}
+								className={`flex items-start gap-3 rounded-lg border px-4 py-3 ${
+									esCorrecta
+										? "border-success bg-success-container/40"
+										: "border-outline-variant bg-surface-container-low"
+								}`}
 							>
-								{letra}
-							</span>
-							<span className="text-body-md text-on-surface">
-								{pregunta.opciones[letra]}
-							</span>
-						</li>
-					))}
+								<span
+									className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-label-caps font-semibold uppercase ${
+										esCorrecta
+											? "bg-success text-on-success"
+											: "bg-surface-container-high text-on-surface-variant"
+									}`}
+									aria-hidden="true"
+								>
+									{letra}
+								</span>
+								<span className="min-w-0 flex-1 text-body-md text-on-surface">
+									{pregunta.opciones[letra]}
+								</span>
+								{/* Etiqueta de texto, no solo el color: quien no
+								    distinga verde tambien tiene que ver cual es. */}
+								{esCorrecta && (
+									<span className="shrink-0 self-center rounded-full bg-success-container px-2 py-0.5 text-label-caps font-semibold text-on-success-container">
+										Correcta
+									</span>
+								)}
+							</li>
+						);
+					})}
 				</ul>
-
-				<p className="mt-4 text-body-sm text-on-surface-muted">
-					La respuesta correcta no viaja al navegador: la pregunta sale igual
-					que saldría en un test de verdad.
-				</p>
 			</article>
 
 			<section className="rounded-xl border border-outline-variant bg-surface-container-low p-4 sm:p-6">
@@ -256,9 +269,11 @@ function PreguntaGeneradaVista({ datos }: { datos: PreguntaGenerada }) {
 					DE DÓNDE SALE
 				</p>
 				<p className="mb-4 text-body-sm text-on-surface-muted">
-					Este es el fragmento del temario que el tutor tenía delante. Lo
-					resaltado es la frase que sostiene la respuesta correcta, comprobada
-					carácter a carácter contra el fragmento.
+					Este es el fragmento del temario que el tutor tenía delante, y lo
+					resaltado es la frase que sostiene la opción marcada como correcta.
+					El backend la comprueba <strong>carácter a carácter</strong> contra
+					el fragmento antes de dar la pregunta por buena: si la frase no
+					estuviera ahí, no habría pregunta.
 				</p>
 				<p className="whitespace-pre-wrap border-l-2 border-primary/40 pl-4 text-body-sm leading-relaxed text-on-surface-variant">
 					{resaltarEvidencia(fragmento, evidencia)}

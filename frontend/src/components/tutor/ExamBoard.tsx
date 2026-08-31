@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
 	CheckCircle2,
 	ClipboardCheck,
@@ -19,11 +19,33 @@ import {
 	empezarExamen,
 	obtenerResultado,
 	pedirExplicacion,
+	retomarExamen,
 	type FalloDelTutor,
-	type PreguntaServida,
 	type ResultadoDePregunta,
 	type ResultadoDelTest,
 } from "@/lib/tutorApi";
+
+/** Donde se recuerda el test en curso para poder retomarlo tras recargar. */
+const CLAVE_SESION = "iamelilla:tutor:examen:v1";
+
+/**
+ * Una pregunta lista para pintar, venga de `empezar` o de retomar la sesion.
+ *
+ * Sin `id`: al retomar el backend no lo manda —identifica por `posicion`— y la
+ * lista son diez huecos fijos que no se reordenan ni crecen, asi que la
+ * posicion es la identidad de verdad.
+ */
+interface PreguntaEnPantalla {
+	enunciado: string;
+	opciones: Record<string, string>;
+	tema: string;
+	dificultad: number;
+	/**
+	 * Ya no admite cambio de respuesta porque se pidio su explicacion: el
+	 * backend la deja fuera de `pendiente` y contestarla otra vez da 422.
+	 */
+	cerrada: boolean;
+}
 
 const LETRAS = ["a", "b", "c", "d"] as const;
 
@@ -39,6 +61,33 @@ const FASES_EXPLICACION = [
 			"Sigue trabajando. La explicación se genera para tu respuesta concreta, no está escrita de antemano.",
 	},
 ] as const;
+
+function leerSesionGuardada(): string | null {
+	if (typeof window === "undefined") return null;
+	try {
+		return window.localStorage.getItem(CLAVE_SESION);
+	} catch {
+		// Almacenamiento bloqueado (modo privado, permisos): sin retomar, pero
+		// la herramienta funciona igual.
+		return null;
+	}
+}
+
+function recordarSesion(sesionId: string): void {
+	try {
+		window.localStorage.setItem(CLAVE_SESION, sesionId);
+	} catch {
+		/* ver leerSesionGuardada */
+	}
+}
+
+function olvidarSesion(): void {
+	try {
+		window.localStorage.removeItem(CLAVE_SESION);
+	} catch {
+		/* ver leerSesionGuardada */
+	}
+}
 
 interface EstadoDeExplicacion {
 	texto: string | null;
@@ -59,7 +108,8 @@ interface EstadoDeExplicacion {
  */
 export function ExamBoard() {
 	const [sesionId, setSesionId] = useState<string | null>(null);
-	const [preguntas, setPreguntas] = useState<PreguntaServida[]>([]);
+	const [preguntas, setPreguntas] = useState<PreguntaEnPantalla[]>([]);
+	const [retomando, setRetomando] = useState(true);
 	const [respuestas, setRespuestas] = useState<Record<number, string>>({});
 	const [erroresAlContestar, setErroresAlContestar] = useState<
 		Record<number, string>
@@ -89,6 +139,74 @@ export function ExamBoard() {
 	/** La última letra que el servidor confirmó, para revertir sin adivinar. */
 	const confirmadasRef = useRef<Record<number, string>>({});
 
+	/**
+	 * Retoma el test que hubiera en curso al abrir la página.
+	 *
+	 * Recargar a mitad de una demostración —desde el móvil, en una reunión— se
+	 * llevaba el examen por delante: las preguntas venían de `empezar` y no
+	 * había forma de recuperar los enunciados. Si la sesión ya no existe
+	 * (caducan a los siete días) se olvida y se empieza como siempre; un fallo
+	 * de red tampoco bloquea: se cae a la pantalla de inicio.
+	 */
+	useEffect(() => {
+		const guardada = leerSesionGuardada();
+		if (!guardada) {
+			setRetomando(false);
+			return;
+		}
+		let vigente = true;
+		const controlador = new AbortController();
+		retomarExamen(guardada, controlador.signal)
+			.then((sesion) => {
+				if (!vigente) return;
+				setSesionId(sesion.sesion_id);
+				setPreguntas(
+					sesion.preguntas.map((p) => ({
+						enunciado: p.enunciado,
+						opciones: p.opciones,
+						tema: p.tema,
+						dificultad: p.dificultad,
+						cerrada: p.estado !== "pendiente",
+					})),
+				);
+				const contestadas: Record<number, string> = {};
+				const explicadas: Record<number, EstadoDeExplicacion> = {};
+				for (const p of sesion.preguntas) {
+					if (p.contestada !== null) contestadas[p.posicion] = p.contestada;
+					// La explicación ya se pagó: perderla al recargar sería
+					// pagarla otra vez.
+					if (p.explicacion !== null) {
+						explicadas[p.posicion] = {
+							texto: p.explicacion,
+							cargando: false,
+							error: null,
+						};
+					}
+				}
+				setRespuestas(contestadas);
+				confirmadasRef.current = { ...contestadas };
+				setExplicaciones(explicadas);
+			})
+			.catch(() => {
+				// Un aborto NO es "la sesión ya no vale": lo provoca el propio
+				// desmontaje —React monta y desmonta dos veces en desarrollo— y
+				// olvidar aquí borraba un test perfectamente vivo. Se vio
+				// porque la SEGUNDA recarga volvía a la pantalla de inicio: la
+				// primera aún tenía el estado en memoria y parecía que iba bien.
+				if (!vigente || controlador.signal.aborted) return;
+				// Sesión caducada, borrada o red caída: no es un error que
+				// contarle a nadie, se empieza de cero.
+				olvidarSesion();
+			})
+			.finally(() => {
+				if (vigente) setRetomando(false);
+			});
+		return () => {
+			vigente = false;
+			controlador.abort();
+		};
+	}, []);
+
 	const empezar = useCallback(async () => {
 		if (desactivado) return;
 		setEmpezando(true);
@@ -105,12 +223,22 @@ export function ExamBoard() {
 		setDesplegadas({});
 		cadenasRef.current.clear();
 		confirmadasRef.current = {};
+		olvidarSesion();
 		const controlador = nuevo();
 		try {
 			const test = await empezarExamen(controlador.signal);
 			if (!montado.current) return;
 			setSesionId(test.sesion_id);
-			setPreguntas(test.preguntas);
+			setPreguntas(
+				test.preguntas.map((p) => ({
+					enunciado: p.enunciado,
+					opciones: p.opciones,
+					tema: p.tema,
+					dificultad: p.dificultad,
+					cerrada: false,
+				})),
+			);
+			recordarSesion(test.sesion_id);
 		} catch (err) {
 			if (!montado.current) return;
 			setErrorGeneral(describirFallo(err, "No hemos podido montar el test"));
@@ -219,6 +347,11 @@ export function ExamBoard() {
 
 	async function cargarExplicacion(posicion: number) {
 		if (!sesionId) return;
+		// El backend la saca de `pendiente` en cuanto se pide: contestarla otra
+		// vez daria 422, asi que la pantalla la cierra a la vez.
+		setPreguntas((previas) =>
+			previas.map((p, i) => (i === posicion ? { ...p, cerrada: true } : p)),
+		);
 		setExplicaciones((previas) => ({
 			...previas,
 			[posicion]: { texto: null, cargando: true, error: null },
@@ -256,6 +389,16 @@ export function ExamBoard() {
 		// Cada explicación cuesta una llamada al modelo, así que solo se pide
 		// la primera vez que se despliega esa pregunta concreta.
 		if (!abierta && !explicaciones[posicion]) void cargarExplicacion(posicion);
+	}
+
+	if (retomando) {
+		return (
+			<WorkingNotice
+				fases={[
+					{ desdeSegundo: 0, texto: "Buscando si tenías un test a medias…" },
+				]}
+			/>
+		);
 	}
 
 	if (!sesionId) {
@@ -383,7 +526,7 @@ export function ExamBoard() {
 
 			<ol className="flex flex-col gap-5">
 				{preguntas.map((pregunta, posicion) => (
-					<li key={pregunta.id}>
+					<li key={posicion}>
 						<TarjetaDePregunta
 							pregunta={pregunta}
 							posicion={posicion}
@@ -392,7 +535,9 @@ export function ExamBoard() {
 							errorAlContestar={erroresAlContestar[posicion]}
 							resultado={porResultado.get(posicion)}
 							corregido={resultado !== null}
-							bloqueado={resultado !== null || corrigiendo}
+							bloqueado={
+								resultado !== null || corrigiendo || pregunta.cerrada
+							}
 							explicacion={explicaciones[posicion]}
 							desplegada={desplegadas[posicion] === true}
 							onElegir={(letra) => contestar(posicion, letra)}
@@ -467,7 +612,7 @@ function TarjetaDeResultado({
 }
 
 interface TarjetaDePreguntaProps {
-	pregunta: PreguntaServida;
+	pregunta: PreguntaEnPantalla;
 	posicion: number;
 	total: number;
 	elegida: string | undefined;

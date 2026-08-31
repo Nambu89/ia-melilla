@@ -35,18 +35,16 @@ describe("tutorApi", () => {
 		expect(mockFetch.mock.calls[0][0]).toBe("https://tutor.test/temas");
 	});
 
-	it("ordena los temas por numero, no alfabeticamente", async () => {
-		// El backend los sirve con SELECT DISTINCT: "Tema 10" antes que "Tema 2".
-		const mockFetch = vi.fn().mockResolvedValue(
-			respuestaJson({ temas: ["Tema 1", "Tema 10", "Tema 2", "Tema 21"] }),
-		);
+	it("respeta el orden de temas que da el backend, sin reordenarlo", async () => {
+		// El backend ordena por numero y manda los temas SIN numero al final a
+		// proposito. Un comparador de cadenas aqui subiria "Anexo I" al primer
+		// puesto y desharia esa regla: por eso el cliente no toca el orden.
+		const delBackend = ["Tema 1", "Tema 2", "Tema 10", "Tema 23", "Anexo I"];
+		const mockFetch = vi
+			.fn()
+			.mockResolvedValue(respuestaJson({ temas: delBackend }));
 		vi.stubGlobal("fetch", mockFetch);
-		expect(await obtenerTemas()).toEqual([
-			"Tema 1",
-			"Tema 2",
-			"Tema 10",
-			"Tema 21",
-		]);
+		expect(await obtenerTemas()).toEqual(delBackend);
 	});
 
 	it("acepta el 204 sin cuerpo de contestar sin intentar leer JSON", async () => {

@@ -228,6 +228,33 @@ export interface TestEmpezado {
 	preguntas: PreguntaServida[];
 }
 
+/**
+ * Una pregunta tal como se recupera al retomar un test.
+ *
+ * Trae las opciones —que `/resultado` no da— para poder repintar el test sin
+ * haber guardado nada de `/empezar`. `respuesta_correcta` viaja SOLO si la
+ * pregunta ya se contestó: si viajara siempre, empezar y recargar sería la
+ * puerta trasera del examen.
+ */
+export interface PreguntaRetomada {
+	posicion: number;
+	enunciado: string;
+	opciones: Record<string, string>;
+	tema: string;
+	dificultad: number;
+	/** `pendiente` | `generando` | `completada`. Fuera de `pendiente` ya no admite cambio de respuesta. */
+	estado: string;
+	contestada: string | null;
+	explicacion: string | null;
+	respuesta_correcta?: string;
+}
+
+export interface SesionRetomada {
+	sesion_id: string;
+	version_corpus: string;
+	preguntas: PreguntaRetomada[];
+}
+
 export interface ResultadoDePregunta {
 	posicion: number;
 	enunciado: string;
@@ -242,8 +269,22 @@ export interface ResultadoDelTest {
 	preguntas: ResultadoDePregunta[];
 }
 
+/**
+ * La pregunta del generador: como la del examen MÁS cuál es la correcta.
+ *
+ * Solo la sirve `POST /generador/pregunta`, y la diferencia es deliberada del
+ * backend: el examen se juega —si la correcta viaja, el test se regala— y el
+ * generador se demuestra. Sin la respuesta al lado de la evidencia, quien mira
+ * ve una pregunta y un párrafo y no puede juzgar si la IA acertó, que es justo
+ * a lo que ha venido.
+ */
+export interface PreguntaConRespuesta extends PreguntaServida {
+	/** Letra de la opción correcta: "a" | "b" | "c" | "d". */
+	respuesta: string;
+}
+
 export interface PreguntaGenerada {
-	pregunta: PreguntaServida;
+	pregunta: PreguntaConRespuesta;
 	/** Fragmento literal del temario que sostiene la respuesta. */
 	evidencia: string;
 	/** "mismo tema" o "temas hermanos": de dónde salió el estilo de la pregunta. */
@@ -268,22 +309,22 @@ export async function consultarSalud(
 /**
  * Los temas con temario publicado, para el desplegable del generador.
  *
- * El backend los devuelve en orden alfabético, así que "Tema 10" sale antes que
- * "Tema 2". Se reordenan aquí con un comparador que entiende de números porque
- * es cosa de cómo se PRESENTA la lista, no de qué contiene: el valor que se
- * manda de vuelta es la cadena exacta que vino, sin tocar.
+ * Se sirven EN EL ORDEN QUE VIENEN, sin reordenar. Los hubo que reordenar
+ * mientras el backend los daba alfabéticos —"Tema 10" antes que "Tema 2"—, pero
+ * desde entonces los ordena él por número, y su criterio es más fino que
+ * cualquier comparador de cadenas: manda los temas SIN número al final a
+ * propósito (`ORDER BY MIN(numero_tema) IS NULL, MIN(numero_tema), tema`).
+ *
+ * Reordenar aquí ya no sería inofensivo: un `Intl.Collator` numérico sube
+ * "Anexo I" por delante de "Tema 1" y deshace justo esa regla. Comprobado
+ * antes de quitarlo, no supuesto.
  */
 export async function obtenerTemas(signal?: AbortSignal): Promise<string[]> {
 	const { datos } = await pedir<{ temas: string[] }>("GET", "/temas", {
 		signal,
 		tiempoMaximoMs: TIEMPO_MAXIMO_CORTO_MS,
 	});
-	const temas = datos?.temas ?? [];
-	const comparador = new Intl.Collator("es-ES", {
-		numeric: true,
-		sensitivity: "base",
-	});
-	return [...temas].sort(comparador.compare);
+	return datos?.temas ?? [];
 }
 
 export async function preguntarAlTutor(
@@ -325,6 +366,25 @@ export async function contestarPregunta(
 		cuerpo: { posicion, letra },
 		signal,
 	});
+}
+
+/**
+ * La sesión entera, para repintar el test tras recargar la página.
+ *
+ * 404 si la sesión ya no existe —caducan a los siete días—, y ese caso lo
+ * trata el llamante olvidándola.
+ */
+export async function retomarExamen(
+	sesionId: string,
+	signal?: AbortSignal,
+): Promise<SesionRetomada> {
+	const { datos } = await pedir<SesionRetomada>(
+		"GET",
+		`/examen/${encodeURIComponent(sesionId)}`,
+		{ signal, tiempoMaximoMs: TIEMPO_MAXIMO_CORTO_MS },
+	);
+	if (!datos) throw new ApiError(500, null);
+	return { ...datos, preguntas: datos.preguntas ?? [] };
 }
 
 export async function obtenerResultado(
