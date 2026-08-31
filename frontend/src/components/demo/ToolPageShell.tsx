@@ -16,6 +16,8 @@ interface ToolPageShellProps {
 	 * mandar a un opositor "a un asesor fiscal" no significa nada.
 	 */
 	footerNote?: ReactNode;
+	/** Cuerpo del descargo de IA. Por defecto, el fiscal. */
+	disclaimerContent?: ReactNode;
 	children: ReactNode;
 }
 
@@ -34,6 +36,7 @@ export function ToolPageShell({
 	backHref = "/demos/ia-fiscal-melilla",
 	backLabel = "Volver a IA Fiscal Melilla",
 	footerNote = NOTA_FISCAL_POR_DEFECTO,
+	disclaimerContent,
 	children,
 }: ToolPageShellProps) {
 	return (
@@ -57,7 +60,7 @@ export function ToolPageShell({
 						{description}
 					</p>
 				)}
-				<AiDisclaimer className="mt-8 max-w-3xl" />
+				<AiDisclaimer className="mt-8 max-w-3xl" contenido={disclaimerContent} />
 			</RevealOnScroll>
 			<div className="mt-12">{children}</div>
 			<div className="mt-16 rounded-lg border border-outline-variant bg-surface-container-low p-5">

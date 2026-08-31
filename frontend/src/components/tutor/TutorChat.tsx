@@ -2,7 +2,6 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 import { Send, Loader2, GraduationCap, User } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { AiDisclaimer } from "@/components/demo/AiDisclaimer";
 import { CitedAnswer } from "@/components/tutor/CitedAnswer";
 import { ErrorNotice } from "@/components/tutor/ErrorNotice";
 import { WorkingNotice } from "@/components/tutor/WorkingNotice";
@@ -215,7 +214,6 @@ export function TutorChat({ preguntasSugeridas }: TutorChatProps) {
 				</div>
 			)}
 
-			<AiDisclaimer variant="inline" className="leading-relaxed" />
 		</div>
 	);
 }

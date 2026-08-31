@@ -43,10 +43,15 @@ export function CitedAnswer({ texto, fuentes }: CitedAnswerProps) {
 			);
 			// El acordeón anima al abrirse; sin el respiro el scroll apunta a la
 			// posición que el elemento tenía antes de crecer.
+			//
+			// `start` y no `center`: centrar deja el fragmento a media pantalla,
+			// que en móvil es justo donde cae el banner de cookies mientras no se
+			// ha contestado. Arriba se lee además desde el principio, que es como
+			// se quiere leer una cita.
 			window.setTimeout(() => {
 				document.getElementById(idDeFuente(numero))?.scrollIntoView({
 					behavior: "smooth",
-					block: "center",
+					block: "start",
 				});
 			}, 120);
 		},

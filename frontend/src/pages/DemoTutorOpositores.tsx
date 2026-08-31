@@ -17,7 +17,10 @@ import RevealOnScroll from "@/components/animations/RevealOnScroll";
 import { AiDisclaimer } from "@/components/demo/AiDisclaimer";
 import { AboutMelilla } from "@/components/sections/AboutMelilla";
 import { ServiceNotice } from "@/components/tutor/ServiceNotice";
-import { RUTA_DEL_TUTOR } from "@/components/tutor/TutorToolShell";
+import {
+	DESCARGO_DEL_TUTOR,
+	RUTA_DEL_TUTOR,
+} from "@/components/tutor/TutorToolShell";
 import { demoTutorOpositoresContent } from "@/content/demoTutorOpositores";
 import { obtenerTemas } from "@/lib/tutorApi";
 
@@ -96,7 +99,10 @@ export default function DemoTutorOpositores() {
 							{hero.subheadline}
 						</p>
 						<ServiceNotice className="mt-8 max-w-3xl" />
-						<AiDisclaimer className="mt-8 max-w-3xl" />
+						<AiDisclaimer
+							className="mt-8 max-w-3xl"
+							contenido={DESCARGO_DEL_TUTOR}
+						/>
 						<div className="mt-8 flex flex-col gap-3 sm:flex-row">
 							<Button asChild size="lg">
 								<Link to={`${RUTA_DEL_TUTOR}/tutor`}>

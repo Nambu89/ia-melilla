@@ -9,7 +9,6 @@ import {
 	XCircle,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { AiDisclaimer } from "@/components/demo/AiDisclaimer";
 import { ErrorNotice } from "@/components/tutor/ErrorNotice";
 import { WorkingNotice } from "@/components/tutor/WorkingNotice";
 import { useAbortables } from "@/hooks/useAbortables";
@@ -311,7 +310,6 @@ export function ExamBoard() {
 						}
 					/>
 				)}
-				<AiDisclaimer variant="inline" className="leading-relaxed" />
 			</div>
 		);
 	}
@@ -422,7 +420,6 @@ export function ExamBoard() {
 				</div>
 			)}
 
-			<AiDisclaimer variant="inline" className="leading-relaxed" />
 		</div>
 	);
 }

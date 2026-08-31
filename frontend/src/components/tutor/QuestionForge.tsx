@@ -2,7 +2,6 @@ import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { Loader2, Quote, Sparkles, Wand2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FormField } from "@/components/forms/FormField";
-import { AiDisclaimer } from "@/components/demo/AiDisclaimer";
 import { ErrorNotice } from "@/components/tutor/ErrorNotice";
 import { WorkingNotice } from "@/components/tutor/WorkingNotice";
 import { useAbortables } from "@/hooks/useAbortables";
@@ -192,7 +191,6 @@ export function QuestionForge() {
 
 			{generada && <PreguntaGeneradaVista datos={generada} />}
 
-			<AiDisclaimer variant="inline" className="leading-relaxed" />
 		</div>
 	);
 }
