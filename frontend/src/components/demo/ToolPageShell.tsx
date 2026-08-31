@@ -18,6 +18,16 @@ interface ToolPageShellProps {
 	footerNote?: ReactNode;
 	/** Cuerpo del descargo de IA. Por defecto, el fiscal. */
 	disclaimerContent?: ReactNode;
+	/**
+	 * Cabecera comprimida: titular más pequeño en móvil y menos aire entre
+	 * bloques. Opt-in, y por eso las cinco páginas fiscales no se enteran.
+	 *
+	 * El motivo es medido, no estético: a 390x844, con la cabecera de siempre,
+	 * el contenido de la herramienta arranca a 821 px y no hay reordenación
+	 * interna que lo salve. Quien abre la página desde el móvil ve texto y tiene
+	 * que desplazar a ciegas para encontrar por dónde se empieza.
+	 */
+	compact?: boolean;
 	children: ReactNode;
 }
 
@@ -37,10 +47,15 @@ export function ToolPageShell({
 	backLabel = "Volver a IA Fiscal Melilla",
 	footerNote = NOTA_FISCAL_POR_DEFECTO,
 	disclaimerContent,
+	compact = false,
 	children,
 }: ToolPageShellProps) {
 	return (
-		<section className="mx-auto max-w-[1200px] px-6 pt-16 pb-24 md:pt-20">
+		<section
+			className={`mx-auto max-w-[1200px] px-6 pb-24 md:pt-20 ${
+				compact ? "pt-6" : "pt-16"
+			}`}
+		>
 			<Link
 				to={backHref}
 				className="inline-flex items-center gap-1.5 text-label-lg text-on-surface-variant transition-colors hover:text-on-surface"
@@ -49,20 +64,38 @@ export function ToolPageShell({
 				{backLabel}
 			</Link>
 			<RevealOnScroll>
-				<p className="mt-8 text-label-caps uppercase tracking-[0.12em] text-primary">
-					{eyebrow}
-				</p>
-				<h1 className="mt-3 text-display-md md:text-display-lg font-bold tracking-tight text-on-surface max-w-4xl">
+				{/* En compacto no va: el antetítulo repite palabra por palabra el
+				    enlace de volver que tiene justo encima, y el titular lo dice
+				    otra vez. Tres veces lo mismo en los primeros 200 px. */}
+				{!compact && (
+					<p className="mt-8 text-label-caps uppercase tracking-[0.12em] text-primary">
+						{eyebrow}
+					</p>
+				)}
+				<h1
+					className={`font-bold tracking-tight text-on-surface max-w-4xl ${
+						compact
+							? "mt-6 text-headline-md sm:text-headline-lg md:text-display-lg"
+							: "mt-3 text-display-md md:text-display-lg"
+					}`}
+				>
 					{title}
 				</h1>
 				{description && (
-					<p className="mt-6 max-w-2xl text-body-lg text-on-surface-variant">
+					<p
+						className={`max-w-2xl text-body-lg text-on-surface-variant ${
+							compact ? "mt-3" : "mt-6"
+						}`}
+					>
 						{description}
 					</p>
 				)}
-				<AiDisclaimer className="mt-8 max-w-3xl" contenido={disclaimerContent} />
+				<AiDisclaimer
+					className={`max-w-3xl ${compact ? "mt-5" : "mt-8"}`}
+					contenido={disclaimerContent}
+				/>
 			</RevealOnScroll>
-			<div className="mt-12">{children}</div>
+			<div className={compact ? "mt-4" : "mt-12"}>{children}</div>
 			<div className="mt-16 rounded-lg border border-outline-variant bg-surface-container-low p-5">
 				<p className="text-body-sm text-on-surface-muted">{footerNote}</p>
 			</div>

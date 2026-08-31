@@ -261,27 +261,25 @@ export function ExamBoard() {
 	if (!sesionId) {
 		return (
 			<div className="flex flex-col gap-5">
-				<div className="rounded-xl border border-outline-variant bg-surface-container px-6 py-12 text-center">
-					<span
-						className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary"
-						aria-hidden="true"
-					>
-						<ClipboardCheck className="h-6 w-6" />
-					</span>
-					<p className="text-headline-sm font-semibold text-on-surface">
-						Diez preguntas del temario, a tu ritmo
-					</p>
-					<p className="mx-auto mt-2 max-w-md text-body-md text-on-surface-variant">
-						Sin reloj y sin penalización por fallo. Al corregir puedes
-						desplegar la explicación de cada pregunta, y el tutor te la
-						redacta en ese momento para la respuesta que hayas dado.
+				{/* Sin caja, sin icono y sin titular: el titular repetía palabra
+				    por palabra la descripción de la página, y entre los tres se
+				    llevaban 300 px por delante del único botón que hay que
+				    pulsar. Queda el dato que no está en ningún otro sitio
+				    todavía y el botón. */}
+				<div className="flex flex-col items-start gap-4">
+					<p className="flex items-center gap-2 text-body-md text-on-surface-variant">
+						<ClipboardCheck
+							className="h-4 w-4 shrink-0 text-primary"
+							aria-hidden="true"
+						/>
+						Sin reloj y sin penalización por fallo.
 					</p>
 					<Button
 						type="button"
 						size="lg"
 						onClick={() => void empezar()}
 						disabled={empezando || desactivado}
-						className="mt-8"
+						className="w-full sm:w-auto"
 					>
 						{empezando ? (
 							<>

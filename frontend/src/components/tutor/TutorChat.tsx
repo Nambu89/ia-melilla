@@ -111,9 +111,32 @@ export function TutorChat({ preguntasSugeridas }: TutorChatProps) {
 
 	return (
 		<div className="flex flex-col gap-5">
-			{vacio ? (
-				<EstadoVacio />
-			) : (
+			{/* Sin conversación, lo primero que se ve son las preguntas de
+			    ejemplo, no una caja explicando lo que ya dice el titular. En una
+			    demo son el camino corto: se toca una y ya está pasando algo. */}
+			{vacio && (
+				<div>
+					<p className="mb-2 text-label-caps uppercase tracking-[0.12em] text-on-surface-muted">
+						PRUEBA A PREGUNTAR
+					</p>
+					<ul className="flex flex-col gap-2">
+						{preguntasSugeridas.map((pregunta) => (
+							<li key={pregunta}>
+								<button
+									type="button"
+									onClick={() => void preguntar(pregunta)}
+									disabled={ocupado || desactivado}
+									className="w-full rounded-md border border-outline-variant px-4 py-3 text-left text-body-md text-on-surface-variant transition-colors hover:bg-surface-container-high hover:text-on-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50"
+								>
+									{pregunta}
+								</button>
+							</li>
+						))}
+					</ul>
+				</div>
+			)}
+
+			{!vacio && (
 				<div className="flex flex-col gap-6">
 					{intercambios.map((intercambio) => (
 						<article
@@ -192,49 +215,6 @@ export function TutorChat({ preguntasSugeridas }: TutorChatProps) {
 				</Button>
 			</form>
 
-			{vacio && (
-				<div>
-					<p className="mb-3 text-label-caps uppercase tracking-[0.12em] text-on-surface-muted">
-						PRUEBA A PREGUNTAR
-					</p>
-					<ul className="flex flex-col gap-2">
-						{preguntasSugeridas.map((pregunta) => (
-							<li key={pregunta}>
-								<button
-									type="button"
-									onClick={() => void preguntar(pregunta)}
-									disabled={ocupado || desactivado}
-									className="w-full rounded-md border border-outline-variant px-4 py-3 text-left text-body-md text-on-surface-variant transition-colors hover:bg-surface-container-high hover:text-on-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50"
-								>
-									{pregunta}
-								</button>
-							</li>
-						))}
-					</ul>
-				</div>
-			)}
-
-		</div>
-	);
-}
-
-function EstadoVacio() {
-	return (
-		<div className="rounded-xl border border-outline-variant bg-surface-container px-6 py-12 text-center">
-			<span
-				className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary"
-				aria-hidden="true"
-			>
-				<GraduationCap className="h-6 w-6" />
-			</span>
-			<p className="text-headline-sm font-semibold text-on-surface">
-				Pregúntale lo que quieras del temario
-			</p>
-			<p className="mx-auto mt-2 max-w-md text-body-md text-on-surface-variant">
-				Contesta con los fragmentos del temario que ha usado, numerados al lado
-				de cada afirmación. Si la duda no está en el temario publicado, te lo
-				dice en vez de inventarse la respuesta.
-			</p>
 		</div>
 	);
 }

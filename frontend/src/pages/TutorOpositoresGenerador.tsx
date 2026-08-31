@@ -13,7 +13,7 @@ export default function TutorOpositoresGenerador() {
 			/>
 			<TutorToolShell
 				title="Generador de preguntas"
-				description="Elige un tema y el tutor escribe una pregunta de test que no existía. Debajo verás el fragmento del temario del que la ha sacado: esa es la prueba de que no se la inventa."
+				description="Mira cómo se fabrica una pregunta, con su fragmento del temario al lado."
 			>
 				<div className="max-w-3xl">
 					<QuestionForge />

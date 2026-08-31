@@ -20,9 +20,9 @@ export const DESCARGO_DEL_TUTOR = (
 		<strong className="text-on-surface">
 			Estás interactuando con un sistema de IA.
 		</strong>{" "}
-		Sus respuestas son orientativas y salen de un temario de muestra:{" "}
+		Sus respuestas son orientativas:{" "}
 		<strong>
-			contrástalas siempre con el temario oficial y con la convocatoria del BOE
+			contrástalas con el temario oficial y la convocatoria del BOE
 		</strong>
 		, que son los que mandan en tu examen.{" "}
 		<Link
@@ -61,6 +61,7 @@ export function TutorToolShell({
 			backHref={RUTA_DEL_TUTOR}
 			backLabel="Volver al Tutor IA para opositores"
 			disclaimerContent={DESCARGO_DEL_TUTOR}
+			compact
 			footerNote={
 				<>
 					<strong className="text-on-surface-variant">Por si acaso:</strong>{" "}

@@ -14,7 +14,7 @@ export default function TutorOpositoresTutor() {
 			/>
 			<TutorToolShell
 				title="Resuelve dudas del temario"
-				description="Pregunta lo que no acabas de entender. El tutor busca en el temario publicado y contesta con los fragmentos que ha usado numerados al lado, para que puedas comprobar cada afirmación."
+				description="Pregunta y te contesta citando el temario."
 			>
 				<div className="max-w-3xl">
 					<TutorChat

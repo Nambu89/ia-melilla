@@ -13,7 +13,7 @@ export default function TutorOpositoresTest() {
 			/>
 			<TutorToolShell
 				title="Test de diez preguntas"
-				description="Diez preguntas del temario, a tu ritmo. Cuando corrijas, puedes desplegar cada una para que el tutor te explique por qué esa era la respuesta buena."
+				description="Diez preguntas del temario, a tu ritmo. Al corregir, el tutor te explica cada una."
 			>
 				<div className="max-w-3xl">
 					<ExamBoard />
