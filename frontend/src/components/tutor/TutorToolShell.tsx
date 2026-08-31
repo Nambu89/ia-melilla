@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { ToolPageShell } from "@/components/demo/ToolPageShell";
+import { ConnectionNotice } from "@/components/tutor/ConnectionNotice";
 import { ServiceNotice } from "@/components/tutor/ServiceNotice";
 
 export const RUTA_DEL_TUTOR = "/demos/tutor-ia-opositores";
@@ -71,6 +72,10 @@ export function TutorToolShell({
 		>
 			<ServiceNotice className="mb-6" />
 			{children}
+			{/* Al pie y discreto: no es un error de cara al visitante, es la
+			    pista para quien despliegue. Arriba solo va lo que le cambia algo
+			    a quien viene a estudiar. */}
+			<ConnectionNotice className="mt-8" />
 		</ToolPageShell>
 	);
 }

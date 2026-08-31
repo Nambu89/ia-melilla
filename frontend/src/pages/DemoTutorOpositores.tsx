@@ -16,6 +16,7 @@ import AuroraBackground from "@/components/decoration/AuroraBackground";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
 import { AiDisclaimer } from "@/components/demo/AiDisclaimer";
 import { AboutMelilla } from "@/components/sections/AboutMelilla";
+import { ConnectionNotice } from "@/components/tutor/ConnectionNotice";
 import { ServiceNotice } from "@/components/tutor/ServiceNotice";
 import {
 	DESCARGO_DEL_TUTOR,
@@ -144,6 +145,9 @@ export default function DemoTutorOpositores() {
 			/>
 
 			<section className="mx-auto max-w-[1200px] px-6 pb-24">
+				{/* Al pie y discreto: si el backend no contesta, esto es lo unico
+				    que lo dice sin abrir la consola del navegador. */}
+				<ConnectionNotice className="mb-10" />
 				<RevealOnScroll>
 					<div className="rounded-xl border border-outline-variant bg-surface-container p-8 md:p-12">
 						<div className="grid gap-6 md:grid-cols-[2fr_1fr] md:items-center">
