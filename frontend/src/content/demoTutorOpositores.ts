@@ -6,7 +6,7 @@ export const demoTutorOpositoresContent = {
 			"Asistente IA anclado al temario publicado de la oposición. Resuelve dudas citando el fragmento del que sale cada respuesta, te pone un test de diez preguntas y te lo corrige explicándote cada fallo.",
 	},
 	preguntasSugeridas: [
-		"¿Qué forma política tiene el Estado español según la Constitución?",
+		"¿Qué es la Monarquía parlamentaria?",
 		"¿Cuáles son los derechos fundamentales y libertades públicas?",
 		"Explícame la diferencia entre las Cortes Generales y el Gobierno.",
 		"¿Qué dice la Constitución sobre la organización territorial del Estado?",

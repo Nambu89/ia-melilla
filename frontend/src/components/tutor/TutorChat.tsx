@@ -116,7 +116,7 @@ export function TutorChat({ preguntasSugeridas }: TutorChatProps) {
 			    demo son el camino corto: se toca una y ya está pasando algo. */}
 			{vacio && (
 				<div>
-					<p className="mb-2 text-label-caps uppercase tracking-[0.12em] text-on-surface-muted">
+					<p className="mb-1.5 text-label-caps uppercase tracking-[0.12em] text-on-surface-muted">
 						PRUEBA A PREGUNTAR
 					</p>
 					<ul className="flex flex-col gap-2">

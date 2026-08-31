@@ -53,7 +53,7 @@ export function ToolPageShell({
 	return (
 		<section
 			className={`mx-auto max-w-[1200px] px-6 pb-24 md:pt-20 ${
-				compact ? "pt-6" : "pt-16"
+				compact ? "pt-4" : "pt-16"
 			}`}
 		>
 			<Link
@@ -75,7 +75,7 @@ export function ToolPageShell({
 				<h1
 					className={`font-bold tracking-tight text-on-surface max-w-4xl ${
 						compact
-							? "mt-6 text-headline-md sm:text-headline-lg md:text-display-lg"
+							? "mt-5 text-headline-md sm:text-headline-lg md:text-display-lg"
 							: "mt-3 text-display-md md:text-display-lg"
 					}`}
 				>
@@ -83,19 +83,19 @@ export function ToolPageShell({
 				</h1>
 				{description && (
 					<p
-						className={`max-w-2xl text-body-lg text-on-surface-variant ${
-							compact ? "mt-3" : "mt-6"
+						className={`max-w-2xl text-on-surface-variant ${
+							compact ? "mt-2 text-body-sm" : "mt-6 text-body-lg"
 						}`}
 					>
 						{description}
 					</p>
 				)}
 				<AiDisclaimer
-					className={`max-w-3xl ${compact ? "mt-5" : "mt-8"}`}
+					className={`max-w-3xl ${compact ? "mt-4" : "mt-8"}`}
 					contenido={disclaimerContent}
 				/>
 			</RevealOnScroll>
-			<div className={compact ? "mt-4" : "mt-12"}>{children}</div>
+			<div className={compact ? "mt-3" : "mt-12"}>{children}</div>
 			<div className="mt-16 rounded-lg border border-outline-variant bg-surface-container-low p-5">
 				<p className="text-body-sm text-on-surface-muted">{footerNote}</p>
 			</div>

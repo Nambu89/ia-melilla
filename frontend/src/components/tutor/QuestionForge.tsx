@@ -96,7 +96,7 @@ export function QuestionForge() {
 
 	return (
 		<div className="flex flex-col gap-6">
-			<div className="rounded-xl border border-outline-variant bg-surface-container p-4 sm:p-6">
+			<div className="rounded-xl border border-outline-variant bg-surface-container p-3 sm:p-6">
 				<FormField
 					label="Tema del temario"
 					htmlFor="tema-del-generador"
