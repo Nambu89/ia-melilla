@@ -7,24 +7,37 @@ export const demoTutorOpositoresContent = {
 	},
 	/**
 	 * Las cuatro preguntas de ejemplo. Son el camino que recorre TODO el que
-	 * entra, asi que se eligen por que funcionan contra el temario y NO por lo
+	 * entra, asi que se eligen porque funcionan contra el temario y NO por lo
 	 * que miden ni por lo bien que suenan.
 	 *
-	 * El criterio, aprendido de una que se rechazo: usar el vocabulario que el
-	 * corpus usa de verdad —"forma politica", "Estado espanol"— y NO pedir
-	 * definiciones de terminos que el temario menciona pero no define, ni
-	 * comparaciones entre dos cosas que ningun fragmento pone juntas. La valla
-	 * del backend mide distancia a un fragmento: si no hay ninguno cerca,
-	 * rechaza, y hace bien.
+	 * LA REGLA, y es la unica que manda: **probar la pregunta contra el backend
+	 * real y ver que devuelve 200 antes de dejarla aqui**. Un 400 en esta lista
+	 * es un "no lo se" en la primera pantalla de la demo.
 	 *
-	 * ANTES DE TOCAR ESTA LISTA: probar la pregunta contra el backend real y
-	 * comprobar que devuelve 200. Un 400 aqui es un "no lo se" en la primera
-	 * pantalla de la demo.
+	 * Lo que si se sabe del rechazo, de un caso real: se cayo
+	 * "¿Que es la Monarquia parlamentaria?" con "la consulta no parece estar del
+	 * temario publicado". Pedia la DEFINICION de un termino que el temario
+	 * menciona pero no define, asi que ningun fragmento quedo bajo el umbral. Y
+	 * la que si funciona usa el vocabulario que el corpus usa de verdad: "forma
+	 * politica", "Estado espanol", "Constitucion".
+	 *
+	 * Lo que NO vale como criterio, aunque suene razonable: aqui llego a
+	 * escribirse que las preguntas COMPARATIVAS fallaban por el mismo motivo, y
+	 * con eso se retiro "Explicame la diferencia entre las Cortes Generales y el
+	 * Gobierno". Se probo despues contra el backend: **200, con tres fuentes**.
+	 * La busqueda trae VARIOS fragmentos y el modelo compara entre ellos. La
+	 * prediccion era plausible, salia de un caso real y era falsa; queda escrita
+	 * para que nadie vuelva a descartar preguntas buenas con ella.
+	 *
+	 * Moraleja de las dos cosas juntas: el criterio orienta la busqueda, no
+	 * sustituye a la llamada.
 	 */
 	preguntasSugeridas: [
-		// Comprobada contra el backend real: 200, con 3 fuentes.
+		// Las cuatro comprobadas contra el backend real: 200 y 3 fuentes cada una.
 		"¿Qué forma política tiene el Estado español según la Constitución?",
 		"¿Cuáles son los derechos fundamentales y libertades públicas?",
+		// De procedimiento administrativo y no de la Constitución a propósito:
+		// variar de área enseña más alcance en la demo.
 		"¿Qué plazo hay para interponer un recurso de alzada?",
 		"¿Qué dice la Constitución sobre la organización territorial del Estado?",
 	],
