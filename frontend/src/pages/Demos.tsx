@@ -27,6 +27,15 @@ const DEMOS: Demo[] = [
 		category: "FISCAL",
 	},
 	{
+		slug: "tutor-ia-opositores",
+		name: "Tutor IA para opositores",
+		tagline:
+			"Profesor particular IA anclado al temario publicado. Resuelve dudas citando el fragmento del que sale cada respuesta, pone tests de diez preguntas y corrige explicando por qué fallaste.",
+		status: "live",
+		toolsCount: 3,
+		category: "FORMACIÓN",
+	},
+	{
 		slug: "atencion-cliente",
 		name: "IA Atención al Cliente",
 		tagline:
@@ -60,7 +69,7 @@ export default function Demos() {
 		<PageShell>
 			<SeoHead
 				title="Showroom de Demos · IA Melilla"
-				description="Prueba nuestras demos de IA antes de contratar. IA Fiscal Melilla disponible. Más herramientas próximamente."
+				description="Prueba nuestras demos de IA antes de contratar. IA Fiscal Melilla y el Tutor IA para opositores ya están disponibles. Más herramientas próximamente."
 				path="/demos"
 			/>
 			<section className="relative overflow-hidden">
@@ -68,7 +77,10 @@ export default function Demos() {
 				<div className="relative mx-auto max-w-[1200px] px-6 pt-20 pb-16 md:pt-28">
 					<RevealOnScroll>
 						<p className="text-label-caps uppercase tracking-[0.12em] text-primary mb-6">
-							SHOWROOM · {liveDemos.length} DEMO{liveDemos.length !== 1 ? "S" : ""} ACTIVA
+							SHOWROOM ·{" "}
+						{liveDemos.length === 1
+							? "1 DEMO ACTIVA"
+							: `${liveDemos.length} DEMOS ACTIVAS`}
 						</p>
 					</RevealOnScroll>
 					<AnimatedHeadline

@@ -41,10 +41,12 @@ interface StaticPage {
  *
  * - /cliente/*  → área privada tras login, no tiene sentido indexarla.
  * - /demos/ia-fiscal-melilla/{chat,calculadora-neto,calculadora-retenciones,
- *   guia-fiscal,clasificador-facturas} → herramientas interactivas de la demo.
- *   Su contenido depende de lo que teclee el usuario, así que no hay nada
- *   estable que indexar; la portada /demos/ia-fiscal-melilla sí entra porque
- *   es una landing de verdad (propuesta, comparativa, secciones de contenido).
+ *   guia-fiscal,clasificador-facturas} y
+ *   /demos/tutor-ia-opositores/{tutor,test,generador} → herramientas
+ *   interactivas de las demos. Su contenido depende de lo que teclee el
+ *   usuario, así que no hay nada estable que indexar; las portadas
+ *   /demos/ia-fiscal-melilla y /demos/tutor-ia-opositores sí entran porque son
+ *   landings de verdad (propuesta, secciones de contenido).
  * - /sobre-nosotros → hoy es un "Página en construcción". Está enlazada desde
  *   el footer, así que sacarla del sitemap no basta para que no se indexe:
  *   lleva además noindex en su SeoHead. Quitar ese noindex y añadirla aquí en
@@ -92,7 +94,7 @@ const PAGES: readonly StaticPage[] = [
 		path: "/demos",
 		label: "Showroom de demos",
 		summary:
-			"Demos que se pueden probar antes de contratar nada. IA Fiscal Melilla ya está disponible.",
+			"Demos que se pueden probar antes de contratar nada. IA Fiscal Melilla y el Tutor IA para opositores ya están disponibles.",
 		section: "demos",
 		changefreq: "weekly",
 		priority: "0.9",
@@ -102,6 +104,15 @@ const PAGES: readonly StaticPage[] = [
 		label: "IA Fiscal Melilla",
 		summary:
 			"Demo del régimen fiscal de Melilla: chat con citas a la norma, calculadora de neto para autónomos, calculadora de retenciones, guía fiscal y clasificador de facturas.",
+		section: "demos",
+		changefreq: "monthly",
+		priority: "0.8",
+	},
+	{
+		path: "/demos/tutor-ia-opositores",
+		label: "Tutor IA para opositores",
+		summary:
+			"Demo de un tutor IA anclado al temario de una oposición: resuelve dudas citando el fragmento del que sale la respuesta, pone tests de diez preguntas y los corrige explicando cada fallo.",
 		section: "demos",
 		changefreq: "monthly",
 		priority: "0.8",
