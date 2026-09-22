@@ -196,7 +196,7 @@ function useTemasIndexados(respaldo: number): number {
 		const controlador = new AbortController();
 		obtenerTemas(controlador.signal)
 			.then((lista) => {
-				if (montadoRef.current && lista.length > 0) setTemas(lista.length);
+if (montadoRef.current) setTemas(lista.length);
 			})
 			.catch(() => {
 				// Silencio deliberado: es un adorno, no puede romper la portada.
