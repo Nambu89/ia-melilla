@@ -26,15 +26,18 @@ export default function MobileDrawer({
 		<Dialog.Root>
 			<Dialog.Trigger asChild>{trigger}</Dialog.Trigger>
 			<Dialog.Portal>
+				{/* Por encima del banner de cookies (60) y de los botones flotantes
+				    de contacto (65): es el menú a pantalla completa, y mientras esté
+				    abierto no debe asomar nada de la página por debajo. */}
 				<Dialog.Overlay
 					className={cn(
-						"fixed inset-0 z-40 bg-black/80 backdrop-blur-sm",
+						"fixed inset-0 z-[74] bg-black/80 backdrop-blur-sm",
 						"data-[state=open]:animate-fade-in",
 					)}
 				/>
 				<Dialog.Content
 					className={cn(
-						"fixed inset-0 z-50 flex flex-col bg-surface p-6",
+						"fixed inset-0 z-[75] flex flex-col bg-surface p-6",
 						"data-[state=open]:animate-slide-in-top",
 					)}
 				>
