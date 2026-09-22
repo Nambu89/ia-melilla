@@ -47,7 +47,7 @@ export function WorkingNotice({ fases, className = "" }: WorkingNoticeProps) {
 			/>
 			<p className="text-body-sm text-on-surface-variant">
 				{fase?.texto}{" "}
-				<span className="text-on-surface-muted tabular-nums">
+<span aria-hidden="true" className="text-on-surface-muted tabular-nums">
 					({segundos} s)
 				</span>
 			</p>
